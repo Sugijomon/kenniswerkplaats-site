@@ -5,11 +5,15 @@
   "private": true,
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview"
+    "build": "node scripts/check.mjs --data && astro build && node scripts/check.mjs",
+    "preview": "astro preview",
+    "check": "node scripts/check.mjs"
   },
   "dependencies": {
     "@fontsource-variable/figtree": "^5.2.10",
     "astro": "^5.18.2"
+  },
+  "engines": {
+    "node": ">=22.18"
   }
 }
