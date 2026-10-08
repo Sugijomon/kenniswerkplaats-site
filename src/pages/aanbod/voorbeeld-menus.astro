@@ -1,0 +1,35 @@
+---
+import Base from '../../layouts/Base.astro';
+import Logo from '../../components/Logo.astro';
+import { groepen, aanbodBySlug } from '../../data/aanbod';
+const kort = ['AI Governance', 'Leren & AI', 'Platforms'];
+---
+<Base title="Drie varianten voor het aanbodmenu" description="Vergelijk drie manieren om het aanbod van Kenniswerkplaats te vinden.">
+  <header class="page-head"><div class="wrap"><p class="eyebrow">Menuvoorbeelden</p><h1>Drie routes naar het aanbod</h1><p class="lead">Probeer de menu’s hieronder. Ze gebruiken dezelfde drie categorieën en negen aanbodonderdelen.</p><nav class="jump" aria-label="Menuvarianten"><a href="#zwevend">1. Zwevend mega-menu</a><a href="#pijlers">2. Drie pijlers</a><a href="#overzicht">3. Overzicht met subnavigatie</a></nav></div></header>
+  <div class="wrap examples">
+    <section id="zwevend"><p class="eyebrow">Optie 1</p><h2>Zwevend mega-menu</h2><p>Een compact topmenu. Open ‘Aanbod’ voor het volledige overzicht.</p>
+      <div class="demo floating">
+        <div class="demo-header"><Logo /><nav aria-label="Voorbeeld mega-menu"><a href="/vraagstukken/">Vraagstukken</a><a href="/werkwijze/">Werkwijze</a><details class="dropdown" open><summary>Aanbod <span aria-hidden="true">⌄</span></summary><div class="panel columns">{groepen.map(g => <div class={`category groep-${g.key}`}><h3><a href={`/aanbod/#${g.key}`}>{g.naam}</a></h3><ul>{g.items.map(s => <li><a href={`/aanbod/${s}/`}>{aanbodBySlug[s].naam}</a></li>)}</ul></div>)}</div></details><a href="/werkplaats/">Werkplaats</a><a href="/over/">Over</a><a href="/contact/">Contact</a></nav></div>
+        <div class="demo-body"><p class="eyebrow">Aanbod</p><h3>Wat ik voor je kan doen</h3><p>Van zicht op je vraagstuk naar een werkende oplossing.</p></div>
+      </div>
+    </section>
+    <section id="pijlers"><p class="eyebrow">Optie 2</p><h2>Drie pijlers in het topmenu</h2><p>De categorieën zijn direct zichtbaar. Open een pijler voor de bijbehorende onderdelen.</p><p class="naming">Hier zie je de voorgestelde korte menunamen; de volledige categorienamen staan in de uitklapmenu’s.</p>
+      <div class="demo pillars"><div class="demo-header"><Logo /><nav aria-label="Voorbeeld drie pijlers"><a href="/vraagstukken/">Vraagstukken</a><a href="/werkwijze/">Werkwijze</a>{groepen.map((g,i) => <details class={`dropdown category groep-${g.key}`}><summary>{kort[i]} <span aria-hidden="true">⌄</span></summary><div class="panel compact"><h3>{g.naam}</h3><ul>{g.items.map(s => <li><a href={`/aanbod/${s}/`}>{aanbodBySlug[s].naam}</a></li>)}</ul></div></details>)}<a href="/werkplaats/">Werkplaats</a><a href="/contact/">Contact</a></nav></div><div class="demo-body"><p class="eyebrow">Kenniswerkplaats</p><h3>Samen uitzoeken wat werkt</h3><p>Drie herkenbare ingangen, elk met een eigen aanbod.</p></div></div>
+    </section>
+    <section id="overzicht"><p class="eyebrow">Optie 3</p><h2>Overzicht met subnavigatie</h2><p>‘Aanbod’ opent het overzicht. De categorieknoppen brengen je naar het juiste onderdeel.</p>
+      <div class="demo overview"><div class="demo-header"><Logo /><nav aria-label="Voorbeeld overzicht"><a href="/vraagstukken/">Vraagstukken</a><a href="/werkwijze/">Werkwijze</a><a class="selected" href="#voorbeeld-aanbod">Aanbod</a><a href="/werkplaats/">Werkplaats</a><a href="/over/">Over</a><a href="/contact/">Contact</a></nav></div><div class="demo-body" id="voorbeeld-aanbod"><p class="eyebrow">Aanbod</p><h3>Wat ik voor je kan doen</h3><nav class="jump" aria-label="Voorbeeld categorieën">{groepen.map(g => <a class={`category groep-${g.key}`} href={`#voorbeeld-${g.key}`}>{g.naam}</a>)}</nav>{groepen.map(g => <section class={`category aanbod-block groep-${g.key}`} id={`voorbeeld-${g.key}`}><h3>{g.naam}</h3><p>{g.tekst}</p><div class="service-grid">{g.items.map(s => <a href={`/aanbod/${s}/`}><strong>{aanbodBySlug[s].naam}</strong><span>{aanbodBySlug[s].kort}</span></a>)}</div></section>)}</div></div>
+    </section>
+  </div>
+</Base>
+<style>
+  .examples { padding-bottom:72px; } .examples>section { padding:40px 0; scroll-margin-top:90px; } .examples>section>p { max-width:760px; } .naming { color:var(--ink-2); font-size:.9rem; }
+  .jump { display:flex; flex-wrap:wrap; gap:10px; margin-top:24px; } .jump a { text-decoration:none; padding:12px 18px; background:white; border:1px solid var(--line); border-radius:24px; font-weight:600; }
+  .demo { margin-top:28px; border:1px solid var(--line); border-radius:20px; background:var(--paper); } .demo-header { padding:22px; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:20px; border-bottom:1px solid var(--line); position:relative; } .demo-header nav { display:flex; align-items:center; flex-wrap:wrap; gap:12px; } .demo-header nav>a { font-size:.9rem; text-decoration:none; }
+  .dropdown { position:relative; } summary { list-style:none; cursor:pointer; font-weight:650; font-size:.9rem; padding:10px 14px; border-radius:22px; background:var(--accent-bg,var(--teal-100)); color:var(--accent,var(--teal-900)); } summary::-webkit-details-marker { display:none; }
+  .panel { position:absolute; top:calc(100% + 12px); z-index:5; background:white; border:1px solid var(--line); border-radius:16px; padding:24px; box-shadow:0 16px 40px #10283a18; } .columns { width:min(760px,80vw); right:-170px; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:24px; } .category h3 { color:var(--accent); font-size:1rem; } .columns .category { border-top:3px solid var(--accent); padding-top:16px; } .panel h3 { margin:0 0 14px; } .panel ul { list-style:none; padding:0; margin:0; } .panel a { display:block; padding:8px 0; font-size:.95rem; text-decoration:none; } .panel h3 a { padding:0; } .panel a:hover { text-decoration:underline; }
+  .compact { left:0; width:270px; } .demo-body { padding:32px; } .demo-body>h3 { font-size:2rem; } .floating .demo-body { min-height:300px; } .pillars .demo-body { min-height:250px; } .selected { background:var(--teal-100); padding:10px 14px; border-radius:24px; }
+  .overview .jump a { color:var(--accent); border-color:var(--accent); } .aanbod-block { padding:40px 0 0; scroll-margin-top:90px; } .service-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; } .service-grid>a { padding:20px; background:white; border:1px solid var(--line); border-top:3px solid var(--accent); border-radius:12px; text-decoration:none; } .service-grid span { display:block; margin-top:10px; color:var(--ink-2); }
+  @media(max-width:1000px) { .columns { right:-100px; } }
+  @media(max-width:760px) { .demo-header { display:block; } .demo-header nav { margin-top:20px; align-items:flex-start; } .panel { position:static; margin-top:12px; box-shadow:none; max-width:100%; } .columns { width:100%; grid-template-columns:1fr; } .dropdown[open] { flex-basis:100%; } .compact { width:100%; } .service-grid { grid-template-columns:1fr; } .demo-body { padding:24px; } .floating .demo-body,.pillars .demo-body { min-height:0; } }
+  @media(prefers-reduced-motion:no-preference) { :global(html) { scroll-behavior:smooth; } }
+</style>

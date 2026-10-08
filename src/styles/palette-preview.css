@@ -1,0 +1,42 @@
+/* Alleen het kleurenvoorbeeld; het standaardpalet blijft behouden. */
+.palette-preview {
+  --ink: #1e2b37;
+  --ink-2: #425260;
+  --ink-3: #596874;
+  --paper: #f4f7f6;
+  --teal-900: #13574b;
+  --teal-700: #117a65;
+  --teal-600: #117a65;
+  --teal-500: #21937e;
+  --teal-400: #64b8a7;
+  --teal-100: #deeee8;
+  --teal-50: #edf6f2;
+  --logo-blue: #1e2b37;
+  --logo-magenta: #c22067;
+  --logo-green: #117a65;
+  --logo-amber: #d48b28;
+}
+.palette-preview .groep-ai { --accent: #117a65; --accent-bg: #edf6f2; }
+.palette-preview .groep-leren { --accent: #925708; --accent-bg: #fff4e2; }
+.palette-preview .groep-platforms { --accent: #1e2b37; --accent-bg: #edf0f4; }
+.palette-preview .btn { background:#1e2b37; border-color:#1e2b37; }
+.palette-preview .btn:hover { background:#344859; border-color:#344859; }
+.palette-preview .btn.ghost { color:#1e2b37; background:transparent; }
+.palette-preview .btn.ghost:hover { background:#e8eef0; }
+.palette-preview .btn.light { background:white; border-color:white; color:#1e2b37; }
+.palette-preview .hero-panel { background:linear-gradient(125deg,#e9f3ee,#faf4e8); }
+.palette-preview .tile.t1 .n { background:#117a65; color:white; }
+.palette-preview .tile.t2 .n { background:#925708; color:white; }
+.palette-preview .tile.t3 .n { background:#c22067; color:white; }
+.palette-preview .tile.t4 .n { background:#1e2b37; color:white; }
+.palette-preview .vraag-tile:nth-child(3n+2) .ico { color:#925708; background:#fff4e2; }
+.palette-preview .vraag-tile:nth-child(3n) .ico { color:#a51b58; background:#fbeaf1; }
+.palette-preview .banner { background:#1e2b37; }
+.palette-preview :focus-visible { outline-color:#a51b58; }
+.palette-preview .banner :focus-visible { outline-color:white; }
+.palette-preview .preview-notice { padding:14px 0; background:white; border-bottom:1px solid var(--line); }
+.palette-preview .preview-notice .wrap { display:flex; gap:16px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
+.palette-preview .preview-notice p { margin:0; font-size:.9rem; }
+.palette-preview .swatches { display:flex; gap:16px; flex-wrap:wrap; margin-top:18px; }
+.palette-preview .swatch { display:flex; align-items:center; gap:8px; font-size:.875rem; }
+.palette-preview .swatch i { width:18px; height:18px; border-radius:5px; background:var(--swatch); }

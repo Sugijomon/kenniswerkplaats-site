@@ -5,8 +5,8 @@ import Logo from '../components/Logo.astro';
 import { site } from '../data/site';
 import { groepen, aanbodBySlug } from '../data/aanbod';
 
-interface Props { title?: string; description?: string }
-const { title, description = site.beschrijving } = Astro.props;
+interface Props { title?: string; description?: string; palettePreview?: boolean }
+const { title, description = site.beschrijving, palettePreview = false } = Astro.props;
 const fullTitle = title ? `${title} · Kenniswerkplaats` : 'Kenniswerkplaats · Samen uitzoeken wat werkt';
 const path = Astro.url.pathname;
 const nav = [
@@ -28,7 +28,7 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
     <meta name="description" content={description} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   </head>
-  <body>
+  <body class:list={{ 'palette-preview': palettePreview }}>
     <a class="skip" href="#main">Naar de inhoud</a>
     <header class="site-header">
       <div class="wrap header-inner">
