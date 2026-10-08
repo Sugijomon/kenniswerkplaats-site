@@ -5,11 +5,25 @@ const { values, highlight = [] } = Astro.props;
 const label = (v: number) => (v === 2 ? 'bewezen' : v === 1 ? 'deels' : 'niet in deze case');
 const summary = fasen.map((f) => `${f.naam}: ${label(values[f.key])}`).join(', ');
 ---
-<ul class="dots" aria-label={`Fasen in deze case. ${summary}`}>
+<ul class="case-stepper" aria-label={`Fasen in deze case. ${summary}`}>
   {fasen.map((f) => (
-    <li class:list={['dot', `v${values[f.key]}`, { hl: highlight.includes(f.key) }]} title={`${f.naam}: ${label(values[f.key])}`}>
-      <span class="pip" aria-hidden="true"></span>
-      <span class="lbl" aria-hidden="true">{f.naam.split(' ')[0]}</span>
+    <li class:list={[`status-${values[f.key]}`, { relevant: highlight.includes(f.key) }]}>
+      <span class="phase-mark" aria-hidden="true"></span>
+      <span class="phase-name">{f.naam}</span>
+      <span class="phase-status">{label(values[f.key])}</span>
     </li>
   ))}
 </ul>
+<style>
+  .case-stepper { list-style:none; margin:24px 0 16px; padding:20px 0 0; border-top:1px solid var(--line); display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:8px; }
+  li { position:relative; display:flex; flex-direction:column; align-items:center; text-align:center; gap:8px; color:#165a53; min-width:0; }
+  .phase-name { font-size:.875rem; font-weight:650; line-height:1.35; }
+  .phase-status { font-size:.75rem; line-height:1.4; color:#526460; }
+  .status-0 { color:#526460; }
+  .phase-mark { width:18px; height:18px; flex-shrink:0; border:2px solid #79948f; border-radius:50%; background:white; z-index:1; }
+  .status-2 .phase-mark { background:#17675c; border-color:#17675c; }
+  .status-1 .phase-mark { background:linear-gradient(90deg,#17675c 50%,white 50%); border-color:#17675c; }
+  li:not(:last-child):after { content:''; position:absolute; top:8px; left:calc(50% + 13px); width:calc(100% - 18px); height:2px; background:#c9d9d6; }
+  .relevant .phase-name { text-decoration:underline; text-decoration-color:#91b9b1; text-underline-offset:4px; }
+  @media(max-width:480px) { .case-stepper { grid-template-columns:repeat(2,minmax(0,1fr)); row-gap:18px; } li:nth-child(2):after { display:none; } }
+</style>
