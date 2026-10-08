@@ -1,0 +1,14 @@
+---
+import { fasen, type FaseKey } from '../data/fasen';
+interface Props { active?: FaseKey[]; compact?: boolean }
+const { active = [], compact = false } = Astro.props;
+---
+<ol class:list={['fase-strip', { compact }]}>
+  {fasen.map((f) => (
+    <li class:list={{ on: active.length === 0 || active.includes(f.key), dim: active.length > 0 && !active.includes(f.key) }}>
+      <span class="nr">{f.nr}</span>
+      <span class="naam">{f.naam}</span>
+      {!compact && <span class="vraag">{f.vraag}</span>}
+    </li>
+  ))}
+</ol>

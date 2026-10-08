@@ -1,0 +1,45 @@
+---
+import Base from '../../layouts/Base.astro';
+import CaseCard from '../../components/CaseCard.astro';
+import { cases } from '../../data/cases';
+import { fasen } from '../../data/fasen';
+---
+<Base title="Praktijkcases" description="Eerder aangepakte vraagstukken in zorg, onderwijs en organisaties, per fase van een traject.">
+  <header class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Praktijkcases</p>
+      <h1>Eerder aangepakt</h1>
+      <p class="lead">Geen project was een volledige Kenniswerkplaats. Samen laten ze zien dat elke fase al vaak in de praktijk is uitgevoerd. De stipjes tonen welke fasen een case aantoonbaar bewijst.</p>
+    </div>
+  </header>
+  <section class="tight">
+    <div class="wrap">
+      <nav class="filter" aria-label="Filter op fase">
+        <a href="#" data-f="alle" class="on">Alle</a>
+        {fasen.map((f) => <a href={`#${f.key}`} data-f={f.key}>{f.nr}. {f.naam}</a>)}
+      </nav>
+      <div class="cases-grid">
+        {cases.map((c) => (
+          <div data-fasen={Object.entries(c.fasen).filter(([, v]) => v === 2).map(([k]) => k).join(' ')}>
+            <CaseCard c={c} />
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+  <script>
+    const links = document.querySelectorAll<HTMLAnchorElement>('.filter a');
+    const items = document.querySelectorAll<HTMLElement>('[data-fasen]');
+    function apply(f: string) {
+      links.forEach((l) => l.classList.toggle('on', l.dataset.f === f));
+      items.forEach((el) => { el.hidden = f !== 'alle' && !el.dataset.fasen!.split(' ').includes(f); });
+    }
+    links.forEach((l) => l.addEventListener('click', (e) => {
+      e.preventDefault();
+      const f = l.dataset.f!;
+      history.replaceState(null, '', f === 'alle' ? location.pathname : `#${f}`);
+      apply(f);
+    }));
+    apply(location.hash.slice(1) || 'alle');
+  </script>
+</Base>

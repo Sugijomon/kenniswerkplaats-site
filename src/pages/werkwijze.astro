@@ -1,0 +1,66 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { fasen } from '../data/fasen';
+import { aanbod } from '../data/aanbod';
+
+const principes = [
+  { titel: 'Samen met wie het vraagstuk kent', tekst: 'De mensen die het werk doen, onderzoeken, ontwerpen en beoordelen mee. Wie meedoet, maakt het onderweg eigen.' },
+  { titel: 'Eerst zien wat er werkelijk gebeurt', tekst: 'Ik stel vast wat er feitelijk speelt voordat ik iets ontwerp. Soms blijkt de oorspronkelijke vraag niet de juiste.' },
+  { titel: 'Iets tastbaars na elke stap', tekst: 'Elke fase levert iets op waar je mee verder kunt: een analyse, een ontwerp, een werkende praktijk of een besluit.' },
+  { titel: 'Een besluitmoment ingebouwd', tekst: 'Na elke stap kies je zelf: doorgaan, bijsturen of stoppen. Je zit niet vast aan een groot traject.' },
+];
+---
+<Base title="Werkwijze" description="Vier fasen van zicht krijgen tot sturen en evalueren, en de principes die in elke fase gelden.">
+  <header class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Werkwijze</p>
+      <h1>Van vraagstuk naar werkende praktijk</h1>
+      <p class="lead">Een traject bestaat meestal uit vier fasen. Je kunt bij elke fase instappen en alleen afnemen wat je nodig hebt.</p>
+    </div>
+  </header>
+
+  <section class="tight">
+    <div class="wrap grid grid-2">
+      {fasen.map((f) => {
+        const items = aanbod.filter((a) => a.fasen.includes(f.key));
+        return (
+          <div class="card" id={f.key}>
+            <p class="eyebrow">Fase {f.nr}</p>
+            <h2 style="font-size:1.4rem">{f.naam}</h2>
+            <p style="font-weight:600;color:var(--teal-900)">{f.vraag}</p>
+            <p style="color:var(--ink-2)">{f.tekst}</p>
+            <div class="fase-tags">
+              {items.map((a) => <a class="fase-tag" href={`/aanbod/${a.slug}/`} style="text-decoration:none">{a.naam}</a>)}
+            </div>
+            <p style="margin:14px 0 0"><a class="textlink" href={`/cases/#${f.key}`}>Cases in deze fase <Icon name="arrow" size={14} /></a></p>
+          </div>
+        );
+      })}
+    </div>
+    <div class="wrap">
+      <p class="loop-note"><Icon name="loop" size={20} /> Fase 4 voedt fase 1: wat je evalueert, is vaak de verkenning van de volgende ronde.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <h2>Wat in elke fase hetzelfde is</h2>
+      <p class="prose">De fasen beschrijven wat er gebeurt. Deze principes beschrijven hoe.</p>
+      <div class="grid grid-2">
+        {principes.map((p) => (
+          <div class="card"><h3>{p.titel}</h3><p style="margin:0;color:var(--ink-2)">{p.tekst}</p></div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="cta-bar">
+        <p>Waar sta jij in je vraagstuk?</p>
+        <a class="btn" href="/contact/">Plan een kennismaking <Icon name="arrow" size={18} /></a>
+      </div>
+    </div>
+  </section>
+</Base>

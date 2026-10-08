@@ -1,0 +1,19 @@
+---
+import type { Case } from '../data/cases';
+import type { FaseKey } from '../data/fasen';
+import PhaseDots from './PhaseDots.astro';
+interface Props { c: Case; highlight?: FaseKey[] }
+const { c, highlight = [] } = Astro.props;
+---
+<article class="case-card" id={`case-${c.id}`}>
+  <p class="case-domain">{c.domein}</p>
+  <h3>{c.vraagstuk}</h3>
+  <p class="case-text">{c.tekst}</p>
+  <dl>
+    <div><dt>Rol</dt><dd>{c.rol}</dd></div>
+    <div><dt>Aanpak</dt><dd>{c.aanpak}</dd></div>
+    <div><dt>Opbrengst</dt><dd>{c.opbrengst}</dd></div>
+  </dl>
+  <PhaseDots values={c.fasen} highlight={highlight} />
+  <p class="case-org">{c.organisatie} <span>· {c.periode}</span></p>
+</article>

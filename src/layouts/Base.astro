@@ -1,0 +1,75 @@
+---
+import '@fontsource-variable/figtree';
+import '../styles/global.css';
+import Logo from '../components/Logo.astro';
+import { site } from '../data/site';
+
+interface Props { title?: string; description?: string }
+const { title, description = site.beschrijving } = Astro.props;
+const fullTitle = title ? `${title} · Kenniswerkplaats` : 'Kenniswerkplaats · Samen uitzoeken wat werkt';
+const path = Astro.url.pathname;
+const nav = [
+  { href: '/vraagstukken/', label: 'Vraagstukken' },
+  { href: '/werkwijze/', label: 'Werkwijze' },
+  { href: '/aanbod/', label: 'Aanbod' },
+  { href: '/werkplaats/', label: 'Werkplaats' },
+  { href: '/over/', label: 'Over' },
+  { href: '/contact/', label: 'Contact' },
+];
+const isActive = (href: string) => path === href || (href !== '/' && path.startsWith(href));
+---
+<!doctype html>
+<html lang="nl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Naar de inhoud</a>
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <Logo />
+        <nav aria-label="Hoofdmenu">
+          <ul class="nav-desktop">
+            {nav.map((n) => (
+              <li><a href={n.href} aria-current={isActive(n.href) ? 'page' : undefined}>{n.label}</a></li>
+            ))}
+          </ul>
+          <details class="menu">
+            <summary aria-label="Menu openen">
+              <span class="bars" aria-hidden="true"></span>Menu
+            </summary>
+            <ul>
+              {nav.map((n) => (
+                <li><a href={n.href} aria-current={isActive(n.href) ? 'page' : undefined}>{n.label}</a></li>
+              ))}
+            </ul>
+          </details>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="wrap footer-inner">
+        <div>
+          <Logo />
+          <p class="muted">{site.tagline}</p>
+        </div>
+        <ul class="footer-nav">
+          {nav.map((n) => <li><a href={n.href}>{n.label}</a></li>)}
+        </ul>
+        <div>
+          <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
+          <p class="muted">{site.plaats}</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

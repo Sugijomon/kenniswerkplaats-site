@@ -1,0 +1,51 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import FaseStrip from '../../components/FaseStrip.astro';
+import { groepen, aanbodBySlug } from '../../data/aanbod';
+import { faseByKey } from '../../data/fasen';
+---
+<Base title="Aanbod" description="Modulair aanbod in drie domeinen: verantwoord werken met AI, leren en ontwikkelen, en digitale platforms.">
+  <header class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Aanbod</p>
+      <h1>Wat ik voor je kan doen</h1>
+      <p class="lead">Elk onderdeel hoort bij een of meer fasen van een traject. Je kunt los instappen of onderdelen combineren tot een heel traject.</p>
+    </div>
+  </header>
+  <section class="tight">
+    <div class="wrap"><FaseStrip compact /></div>
+  </section>
+  <section>
+    <div class="wrap">
+      {groepen.map((g) => (
+        <div class="aanbod-groep">
+          <h2>{g.naam}</h2>
+          <p>{g.tekst}</p>
+          <div class="grid grid-3">
+            {g.items.map((slug) => {
+              const a = aanbodBySlug[slug];
+              return (
+                <a class:list={['card', 'aanbod-card', { instap: a.instap }]} href={`/aanbod/${a.slug}/`}>
+                  <h3>{a.naam} {a.instap && <span class="badge">Instap</span>}</h3>
+                  <p>{a.kort}</p>
+                  <div class="fase-tags">
+                    {a.fasen.map((f) => <span class="fase-tag">{faseByKey[f].nr}. {faseByKey[f].naam}</span>)}
+                  </div>
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+  <section class="tight">
+    <div class="wrap">
+      <div class="cta-bar">
+        <p>Twijfel je waar je moet beginnen?</p>
+        <a class="btn" href="/contact/">Plan een kennismaking <Icon name="arrow" size={18} /></a>
+      </div>
+    </div>
+  </section>
+</Base>

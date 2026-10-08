@@ -1,0 +1,147 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import FaseStrip from '../components/FaseStrip.astro';
+import CaseCard from '../components/CaseCard.astro';
+import { vraagstukken } from '../data/vraagstukken';
+import { fasen } from '../data/fasen';
+import { caseById } from '../data/cases';
+import { werkplaats } from '../data/werkplaats';
+
+const homeTegels = vraagstukken.filter((v) => v.home);
+// Drie cases op de homepage: verschillende fasen en domeinen.
+const homeCases = ['zorgwise', 'viazorg-flexplatform', 'corpio'].map((id) => caseById[id]);
+---
+<Base>
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-panel">
+        <div>
+          <h1>Samen uitzoeken wat werkt. Daarna zorgen dat het blijft werken.</h1>
+          <p>Ik help organisaties en samenwerkingsverbanden om zicht te krijgen op een lastig vraagstuk, samen een werkbare oplossing te ontwerpen en die te laten landen in de praktijk.</p>
+          <div class="hero-actions">
+            <a class="btn" href="/contact/">Plan een kennismaking <Icon name="arrow" size={18} /></a>
+            <a class="btn ghost" href="/vraagstukken/">Bekijk vraagstukken</a>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          {fasen.map((f, i) => (
+            <div class={`tile t${i + 1}`}>
+              <span class="n">{f.nr}</span>
+              <strong>{f.naam}</strong>
+              <div class="lines"><span style="width:90%"></span><span style="width:70%"></span><span style="width:80%"></span></div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Herken je dit? -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Herken je dit?</h2>
+        <a class="textlink" href="/vraagstukken/">Alle vraagstukken <Icon name="arrow" size={16} /></a>
+      </div>
+      <div class="grid grid-3">
+        {homeTegels.map((v) => (
+          <a class="card vraag-tile" href={`/aanbod/${v.aanbod}/`}>
+            <span class="ico"><Icon name={v.icoon} size={28} /></span>
+            <h3>{v.titel}</h3>
+            <p>{v.tekst}</p>
+            <span class="go">Zo pak ik het aan <Icon name="arrow" size={14} /></span>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Praktijklab -->
+  <section class="tight">
+    <div class="wrap">
+      <div class="banner">
+        <div>
+          <p class="eyebrow">Instap</p>
+          <h2>Begin met een praktijklab</h2>
+          <p>Met de mensen die het vraagstuk kennen samen onderzoeken, ontwerpen en beoordelen. Eén werkplaats of een korte reeks, in je eigen organisatie of met meerdere organisaties samen.</p>
+          <a class="btn light" href="/aanbod/praktijklab/">Bekijk het praktijklab <Icon name="arrow" size={18} /></a>
+        </div>
+        <div class="banner-cards" aria-hidden="true">
+          <span><Icon name="search" size={34} /></span>
+          <span><Icon name="layers" size={34} /></span>
+          <span><Icon name="people" size={34} /></span>
+          <span><Icon name="chart" size={34} /></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Zo werk ik -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Zo werk ik</h2>
+        <a class="textlink" href="/werkwijze/">Meer over de werkwijze <Icon name="arrow" size={16} /></a>
+      </div>
+      <FaseStrip />
+      <p class="loop-note"><Icon name="loop" size={20} /> Je kunt bij elke stap instappen. Een evaluatie is vaak het begin van de volgende ronde.</p>
+    </div>
+  </section>
+
+  <!-- Eerder aangepakt -->
+  <section class="cases-section">
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Eerder aangepakt</h2>
+        <a class="textlink" href="/cases/">Alle praktijkcases <Icon name="arrow" size={16} /></a>
+      </div>
+      <div class="cases-grid">
+        {homeCases.map((c) => <CaseCard c={c} />)}
+      </div>
+    </div>
+  </section>
+
+  <!-- Uit de werkplaats -->
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>Uit de werkplaats</h2>
+        <a class="textlink" href="/werkplaats/">Naar de werkplaats <Icon name="arrow" size={16} /></a>
+      </div>
+      <div class="grid grid-3">
+        {werkplaats.map((w) => (
+          <a class="card tool-tile" href={`/werkplaats/#${w.id}`}>
+            <span class="ico"><Icon name={w.icoon} /></span>
+            <div><h3>{w.naam}</h3><p>{w.kort}</p></div>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Over Rink -->
+  <section class="tight">
+    <div class="wrap">
+      <div class="card about">
+        <div class="avatar" aria-hidden="true">RW</div>
+        <div>
+          <h3>Over Rink</h3>
+          <p>Al twintig jaar werk ik aan dezelfde overgang: van ambitie of besluit naar een praktijk die werkt en blijft werken. Vaak tussen organisaties die geen zeggenschap over elkaar hebben, in zorg, onderwijs en daarbuiten.</p>
+        </div>
+        <a class="textlink" href="/over/">Meer over mij <Icon name="arrow" size={16} /></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="tight">
+    <div class="wrap">
+      <div class="cta-bar">
+        <p>Benieuwd wat werkt voor jullie?</p>
+        <a class="btn" href="/contact/">Neem contact op <Icon name="arrow" size={18} /></a>
+      </div>
+    </div>
+  </section>
+</Base>

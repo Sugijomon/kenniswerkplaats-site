@@ -1,0 +1,69 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { site } from '../data/site';
+
+const sterktes = [
+  { titel: 'Eerst vaststellen wat er gebeurt', tekst: 'Met eigen instrumenten onderzoeken wat er werkelijk speelt, voordat er iets wordt ontworpen.' },
+  { titel: 'Ontwerpen dat landt in het gewone werk', tekst: 'Scenario’s, kaders, processen en instrumenten die in een bestaande cyclus worden gebruikt.' },
+  { titel: 'Financiering en besluitvorming meenemen', tekst: 'Businesscases, scenario’s en begrotingen, en ervaring met stuurgroepen en medezeggenschap van beide kanten van de tafel.' },
+  { titel: 'Koppelingen en leveranciers doorzien', tekst: 'Begrijpen hoe gegevensstromen, standaarden en leveranciersbelangen de uitvoerbaarheid bepalen.' },
+  { titel: 'Verantwoording organiseren', tekst: 'Normen en kwaliteitseisen vertalen naar rollen, ritmes, registraties en bewijs.' },
+];
+---
+<Base title="Over" description="Rink Weijs werkt aan de overgang van ambitie of besluit naar werkende, geborgde praktijk.">
+  <header class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Over</p>
+      <h1>Rink Weijs</h1>
+      <p class="lead">Ik werk aan de overgang van ambitie of besluit naar een praktijk die werkt en blijft werken. Bijna altijd tussen organisaties, disciplines of bestuurslagen die geen zeggenschap over elkaar hebben.</p>
+    </div>
+  </header>
+  <section class="tight">
+    <div class="wrap prose">
+      <p>Twintig jaar werk ik aan hetzelfde soort vraagstuk, vanuit wisselende posities: als adviseur, als onderwijsontwerper binnen een hogeschool, als lid van de centrale medezeggenschap en als projectleider. In het hoger onderwijs, in de zorg en bij publieke en private organisaties.</p>
+      <p>Mijn manier van werken is faciliterend: kennis ophalen bij de mensen die het vraagstuk kennen, zichtbaar maken en terugleggen, zodat een groep er samen over kan besluiten. Systeemdenken is daarbij mijn lens: wie zijn de spelers, waar lopen de afhankelijkheden en geldstromen, en wat zijn de onbedoelde effecten.</p>
+      <p>Sinds 2025 richt ik me ook op verantwoord werken met AI: de organisatorische laag tussen wat is besloten en wat mensen feitelijk doen.</p>
+    </div>
+  </section>
+  <section class="tight">
+    <div class="wrap">
+      <h2>Waar ik sterk in ben</h2>
+      <div class="grid grid-3">
+        {sterktes.map((s) => <div class="card"><h3>{s.titel}</h3><p style="margin:0;color:var(--ink-2)">{s.tekst}</p></div>)}
+      </div>
+    </div>
+  </section>
+  <section class="tight">
+    <div class="wrap two-col">
+      <div class="card">
+        <h2 style="font-size:1.25rem">Opleiding</h2>
+        <ul class="check-list">
+          <li>MSc Industrial Ecology · TU Delft / Universiteit Leiden</li>
+          <li>MA Communicatie, Beleid &amp; Management (cum laude) · Universiteit Utrecht</li>
+          <li>BSc Onderwijskunde (HRD) · Universiteit Utrecht</li>
+          <li>BA Communicatie &amp; Journalistiek · Hogeschool Utrecht</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h2 style="font-size:1.25rem">Scholing en certificering</h2>
+        <ul class="check-list">
+          <li>Oxford AI Ethics, Regulation and Compliance Programme (Saïd Business School)</li>
+          <li>ISO/IEC 42001 Lead Implementer, in opleiding</li>
+          <li>PRINCE2 Foundation</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+  <section class="tight">
+    <div class="wrap">
+      <div class="cta-bar">
+        <p>Kennismaken?</p>
+        <div style="display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn ghost" href={site.linkedin} rel="noopener">LinkedIn</a>
+          <a class="btn" href="/contact/">Neem contact op <Icon name="arrow" size={18} /></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Base>

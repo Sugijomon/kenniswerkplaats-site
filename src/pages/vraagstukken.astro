@@ -1,0 +1,35 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { vraagstukken } from '../data/vraagstukken';
+import { aanbodBySlug } from '../data/aanbod';
+---
+<Base title="Vraagstukken" description="Herken je jouw vraagstuk? Van ongecontroleerd AI-gebruik tot samenwerken aan een gedeeld platform.">
+  <header class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Vraagstukken</p>
+      <h1>Herken je dit?</h1>
+      <p class="lead">Ik begin bij het vraagstuk, niet bij een product. Kies wat het meest op jouw situatie lijkt; je ziet dan hoe ik het zou aanpakken.</p>
+    </div>
+  </header>
+  <section class="tight">
+    <div class="wrap grid grid-3">
+      {vraagstukken.map((v) => (
+        <a class="card vraag-tile" href={`/aanbod/${v.aanbod}/`} id={v.id}>
+          <span class="ico"><Icon name={v.icoon} size={28} /></span>
+          <h3>{v.titel}</h3>
+          <p>{v.tekst}</p>
+          <span class="go">{aanbodBySlug[v.aanbod].naam} <Icon name="arrow" size={14} /></span>
+        </a>
+      ))}
+    </div>
+  </section>
+  <section class="tight">
+    <div class="wrap">
+      <div class="cta-bar">
+        <p>Staat jouw vraagstuk er niet tussen?</p>
+        <a class="btn" href="/contact/">Bespreek een vraagstuk <Icon name="arrow" size={18} /></a>
+      </div>
+    </div>
+  </section>
+</Base>

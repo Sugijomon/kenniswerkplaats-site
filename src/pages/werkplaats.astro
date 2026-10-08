@@ -1,0 +1,27 @@
+---
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { werkplaats } from '../data/werkplaats';
+---
+<Base title="Werkplaats" description="Instrumenten, experimenten en signalen uit de werkplaats.">
+  <header class="page-head">
+    <div class="wrap">
+      <p class="eyebrow">Werkplaats</p>
+      <h1>Uit de werkplaats</h1>
+      <p class="lead">Instrumenten en experimenten die uit eerdere trajecten zijn ontstaan. Sommige zijn nog in ontwikkeling.</p>
+    </div>
+  </header>
+  <section class="tight">
+    <div class="wrap grid grid-3">
+      {werkplaats.map((w) => (
+        <div class="card" id={w.id}>
+          <div class="tool-tile" style="margin-bottom:12px">
+            <span class="ico"><Icon name={w.icoon} /></span>
+            <div><h3>{w.naam}</h3><span class="badge">{w.status}</span></div>
+          </div>
+          <p style="margin:0;color:var(--ink-2)">{w.tekst}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+</Base>

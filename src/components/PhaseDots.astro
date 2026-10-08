@@ -1,0 +1,15 @@
+---
+import { fasen, type FaseKey } from '../data/fasen';
+interface Props { values: Record<FaseKey, 0 | 1 | 2>; highlight?: FaseKey[] }
+const { values, highlight = [] } = Astro.props;
+const label = (v: number) => (v === 2 ? 'bewezen' : v === 1 ? 'deels' : 'niet in deze case');
+const summary = fasen.map((f) => `${f.naam}: ${label(values[f.key])}`).join(', ');
+---
+<ul class="dots" aria-label={`Fasen in deze case. ${summary}`}>
+  {fasen.map((f) => (
+    <li class:list={['dot', `v${values[f.key]}`, { hl: highlight.includes(f.key) }]} title={`${f.naam}: ${label(values[f.key])}`}>
+      <span class="pip" aria-hidden="true"></span>
+      <span class="lbl" aria-hidden="true">{f.naam.split(' ')[0]}</span>
+    </li>
+  ))}
+</ul>
