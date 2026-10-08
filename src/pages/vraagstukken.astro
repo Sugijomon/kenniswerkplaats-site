@@ -12,7 +12,8 @@ import { aanbodBySlug } from '../data/aanbod';
       <p class="lead">Ik begin bij het vraagstuk, niet bij een product. Kies wat het meest op jouw situatie lijkt; je ziet dan hoe ik het zou aanpakken.</p>
     </div>
   </header>
-  <section class="tight">
+  <section class="tight" aria-labelledby="vraagstukken-lijst">
+    <h2 id="vraagstukken-lijst" class="sr-only">Alle vraagstukken</h2>
     <div class="wrap grid grid-3">
       {vraagstukken.map((v) => (
         <a class="card vraag-tile" href={`/aanbod/${v.aanbod}/`} id={v.id}>

@@ -11,7 +11,8 @@ import { werkplaats } from '../data/werkplaats';
       <p class="lead">Instrumenten en experimenten die uit eerdere trajecten zijn ontstaan. Sommige zijn nog in ontwikkeling.</p>
     </div>
   </header>
-  <section class="tight">
+  <section class="tight" aria-labelledby="werkplaats-lijst">
+    <h2 id="werkplaats-lijst" class="sr-only">Instrumenten en experimenten</h2>
     <div class="wrap grid grid-3">
       {werkplaats.map((w) => (
         <div class="card" id={w.id}>
