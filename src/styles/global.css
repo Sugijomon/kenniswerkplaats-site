@@ -283,3 +283,6 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
 
 .prose { max-width: 44rem; }
 .prose p { color: var(--ink-2); }
+
+.logo-mark { flex-shrink: 0; width: auto; }
+.footer-inner .logo-mark { height: 28px; }
