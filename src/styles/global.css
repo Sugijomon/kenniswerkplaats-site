@@ -283,3 +283,48 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
 
 .prose { max-width: 44rem; }
 .prose p { color: var(--ink-2); }
+
+/* ─── Aanbodgroepen: accentkleur per groep ─────────────── */
+.groep-ai { --accent: #1f6f6b; --accent-bg: #eef6f5; }
+.groep-leren { --accent: #8a5a14; --accent-bg: #fbf3e4; }
+.groep-platforms { --accent: #35588f; --accent-bg: #eaf0f8; }
+
+.groep-card { display: flex; flex-direction: column; gap: 8px; border-top: 4px solid var(--accent); background: linear-gradient(180deg, var(--accent-bg), #fff 60%); }
+.groep-card h3 { margin: 0; font-size: 1.2rem; color: var(--accent); }
+.groep-card .groep-kort { margin: 0; font-weight: 600; }
+.groep-card .groep-items { margin: 0; color: var(--ink-2); font-size: .95rem; }
+.groep-card .go { margin-top: auto; padding-top: 10px; font-weight: 650; color: var(--accent); text-decoration: none; display: inline-flex; align-items: center; gap: .35rem; }
+.groep-card .go:hover { text-decoration: underline; color: var(--accent); }
+.groep-card :focus-visible, .mega :focus-visible { outline-color: var(--accent, var(--teal-700)); }
+.aanbod-groep { scroll-margin-top: 88px; }
+.aanbod-groep > h2 { border-left: 4px solid var(--accent); padding-left: 12px; }
+
+/* ─── Aanbod-dropdown (desktop) en groepen in mobiel menu ─ */
+.has-mega { position: relative; display: flex; align-items: center; }
+.mega-toggle { background: none; border: 0; padding: 8px 6px 8px 0; margin-left: -8px; cursor: pointer; color: var(--ink-2); border-radius: 999px; display: grid; place-items: center; }
+.mega-toggle svg { transition: transform .15s; }
+.has-mega.open .mega-toggle svg { transform: rotate(180deg); }
+.mega {
+  display: none; position: absolute; top: 100%; right: -120px; z-index: 30; width: min(760px, 92vw);
+  grid-template-columns: repeat(3, 1fr); gap: 20px; padding: 22px 24px;
+  background: #fff; border: 1px solid var(--line); border-radius: var(--radius); box-shadow: 0 12px 36px rgba(16, 40, 58, .14);
+}
+.has-mega:hover .mega, .has-mega:focus-within .mega, .has-mega.open .mega { display: grid; }
+/* brug tussen link en paneel, zodat hover niet wegvalt */
+.has-mega::after { content: ''; position: absolute; left: 0; right: 0; top: 100%; height: 10px; }
+.mega-col { border-top: 3px solid var(--accent); padding-top: 12px; }
+.mega-kop { margin: 0 0 8px; font-weight: 700; font-size: .95rem; }
+.nav-desktop .mega a { display: block; padding: 6px 8px; margin: 0 -8px; border-radius: 8px; font-size: .95rem; color: var(--ink-2); }
+.nav-desktop .mega .mega-kop a { color: var(--accent); font-weight: 700; padding: 0 8px; }
+.nav-desktop .mega a:hover { background: var(--accent-bg); color: var(--ink); }
+.mega ul { list-style: none; margin: 0; padding: 0; display: block; }
+
+.menu-groepen { padding: 0 0 4px 12px; }
+.menu-groep { border-left: 3px solid var(--accent); margin: 2px 0; }
+.menu-groep summary { display: block; border: 0; border-radius: 0; padding: 10px 12px; font-weight: 650; font-size: 1rem; color: var(--accent); cursor: pointer; }
+.menu-groep summary::after { content: '+'; float: right; font-weight: 700; }
+.menu-groep[open] summary::after { content: '–'; }
+.menu .menu-groep ul { position: static; display: block; padding: 0 0 6px; }
+.menu[open] .menu-groep a { padding: 10px 12px 10px 24px; font-size: 1rem; }
+@media (max-width: 1000px) { .mega { right: -60px; } }
+.nowrap { white-space: nowrap; }

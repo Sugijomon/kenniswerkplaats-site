@@ -19,26 +19,36 @@ export interface AanbodItem {
   noot?: string;
 }
 
+export type GroepKey = 'ai' | 'leren' | 'platforms';
+
 export interface AanbodGroep {
+  key: GroepKey; // bepaalt de accentkleur (zie .groep-* in global.css)
   naam: string;
   tekst: string;
+  kort: string; // zin op de groepskaart (homepage)
   items: string[];
 }
 
 export const groepen: AanbodGroep[] = [
   {
+    key: 'ai',
     naam: 'Verantwoord werken met AI',
     tekst: 'Van zicht op feitelijk AI-gebruik naar afspraken, eigenaarschap en bewijs.',
+    kort: 'AI zorgvuldig inzetten in je organisatie.',
     items: ['ai-foto', 'grip-op-ai-in-hr', 'ai-op-orde'],
   },
   {
+    key: 'leren',
     naam: 'Leren en ontwikkelen',
     tekst: 'Samen werken aan wat mensen nodig hebben om het in de praktijk te laten werken.',
+    kort: 'Leren verbinden met de dagelijkse praktijk.',
     items: ['praktijklab', 'leermodule-op-maat', 'ai-bekwaamheid'],
   },
   {
+    key: 'platforms',
     naam: 'Digitale platforms',
     tekst: 'Platforms kiezen, inrichten en besturen, ook als meerdere organisaties ze delen.',
+    kort: 'Platforms ontwikkelen die je werk ondersteunen.',
     items: ['ontwerp-en-ontwikkeling', 'implementatie', 'governance-en-evaluatie'],
   },
 ];
