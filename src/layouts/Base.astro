@@ -3,6 +3,7 @@ import '@fontsource-variable/figtree';
 import '../styles/global.css';
 import Logo from '../components/Logo.astro';
 import { site } from '../data/site';
+import { groepen, aanbodBySlug } from '../data/aanbod';
 
 interface Props { title?: string; description?: string }
 const { title, description = site.beschrijving } = Astro.props;
@@ -34,7 +35,24 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
         <Logo />
         <nav aria-label="Hoofdmenu">
           <ul class="nav-desktop">
-            {nav.map((n) => (
+            {nav.map((n) => n.href === '/aanbod/' ? (
+              <li class="has-mega">
+                <a href={n.href} aria-current={isActive(n.href) ? 'page' : undefined}>{n.label}</a>
+                <button type="button" class="mega-toggle" aria-expanded="false" aria-controls="mega-aanbod" aria-label="Aanbod per categorie tonen">
+                  <svg width="12" height="12" viewBox="0 0 12 12" aria-hidden="true"><path d="M2 4.5 6 8.5 10 4.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" /></svg>
+                </button>
+                <div class="mega" id="mega-aanbod">
+                  {groepen.map((g) => (
+                    <div class={`mega-col groep-${g.key}`}>
+                      <p class="mega-kop"><a href={`/aanbod/#${g.key}`}>{g.naam}</a></p>
+                      <ul>
+                        {g.items.map((s) => <li><a href={`/aanbod/${s}/`}>{aanbodBySlug[s].naam}</a></li>)}
+                      </ul>
+                    </div>
+                  ))}
+                </div>
+              </li>
+            ) : (
               <li><a href={n.href} aria-current={isActive(n.href) ? 'page' : undefined}>{n.label}</a></li>
             ))}
           </ul>
@@ -43,7 +61,21 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
               <span class="bars" aria-hidden="true"></span>Menu
             </summary>
             <ul>
-              {nav.map((n) => (
+              {nav.map((n) => n.href === '/aanbod/' ? (
+                <li>
+                  <a href={n.href} aria-current={isActive(n.href) ? 'page' : undefined}>{n.label}</a>
+                  <div class="menu-groepen">
+                    {groepen.map((g) => (
+                      <details class={`menu-groep groep-${g.key}`}>
+                        <summary>{g.naam}</summary>
+                        <ul>
+                          {g.items.map((s) => <li><a href={`/aanbod/${s}/`}>{aanbodBySlug[s].naam}</a></li>)}
+                        </ul>
+                      </details>
+                    ))}
+                  </div>
+                </li>
+              ) : (
                 <li><a href={n.href} aria-current={isActive(n.href) ? 'page' : undefined}>{n.label}</a></li>
               ))}
             </ul>
@@ -71,5 +103,22 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
         </div>
       </div>
     </footer>
+    <script>
+      // Aanbod-dropdown: knop schakelt, Escape en klik buiten sluiten. Zonder JS opent hij bij hover/focus (CSS).
+      const li = document.querySelector<HTMLElement>('.has-mega');
+      const knop = li?.querySelector<HTMLButtonElement>('.mega-toggle');
+      if (li && knop) {
+        const zet = (open: boolean) => {
+          li.classList.toggle('open', open);
+          knop.setAttribute('aria-expanded', String(open));
+        };
+        knop.addEventListener('click', () => zet(!li.classList.contains('open')));
+        li.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && li.classList.contains('open')) { zet(false); knop.focus(); }
+        });
+        document.addEventListener('click', (e) => { if (!li.contains(e.target as Node)) zet(false); });
+        li.addEventListener('focusout', (e) => { if (!li.contains(e.relatedTarget as Node)) zet(false); });
+      }
+    </script>
   </body>
 </html>

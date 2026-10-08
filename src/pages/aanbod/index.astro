@@ -19,7 +19,7 @@ import { faseByKey } from '../../data/fasen';
   <section>
     <div class="wrap">
       {groepen.map((g) => (
-        <div class="aanbod-groep">
+        <div class={`aanbod-groep groep-${g.key}`} id={g.key}>
           <h2>{g.naam}</h2>
           <p>{g.tekst}</p>
           <div class="grid grid-3">
