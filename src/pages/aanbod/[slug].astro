@@ -3,6 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import FaseStrip from '../../components/FaseStrip.astro';
 import CaseCard from '../../components/CaseCard.astro';
+import GovernanceIllustratie from '../../components/GovernanceIllustratie.astro';
 import { aanbod, groepen, aanbodBySlug, type AanbodItem } from '../../data/aanbod';
 import { caseById } from '../../data/cases';
 import { fasen } from '../../data/fasen';
@@ -14,17 +15,21 @@ const { a } = Astro.props as { a: AanbodItem };
 const groep = groepen.find((g) => g.naam === a.groep)!;
 const verwant = groep.items.filter((s) => s !== a.slug).map((s) => aanbodBySlug[s]);
 const cases = a.cases.map((id) => caseById[id]).filter(Boolean);
+const governance = a.slug === 'governance-en-evaluatie';
 ---
 <Base title={a.naam} description={a.kort}>
+  <div class:list={{ 'governance-page': governance }}>
   <header class="page-head">
     <div class="wrap">
       <p class="crumbs"><a href="/aanbod/">Aanbod</a> / {a.groep}</p>
+      <div class:list={{ 'governance-hero': governance }}><div>
       <p class="eyebrow">{a.groep}</p>
       <h1>{a.naam} {a.instap && <span class="badge">Instap</span>}</h1>
       <p class="lead">{a.intro}</p>
       <div class="hero-actions">
         <a class="btn" href={`/contact/?onderwerp=${encodeURIComponent(a.naam)}`}>Bespreek je vraagstuk <Icon name="arrow" size={18} /></a>
       </div>
+      </div>{governance && <GovernanceIllustratie />}</div>
     </div>
   </header>
 
@@ -37,15 +42,15 @@ const cases = a.cases.map((id) => caseById[id]).filter(Boolean);
 
   <section class="tight">
     <div class="wrap">
-      <div class="note" style="margin-bottom:24px"><strong>Herkenbaar?</strong> {a.vraag}</div>
+      <div class="note" style="margin-bottom:24px">{governance && <Icon name="search" size={28} />}<span><strong>Herkenbaar?</strong> {a.vraag}</span></div>
       <div class="two-col">
         <div class="card">
           <h2 style="font-size:1.25rem">Wat je krijgt</h2>
-          <ul class="check-list">{a.jeKrijgt.map((x) => <li>{x}</li>)}</ul>
+          <ul class:list={['check-list', { 'icon-list': governance }]}>{a.jeKrijgt.map((x, i) => <li>{governance && <Icon name={['doc', 'layers', 'loop'][i] ?? 'doc'} size={24} />}<span>{x}</span></li>)}</ul>
         </div>
         <div class="card">
           <h2 style="font-size:1.25rem">Hoe ik werk</h2>
-          <ul class="check-list">{a.zoWerkIk.map((x) => <li>{x}</li>)}</ul>
+          <ul class:list={['check-list', { 'icon-list': governance }]}>{a.zoWerkIk.map((x, i) => <li>{governance && <Icon name={['layers', 'people', 'chart'][i] ?? 'target'} size={24} />}<span>{x}</span></li>)}</ul>
         </div>
       </div>
       {a.noot && <p class="note" style="margin-top:20px">{a.noot}</p>}
@@ -83,4 +88,23 @@ const cases = a.cases.map((id) => caseById[id]).filter(Boolean);
       </div>
     </div>
   </section>
+  </div>
 </Base>
+<style>
+  .governance-hero { display:grid; grid-template-columns:minmax(0,1.65fr) minmax(260px,1fr); gap:40px; align-items:center; }
+  .governance-page .lead { max-width:44rem; }
+  .governance-page .note { display:flex; align-items:center; gap:18px; background:#fff0cf; border-color:#dba536; color:#624612; padding:20px 24px; border-radius:14px; }
+  .governance-page .note :global(svg) { flex-shrink:0; }
+  .icon-list li { padding:0; display:flex; align-items:flex-start; gap:14px; margin-bottom:16px; }
+  .icon-list li::before { display:none; }
+  .icon-list :global(svg) { flex-shrink:0; margin-top:3px; color:#117a65; }
+  .icon-list li:nth-child(2) :global(svg) { color:#a87512; }
+  .icon-list li:nth-child(3) :global(svg) { color:#a81c60; }
+  .governance-page :global(.fase-strip li.dim) { opacity:1; background:transparent; border-color:var(--line); color:var(--ink-2); }
+  .governance-page :global(.fase-strip li:nth-child(1) .nr) { background:#117a65; }
+  .governance-page :global(.fase-strip li:nth-child(2) .nr) { background:#94640e; }
+  .governance-page :global(.fase-strip li:nth-child(3) .nr) { background:#c8156b; }
+  .governance-page :global(.fase-strip li:nth-child(4) .nr) { background:#183e55; }
+  .governance-page :global(.fase-strip li.on) { box-shadow:0 10px 28px #183e5518; border:2px solid #183e55; }
+  @media(max-width:760px) { .governance-hero { grid-template-columns:1fr; gap:24px; } .governance-hero :global(.governance-art) { max-width:300px; } }
+</style>
