@@ -5,10 +5,16 @@ const { active = [], compact = false } = Astro.props;
 ---
 <ol class:list={['fase-strip', { compact }]}>
   {fasen.map((f) => (
-    <li class:list={{ on: active.length === 0 || active.includes(f.key), dim: active.length > 0 && !active.includes(f.key) }}>
+    <li class:list={{ on: active.includes(f.key), dim: active.length > 0 && !active.includes(f.key) }}>
       <span class="nr">{f.nr}</span>
       <span class="naam">{f.naam}</span>
       {!compact && <span class="vraag">{f.vraag}</span>}
     </li>
   ))}
 </ol>
+<style>
+  .fase-strip li,.fase-strip li.dim { opacity:1; background:white; color:var(--ink); box-shadow:none; }
+  .fase-strip li .nr,.fase-strip li.dim .nr { background:#e7edef; color:var(--ink-2); }
+  .fase-strip li.on { border-color:var(--brand-petrol); }
+  .fase-strip li.on .nr { background:var(--brand-petrol); color:white; }
+</style>

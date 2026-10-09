@@ -2,7 +2,7 @@
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
 import { vraagstukken } from '../data/vraagstukken';
-import { aanbodBySlug } from '../data/aanbod';
+import { aanbodBySlug, groepen } from '../data/aanbod';
 ---
 <Base title="Vraagstukken" description="Herken je jouw vraagstuk? Van ongecontroleerd AI-gebruik tot samenwerken aan een gedeeld platform.">
   <header class="page-head">
@@ -16,7 +16,7 @@ import { aanbodBySlug } from '../data/aanbod';
     <h2 id="vraagstukken-lijst" class="sr-only">Alle vraagstukken</h2>
     <div class="wrap grid grid-3">
       {vraagstukken.map((v) => (
-        <a class="card vraag-tile" href={`/aanbod/${v.aanbod}/`} id={v.id}>
+        <a class={`card vraag-tile groep-${groepen.find(g => g.naam === aanbodBySlug[v.aanbod].groep)!.key}`} href={`/aanbod/${v.aanbod}/`} id={v.id}>
           <span class="ico"><Icon name={v.icoon} size={28} /></span>
           <h3>{v.titel}</h3>
           <p>{v.tekst}</p>
