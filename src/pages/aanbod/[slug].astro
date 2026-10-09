@@ -27,7 +27,6 @@ const visueel = governance || ontwerp;
       <p class="crumbs"><a href="/aanbod/">Aanbod</a> / {a.groep}</p>
       <div class:list={{ 'governance-hero': visueel }}><div>
       <p class="eyebrow">{a.groep}</p>
-      <p class="domein-label">{domeinen[a.domein].naam}</p>
       <h1>{a.naam} {a.instap && <span class="badge">Instap</span>}</h1>
       <p class="lead">{a.intro}</p>
       <div class="hero-actions">
@@ -86,7 +85,6 @@ const visueel = governance || ontwerp;
         {verwant.map((v) => (
           <a class={`card aanbod-card domein-${v.domein}`} href={`/aanbod/${v.slug}/`}>
             <span class="ico"><Icon name={domeinen[v.domein].icoon} size={28} /></span>
-            <span class="domein-label">{domeinen[v.domein].naam}</span>
             <h3>{v.naam}</h3>
             <p>{v.kort}</p>
           </a>

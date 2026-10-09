@@ -42,7 +42,7 @@ De drie domeintinten zijn afgeronde mengingen van 8% basiskleur met 92% wit. Lij
 
 Copilot als vraagstuk blijft `tech`, terwijl het gekoppelde aanbod AI-bekwaamheid `leren` is. Samenwerken is `org`, terwijl het gekoppelde Praktijklab `leren` is. Dit zijn verschillende invalshoeken, geen reden om een kleur uit de bestemming af te leiden.
 
-Cases behouden hun bestaande sectoromschrijving in `domein`. Een afzonderlijk `kleurDomein` geeft de presentatierol aan. Zowel de oorspronkelijke sectoromschrijving als de nieuwe domeinnaam blijven zichtbaar. De indeling is expliciet, nooit automatisch afgeleid uit een woord als Zorg of Onderwijs:
+Cases behouden hun bestaande sectoromschrijving in `domein`. Een afzonderlijk `kleurDomein` geeft alleen de interne kleurrol aan. De oorspronkelijke sectoromschrijving blijft zichtbaar; er verschijnt geen extra domeinnaam. De indeling is expliciet, nooit automatisch afgeleid uit een woord als Zorg of Onderwijs:
 
 - tech: Addventure, Rode Kruis, Zorgwise, Corpio, Moodle RBS, Stad+Esch.
 - org: Enexis, Viazorg flexplatform, Balans flex/vast, Quarterly Review, Green Key, Heineken, UrWay, Delft OpenCourseWare.
@@ -50,9 +50,9 @@ Cases behouden hun bestaande sectoromschrijving in `domein`. Een afzonderlijk `k
 
 ## Toepassing
 
-Vraagstuktegels en aanbodkaarten krijgen een rond icoonvlak in de domeintint. Het icoon gebruikt de basiskleur, behalve bij leren: daar is ook de donkere variant nodig voor voldoende contrast. Domeinlabels gebruiken altijd de `--x-ink` variant. De domeinnaam staat in tekst; kleur is nooit de enige informatiebron.
+Vraagstuktegels en aanbodkaarten krijgen een rond icoonvlak in de domeintint. Het icoon gebruikt de basiskleur, behalve bij leren: daar is ook de donkere variant nodig voor voldoende contrast. Kleurrollen blijven intern: toon geen extra labels zoals Organisatie & governance, Technologie & AI of Leren & ontwikkelen. Onderwerp, dienstnaam en bestaande aanbodcategorie geven de betekenis in tekst; kleur is alleen ondersteunend.
 
-Alle actieknoppen en links gebruiken de actie-rol, met witte tekst op een donkere knop of donkere actie-tekst op een lichte achtergrond. Gewone koppen blijven marine. De categorieën in navigatie en de nummers in de mini-mindmap zijn neutraal; individuele onderwerpen dragen hun eigen domeinlabel. Kaarten blijven wit, met zachte randen en schaduwen.
+Alle actieknoppen en links gebruiken de actie-rol, met witte tekst op een donkere knop of donkere actie-tekst op een lichte achtergrond. Gewone koppen blijven marine. De categorieën in navigatie en de nummers in de mini-mindmap zijn neutraal. Behoud de bestaande drie aanbodcategorieën. Kaarten blijven wit, met zachte randen en schaduwen.
 
 Hero en praktijklabbanner gebruiken wit of een zeer lichte tint. De vijf echte AISA-kaarten en de compacte beeldruimte in de praktijklabbanner blijven behouden. De homepage-illustratie blijft behouden: zij gebruikt zacht magenta, teal, gedempt groen en donkere contouren op een lichte achtergrond. Het horizontale logo behoudt zijn eigen beeldkleuren: oranje, magenta, donkerblauw en petrol. Logo- en illustratiekleuren vormen geen extra functionele UI-rollen.
 

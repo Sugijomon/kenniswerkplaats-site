@@ -71,7 +71,7 @@ const voorbeeld = `mailto:${site.email}?subject=${encodeURIComponent('Voorbeeldr
       <details class="scope"><summary>Wat buiten de scope valt</summary><p>{f.buitenScope}</p></details>
     </div></section>
 
-    <section class="cases-section"><div class="wrap"><p class="eyebrow">Ervaring met de aanpak</p><h2>Eerder aangepakt</h2><p class="prose">{a.casesIntro}</p><div class="cases-grid">{a.cases.map(id => <CaseCard c={caseById[id]} highlight={a.fasen} showDomeinLabel={false} />)}</div></div></section>
+    <section class="cases-section"><div class="wrap"><p class="eyebrow">Ervaring met de aanpak</p><h2>Eerder aangepakt</h2><p class="prose">{a.casesIntro}</p><div class="cases-grid">{a.cases.map(id => <CaseCard c={caseById[id]} highlight={a.fasen} />)}</div></div></section>
 
     <section><div class="wrap"><h2>Wat hierna kan volgen</h2><p class="prose">{f.vervolg}</p><div class="grid grid-2 vervolg">{['grip-op-ai-in-hr','ai-op-orde'].map(slug => <a class="card" href={`/aanbod/${slug}/`}><h3>{aanbodBySlug[slug].naam}</h3><p>{aanbodBySlug[slug].kort}</p><span class="textlink">Bekijk het aanbod <Icon name="arrow" size={16} /></span></a>)}</div></div></section>
 
