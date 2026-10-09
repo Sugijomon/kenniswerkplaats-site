@@ -3,6 +3,8 @@ import Base from '../layouts/Base.astro';
 import Logo from '../components/Logo.astro';
 import { site } from '../data/site';
 const variants = [
+  { id:'typographic', name:'1. Puur typografisch', description:'Mijn voorkeur: een rustige afsluiting zonder kunst. Heldere typografie, witruimte en drie overzichtelijke kolommen.' },
+  { id:'accent', name:'2. Vierkleurige accentlijn', description:'Dezelfde rustige footer, met een rechte merkstreep van drie pixels langs de onderrand.' },
   { id:'fade', name:'A. Zachte overgang onderaan', description:'De kunst vloeit vanuit de onderrand omhoog. Logo, links en contact staan op een rustig vlak.' },
   { id:'artcard', name:'B. Kunstkaart rechts', description:'Een afzonderlijk kunstvlak naast de informatie. De afbeelding blijft zichtbaar zonder achter de tekst te komen.' },
   { id:'dark', name:'C. Donkere footer met watermerk', description:'Donker petrol met lichte tekst. De kunst verschijnt subtiel op de achtergrond.' },
@@ -10,14 +12,14 @@ const variants = [
 const links = [ ['Vraagstukken','/vraagstukken/'],['Werkwijze','/werkwijze/'],['Aanbod','/aanbod/'],['Werkplaats','/werkplaats/'],['Over','/over/'],['Contact','/contact/'] ];
 ---
 <Base title="Footervarianten vergelijken">
-  <header class="page-head"><div class="wrap"><p class="eyebrow">Ontwerpvoorbeelden</p><h1>Drie manieren om de pagina af te sluiten</h1><p class="lead">Dezelfde kunst en informatie, telkens anders toegepast. De links werken; op mobiel past elke variant zich aan.</p><nav class="variant-jump" aria-label="Footervarianten">{variants.map(v => <a href={`#${v.id}`}>{v.name}</a>)}</nav></div></header>
+  <header class="page-head"><div class="wrap"><p class="eyebrow">Ontwerpvoorbeelden</p><h1>Een rustige afsluiting voor de website</h1><p class="lead">Bovenaan staan de twee nieuwe opties. De eerdere varianten met kunst staan eronder ter vergelijking. De standaardfooter is nog behouden.</p><nav class="variant-jump" aria-label="Footervarianten">{variants.map(v => <a href={`#${v.id}`}>{v.name}</a>)}</nav></div></header>
   <div class="wrap examples">
     {variants.map(v => <section id={v.id} class="example"><h2>{v.name}</h2><p>{v.description}</p>
       <footer class={`demo-footer ${v.id}`} aria-label={`Voorbeeldfooter ${v.name}`}>
         <div class="demo-content">
           <div class="identity">{v.id === 'dark' ? <a class="dark-logo" href="/" aria-label="Kenniswerkplaats naar homepage"><img src="/favicon2.png" width="50" height="50" alt=""/><span>Kenniswerkplaats<small>Mensen · Kennis · Technologie</small></span></a> : <Logo />}<p>{site.tagline}</p></div>
-          <nav class="demo-nav" aria-label={`Navigatie ${v.name}`}>{links.map(([label,href]) => <a href={href}>{label}</a>)}</nav>
-          <div class="contact"><a href={`mailto:${site.email}`}>{site.email}</a><p>{site.plaats}</p></div>
+          <nav class="demo-nav" aria-label={`Navigatie ${v.name}`}>{(v.id === 'typographic' || v.id === 'accent') && <h3>Verken Kenniswerkplaats</h3>}{links.map(([label,href]) => <a href={href}>{label}</a>)}</nav>
+          <div class="contact">{(v.id === 'typographic' || v.id === 'accent') && <h3>Contact</h3>}<a href={`mailto:${site.email}`}>{site.email}</a><p>{site.plaats}</p></div>
         </div>
         {v.id === 'artcard' && <div class="art-frame"><img src="/footer-kunst.png" width="2172" height="724" alt="" loading="lazy"/></div>}
         {v.id === 'fade' && <div class="fade-art" aria-hidden="true"><img src="/footer-kunst.png" width="2172" height="724" alt="" loading="lazy"/></div>}
@@ -26,6 +28,12 @@ const links = [ ['Vraagstukken','/vraagstukken/'],['Werkwijze','/werkwijze/'],['
   </div>
 </Base>
 <style>
+  .typographic,.accent { background:#f4f7f6; border-radius:0; border:0; border-top:1px solid var(--line); }
+  .typographic .demo-content,.accent .demo-content { padding:48px 36px; gap:40px; }
+  .typographic .demo-nav,.accent .demo-nav { display:grid; grid-template-columns:1fr 1fr; gap:12px 20px; }
+  .demo-nav h3 { grid-column:1/-1; margin:0 0 8px; }
+  .demo-nav h3,.contact h3 { font-size:.875rem; font-weight:650; color:var(--ink); }
+  .accent::after { content:''; position:absolute; left:0; right:0; bottom:0; height:3px; background:linear-gradient(90deg,#D80950 0 25%,#034F64 25% 50%,#F17C18 50% 75%,#061F5C 75%); }
   .variant-jump { display:flex; flex-wrap:wrap; gap:12px; margin-top:24px; }.variant-jump a { display:block; padding:10px 16px; border:1px solid var(--line); border-radius:24px; background:white; text-decoration:none; }
   .examples { padding-bottom:40px; }.example { padding:36px 0; scroll-margin-top:90px; }.example>p { color:var(--ink-2); }
   .demo-footer { position:relative; overflow:hidden; border:1px solid var(--line); border-radius:24px; background:#f2f7f9; margin-top:24px; }
