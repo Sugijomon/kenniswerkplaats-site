@@ -412,3 +412,11 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
 .cta-bar { background:#edf5f7; border-color:var(--brand-glass); }
 .site-footer { background:#edf5f7; }
 .footer-art::before { background:linear-gradient(180deg,#edf5f7,transparent 48%); }
+/* Standaardfooter: puur typografisch, zonder decoratieve kunst. */
+.site-footer { background:#f4f7f6; padding:48px 0; border-top:1px solid var(--line); }
+.footer-inner { grid-template-columns:1.25fr 1fr 1fr; gap:40px; align-items:start; }
+.footer-inner .muted { max-width:300px; margin-top:16px; color:var(--ink-2); }
+.footer-nav { display:grid; grid-template-columns:1fr 1fr; gap:12px 20px; }
+.footer-nav-title { grid-column:1/-1; margin-bottom:8px; font-size:.875rem; font-weight:650; color:var(--ink); }
+.footer-contact-title { margin:0 0 20px; font-size:.875rem; font-weight:650; color:var(--ink); }
+@media(max-width:720px) { .footer-inner { grid-template-columns:1fr; gap:32px; }.site-footer { padding:36px 0; } }

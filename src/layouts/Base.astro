@@ -97,14 +97,15 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
           <p class="muted">{site.tagline}</p>
         </div>
         <ul class="footer-nav">
+          <li class="footer-nav-title">Verken Kenniswerkplaats</li>
           {nav.map((n) => <li><a href={n.href}>{n.label}</a></li>)}
         </ul>
         <div>
+          <p class="footer-contact-title">Contact</p>
           <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
           <p class="muted">{site.plaats}</p>
         </div>
       </div>
-      <div class="footer-art" aria-hidden="true"><img src="/footer-kunst.png" alt="" width="2172" height="724" loading="lazy" decoding="async" /></div>
     </footer>
     <script>
       // Aanbod-dropdown: knop schakelt, Escape en klik buiten sluiten. Zonder JS opent hij bij hover/focus (CSS).
