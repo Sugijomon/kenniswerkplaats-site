@@ -42,7 +42,7 @@ const homeCases = ['zorgwise', 'viazorg-flexplatform', 'corpio'].map((id) => cas
       </div>
       <div class="grid grid-3">
         {homeTegels.map((v) => (
-          <a class="card vraag-tile" href={`/aanbod/${v.aanbod}/`}>
+          <a class={`card vraag-tile groep-${groepen.find(g => g.naam === aanbodBySlug[v.aanbod].groep)!.key}`} href={`/aanbod/${v.aanbod}/`}>
             <span class="ico"><Icon name={v.icoon} size={28} /></span>
             <h3>{v.titel}</h3>
             <p>{v.tekst}</p>

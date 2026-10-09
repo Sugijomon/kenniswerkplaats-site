@@ -355,15 +355,7 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
 .site-header { background:rgba(245,247,246,.96); }
 .site-header .nav-desktop > li:last-child > a { background:var(--brand-blue-dark); color:white; padding-inline:22px; }
 .vraag-tile .ico { width:56px; height:56px; border-radius:50%; display:grid; place-items:center; background:var(--brand-blue-dark); color:white; }
-.vraag-tile:nth-child(3n+2) .ico { background:var(--brand-magenta); }
-.vraag-tile:nth-child(3n) .ico { background:var(--brand-green-dark); }
 .banner { background:linear-gradient(120deg,#061f5c,#034f64); }
-.banner-cards span:nth-child(2) { color:var(--brand-magenta); }
-.banner-cards span:nth-child(3) { color:var(--brand-green-dark); }
-.banner-cards span:nth-child(4) { color:var(--support-blue); }
-.fase-strip li:nth-child(2):not(.dim) .nr { background:var(--brand-magenta); }
-.fase-strip li:nth-child(3):not(.dim) .nr { background:var(--brand-green-dark); }
-.fase-strip li:nth-child(4):not(.dim) .nr { background:var(--support-blue); }
 .cases-section { background:#edf2f5; }
 .case-domain { color:var(--brand-blue-dark); }
 .badge { background:#fbeaf2; color:#8f165b; }
@@ -406,9 +398,6 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
 .btn.light { background:white; border-color:white; color:var(--brand-petrol); }
 .site-header .nav-desktop>li:last-child>a { background:var(--brand-petrol); }
 .banner { background:linear-gradient(120deg,var(--brand-petrol),var(--brand-dark-teal)); }
-.fase-strip li:nth-child(2):not(.dim) .nr { background:var(--brand-ochre); color:var(--brand-night); }
-.fase-strip li:nth-child(3):not(.dim) .nr { background:var(--brand-raspberry); color:white; }
-.fase-strip li:nth-child(4):not(.dim) .nr { background:var(--brand-night); color:white; }
 .cta-bar { background:#edf5f7; border-color:var(--brand-glass); }
 .site-footer { background:#edf5f7; }
 .footer-art::before { background:linear-gradient(180deg,#edf5f7,transparent 48%); }
@@ -420,3 +409,9 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
 .footer-nav-title { grid-column:1/-1; margin-bottom:8px; font-size:.875rem; font-weight:650; color:var(--ink); }
 .footer-contact-title { margin:0 0 20px; font-size:.875rem; font-weight:650; color:var(--ink); }
 @media(max-width:720px) { .footer-inner { grid-template-columns:1fr; gap:32px; }.site-footer { padding:36px 0; } }
+
+/* Functionele kleurrollen: categorie uit inhoud, actie altijd petrol. */
+.vraag-tile .ico { background:var(--accent,var(--brand-petrol)); color:white; }
+.banner { background:var(--brand-petrol); }
+.banner-cards span { color:var(--brand-petrol); }
+.hero h1,h1,h2,h3 { color:var(--ink); }

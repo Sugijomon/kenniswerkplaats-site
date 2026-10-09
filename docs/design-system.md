@@ -25,13 +25,28 @@ Deskundig, menselijk en praktisch. Een lichte, rustige interface met diep gekleu
 | Nachtblauw | #061F5C | Titels en hoofdtekst |
 | Donker teal | #055566 | Leren en ontwikkelen |
 
-De categorieën blijven duidelijk verschillend: AI framboos, leren donker teal als groenachtige tint, platforms kobalt. Oranje en geel zijn ondersteunend en vormen geen extra categorie.
+De categorieën blijven duidelijk verschillend: AI framboos, leren donker teal als groenachtige tint, platforms kobalt. Oranje en geel zijn ondersteunend in kunst en vormen geen extra categorie. Koppel kleur aan het onderwerp van de gekoppelde dienst; nooit aan de positie van een kaart in een rij.
 
 ## Componenten en beelden
 
 Gebruik Figtree, ruime witruimte, witte kaarten en zachte schaduwen. Accentranden blijven recht; kaders mogen afgerond zijn. Gebruik badges alleen als ze nuttige informatie toevoegen. Het aanbodmenu heeft drie kolommen. Casekaarten openen compacte dialogs met bestaande feiten en fasescores.
 
-Mensgerichte lijnillustraties blijven uitsluitend op de homepage. Andere pagina’s behouden hun eigen eerdere illustraties. De aangeleverde abstracte achtergrondkunst is uitsluitend op Ontwerp en ontwikkeling gebruikt; de footer heeft een afzonderlijke decoratieve kunststrook.
+Mensgerichte lijnillustraties blijven uitsluitend op de homepage. Andere pagina’s behouden hun eigen eerdere illustraties. De aangeleverde abstracte achtergrondkunst is uitsluitend op Ontwerp en ontwikkeling gebruikt. De standaardfooter is puur typografisch, zonder kunststrook.
+
+## Functionele kleurrollen
+
+- Primaire acties gebruiken altijd donker petrol #034F64 met witte tekst; hover is nachtblauw #061F5C. Secundaire acties krijgen petroltekst op wit of een lichte achtergrond. Op een donkere banner kan de primaire knop een witte variant met petroltekst zijn.
+- Hoofdkoppen gebruiken nachtblauw; hoofdtekst en toelichting gebruiken de vaste tekstkleuren. Gebruik geen willekeurige categoriekleur voor een gewone kop.
+- Categorieaccenten verschijnen alleen waar de inhoud duidelijk bij AI, leren of platforms hoort: domeinlabels, vraagstukiconen, categorieknopen en dienstpillen.
+- Gewone kaarten zijn wit met lichte neutrale randen. Functionele iconen zonder categorie zijn petrol of grijsblauw. Iconen binnen één informatieblok krijgen geen afwisselende kleuren.
+- De praktijklabbanner is effen petrol. Kleine illustratieve objecten mogen kleur bevatten; de interface eromheen blijft rustig.
+- De verhouding 60–30–10 is inspiratie, geen norm of meetdoel. Kies overwegend lichte vlakken, donkere tekst en spaarzame betekenisvolle accenten.
+
+## Proceslijn en bewijsstatus
+
+Een algemeen fasenoverzicht heeft geen geselecteerde stap: alle nummers zijn neutraal. Op een aanbodpagina krijgen uitsluitend de toepasselijke fasen petrolnummers en een duidelijke rand. Inactieve fasen blijven leesbaar; verminder niet de dekking van de hele kaart.
+
+Casecirkels geven bewijsstatus aan, geen voortgang: gevulde petrolcirkel is bewezen, halfgevuld is deels en leeg is niet in deze case. Verander geen fasescores om de presentatie aantrekkelijker te maken. Labels en toegankelijkheidstekst blijven behouden.
 
 ## Leesbaarheid
 
