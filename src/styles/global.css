@@ -1,24 +1,30 @@
 /* ─── Tokens ───────────────────────────────────────────── */
 :root {
-  --teal-900: #0f3f3d;
-  --teal-700: #1f6f6b;
-  --teal-600: #24807b;
-  --teal-500: #2f9590;
-  --teal-400: #5bb3ad;
-  --teal-100: #dceeec;
-  --teal-50: #eef6f5;
+  --brand-blue: #009bcc;
+  --brand-blue-dark: #00658f;
+  --brand-magenta: #c8156b;
+  --brand-green: #8cc459;
+  --brand-green-dark: #4d722b;
+  --support-blue: #54758a;
+  --teal-900: #064360;
+  --teal-700: #00658f;
+  --teal-600: #007aa6;
+  --teal-500: #009bcc;
+  --teal-400: #73b5cb;
+  --teal-100: #dfedf4;
+  --teal-50: #f0f6f9;
 
-  --ink: #10283a;
-  --ink-2: #3c5163;
-  --ink-3: #566876;
-  --line: #dde3e6;
+  --ink: #101c30;
+  --ink-2: #435871;
+  --ink-3: #586b7c;
+  --line: #e4eaee;
   --line-2: #c9d3d8;
-  --paper: #faf9f6;
+  --paper: #f5f7f6;
   --card: #ffffff;
 
-  --radius: 12px;
-  --radius-sm: 8px;
-  --shadow: 0 1px 2px rgba(16, 40, 58, .05), 0 4px 16px rgba(16, 40, 58, .05);
+  --radius: 22px;
+  --radius-sm: 12px;
+  --shadow: 0 8px 28px rgba(28, 48, 69, .06);
 
   --font: 'Figtree Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
   --wrap: 1140px;
@@ -120,10 +126,10 @@ section.tight { padding: 36px 0; }
 .hero { padding: 28px 0 8px; }
 .hero-panel {
   display: grid; grid-template-columns: 1.1fr 1fr; align-items: center; gap: 24px;
-  background: linear-gradient(120deg, var(--teal-50), #e3f0ef 60%, var(--teal-100));
-  border-radius: 20px; padding: 56px 48px; overflow: hidden; position: relative;
+  background: linear-gradient(110deg, #fff 40%, #eef4f7);
+  border-radius: 28px; padding: 56px 48px; overflow: hidden; position: relative; box-shadow: var(--shadow);
 }
-.hero h1 { color: var(--teal-900); margin-bottom: .45em; }
+.hero h1 { color: var(--ink); margin-bottom: .45em; letter-spacing: -.04em; }
 .hero p { font-size: 1.15rem; color: var(--ink-2); max-width: 34rem; }
 .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 1.5rem; }
 .hero-visual { position: relative; height: 300px; }
@@ -139,9 +145,9 @@ section.tight { padding: 36px 0; }
 .hero-visual .t2 { left: 25%; top: 20px; transform: rotate(-3deg); }
 .hero-visual .t3 { left: 50%; top: 44px; transform: rotate(4deg); }
 .hero-visual .t4 { left: 75%; top: 84px; transform: rotate(10deg); }
-.hero-visual .t2 .n { background: var(--teal-600); }
-.hero-visual .t3 .n { background: var(--teal-500); }
-.hero-visual .t4 .n { background: var(--teal-400); }
+.hero-visual .t2 .n { background: var(--brand-magenta); }
+.hero-visual .t3 .n { background: var(--brand-green-dark); }
+.hero-visual .t4 .n { background: var(--support-blue); }
 @media (max-width: 900px) {
   .hero-panel { grid-template-columns: 1fr; padding: 36px 24px; }
   .hero-visual { height: 230px; }
@@ -288,9 +294,9 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
 .prose p { color: var(--ink-2); }
 
 /* ─── Aanbodgroepen: accentkleur per groep ─────────────── */
-.groep-ai { --accent: #1f6f6b; --accent-bg: #eef6f5; }
-.groep-leren { --accent: #8a5a14; --accent-bg: #fbf3e4; }
-.groep-platforms { --accent: #35588f; --accent-bg: #eaf0f8; }
+.groep-ai { --accent: #a81c60; --accent-bg: #fbecf3; }
+.groep-leren { --accent: var(--brand-green-dark); --accent-bg: #eff5e9; }
+.groep-platforms { --accent: var(--brand-blue-dark); --accent-bg: #eaf3f8; }
 
 .groep-card { display: flex; flex-direction: column; gap: 8px; border-top: 4px solid var(--accent); background: linear-gradient(180deg, var(--accent-bg), #fff 60%); }
 .groep-card h3 { margin: 0; font-size: 1.2rem; color: var(--accent); }
@@ -342,3 +348,23 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
 .nav-desktop .mega-toggle { padding-right: 12px; }
 
 .case-card { container-type: inline-size; }
+
+/* Merkaccenten: donkere tinten voor tekst, lichte tinten voor vlakken. */
+.btn { background:linear-gradient(120deg,var(--brand-blue-dark),#0076a1); }
+.btn.ghost { background:transparent; }
+.site-header { background:rgba(245,247,246,.96); }
+.site-header .nav-desktop > li:last-child > a { background:var(--brand-blue-dark); color:white; padding-inline:22px; }
+.vraag-tile .ico { width:56px; height:56px; border-radius:50%; display:grid; place-items:center; background:var(--brand-blue-dark); color:white; }
+.vraag-tile:nth-child(3n+2) .ico { background:var(--brand-magenta); }
+.vraag-tile:nth-child(3n) .ico { background:var(--brand-green-dark); }
+.banner { background:linear-gradient(120deg,#064360,#00658f); }
+.banner-cards span:nth-child(2) { color:var(--brand-magenta); }
+.banner-cards span:nth-child(3) { color:var(--brand-green-dark); }
+.banner-cards span:nth-child(4) { color:var(--support-blue); }
+.fase-strip li:nth-child(2):not(.dim) .nr { background:var(--brand-magenta); }
+.fase-strip li:nth-child(3):not(.dim) .nr { background:var(--brand-green-dark); }
+.fase-strip li:nth-child(4):not(.dim) .nr { background:var(--support-blue); }
+.cases-section { background:#edf2f5; }
+.case-domain { color:var(--brand-blue-dark); }
+.badge { background:#fbeaf2; color:#a81c60; }
+.site-footer { background:#edf2f5; }
