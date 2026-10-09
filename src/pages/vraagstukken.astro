@@ -1,17 +1,15 @@
 ---
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
-import MensIllustratie from '../components/MensIllustratie.astro';
 import { vraagstukken } from '../data/vraagstukken';
 import { aanbodBySlug } from '../data/aanbod';
 ---
 <Base title="Vraagstukken" description="Herken je jouw vraagstuk? Van ongecontroleerd AI-gebruik tot samenwerken aan een gedeeld platform.">
   <header class="page-head">
     <div class="wrap">
-      <div class="question-hero"><div><p class="eyebrow">Vraagstukken</p>
+      <p class="eyebrow">Vraagstukken</p>
       <h1>Herken je dit?</h1>
       <p class="lead">Ik begin bij het vraagstuk, niet bij een product. Kies wat het meest op jouw situatie lijkt; je ziet dan hoe ik het zou aanpakken.</p>
-      </div><MensIllustratie /></div>
     </div>
   </header>
   <section class="tight" aria-labelledby="vraagstukken-lijst">
@@ -36,4 +34,3 @@ import { aanbodBySlug } from '../data/aanbod';
     </div>
   </section>
 </Base>
-<style>.question-hero { display:grid; grid-template-columns:1.5fr 1fr; gap:40px; align-items:center; }@media(max-width:760px) { .question-hero { grid-template-columns:1fr; gap:24px; }.question-hero :global(img) { max-width:360px; margin:auto; } }</style>
