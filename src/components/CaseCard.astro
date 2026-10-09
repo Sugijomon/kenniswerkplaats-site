@@ -56,16 +56,20 @@ const { c, highlight = [] } = Astro.props;
   .case-summary { display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
   .case-teaser-org { font-size:.875rem; color:var(--ink-3); margin:0; }
   .case-read { margin-top:auto; padding-top:12px; color:var(--brand-blue-dark); font-weight:650; display:flex; justify-content:space-between; }
-  .case-dialog { width:min(720px,calc(100vw - 32px)); max-height:calc(100dvh - 48px); padding:0; border:1px solid var(--line); border-radius:24px; background:white; color:var(--ink); box-shadow:0 24px 80px #101c3030; overflow:auto; }
+  .case-dialog { width:min(820px,calc(100vw - 32px)); max-height:calc(100dvh - 32px); padding:0; border:1px solid var(--line); border-radius:24px; background:white; color:var(--ink); box-shadow:0 24px 80px #101c3030; overflow:auto; font-size:.9375rem; line-height:1.45; }
   .case-dialog::backdrop { background:#101c3066; backdrop-filter:blur(4px); }
-  .dialog-inner { padding:32px; container-type:inline-size; }
-  form { display:flex; justify-content:flex-end; margin-bottom:20px; }
+  .dialog-inner { padding:24px 28px; container-type:inline-size; }
+  form { display:flex; justify-content:flex-end; margin-bottom:8px; }
   .case-close { border:1px solid var(--line); background:var(--teal-50); color:var(--ink); padding:8px 14px; border-radius:24px; font:inherit; cursor:pointer; display:flex; gap:12px; align-items:center; }
   .case-close span { font-size:1.5rem; line-height:1; }
-  h2 { font-size:clamp(1.5rem,4vw,2rem); }
-  dl { margin:24px 0; display:grid; gap:16px; }
+  h2 { font-size:clamp(1.25rem,3vw,1.65rem); margin-bottom:12px; }
+  .case-dialog .case-text { font-size:.9375rem; margin-bottom:14px; }
+  .case-dialog .case-domain { margin-bottom:8px; }
+  dl { margin:16px 0; display:grid; gap:10px; }
   dt { font-size:.8rem; text-transform:uppercase; letter-spacing:.05em; color:var(--ink-3); font-weight:650; }
-  dd { margin:4px 0 0; }
+  dd { margin:3px 0 0; }
+  .case-dialog :global(.case-stepper) { margin:16px 0 12px; padding-top:14px; }
+  .case-dialog .case-org { padding-top:10px; margin-bottom:0; font-size:.875rem; }
   :global(body.case-modal-open) { overflow:hidden; }
   @media(max-width:480px) { .dialog-inner { padding:24px 20px; } }
 </style>
