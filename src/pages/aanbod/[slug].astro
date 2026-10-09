@@ -113,5 +113,23 @@ const visueel = governance || ontwerp;
   .ontwerp-page .icon-list :global(svg) { color:var(--brand-blue-dark); }
   .ontwerp-page :global(.fase-strip li.dim) { color:var(--ink-3); background:transparent; }
   .ontwerp-page :global(.fase-strip li.on) { border-color:var(--brand-blue-dark); background:#fff; }
+  .ontwerp-page {
+    --ink:#183e55; --ink-2:#435968; --ink-3:#546b78;
+    --brand-blue-dark:#116f75; --teal-900:#183e55; --teal-700:#116f75;
+    --teal-600:#167f70; --teal-400:#72a7a6; --teal-100:#dceceb; --teal-50:#eef5f3;
+    background:#f4f7f6;
+  }
+  .ontwerp-page :global(.btn:not(.ghost)) { background:#116f75; border-color:#116f75; }
+  .ontwerp-page :global(.btn:not(.ghost):hover) { background:#183e55; border-color:#183e55; }
+  .ontwerp-page .note { background:#fbf1d8; border-color:#dba536; color:#614b20; }
+  .ontwerp-page .icon-list li:nth-child(1) :global(svg) { color:#116f75; }
+  .ontwerp-page .icon-list li:nth-child(2) :global(svg) { color:#a57816; }
+  .ontwerp-page .icon-list li:nth-child(3) :global(svg) { color:#c21868; }
+  .ontwerp-page :global(.fase-strip li.on) { border-color:#92b8b4; background:#fff; box-shadow:0 8px 24px #183e550c; }
+  .ontwerp-page :global(.fase-strip li:nth-child(1) .nr) { background:#167f70; }
+  .ontwerp-page :global(.fase-strip li:nth-child(2) .nr) { background:#a57816; }
+  .ontwerp-page :global(.fase-strip li:nth-child(3) .nr) { background:#c21868; }
+  .ontwerp-page :global(.fase-strip li:nth-child(4) .nr) { background:#183e55; }
+  .ontwerp-page :global(.cases-section) { background:#eaf1f3; }
   @media(max-width:760px) { .governance-hero { grid-template-columns:1fr; gap:24px; } .governance-hero :global(.governance-art),.governance-hero :global(.platform-art) { max-width:300px; } }
 </style>
