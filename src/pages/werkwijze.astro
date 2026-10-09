@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
+import MensIllustratie from '../components/MensIllustratie.astro';
 import { fasen } from '../data/fasen';
 import { aanbod } from '../data/aanbod';
 
@@ -14,9 +15,10 @@ const principes = [
 <Base title="Werkwijze" description="Vier fasen van zicht krijgen tot sturen en evalueren, en de principes die in elke fase gelden.">
   <header class="page-head">
     <div class="wrap">
-      <p class="eyebrow">Werkwijze</p>
+      <div class="method-hero"><div><p class="eyebrow">Werkwijze</p>
       <h1>Van vraagstuk naar werkende praktijk</h1>
       <p class="lead">Een traject bestaat meestal uit vier fasen. Je kunt bij elke fase instappen en alleen afnemen wat je nodig hebt.</p>
+      </div><MensIllustratie groep="ai" /></div>
     </div>
   </header>
 
@@ -64,3 +66,4 @@ const principes = [
     </div>
   </section>
 </Base>
+<style>.method-hero { display:grid; grid-template-columns:1.5fr 1fr; gap:40px; align-items:center; }@media(max-width:760px) { .method-hero { grid-template-columns:1fr; }.method-hero :global(img) { max-width:360px; margin:auto; } }</style>

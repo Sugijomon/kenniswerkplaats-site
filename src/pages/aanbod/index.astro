@@ -2,6 +2,7 @@
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import FaseStrip from '../../components/FaseStrip.astro';
+import MensIllustratie from '../../components/MensIllustratie.astro';
 import { groepen, aanbodBySlug } from '../../data/aanbod';
 import { faseByKey } from '../../data/fasen';
 ---
@@ -20,8 +21,7 @@ import { faseByKey } from '../../data/fasen';
     <div class="wrap">
       {groepen.map((g) => (
         <div class={`aanbod-groep groep-${g.key}`} id={g.key}>
-          <h2>{g.naam}</h2>
-          <p>{g.tekst}</p>
+          <div class="groep-intro"><div><h2>{g.naam}</h2><p>{g.tekst}</p></div><MensIllustratie groep={g.key} compact /></div>
           <div class="grid grid-3">
             {g.items.map((slug) => {
               const a = aanbodBySlug[slug];
@@ -49,3 +49,4 @@ import { faseByKey } from '../../data/fasen';
     </div>
   </section>
 </Base>
+<style>.groep-intro { display:grid; grid-template-columns:1fr 240px; align-items:center; gap:32px; margin-bottom:24px; }.groep-intro h2 { color:var(--accent); }@media(max-width:600px) { .groep-intro { grid-template-columns:1fr; gap:16px; }.groep-intro :global(img) { max-width:300px; } }</style>
