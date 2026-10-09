@@ -1,14 +1,13 @@
 ---
-import { domeinen } from '../data/domeinen';
 import type { Case } from '../data/cases';
 import type { FaseKey } from '../data/fasen';
 import PhaseDots from './PhaseDots.astro';
-interface Props { c: Case; highlight?: FaseKey[]; showDomeinLabel?: boolean }
-const { c, highlight = [], showDomeinLabel = true } = Astro.props;
+interface Props { c: Case; highlight?: FaseKey[] }
+const { c, highlight = [] } = Astro.props;
 const aanpak = c.aanpak.split(' · ').filter(Boolean);
 ---
 <article class={`case-card domein-${c.kleurDomein}`} id={`case-${c.id}`}>
-  <p class="case-domain">{c.domein}{showDomeinLabel && <span class="case-kleurdomein">{domeinen[c.kleurDomein].naam}</span>}</p>
+  <p class="case-domain">{c.domein}</p>
   <h3><button type="button" class="case-open" data-case-dialog={`dialog-${c.id}`} aria-haspopup="dialog">{c.vraagstuk}</button></h3>
   <p class="case-text case-summary">{c.tekst}</p>
   <p class="case-teaser-org">{c.organisatie}</p>
@@ -17,7 +16,7 @@ const aanpak = c.aanpak.split(' · ').filter(Boolean);
 <dialog id={`dialog-${c.id}`} class={`case-dialog domein-${c.kleurDomein}`} aria-labelledby={`title-${c.id}`}>
   <div class="dialog-inner">
   <form method="dialog"><button class="case-close" aria-label="Case sluiten">Sluiten <span aria-hidden="true">×</span></button></form>
-  <div class="case-meta-top"><p class="case-domain">{c.domein}{showDomeinLabel && <span class="case-kleurdomein">{domeinen[c.kleurDomein].naam}</span>}</p><span class="organisation-badge">{c.organisatie}</span></div>
+  <div class="case-meta-top"><p class="case-domain">{c.domein}</p><span class="organisation-badge">{c.organisatie}</span></div>
   <h2 id={`title-${c.id}`}>{c.vraagstuk}</h2>
   <p class="case-text">{c.tekst}</p>
   <p class="role-badge"><span>Mijn rol</span> {c.rol}</p>
@@ -49,7 +48,6 @@ const aanpak = c.aanpak.split(' · ').filter(Boolean);
   });
 </script>
 <style>
-  .case-kleurdomein { display:block; margin-top:3px; font-size:.6875rem; text-transform:none; letter-spacing:0; }
   .case-card { position:relative; padding:26px; transition:box-shadow .18s, border-color .18s; }
   .case-card:hover { border-color:var(--teal-400); box-shadow:0 12px 32px #10283a12; }
   .case-open { padding:0; border:0; background:none; color:var(--action); font:inherit; text-align:left; cursor:pointer; }

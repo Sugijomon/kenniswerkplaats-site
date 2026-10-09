@@ -31,7 +31,6 @@ import { faseByKey } from '../../data/fasen';
               return (
                 <a class:list={['card', 'aanbod-card', `domein-${a.domein}`, { instap: a.instap }]} href={`/aanbod/${a.slug}/`}>
                   <span class="ico"><Icon name={domeinen[a.domein].icoon} size={28} /></span>
-                  <span class="domein-label">{domeinen[a.domein].naam}</span>
                   <h3>{a.naam} {a.instap && <span class="badge">Instap</span>}</h3>
                   <p>{a.kort}</p>
                   <div class="fase-tags">

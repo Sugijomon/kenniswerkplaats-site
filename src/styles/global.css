@@ -388,7 +388,6 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
 .domein-tech { --domein-color:var(--tech); --domein-tint:var(--tech-tint); --domein-ink:var(--tech-ink); --domein-icon:var(--tech); }
 /* Het basisgroen haalt op de tint geen 3:1: lijniconen gebruiken ook leren-ink. */
 .domein-leren { --domein-color:var(--leren); --domein-tint:var(--leren-tint); --domein-ink:var(--leren-ink); --domein-icon:var(--leren-ink); }
-.domein-label { color:var(--domein-ink); font-size:.75rem; font-weight:650; line-height:1.4; }
 .site-header .nav-desktop > li:last-child > a { background:var(--action); color:#fff; padding-inline:22px; }
 .site-header .nav-desktop > li:last-child > a:hover { background:var(--action-hover); }
 .filter a { color:var(--action); }

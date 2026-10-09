@@ -1,0 +1,118 @@
+---
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import CaseCard from '../../components/CaseCard.astro';
+import { aiFoto as f } from '../../data/ai-foto';
+import { aanbodBySlug } from '../../data/aanbod';
+import { caseById } from '../../data/cases';
+import { site } from '../../data/site';
+const a = aanbodBySlug['ai-foto'];
+const contact = '/contact/?onderwerp=AI-Foto';
+const voorbeeld = `mailto:${site.email}?subject=${encodeURIComponent('Voorbeeldrapport AI-Foto opvragen')}`;
+---
+<Base title="AI-Foto" description={f.intro}>
+  <div class="foto-page">
+    <header class="page-head">
+      <div class="wrap">
+        <p class="crumbs"><a href="/aanbod/">Aanbod</a> / {a.groep}</p>
+        <div class="foto-hero">
+          <div>
+            <p class="eyebrow">{a.groep}</p>
+            <h1>{a.naam}</h1>
+            <p class="hero-belofte">{f.belofte}</p>
+            <p class="lead">{f.intro}</p>
+            <p class="hero-uitleg">{f.uitleg}</p>
+            <div class="hero-actions"><a class="btn" href={contact}>Plan een AI-Foto-check <Icon name="arrow" size={18} /></a><a class="textlink" href={voorbeeld}>Vraag een voorbeeldrapport</a></div>
+          </div>
+          <div class="beeld-kaart" aria-label="Van drie perspectieven naar één organisatiebeeld en een besluitagenda">
+            <p class="eyebrow">Van signalen naar besluiten</p>
+            <div class="beeld-bronnen">{f.perspectieven.map(p => <div><Icon name={p.icoon} size={22} /><span>{p.naam}</span></div>)}</div>
+            <div class="beeld-lijn" aria-hidden="true">↓</div>
+            <div class="beeld-resultaat"><Icon name="search" size={28} /><strong>Eén gedeeld organisatiebeeld</strong><span>Waarde · aandachtspunten · vaardigheden</span></div>
+            <div class="beeld-lijn" aria-hidden="true">↓</div>
+            <div class="beeld-besluit"><strong>Maximaal 5 besluitpunten</strong><span>Eigenaren en een 90-dagenroute</span></div>
+            <p class="kleine-noot">Schematische weergave van de aanpak</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section><div class="wrap two-col">
+      <div class="card"><h2>Wanneer AI-Foto past</h2><ul class="check-list">{f.past.map(x => <li>{x}</li>)}</ul></div>
+      <div class="grenzen"><h2>Een duidelijke grens</h2><ul class="plain-list">{f.grenzen.map(x => <li>{x}</li>)}</ul></div>
+    </div></section>
+
+    <section class="zacht"><div class="wrap">
+      <div class="section-head"><div><p class="eyebrow">Het organisatiebeeld</p><h2>Drie perspectieven, één beeld</h2></div></div>
+      <div class="grid grid-3">{f.perspectieven.map(p => <article class="card perspectief"><span class="foto-ico"><Icon name={p.icoon} size={26} /></span><p class="eyebrow">{p.naam}</p><h3>{p.kop}</h3><p>{p.tekst}</p></article>)}</div>
+      <p class="resultaat-zin">{f.beeldSamenvatting}</p>
+    </div></section>
+
+    <section><div class="wrap">
+      <div class="section-head"><div><p class="eyebrow">Van voorbereiding tot besluit</p><h2>Hoe het verloopt</h2></div><span class="tijd-label">Compact · ongeveer 2 weken</span></div>
+      <ol class="stappen">{f.stappen.map((s,i) => <li><span class="stap-nr" aria-hidden="true">{i+1}</span><p class="kleine-noot">{s.tijd}</p><h3>{s.naam}</h3><p>{s.tekst}</p></li>)}</ol>
+    </div></section>
+
+    <section class="zacht"><div class="wrap">
+      <p class="eyebrow">Wat je ontvangt</p><h2>Drie kaarten, geen totaalscore</h2>
+      <div class="grid grid-3 analyse-kaarten">{f.kaarten.map((k,i) => <article class="card analyse"><p class="eyebrow">Kaart {i+1}</p><h3>{k.naam}</h3><p>{k.vraag}</p><ul>{k.punten.map(p => <li>{p}</li>)}</ul></article>)}</div>
+      <p class="kleine-noot">{f.kaartenNoot}</p>
+      <div class="besluit-panel"><div><h3>Daarna weet de directie</h3><ul class="check-list">{f.besluiten.map(x => <li>{x}</li>)}</ul></div><div class="route"><p class="eyebrow">De eerste negentig dagen</p><div class="route-dagen"><span>30</span><span>60</span><span>90</span></div><p>{f.routeNoot}</p></div></div>
+    </div></section>
+
+    <section><div class="wrap vertrouwen-grid">
+      <div><span class="foto-ico"><Icon name="people" size={28} /></span><p class="eyebrow">Vertrouwen van medewerkers</p><h2>Veilig vertellen wat er echt gebeurt</h2><p>{f.vertrouwen}</p></div>
+      <div class="rollen">{f.rollen.map(r => <div><h3>{r.naam}</h3><p>{r.tekst}</p></div>)}</div>
+    </div></section>
+
+    <section class="zacht"><div class="wrap">
+      <p class="eyebrow">Passend bij je scope</p><h2>Drie varianten</h2>
+      <div class="grid grid-3 varianten">{f.varianten.map(v => <article class="card"><h3>{v.naam}</h3><p class="variant-scope">{v.scope}</p><span class="tijd-label">{v.tijd}</span><p>{v.tekst}</p><p class="variant-grens">{v.grens}</p><a class="textlink" href={`/contact/?onderwerp=${encodeURIComponent(`AI-Foto ${v.naam}`)}`}>Bespreek deze variant <Icon name="arrow" size={16} /></a></article>)}</div>
+      <details class="scope"><summary>Wat buiten de scope valt</summary><p>{f.buitenScope}</p></details>
+    </div></section>
+
+    <section class="cases-section"><div class="wrap"><p class="eyebrow">Ervaring met de aanpak</p><h2>Eerder aangepakt</h2><p class="prose">{a.casesIntro}</p><div class="cases-grid">{a.cases.map(id => <CaseCard c={caseById[id]} highlight={a.fasen} />)}</div></div></section>
+
+    <section><div class="wrap"><h2>Wat hierna kan volgen</h2><p class="prose">{f.vervolg}</p><div class="grid grid-2 vervolg">{['grip-op-ai-in-hr','ai-op-orde'].map(slug => <a class="card" href={`/aanbod/${slug}/`}><h3>{aanbodBySlug[slug].naam}</h3><p>{aanbodBySlug[slug].kort}</p><span class="textlink">Bekijk het aanbod <Icon name="arrow" size={16} /></span></a>)}</div></div></section>
+
+    <section class="tight"><div class="wrap"><div class="foto-contact"><div><h2>Eerst samen kijken of het past</h2><p>{f.contact}</p></div><div class="contact-acties"><a class="btn" href={contact}>Plan een AI-Foto-check <Icon name="arrow" size={18} /></a><a class="textlink" href={voorbeeld}>Vraag een voorbeeldrapport</a></div></div></div></section>
+  </div>
+</Base>
+<style>
+  .foto-page h2 { font-size:clamp(1.55rem,3vw,2rem); line-height:1.2; margin-bottom:24px; }
+  .foto-page h3 { font-size:1.2rem; line-height:1.3; }
+  .foto-hero { display:grid; grid-template-columns:minmax(0,1.25fr) minmax(0,.85fr); gap:64px; align-items:center; }
+  .foto-hero h1 { margin-bottom:8px; }
+  .hero-belofte { font-size:clamp(1.4rem,3vw,2rem); line-height:1.25; font-weight:650; margin:0 0 24px; }
+  .hero-uitleg { color:var(--ink-2); max-width:38rem; }
+  .beeld-kaart { background:white; border:1px solid var(--line-2); border-radius:var(--radius); padding:28px; box-shadow:var(--shadow); }
+  .beeld-bronnen { display:grid; grid-template-columns:repeat(3,1fr); gap:8px; }
+  .beeld-bronnen>div { display:flex; flex-direction:column; align-items:center; gap:10px; padding:16px 4px; border-radius:12px; background:var(--surface); font-size:.8rem; }
+  .beeld-bronnen svg { color:var(--tech-ink); }
+  .beeld-lijn { text-align:center; font-size:1.5rem; padding:5px; color:var(--ink-3); }
+  .beeld-resultaat,.beeld-besluit { display:flex; flex-direction:column; align-items:center; gap:8px; text-align:center; padding:20px 12px; background:var(--tech-tint); border-radius:12px; }
+  .beeld-resultaat span,.beeld-besluit span { font-size:.875rem; color:var(--ink-2); }
+  .beeld-besluit { background:var(--paper); }
+  .kleine-noot { font-size:.875rem; color:var(--ink-3); }
+  .beeld-kaart>.kleine-noot { text-align:center; margin:16px 0 0; }
+  .grenzen { padding:28px; }
+  .plain-list { padding-left:20px; color:var(--ink-2); }.plain-list li { margin:12px 0; }
+  .zacht { background:var(--surface); }
+  .foto-ico { width:52px; height:52px; display:grid; place-items:center; border-radius:50%; background:var(--tech-tint); color:var(--tech-ink); margin-bottom:12px; }
+  .perspectief .eyebrow { margin:0; }.perspectief p:last-child { margin-bottom:0; }
+  .resultaat-zin { max-width:46rem; text-align:center; margin:28px auto 0; color:var(--ink-2); }
+  .tijd-label { display:inline-block; border-radius:24px; background:var(--action-tint); color:var(--ink-2); font-size:.875rem; padding:7px 12px; }
+  .stappen { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:28px; list-style:none; padding:0; margin:0; }
+  .stap-nr { display:grid; place-items:center; width:40px; height:40px; border-radius:50%; background:var(--surface); font-weight:700; }
+  .stappen p { color:var(--ink-2); font-size:.9375rem; }.stappen .kleine-noot { margin:14px 0 6px; }
+  .analyse-kaarten,.varianten { margin-top:28px; }.analyse { border-top:3px solid var(--tech); }.analyse ul { padding:16px 0 0; border-top:1px solid var(--line); list-style:none; margin:0; }.analyse li { padding:8px 0; font-size:.9375rem; color:var(--ink-2); }
+  .besluit-panel { margin-top:32px; display:grid; grid-template-columns:1.4fr 1fr; gap:40px; padding:32px; border-radius:var(--radius); background:white; }.besluit-panel h3 { margin-bottom:18px; }
+  .route { border-left:1px solid var(--line-2); padding-left:32px; align-self:center; }.route-dagen { display:flex; justify-content:space-between; gap:12px; margin:24px 0; }.route-dagen span { display:grid; place-items:center; width:56px; height:56px; border:1px solid var(--line-2); border-radius:50%; font-weight:700; }.route p:last-child { color:var(--ink-2); font-size:.9375rem; }
+  .vertrouwen-grid { display:grid; grid-template-columns:1fr 1fr; gap:64px; }.rollen { display:grid; gap:20px; }.rollen>div { padding:0 0 16px; border-bottom:1px solid var(--line-2); }.rollen p { margin:8px 0 0; color:var(--ink-2); }
+  .variant-scope { margin:0; color:var(--ink-2); }.varianten .tijd-label { align-self:flex-start; }.variant-grens { border-top:1px solid var(--line); padding-top:16px; color:var(--ink-3); font-size:.9375rem; }.varianten .textlink { margin-top:auto; }
+  .scope { margin-top:28px; border:1px solid var(--line-2); background:white; border-radius:12px; padding:18px 24px; }.scope summary { cursor:pointer; font-weight:650; color:var(--action); }.scope p { color:var(--ink-2); margin-bottom:0; }
+  .vervolg { margin-top:28px; }.vervolg>a { text-decoration:none; }.vervolg p { color:var(--ink-2); }
+  .foto-contact { display:grid; grid-template-columns:1.4fr 1fr; align-items:center; gap:40px; padding:36px; background:var(--tech-tint); border-radius:var(--radius); }.foto-contact p { color:var(--ink-2); margin-bottom:0; }.contact-acties { display:flex; flex-direction:column; align-items:flex-start; gap:18px; }
+  @media(max-width:900px) { .foto-hero { grid-template-columns:1fr; gap:32px; }.beeld-kaart { max-width:580px; }.stappen { grid-template-columns:repeat(2,minmax(0,1fr)); }.vertrouwen-grid { gap:32px; } }
+  @media(max-width:600px) { .beeld-kaart { padding:20px 16px; }.beeld-bronnen { gap:5px; }.beeld-bronnen>div { font-size:.75rem; }.stappen,.besluit-panel,.vertrouwen-grid,.foto-contact { grid-template-columns:1fr; }.stappen { gap:24px; }.besluit-panel,.foto-contact { padding:24px; gap:24px; }.route { border-left:0; border-top:1px solid var(--line-2); padding:24px 0 0; }.grenzen { padding:20px 0 0; }.section-head { flex-wrap:wrap; }.hero-actions { align-items:flex-start; }.contact-acties .btn { width:100%; }.scope { padding:16px; } }
+</style>
