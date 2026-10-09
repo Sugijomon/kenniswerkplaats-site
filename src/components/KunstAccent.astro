@@ -1,0 +1,16 @@
+---
+interface Props { beeld?: 'linten' | 'samenhang' | 'richting'; vorm?: 'rand' | 'overgang' | 'beeld' }
+const { beeld = 'richting', vorm = 'rand' } = Astro.props;
+---
+<div class:list={['kunst-accent', vorm]} aria-hidden="true"><img src={`/kunst/${beeld}.png`} alt="" loading="lazy" decoding="async" /></div>
+<style>
+  .kunst-accent { pointer-events:none; }
+  img { display:block; width:100%; height:100%; object-fit:cover; }
+  .rand { position:absolute; right:0; top:0; width:min(620px,55%); height:100%; z-index:0; opacity:.14; mask-image:linear-gradient(90deg,transparent,black 55%); }
+  .rand img { object-position:right center; }
+  .overgang { max-width:1140px; margin:16px auto 0; height:120px; opacity:.6; mask-image:linear-gradient(180deg,transparent,black 35%,black 60%,transparent); }
+  .overgang img { object-position:center; }
+  .beeld { width:100%; height:290px; overflow:hidden; border-radius:22px; }
+  .beeld img { object-position:75% center; }
+  @media(max-width:760px) { .rand { width:65%; opacity:.07; }.overgang { height:80px; opacity:.4; }.beeld { height:220px; max-width:420px; margin:auto; } }
+</style>

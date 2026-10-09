@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
+import KunstAccent from '../components/KunstAccent.astro';
 import { fasen } from '../data/fasen';
 import { aanbod } from '../data/aanbod';
 
@@ -13,6 +14,7 @@ const principes = [
 ---
 <Base title="Werkwijze" description="Vier fasen van zicht krijgen tot sturen en evalueren, en de principes die in elke fase gelden.">
   <header class="page-head">
+    <KunstAccent beeld="samenhang" />
     <div class="wrap">
       <p class="eyebrow">Werkwijze</p>
       <h1>Van vraagstuk naar werkende praktijk</h1>
@@ -64,3 +66,4 @@ const principes = [
     </div>
   </section>
 </Base>
+<style>.page-head { position:relative; overflow:hidden; }.page-head .wrap { position:relative; z-index:1; }</style>
