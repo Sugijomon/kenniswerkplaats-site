@@ -1,20 +1,10 @@
 ---
-// Aangeleverd merk met aangepaste kleuren; dezelfde vorm staat in de SVG-favicon.
+// Aangeleverd transparant woordmerk met onderregel.
 ---
 <a href="/" class="logo" aria-label="Kenniswerkplaats, naar de homepage">
-  <svg class="brand-mark" viewBox="0 0 100 100" width="54" height="54" aria-hidden="true">
-    <rect x="34" y="6" width="32" height="32" rx="4" transform="rotate(45 50 22)" fill="#fa7b0b" />
-    <rect x="6" y="34" width="32" height="32" rx="4" transform="rotate(45 22 50)" fill="#ce1060" />
-    <rect x="62" y="34" width="32" height="32" rx="4" transform="rotate(45 78 50)" fill="#0b3179" />
-    <rect x="34" y="62" width="32" height="32" rx="4" transform="rotate(45 50 78)" fill="#006e78" />
-  </svg>
-  <span class="wordmark"><span class="brand-name">Kenniswerkplaats</span><span class="brand-tagline">Mensen · Kennis · Technologie</span></span>
+  <img class="logo-full" src="/logo-horizontaal-vierkleuren.png" width="2163" height="727" alt="Kenniswerkplaats · Mensen · Kennis · Technologie" />
 </a>
 <style>
-  .logo { gap:10px; }
-  .brand-mark { flex-shrink:0; }
-  .wordmark { display:flex; flex-direction:column; gap:3px; }
-  .brand-name { font-size:1.45rem; font-weight:800; letter-spacing:-.04em; line-height:1.15; color:#0b3179; }
-  .brand-tagline { font-size:.75rem; font-weight:550; letter-spacing:.025em; line-height:1.3; color:#54758a; }
-  @media(max-width:480px) { .brand-mark { width:44px; height:44px; }.brand-name { font-size:1.2rem; }.brand-tagline { font-size:.65rem; } }
+  .logo-full { display:block; width:280px; height:auto; }
+  @media(max-width:480px) { .logo-full { width:230px; } }
 </style>
