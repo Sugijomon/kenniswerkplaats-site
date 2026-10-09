@@ -40,3 +40,13 @@ Deze kleurcontrole omvat functionele HTML-tekst en iconen. Logo's en rasterillus
 [Homepage desktop](homepage-desktop.jpg) · [Aanbod desktop](aanbod-desktop.jpg) · [Homepage 360px](homepage-360.jpg) · [Aanbod 360px](aanbod-360.jpg)
 
 ![Domeinrollen op de homepage, met zichtbare toetsenbordfocus](homepage-kleuren.jpg)
+
+## Vervolg: footer
+
+De footer heeft drie rustige kolommen, een verticale navigatielijst met alle zes bestaande links, logo en slogan dichter bij elkaar, en een onderste regel met het buildjaar, de bestaande merknaam en de bestaande locatie. De bovenlijn blijft zichtbaar. De semantische footer-navigatie heeft een eigen toegankelijke naam. De CSS voor de standaardfooter staat nu op één plek. Op mobiel worden de kolommen gestapeld en krijgen links ruimere klikvlakken. Geen nieuwe locatie of contactgegevens overgenomen uit de voorbeeldtekst.
+
+Build en ingebouwde controles geslaagd; opnieuw gecontroleerd op desktop en 360px, zonder contrastfouten of horizontale scroll. Deze twee aanvullende browsertoestanden zijn toegevoegd aan de meetgegevens. De volledige pagina-screenshots zijn vernieuwd.
+
+![Footer desktop](footer-desktop.jpg)
+
+[Footer op mobiel: volledige homepage](homepage-360.jpg)
