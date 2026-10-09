@@ -2,11 +2,13 @@
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import FaseStrip from '../../components/FaseStrip.astro';
+import KunstAccent from '../../components/KunstAccent.astro';
 import { groepen, aanbodBySlug } from '../../data/aanbod';
 import { faseByKey } from '../../data/fasen';
 ---
 <Base title="Aanbod" description="Modulair aanbod in drie domeinen: verantwoord werken met AI, leren en ontwikkelen, en digitale platforms.">
   <header class="page-head">
+    <KunstAccent beeld="richting" />
     <div class="wrap">
       <p class="eyebrow">Aanbod</p>
       <h1>Wat ik voor je kan doen</h1>
@@ -49,3 +51,4 @@ import { faseByKey } from '../../data/fasen';
     </div>
   </section>
 </Base>
+<style>.page-head { position:relative; overflow:hidden; }.page-head .wrap { position:relative; z-index:1; }</style>

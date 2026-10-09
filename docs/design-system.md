@@ -31,7 +31,7 @@ De categorieën blijven duidelijk verschillend: AI framboos, leren donker teal a
 
 Gebruik Figtree, ruime witruimte, witte kaarten en zachte schaduwen. Accentranden blijven recht; kaders mogen afgerond zijn. Gebruik badges alleen als ze nuttige informatie toevoegen. Het aanbodmenu heeft drie kolommen. Casekaarten openen compacte dialogs met bestaande feiten en fasescores.
 
-Mensgerichte lijnillustraties blijven uitsluitend op de homepage. Andere pagina’s behouden hun eigen eerdere illustraties. De aangeleverde abstracte achtergrondkunst is uitsluitend op Ontwerp en ontwikkeling gebruikt. De standaardfooter is puur typografisch, zonder kunststrook.
+Mensgerichte lijnillustraties blijven uitsluitend op de homepage. Andere pagina’s behouden hun eigen eerdere illustraties. Abstracte kunst verschijnt selectief: zachte achtergrondfragmenten op Ontwerp en ontwikkeling, een kunstvlak naast Governance en evaluatie, lichte randaccenten op Aanbod en Werkwijze, en een overgang tussen werkwijze en cases op de homepage. De inhoudsvlakken blijven rustig. De standaardfooter is puur typografisch, zonder kunststrook.
 
 ## Functionele kleurrollen
 
@@ -55,3 +55,7 @@ Gebruik donkerblauw of petrol voor tekst op lichte vlakken. Oranje, geel, ijsbla
 ## Beheer
 
 Wijzig gedeelde kleuren via CSS-variabelen. Houd pagina-inhoud en navigatie intact bij een stijlronde. Controleer build en links, daarna weergave op desktop en 360px mobiel. Publiceer gecombineerd vanuit main.
+
+## Vrije kunst en vaste interface
+
+Kunst mag het volledige merkpalet combineren zonder dat elke tint een categorie aanduidt. Houd de decoratie los van tekst en klikbare controles. Gebruik decoratieve beelden met lege alt-tekst en buiten de toegankelijkheidsboom. Op mobiel worden achtergrondaccenten kleiner of lichter. De typografische footer bevat geen kunst.
