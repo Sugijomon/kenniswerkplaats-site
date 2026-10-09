@@ -51,4 +51,4 @@ const initials = c.organisatie.split(/\s+/).slice(0, 2).map(x => x[0]).join('');
   :global(body.demo-modal-open) { overflow:hidden; }
   @media(max-width:680px) { .content-grid { grid-template-columns:1fr; }.meta { padding:20px 0 0; border-left:0; border-top:1px solid var(--line); }.dialog-pad { padding:24px; } }
   @media(prefers-reduced-motion:reduce) { .demo-case,.read span { transition:none; }.demo-case:hover,.demo-case:hover .read span { transform:none; } }
-</style>
+.demo-dialog .phases :global(li:nth-child(1)) { --phase-color:#117a65; }.demo-dialog .phases :global(li:nth-child(2)) { --phase-color:#94640e; }.demo-dialog .phases :global(li:nth-child(3)) { --phase-color:#c8156b; }.demo-dialog .phases :global(li:nth-child(4)) { --phase-color:#183e55; }.demo-dialog .phases :global(.status-2 .phase-mark) { background:var(--phase-color); border-color:var(--phase-color); }.demo-dialog .phases :global(.status-1 .phase-mark) { background:linear-gradient(90deg,var(--phase-color) 50%,white 50%); border-color:var(--phase-color); }</style>
