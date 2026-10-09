@@ -19,6 +19,18 @@ const laad = (naam) => import(pathToFileURL(join(root, 'src/data', naam)).href);
 const { aanbod } = await laad('aanbod.ts');
 const { cases } = await laad('cases.ts');
 const { vraagstukken } = await laad('vraagstukken.ts');
+const { domeinen } = await laad('domeinen.ts');
+
+// Elk onderwerp heeft een expliciete kleurrol, los van groep of casesector.
+for (const [bestand, items, veld] of [
+  ['aanbod.ts', aanbod, 'domein'],
+  ['vraagstukken.ts', vraagstukken, 'domein'],
+  ['cases.ts', cases, 'kleurDomein'],
+]) {
+  for (const item of items) {
+    if (!Object.hasOwn(domeinen, item[veld])) fouten.push(`${bestand}: ongeldig ${veld} bij "${item.id ?? item.slug}"`);
+  }
+}
 
 // 1. case-ids
 const caseIds = new Set(cases.map((c) => c.id));

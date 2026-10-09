@@ -1,31 +1,30 @@
 ---
+import { domeinen } from '../data/domeinen';
 import { groepen, aanbodBySlug } from '../data/aanbod';
 ---
 <div class="offer-map">
   {groepen.map((g,i) => <div class={`branch branch-${g.key}`}>
     <div class="node-heading"><span class="node" aria-hidden="true">{String(i+1).padStart(2,'0')}</span><h3><a href={`/aanbod/#${g.key}`}>{g.naam}</a></h3></div>
     <p>{g.kort}</p>
-    <ul>{g.items.map(slug => <li><a href={`/aanbod/${slug}/`}>{aanbodBySlug[slug].naam}</a></li>)}</ul>
+    <ul>{g.items.map(slug => <li class={`domein-${aanbodBySlug[slug].domein}`}><a href={`/aanbod/${slug}/`}>{aanbodBySlug[slug].naam}</a><span class="domein-label">{domeinen[aanbodBySlug[slug].domein].naam}</span></li>)}</ul>
   </div>)}
 </div>
 <style>
   .offer-map { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:28px; position:relative; padding:14px 0 24px; }
   .offer-map::before { content:''; position:absolute; top:38px; left:24px; right:24px; height:2px; background:var(--line-2); }
-  .branch { position:relative; min-width:0; --node-color:var(--brand-raspberry); --soft:#fcf0f6; }
-  .branch-leren { --node-color:var(--brand-dark-teal); --soft:#eef6f5; }
-  .branch-platforms { --node-color:var(--brand-cobalt); --soft:#eef3fb; }
+  .branch { position:relative; min-width:0; }
   .node-heading { display:flex; align-items:center; gap:12px; min-height:48px; }
-  .node { display:grid; place-items:center; width:48px; height:48px; flex-shrink:0; background:var(--node-color); color:white; border-radius:50%; font-weight:750; font-size:1rem; }
-  .branch-leren .node { color:white; }
+  .node { display:grid; place-items:center; width:48px; height:48px; flex-shrink:0; background:var(--surface); color:var(--ink); border-radius:50%; font-weight:750; font-size:1rem; }
   h3 { margin:0; font-size:1.15rem; line-height:1.3; background:var(--paper); padding:4px 8px 4px 0; }
-  h3 a { color:var(--ink); text-decoration:none; }h3 a:hover { color:var(--node-color); }
+  h3 a { color:var(--action); text-decoration:none; }h3 a:hover { color:var(--action-hover); }
   p { margin:12px 0 20px 60px; color:var(--ink-2); font-size:.9375rem; min-height:3em; }
   ul { list-style:none; margin:0 0 0 24px; padding:0 0 0 28px; position:relative; display:grid; gap:10px; }
   ul::before { content:''; position:absolute; left:0; top:-8px; bottom:22px; width:2px; background:var(--line-2); }
   li { position:relative; min-width:0; }
   li::before { content:''; position:absolute; left:-28px; top:-8px; width:28px; height:30px; border-left:2px solid var(--line-2); border-bottom:2px solid var(--line-2); border-bottom-left-radius:20px; }
-  li a { position:relative; display:inline-block; max-width:100%; padding:8px 12px; border:1px solid var(--line-2); border-radius:24px; color:var(--ink-2); background:white; font-size:.875rem; line-height:1.35; text-decoration:none; transition:background .15s,border-color .15s; }
-  li a:hover { background:var(--soft); border-color:var(--node-color); color:var(--ink); }
+  li a { position:relative; display:inline-block; max-width:100%; padding:8px 12px; border:1px solid var(--line-2); border-radius:24px; color:var(--action); background:white; font-size:.875rem; line-height:1.35; text-decoration:none; transition:background .15s,border-color .15s; }
+  li a:hover { background:var(--action-tint); border-color:var(--action); color:var(--action-hover); }
+  .domein-label { display:block; margin:4px 12px 0; font-size:.75rem; }
   @media(max-width:900px) { .offer-map { grid-template-columns:1fr; gap:32px; }.offer-map::before { display:none; }p { min-height:0; margin-bottom:18px; } }
   @media(prefers-reduced-motion:reduce) { li a { transition:none; } }
 </style>

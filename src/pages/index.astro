@@ -5,8 +5,8 @@ import FaseStrip from '../components/FaseStrip.astro';
 import CaseCard from '../components/CaseCard.astro';
 import MensIllustratie from '../components/MensIllustratie.astro';
 import AanbodMindmap from '../components/AanbodMindmap.astro';
-import KunstAccent from '../components/KunstAccent.astro';
 import PraktijklabKaarten from '../components/PraktijklabKaarten.astro';
+import { domeinen } from '../data/domeinen';
 import { vraagstukken } from '../data/vraagstukken';
 import { fasen } from '../data/fasen';
 import { caseById } from '../data/cases';
@@ -44,8 +44,9 @@ const homeCases = ['zorgwise', 'viazorg-flexplatform', 'corpio'].map((id) => cas
       </div>
       <div class="grid grid-3">
         {homeTegels.map((v) => (
-          <a class={`card vraag-tile groep-${groepen.find(g => g.naam === aanbodBySlug[v.aanbod].groep)!.key}`} href={`/aanbod/${v.aanbod}/`}>
+          <a class={`card vraag-tile domein-${v.domein}`} href={`/aanbod/${v.aanbod}/`}>
             <span class="ico"><Icon name={v.icoon} size={28} /></span>
+          <span class="domein-label">{domeinen[v.domein].naam}</span>
             <h3>{v.titel}</h3>
             <p>{v.tekst}</p>
             <span class="go">Zo pak ik het aan <Icon name="arrow" size={14} /></span>
@@ -92,7 +93,6 @@ const homeCases = ['zorgwise', 'viazorg-flexplatform', 'corpio'].map((id) => cas
     </div>
   </section>
 
-  <KunstAccent beeld="linten" vorm="overgang" />
   <!-- Eerder aangepakt -->
   <section class="cases-section">
     <div class="wrap">
@@ -156,7 +156,7 @@ const homeCases = ['zorgwise', 'viazorg-flexplatform', 'corpio'].map((id) => cas
   .art-content h3 { font-size:1.3rem; line-height:1.3; }
   .service-pills { list-style:none; margin:4px 0 0; padding:16px 0 0; border-top:1px solid var(--line); display:flex; flex-wrap:wrap; gap:8px; }
   .service-pills a { display:block; padding:8px 12px; border:1px solid var(--line); border-radius:24px; background:#f7f9fa; color:var(--ink-2); font-size:.875rem; font-weight:550; text-decoration:none; transition:background .15s,color .15s; }
-  .service-pills a:hover { color:var(--accent); background:var(--accent-bg); border-color:var(--accent); }
+  .service-pills a:hover { color:var(--action-hover); background:var(--action-tint); border-color:var(--action); }
   .art-card .go { display:flex; justify-content:space-between; margin: auto 26px 24px; padding-top:18px; border-top:1px solid var(--line); min-height:44px; }
   @media(max-width:600px) { .art-header { height:155px; } }
 </style>

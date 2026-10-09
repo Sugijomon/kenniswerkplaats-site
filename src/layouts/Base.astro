@@ -9,6 +9,7 @@ interface Props { title?: string; description?: string; palettePreview?: boolean
 const { title, description = site.beschrijving, palettePreview = false } = Astro.props;
 const fullTitle = title ? `${title} · Kenniswerkplaats` : 'Kenniswerkplaats · Samen uitzoeken wat werkt';
 const path = Astro.url.pathname;
+const jaar = new Date().getFullYear();
 const nav = [
   { href: '/vraagstukken/', label: 'Vraagstukken' },
   { href: '/werkwijze/', label: 'Werkwijze' },
@@ -92,18 +93,25 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
 
     <footer class="site-footer">
       <div class="wrap footer-inner">
-        <div>
+        <div class="footer-brand">
           <Logo />
-          <p class="muted">{site.tagline}</p>
+          <p class="footer-tagline">{site.tagline}</p>
         </div>
-        <ul class="footer-nav">
-          <li class="footer-nav-title">Verken Kenniswerkplaats</li>
-          {nav.map((n) => <li><a href={n.href}>{n.label}</a></li>)}
-        </ul>
-        <div>
-          <p class="footer-contact-title">Contact</p>
-          <p><a href={`mailto:${site.email}`}>{site.email}</a></p>
-          <p class="muted">{site.plaats}</p>
+        <nav aria-labelledby="footer-nav-title">
+          <h2 id="footer-nav-title" class="footer-title">Verken Kenniswerkplaats</h2>
+          <ul class="footer-nav">
+            {nav.map((n) => <li><a href={n.href}>{n.label}</a></li>)}
+          </ul>
+        </nav>
+        <div class="footer-contact">
+          <h2 class="footer-title">Contact</h2>
+          <a href={`mailto:${site.email}`}>{site.email}</a>
+        </div>
+      </div>
+      <div class="wrap">
+        <div class="footer-bottom">
+          <p>© {jaar} {site.naam}</p>
+          <p>{site.plaats}</p>
         </div>
       </div>
     </footer>
