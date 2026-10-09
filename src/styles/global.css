@@ -1,20 +1,20 @@
 /* ─── Tokens ───────────────────────────────────────────── */
 :root {
-  --brand-blue: #009bcc;
-  --brand-blue-dark: #00658f;
-  --brand-magenta: #c8156b;
-  --brand-green: #8cc459;
-  --brand-green-dark: #4d722b;
+  --brand-blue: #11a5bd;
+  --brand-blue-dark: #022e87;
+  --brand-magenta: #d80950;
+  --brand-green: #c7e1e2;
+  --brand-green-dark: #055566;
   --support-blue: #54758a;
-  --teal-900: #064360;
-  --teal-700: #00658f;
-  --teal-600: #007aa6;
-  --teal-500: #009bcc;
-  --teal-400: #73b5cb;
-  --teal-100: #dfedf4;
-  --teal-50: #f0f6f9;
+  --teal-900: #061f5c;
+  --teal-700: #034f64;
+  --teal-600: #038192;
+  --teal-500: #11a5bd;
+  --teal-400: #c7e1e2;
+  --teal-100: #d9eaf1;
+  --teal-50: #f2f7f9;
 
-  --ink: #101c30;
+  --ink: #061f5c;
   --ink-2: #435871;
   --ink-3: #586b7c;
   --line: #e4eaee;
@@ -294,9 +294,9 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
 .prose p { color: var(--ink-2); }
 
 /* ─── Aanbodgroepen: accentkleur per groep ─────────────── */
-.groep-ai { --accent: #a81c60; --accent-bg: #fbecf3; }
-.groep-leren { --accent: var(--brand-green-dark); --accent-bg: #eff5e9; }
-.groep-platforms { --accent: var(--brand-blue-dark); --accent-bg: #eaf3f8; }
+.groep-ai { --accent: #8f165b; --accent-bg: #fcf0f6; }
+.groep-leren { --accent: var(--brand-green-dark); --accent-bg: #eef6f5; }
+.groep-platforms { --accent: var(--brand-blue-dark); --accent-bg: #eef5f9; }
 
 .groep-card { display: flex; flex-direction: column; gap: 14px; position: relative; background: #fff; padding:28px; transition:transform .2s, box-shadow .2s, border-color .2s; }
 .groep-card h3 { margin: 0; font-size: 1.25rem; line-height:1.35; color: var(--ink); }
@@ -357,7 +357,7 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
 .vraag-tile .ico { width:56px; height:56px; border-radius:50%; display:grid; place-items:center; background:var(--brand-blue-dark); color:white; }
 .vraag-tile:nth-child(3n+2) .ico { background:var(--brand-magenta); }
 .vraag-tile:nth-child(3n) .ico { background:var(--brand-green-dark); }
-.banner { background:linear-gradient(120deg,#064360,#00658f); }
+.banner { background:linear-gradient(120deg,#061f5c,#034f64); }
 .banner-cards span:nth-child(2) { color:var(--brand-magenta); }
 .banner-cards span:nth-child(3) { color:var(--brand-green-dark); }
 .banner-cards span:nth-child(4) { color:var(--support-blue); }
@@ -366,7 +366,7 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
 .fase-strip li:nth-child(4):not(.dim) .nr { background:var(--support-blue); }
 .cases-section { background:#edf2f5; }
 .case-domain { color:var(--brand-blue-dark); }
-.badge { background:#fbeaf2; color:#a81c60; }
+.badge { background:#fbeaf2; color:#8f165b; }
 .site-footer { background:#edf2f5; }
 
 .groep-top { display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:8px; }
@@ -384,3 +384,31 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
 .footer-art img { display:block; width:100%; height:100%; object-fit:cover; object-position:center 55%; }
 @media(max-width:600px) { .footer-art { height:130px; }.footer-art img { object-position:58% center; } }
 @media(prefers-reduced-motion:reduce) { .groep-card,.groep-card .go svg { transition:none; }.groep-card:hover,.groep-card:hover .go svg { transform:none; } }
+
+/* Exact merkpalet 9 oktober 2026. Heldere tinten dienen als accenten. */
+:root {
+  --brand-ice:#C7E1E2; --brand-glass:#D9EAF1;
+  --brand-raspberry:#D80950; --brand-aubergine:#8F165B;
+  --brand-rose:#E496BD; --brand-crimson:#9E1545;
+  --brand-sun:#F5B42C; --brand-ochre:#F17C18;
+  --brand-cyan:#11A5BD; --brand-teal:#038192;
+  --brand-petrol:#034F64; --brand-cobalt:#022E87;
+  --brand-night:#061F5C; --brand-dark-teal:#055566;
+}
+.groep-ai { --accent:var(--brand-raspberry); --accent-bg:#fcf0f6; }
+.groep-leren { --accent:var(--brand-dark-teal); --accent-bg:#eef6f5; }
+.groep-platforms { --accent:var(--brand-cobalt); --accent-bg:#eef3fb; }
+.site-header { background:rgba(248,250,252,.94); }
+.hero-panel { background:linear-gradient(110deg,#fff 35%,#edf5f7); }
+.btn { background:var(--brand-petrol); border-color:var(--brand-petrol); }
+.btn:hover { background:var(--brand-night); border-color:var(--brand-night); }
+.btn.ghost { background:transparent; border-color:var(--brand-petrol); color:var(--brand-petrol); }
+.btn.light { background:white; border-color:white; color:var(--brand-petrol); }
+.site-header .nav-desktop>li:last-child>a { background:var(--brand-petrol); }
+.banner { background:linear-gradient(120deg,var(--brand-petrol),var(--brand-dark-teal)); }
+.fase-strip li:nth-child(2):not(.dim) .nr { background:var(--brand-ochre); color:var(--brand-night); }
+.fase-strip li:nth-child(3):not(.dim) .nr { background:var(--brand-raspberry); color:white; }
+.fase-strip li:nth-child(4):not(.dim) .nr { background:var(--brand-night); color:white; }
+.cta-bar { background:#edf5f7; border-color:var(--brand-glass); }
+.site-footer { background:#edf5f7; }
+.footer-art::before { background:linear-gradient(180deg,#edf5f7,transparent 48%); }
