@@ -331,3 +331,5 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
 .menu[open] .menu-groep a { padding: 10px 12px 10px 24px; font-size: 1rem; }
 @media (max-width: 1000px) { .mega { right: -60px; } }
 .nowrap { white-space: nowrap; }
+
+.case-card { container-type: inline-size; }
