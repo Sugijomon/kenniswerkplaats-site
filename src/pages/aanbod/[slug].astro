@@ -96,40 +96,40 @@ const visueel = governance || ontwerp;
 <style>
   .governance-hero { display:grid; grid-template-columns:minmax(0,1.65fr) minmax(260px,1fr); gap:40px; align-items:center; }
   .governance-page .lead { max-width:44rem; }
-  .governance-page .note { display:flex; align-items:center; gap:18px; background:#fff0cf; border-color:#dba536; color:#624612; padding:20px 24px; border-radius:0 14px 14px 0; }
+  .governance-page .note { display:flex; align-items:center; gap:18px; background:#fff0cf; border-color:#f5b42c; color:#624612; padding:20px 24px; border-radius:0 14px 14px 0; }
   .governance-page .note :global(svg) { flex-shrink:0; }
   .icon-list li { padding:0; display:flex; align-items:flex-start; gap:14px; margin-bottom:16px; }
   .icon-list li::before { display:none; }
-  .icon-list :global(svg) { flex-shrink:0; margin-top:3px; color:#117a65; }
+  .icon-list :global(svg) { flex-shrink:0; margin-top:3px; color:#038192; }
   .icon-list li:nth-child(2) :global(svg) { color:#a87512; }
-  .icon-list li:nth-child(3) :global(svg) { color:#a81c60; }
+  .icon-list li:nth-child(3) :global(svg) { color:#8f165b; }
   .governance-page :global(.fase-strip li.dim) { opacity:1; background:transparent; border-color:var(--line); color:var(--ink-2); }
-  .governance-page :global(.fase-strip li:nth-child(1) .nr) { background:#117a65; }
-  .governance-page :global(.fase-strip li:nth-child(2) .nr) { background:#94640e; }
-  .governance-page :global(.fase-strip li:nth-child(3) .nr) { background:#c8156b; }
-  .governance-page :global(.fase-strip li:nth-child(4) .nr) { background:#183e55; }
-  .governance-page :global(.fase-strip li.on) { box-shadow:0 10px 28px #183e5518; border:2px solid #183e55; }
-  .ontwerp-page .note { background:#eaf3f8; border-color:var(--brand-blue-dark); color:var(--ink-2); }
+  .governance-page :global(.fase-strip li:nth-child(1) .nr) { background:#038192; }
+  .governance-page :global(.fase-strip li:nth-child(2) .nr) { background:#8f165b; }
+  .governance-page :global(.fase-strip li:nth-child(3) .nr) { background:#d80950; }
+  .governance-page :global(.fase-strip li:nth-child(4) .nr) { background:#034f64; }
+  .governance-page :global(.fase-strip li.on) { box-shadow:0 10px 28px #034f6418; border:2px solid #034f64; }
+  .ontwerp-page .note { background:#eef5f9; border-color:var(--brand-blue-dark); color:var(--ink-2); }
   .ontwerp-page .icon-list :global(svg) { color:var(--brand-blue-dark); }
   .ontwerp-page :global(.fase-strip li.dim) { color:var(--ink-3); background:transparent; }
   .ontwerp-page :global(.fase-strip li.on) { border-color:var(--brand-blue-dark); background:#fff; }
   .ontwerp-page {
-    --ink:#183e55; --ink-2:#435968; --ink-3:#546b78;
-    --brand-blue-dark:#116f75; --teal-900:#183e55; --teal-700:#116f75;
-    --teal-600:#167f70; --teal-400:#72a7a6; --teal-100:#dceceb; --teal-50:#eef5f3;
+    --ink:#034f64; --ink-2:#435968; --ink-3:#546b78;
+    --brand-blue-dark:#055566; --teal-900:#034f64; --teal-700:#055566;
+    --teal-600:#038192; --teal-400:#72a7a6; --teal-100:#dceceb; --teal-50:#eef5f3;
     background:#f4f7f6;
   }
-  .ontwerp-page :global(.btn:not(.ghost)) { background:#116f75; border-color:#116f75; }
-  .ontwerp-page :global(.btn:not(.ghost):hover) { background:#183e55; border-color:#183e55; }
-  .ontwerp-page .note { background:#fbf1d8; border-color:#dba536; color:#614b20; }
-  .ontwerp-page .icon-list li:nth-child(1) :global(svg) { color:#116f75; }
-  .ontwerp-page .icon-list li:nth-child(2) :global(svg) { color:#a57816; }
-  .ontwerp-page .icon-list li:nth-child(3) :global(svg) { color:#c21868; }
-  .ontwerp-page :global(.fase-strip li.on) { border-color:#92b8b4; background:#fff; box-shadow:0 8px 24px #183e550c; }
-  .ontwerp-page :global(.fase-strip li:nth-child(1) .nr) { background:#167f70; }
-  .ontwerp-page :global(.fase-strip li:nth-child(2) .nr) { background:#a57816; }
-  .ontwerp-page :global(.fase-strip li:nth-child(3) .nr) { background:#c21868; }
-  .ontwerp-page :global(.fase-strip li:nth-child(4) .nr) { background:#183e55; }
+  .ontwerp-page :global(.btn:not(.ghost)) { background:#055566; border-color:#055566; }
+  .ontwerp-page :global(.btn:not(.ghost):hover) { background:#034f64; border-color:#034f64; }
+  .ontwerp-page .note { background:#fbf1d8; border-color:#f5b42c; color:#614b20; }
+  .ontwerp-page .icon-list li:nth-child(1) :global(svg) { color:#055566; }
+  .ontwerp-page .icon-list li:nth-child(2) :global(svg) { color:#8f165b; }
+  .ontwerp-page .icon-list li:nth-child(3) :global(svg) { color:#d80950; }
+  .ontwerp-page :global(.fase-strip li.on) { border-color:#92b8b4; background:#fff; box-shadow:0 8px 24px #034f640c; }
+  .ontwerp-page :global(.fase-strip li:nth-child(1) .nr) { background:#038192; }
+  .ontwerp-page :global(.fase-strip li:nth-child(2) .nr) { background:#8f165b; }
+  .ontwerp-page :global(.fase-strip li:nth-child(3) .nr) { background:#d80950; }
+  .ontwerp-page :global(.fase-strip li:nth-child(4) .nr) { background:#034f64; }
   .ontwerp-page :global(.cases-section) { background:#eaf1f3; }
   /* Selectieve beeldfragmenten; de contentlaag blijft rustig en klikbaar. */
   .ontwerp-page .page-head { position:relative; isolation:isolate; overflow:hidden; }
@@ -143,3 +143,5 @@ const visueel = governance || ontwerp;
   @media(max-width:760px) { .art-space { display:none; }.ontwerp-page .page-head::before { right:-180px; top:0; width:440px; height:440px; opacity:.07; }.ontwerp-page>section:nth-of-type(2)::before,.ontwerp-page>section:last-child::before { display:none; } }
   @media(max-width:760px) { .governance-hero { grid-template-columns:1fr; gap:24px; } .governance-hero :global(.governance-art),.governance-hero :global(.platform-art) { max-width:300px; } }
 </style>
+
+<style>.governance-page :global(.fase-strip li:nth-child(2) .nr) { background:var(--brand-ochre); color:var(--brand-night); }</style>
