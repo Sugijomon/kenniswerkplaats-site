@@ -1,0 +1,171 @@
+{
+  "tokenPairs": 65,
+  "pages": 76,
+  "checks": 1662,
+  "observedElements": 8964,
+  "minimumTextRatio": 4.74,
+  "minimumIconRatio": 4.772,
+  "minimumLargeTextRatio": 7.851,
+  "domainIcons": [
+    {
+      "label": "icoon org / org-tint",
+      "ratio": 5.307,
+      "minimum": 3,
+      "type": "icon"
+    },
+    {
+      "label": "icoon tech / tech-tint",
+      "ratio": 5.116,
+      "minimum": 3,
+      "type": "icon"
+    },
+    {
+      "label": "icoon leren / leren-tint",
+      "ratio": 5.914,
+      "minimum": 3,
+      "type": "icon"
+    }
+  ],
+  "baseGreenOnWhite": 3.13,
+  "complexBackgrounds": [
+    {
+      "url": "/voorbeeld-logopalet/",
+      "backgrounds": [
+        [
+          233,
+          243,
+          238
+        ],
+        [
+          250,
+          244,
+          232
+        ]
+      ],
+      "foreground": [
+        30,
+        43,
+        55
+      ],
+      "image": "linear-gradient(125deg, rgb(233, 243, 238), rgb(250, 244, 232))",
+      "minimum": 3,
+      "sample": "Samen uitzoeken wat werkt. Daarna zorgen dat het blijft werken."
+    },
+    {
+      "url": "/voorbeeld-logopalet/",
+      "backgrounds": [
+        [
+          233,
+          243,
+          238
+        ],
+        [
+          250,
+          244,
+          232
+        ]
+      ],
+      "foreground": [
+        66,
+        82,
+        96
+      ],
+      "image": "linear-gradient(125deg, rgb(233, 243, 238), rgb(250, 244, 232))",
+      "minimum": 4.5,
+      "sample": "Ik help organisaties en samenwerkingsverbanden om zicht te krijgen op een lastig"
+    },
+    {
+      "url": "/voorbeeld-logopalet/",
+      "backgrounds": [
+        [
+          233,
+          243,
+          238
+        ],
+        [
+          250,
+          244,
+          232
+        ]
+      ],
+      "foreground": [
+        30,
+        43,
+        55
+      ],
+      "image": "linear-gradient(125deg, rgb(233, 243, 238), rgb(250, 244, 232))",
+      "minimum": 4.5,
+      "sample": "Bekijk vraagstukken"
+    },
+    {
+      "url": "/voorbeeld-logopalet/",
+      "backgrounds": [
+        [
+          233,
+          243,
+          238
+        ],
+        [
+          250,
+          244,
+          232
+        ]
+      ],
+      "foreground": [
+        30,
+        43,
+        55
+      ],
+      "image": "linear-gradient(125deg, rgb(233, 243, 238), rgb(250, 244, 232))",
+      "minimum": 3,
+      "sample": "Samen uitzoeken wat werkt. Daarna zorgen dat het blijft werken."
+    },
+    {
+      "url": "/voorbeeld-logopalet/",
+      "backgrounds": [
+        [
+          233,
+          243,
+          238
+        ],
+        [
+          250,
+          244,
+          232
+        ]
+      ],
+      "foreground": [
+        66,
+        82,
+        96
+      ],
+      "image": "linear-gradient(125deg, rgb(233, 243, 238), rgb(250, 244, 232))",
+      "minimum": 4.5,
+      "sample": "Ik help organisaties en samenwerkingsverbanden om zicht te krijgen op een lastig"
+    },
+    {
+      "url": "/voorbeeld-logopalet/",
+      "backgrounds": [
+        [
+          233,
+          243,
+          238
+        ],
+        [
+          250,
+          244,
+          232
+        ]
+      ],
+      "foreground": [
+        30,
+        43,
+        55
+      ],
+      "image": "linear-gradient(125deg, rgb(233, 243, 238), rgb(250, 244, 232))",
+      "minimum": 4.5,
+      "sample": "Bekijk vraagstukken"
+    }
+  ],
+  "failures": []
+}

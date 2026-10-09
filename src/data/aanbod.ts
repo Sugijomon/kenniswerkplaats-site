@@ -1,3 +1,5 @@
+import type { Domein } from './domeinen';
+
 // Aanbod: drie groepen, negen onderdelen. Elk onderdeel hangt aan een of twee fasen
 // en toont onderaan de bijbehorende praktijkcases (ids uit cases.ts).
 
@@ -5,6 +7,7 @@ import type { FaseKey } from './fasen';
 
 export interface AanbodItem {
   slug: string;
+  domein: Domein;
   naam: string;
   groep: string;
   fasen: FaseKey[];
@@ -22,7 +25,7 @@ export interface AanbodItem {
 export type GroepKey = 'ai' | 'leren' | 'platforms';
 
 export interface AanbodGroep {
-  key: GroepKey; // bepaalt de accentkleur (zie .groep-* in global.css)
+  key: GroepKey; // redactionele groepering; kleur volgt het domein van elk item
   naam: string;
   tekst: string;
   kort: string; // zin op de groepskaart (homepage)
@@ -57,6 +60,7 @@ export const aanbod: AanbodItem[] = [
   // ── Verantwoord werken met AI ────────────────────────────────
   {
     slug: 'ai-foto',
+    domein: 'tech',
     naam: 'AI-Foto',
     groep: 'Verantwoord werken met AI',
     fasen: ['zicht'],
@@ -81,6 +85,7 @@ export const aanbod: AanbodItem[] = [
   },
   {
     slug: 'grip-op-ai-in-hr',
+    domein: 'tech',
     naam: 'GRIP op AI in HR',
     groep: 'Verantwoord werken met AI',
     fasen: ['ontwerp'],
@@ -105,6 +110,7 @@ export const aanbod: AanbodItem[] = [
   },
   {
     slug: 'ai-op-orde',
+    domein: 'org',
     naam: 'AI op Orde',
     groep: 'Verantwoord werken met AI',
     fasen: ['ontwikkel', 'sturen'],
@@ -133,6 +139,7 @@ export const aanbod: AanbodItem[] = [
   // ── Leren en ontwikkelen ─────────────────────────────────────
   {
     slug: 'praktijklab',
+    domein: 'leren',
     naam: 'Praktijklab',
     groep: 'Leren en ontwikkelen',
     fasen: ['ontwerp'],
@@ -157,6 +164,7 @@ export const aanbod: AanbodItem[] = [
   },
   {
     slug: 'leermodule-op-maat',
+    domein: 'leren',
     naam: 'Leermodule op maat',
     groep: 'Leren en ontwikkelen',
     fasen: ['ontwerp', 'ontwikkel'],
@@ -179,6 +187,7 @@ export const aanbod: AanbodItem[] = [
   },
   {
     slug: 'ai-bekwaamheid',
+    domein: 'leren',
     naam: 'AI-bekwaamheid',
     groep: 'Leren en ontwikkelen',
     fasen: ['ontwikkel'],
@@ -204,6 +213,7 @@ export const aanbod: AanbodItem[] = [
   // ── Digitale platforms ───────────────────────────────────────
   {
     slug: 'ontwerp-en-ontwikkeling',
+    domein: 'tech',
     naam: 'Ontwerp en ontwikkeling',
     groep: 'Digitale platforms',
     fasen: ['ontwerp', 'ontwikkel'],
@@ -226,6 +236,7 @@ export const aanbod: AanbodItem[] = [
   },
   {
     slug: 'implementatie',
+    domein: 'org',
     naam: 'Implementatie',
     groep: 'Digitale platforms',
     fasen: ['ontwikkel'],
@@ -248,6 +259,7 @@ export const aanbod: AanbodItem[] = [
   },
   {
     slug: 'governance-en-evaluatie',
+    domein: 'org',
     naam: 'Governance en evaluatie',
     groep: 'Digitale platforms',
     fasen: ['sturen'],

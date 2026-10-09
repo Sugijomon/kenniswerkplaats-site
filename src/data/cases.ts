@@ -1,3 +1,5 @@
+import type { Domein } from './domeinen';
+
 // Praktijkcases, gebaseerd op het master-cv (v7).
 // Regel: vul een fase alleen als de case die aantoonbaar bewijst.
 //   2 = bewezen, 1 = gedeeltelijk, 0 = niet.
@@ -9,7 +11,8 @@ export interface Case {
   id: string;
   vraagstuk: string;
   organisatie: string;
-  domein: string;
+  domein: string; // bestaande sectoromschrijving blijft ongewijzigd
+  kleurDomein: Domein;
   periode: string;
   rol: string;
   fasen: Record<FaseKey, 0 | 1 | 2>;
@@ -22,6 +25,7 @@ export const cases: Case[] = [
   // ── Zicht krijgen ─────────────────────────────────────────────
   {
     id: 'addventure',
+    kleurDomein: 'tech',
     vraagstuk: 'Wat doen docenten echt met digitale tools?',
     organisatie: 'Rotterdam Business School · Addventure',
     domein: 'Onderwijs · digitaal',
@@ -35,6 +39,7 @@ export const cases: Case[] = [
   },
   {
     id: 'enexis',
+    kleurDomein: 'org',
     vraagstuk: 'Hoe staat het met kennisdelen, en wat betekent dat voor HR?',
     organisatie: 'Enexis',
     domein: 'Organisatie · HR',
@@ -48,6 +53,7 @@ export const cases: Case[] = [
   },
   {
     id: 'rode-kruis',
+    kleurDomein: 'tech',
     vraagstuk: 'Hoe zetten we onze online kanalen in, en wat werkt?',
     organisatie: 'Nederlandse Rode Kruis',
     domein: 'Organisatie · digitaal',
@@ -61,6 +67,7 @@ export const cases: Case[] = [
   },
   {
     id: 'zorgwise',
+    kleurDomein: 'tech',
     vraagstuk: 'Welk platform vervangt dit, of is dat de verkeerde vraag?',
     organisatie: 'Viazorg · regionaal leerplatform Zorgwise',
     domein: 'Zorg · platform',
@@ -76,6 +83,7 @@ export const cases: Case[] = [
   // ── Ontwerpen ─────────────────────────────────────────────────
   {
     id: 'viazorg-flexplatform',
+    kleurDomein: 'org',
     vraagstuk: 'Hoe komen tien zorgorganisaties tot één werkbare aanpak?',
     organisatie: 'Viazorg · Deltaplan 2.0',
     domein: 'Zorg · regionale samenwerking',
@@ -89,6 +97,7 @@ export const cases: Case[] = [
   },
   {
     id: 'balans-flex-vast',
+    kleurDomein: 'org',
     vraagstuk: 'Hoe kom je van een gedeeld probleem naar gezamenlijke bouwstenen?',
     organisatie: 'Viazorg · Balans flex/vast',
     domein: 'Zorg · arbeidsmarkt',
@@ -102,6 +111,7 @@ export const cases: Case[] = [
   },
   {
     id: 'hz-plj',
+    kleurDomein: 'leren',
     vraagstuk: 'Hoe vertaal je een landelijk beroepsprofiel naar uitvoerbaar onderwijs?',
     organisatie: 'HZ University of Applied Sciences',
     domein: 'Onderwijs · leren',
@@ -117,6 +127,7 @@ export const cases: Case[] = [
   // ── Ontwikkelen ───────────────────────────────────────────────
   {
     id: 'corpio',
+    kleurDomein: 'tech',
     vraagstuk: 'Hoe krijg je één scholingsplatform werkend voor twee organisaties zonder hiërarchie?',
     organisatie: 'De huisartsenconnectie & Nucleuszorg',
     domein: 'Zorg · platform',
@@ -130,6 +141,7 @@ export const cases: Case[] = [
   },
   {
     id: 'moodle-rbs',
+    kleurDomein: 'tech',
     vraagstuk: 'Hoe richt je een leeromgeving in die door meerdere hogescholen gedragen wordt?',
     organisatie: 'Rotterdam Business School · Circular Economy in the Cloud',
     domein: 'Onderwijs · platform',
@@ -143,6 +155,7 @@ export const cases: Case[] = [
   },
   {
     id: 'quarterly-review',
+    kleurDomein: 'org',
     vraagstuk: 'Hoe wordt een nieuw kwaliteitsinstrument onderdeel van de gewone cyclus?',
     organisatie: 'HZ University of Applied Sciences · Quarterly Review',
     domein: 'Onderwijs · kwaliteit',
@@ -156,6 +169,7 @@ export const cases: Case[] = [
   },
   {
     id: 'green-key',
+    kleurDomein: 'org',
     vraagstuk: 'Hoe maak je duurzaamheid onderdeel van het gewone werk?',
     organisatie: 'Hotels, restaurants en festivals · Green Key',
     domein: 'Duurzaamheid · hospitality',
@@ -170,6 +184,7 @@ export const cases: Case[] = [
   // ── Sturen & evalueren ────────────────────────────────────────
   {
     id: 'heineken',
+    kleurDomein: 'org',
     vraagstuk: 'Hoe houd je een internationaal merkplatform bestuurbaar?',
     organisatie: 'Heineken International · Brand Portal',
     domein: 'Organisatie · platform',
@@ -182,6 +197,7 @@ export const cases: Case[] = [
   },
   {
     id: 'urway',
+    kleurDomein: 'org',
     vraagstuk: 'Werkt een online leeromgeving voor jongeren die buiten het onderwijs zijn geraakt?',
     organisatie: 'TU Delft · UrWay.nl (OCW-pilot)',
     domein: 'Onderwijs · evaluatie',
@@ -195,6 +211,7 @@ export const cases: Case[] = [
   },
   {
     id: 'delft-ocw',
+    kleurDomein: 'org',
     vraagstuk: 'Wat levert open onderwijsmateriaal op voor het bedrijfsleven?',
     organisatie: 'TU Delft · ministerie van OCW',
     domein: 'Onderwijs · evaluatie',
@@ -207,6 +224,7 @@ export const cases: Case[] = [
   },
   {
     id: 'stad-esch',
+    kleurDomein: 'tech',
     vraagstuk: 'Wat levert één laptop per leerling werkelijk op?',
     organisatie: 'Kennisnet · Stad+Esch',
     domein: 'Onderwijs · digitaal',

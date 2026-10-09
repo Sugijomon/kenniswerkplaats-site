@@ -1,61 +1,71 @@
-# Kenniswerkplaats visuele stijl
+# Kenniswerkplaats: kleursysteem
 
-Versie 2 · 9 oktober 2026. De aangeleverde exacte kleurentabel is de kleurbron. Dit document vervangt de eerdere kleurengids met groen en oker als hoofdcategorieën.
+Versie 3 · 9 oktober 2026. Deze rolverdeling vervangt het eerdere functionele merkpalet. De bron voor UI-kleuren is de ene `:root` bovenaan `src/styles/global.css`.
 
-## Identiteit
+## Rollen en tokens
 
-Deskundig, menselijk en praktisch. Een lichte, rustige interface met diep gekleurde typografie en selectieve merkaccenten. Behoud het transparante horizontale woordmerk en de vierkleurige favicon met oranje bovenaan.
+| Token | Kleur | Gebruik |
+| --- | --- | --- |
+| `--ink` | #004E70 | Marine voor koppen en hoofdtekst |
+| `--ink-2` | #435871 | Lopende tekst en toelichting |
+| `--ink-3` | #586B7C | Ondergeschikte tekst |
+| `--action` | #034F64 | Alle knoppen, links en focusranden; bestaande knopkleur |
+| `--action-hover` | #003D4E | Donkere actievariant bij hover |
+| `--action-tint` | #EBF1F3 | Lichte achtergrond bij acties |
+| `--paper` | #F7F8F6 | Pagina-achtergrond |
+| `--card` | #FFFFFF | Kaarten en dialogs |
+| `--surface` | #EAF0F2 | Neutrale ondersteunende vlakken |
+| `--phase` | #034F64 | Neutrale teal voor bewijsstatus, onafhankelijk van domein |
+| `--org` | #B52A68 | Organisatie & governance: magenta |
+| `--org-tint` | #F9EEF3 | Lichte domeinachtergrond |
+| `--org-ink` | #9A2057 | Domeintekst op wit en lichte achtergronden |
+| `--tech` | #006D9A | Technologie & AI: blauw |
+| `--tech-tint` | #EBF3F7 | Lichte domeinachtergrond |
+| `--tech-ink` | #005779 | Domeintekst op wit en lichte achtergronden |
+| `--leren` | #709F3A | Leren & ontwikkelen: groen |
+| `--leren-tint` | #F4F7EF | Lichte domeinachtergrond |
+| `--leren-ink` | #486823 | Domeintekst en groene lijniconen |
 
-## Exact palet
+De drie domeintinten zijn afgeronde mengingen van 8% basiskleur met 92% wit. Lijnen en schaduwen gebruiken neutrale tokens. Bestaande `--teal-*` en vijf `--brand-*` namen zijn compatibiliteitsaliassen; voeg geen nieuw functioneel palet naast de rollen toe. Oranje heeft geen UI-token en blijft in het logo en de bijbehorende favicon.
 
-| Naam | Hex | Rol |
-|---|---|---|
-| IJsblauw | #C7E1E2 | Lichte lagen en zachte randen |
-| Matglas | #D9EAF1 | Panelen en ondersteunende vlakken |
-| Framboos | #D80950 | AI en gerichte accenten |
-| Aubergine | #8F165B | Donkere magentatekst en details |
-| Zacht roze | #E496BD | Decoratieve zachte tint |
-| Crimson | #9E1545 | Ondersteunend donker accent |
-| Zonnegeel | #F5B42C | Kleine warme vlakken |
-| Warm oker | #F17C18 | Nummering en illustratieaccenten |
-| Helder cyaan | #11A5BD | Illustraties en decoratie |
-| Midden teal | #038192 | Ondersteunende accenten |
-| Donker petrol | #034F64 | Primaire knoppen en diepe vlakken |
-| Kobalt | #022E87 | Digitale platforms |
-| Nachtblauw | #061F5C | Titels en hoofdtekst |
-| Donker teal | #055566 | Leren en ontwikkelen |
+## Inhoud bepaalt het domein
 
-De categorieën blijven duidelijk verschillend: AI framboos, leren donker teal als groenachtige tint, platforms kobalt. Oranje en geel zijn ondersteunend in kunst en vormen geen extra categorie. Koppel kleur aan het onderwerp van de gekoppelde dienst; nooit aan de positie van een kaart in een rij.
+`src/data/domeinen.ts` bevat de typecodes `org | tech | leren` en hun leesbare namen. Ieder vraagstuk en ieder aanbodonderdeel heeft een verplicht `domein`. De redactionele groepen AI, leren en platforms blijven ongewijzigd. Een aanbodgroep bepaalt geen kleur: bijvoorbeeld Implementatie staat nog bij Digitale platforms, maar heeft domein `org`.
 
-## Componenten en beelden
+| Onderwerp | Domein | Reden |
+| --- | --- | --- |
+| AI-Foto, GRIP op AI in HR, Shadow AI, AI in HR, Copilot | tech | Feitelijk gebruik en toepassingen van technologie |
+| AI op Orde, Weinig grip op AI, AI Act | org | Afspraken, eigenaarschap, verantwoordingsstructuur en sturing |
+| Praktijklab, Leermodule op maat, AI-bekwaamheid, Losse pilots | leren | Gezamenlijk onderzoeken, ontwerpen en vaardigheden ontwikkelen |
+| Samenwerken, Implementatie, Governance en evaluatie, Het komt niet van de grond, Wat levert het op? | org | Samenwerking, borging, evaluatie en besluitvorming |
+| Ontwerp en ontwikkeling, Samen een platform | tech | Platformontwerp, inrichting en koppelingen |
 
-Gebruik Figtree, ruime witruimte, witte kaarten en zachte schaduwen. Accentranden blijven recht; kaders mogen afgerond zijn. Gebruik badges alleen als ze nuttige informatie toevoegen. Het aanbodmenu heeft drie kolommen. Casekaarten openen compacte dialogs met bestaande feiten en fasescores.
+Copilot als vraagstuk blijft `tech`, terwijl het gekoppelde aanbod AI-bekwaamheid `leren` is. Samenwerken is `org`, terwijl het gekoppelde Praktijklab `leren` is. Dit zijn verschillende invalshoeken, geen reden om een kleur uit de bestemming af te leiden.
 
-Mensgerichte lijnillustraties blijven uitsluitend op de homepage. Andere pagina’s behouden hun eigen eerdere illustraties. Abstracte kunst verschijnt selectief: zachte achtergrondfragmenten op Ontwerp en ontwikkeling, een kunstvlak naast Governance en evaluatie, lichte randaccenten op Aanbod en Werkwijze, en een overgang tussen werkwijze en cases op de homepage. De inhoudsvlakken blijven rustig. De standaardfooter is puur typografisch, zonder kunststrook.
+Cases behouden hun bestaande sectoromschrijving in `domein`. Een afzonderlijk `kleurDomein` geeft de presentatierol aan. Zowel de oorspronkelijke sectoromschrijving als de nieuwe domeinnaam blijven zichtbaar. De indeling is expliciet, nooit automatisch afgeleid uit een woord als Zorg of Onderwijs:
 
-## Functionele kleurrollen
+- tech: Addventure, Rode Kruis, Zorgwise, Corpio, Moodle RBS, Stad+Esch.
+- org: Enexis, Viazorg flexplatform, Balans flex/vast, Quarterly Review, Green Key, Heineken, UrWay, Delft OpenCourseWare.
+- leren: HZ Personal Learning Journeys.
 
-- Primaire acties gebruiken altijd donker petrol #034F64 met witte tekst; hover is nachtblauw #061F5C. Secundaire acties krijgen petroltekst op wit of een lichte achtergrond. Op een donkere banner kan de primaire knop een witte variant met petroltekst zijn.
-- Hoofdkoppen gebruiken nachtblauw; hoofdtekst en toelichting gebruiken de vaste tekstkleuren. Gebruik geen willekeurige categoriekleur voor een gewone kop.
-- Categorieaccenten verschijnen alleen waar de inhoud duidelijk bij AI, leren of platforms hoort: domeinlabels, vraagstukiconen, categorieknopen en dienstpillen.
-- Gewone kaarten zijn wit met lichte neutrale randen. Functionele iconen zonder categorie zijn petrol of grijsblauw. Iconen binnen één informatieblok krijgen geen afwisselende kleuren.
-- De praktijklabbanner is effen petrol. Kleine illustratieve objecten mogen kleur bevatten; de interface eromheen blijft rustig.
-- De verhouding 60–30–10 is inspiratie, geen norm of meetdoel. Kies overwegend lichte vlakken, donkere tekst en spaarzame betekenisvolle accenten.
+## Toepassing
 
-## Proceslijn en bewijsstatus
+Vraagstuktegels en aanbodkaarten krijgen een rond icoonvlak in de domeintint. Het icoon gebruikt de basiskleur, behalve bij leren: daar is ook de donkere variant nodig voor voldoende contrast. Domeinlabels gebruiken altijd de `--x-ink` variant. De domeinnaam staat in tekst; kleur is nooit de enige informatiebron.
 
-Een algemeen fasenoverzicht heeft geen geselecteerde stap: alle nummers zijn neutraal. Op een aanbodpagina krijgen uitsluitend de toepasselijke fasen petrolnummers en een duidelijke rand. Inactieve fasen blijven leesbaar; verminder niet de dekking van de hele kaart.
+Alle actieknoppen en links gebruiken de actie-rol, met witte tekst op een donkere knop of donkere actie-tekst op een lichte achtergrond. Gewone koppen blijven marine. De categorieën in navigatie en de nummers in de mini-mindmap zijn neutraal; individuele onderwerpen dragen hun eigen domeinlabel. Kaarten blijven wit, met zachte randen en schaduwen.
 
-Casecirkels geven bewijsstatus aan, geen voortgang: gevulde petrolcirkel is bewezen, halfgevuld is deels en leeg is niet in deze case. Verander geen fasescores om de presentatie aantrekkelijker te maken. Labels en toegankelijkheidstekst blijven behouden.
+Hero en praktijklabbanner gebruiken wit of een zeer lichte tint. De vijf echte AISA-kaarten en de compacte beeldruimte in de praktijklabbanner blijven behouden. De homepage-illustratie blijft behouden: zij gebruikt zacht magenta, teal, gedempt groen en donkere contouren op een lichte achtergrond. Het horizontale logo behoudt zijn eigen beeldkleuren: oranje, magenta, donkerblauw en petrol. Logo- en illustratiekleuren vormen geen extra functionele UI-rollen.
 
-## Leesbaarheid
+Abstracte decoratie wordt in grijstinten getoond, zodat oranje buiten logo/favicon geen rol speelt en kunst niet met domeinaccenten concurreert. Zij blijft buiten de toegankelijkheidsboom en buiten klikbare controls. Op pagina's met achtergrondkunst heeft de kleine breadcrumbtekst een ondoorzichtige paper-achtergrond; de hoofdtekst houdt voldoende contrast bij de maximale decoratie-opacity. Mensgerichte illustraties blijven alleen op de homepage. De footer blijft typografisch, zonder kunststrook.
 
-Gebruik donkerblauw of petrol voor tekst op lichte vlakken. Oranje, geel, ijsblauw en roze zijn geen kleine tekstkleuren op wit. Heldere tinten kunnen een donkere labeltekst krijgen. Behoud zichtbare toetsenbordfocus en statusinformatie die niet alleen van kleur afhangt. Streef naar WCAG AA en controleer elke relevante combinatie. Dit palet is geen volledige toegankelijkheidsaudit.
+Fasecirkels tonen bewijsstatus: gevuld is bewezen, halfgevuld is deels, leeg is niet in deze case. Zij gebruiken neutrale teal, met bestaande statusnamen voor schermlezers en een zichtbare legenda. Fasescores, case-inhoud en dialoggedrag veranderen niet. Algemene fasenoverzichten hebben geen geselecteerde stap; alleen de passende fasen op een aanbodpagina worden gemarkeerd.
 
-## Beheer
+## Contrast en verificatie
 
-Wijzig gedeelde kleuren via CSS-variabelen. Houd pagina-inhoud en navigatie intact bij een stijlronde. Controleer build en links, daarna weergave op desktop en 360px mobiel. Publiceer gecombineerd vanuit main.
+Groen #709F3A haalt op wit slechts 3,13:1 en op de eigen lichte tint minder dan 3:1. Gebruik deze kleur dus niet voor tekst of dunne betekenisvolle lijniconen. De donkere variant #486823 haalt op de eigen tint 5,91:1. Magenta en blauw halen als icoon op hun tint respectievelijk 5,31:1 en 5,12:1. Voor domeintekst gebruiken alle domeinen de donkere variant.
 
-## Vrije kunst en vaste interface
+`scripts/check-contrast.mjs` rekent met de WCAG 2.x-formule voor relatieve luminantie. Het toetst tekst tegen 4,5:1, grote tekst en iconen tegen 3:1, inclusief de kleurcombinaties uit browserobservaties. Transparante achtergronden worden samengesteld met hun ouderachtergrond; bewijsstipjes worden tegen hun buitenachtergrond getoetst. Extra conservatieve berekeningen gebruiken zwart als donkerste mogelijke decoratie bij de maximale opacity.
 
-Kunst mag het volledige merkpalet combineren zonder dat elke tint een categorie aanduidt. Houd de decoratie los van tekst en klikbare controles. Gebruik decoratieve beelden met lege alt-tekst en buiten de toegankelijkheidsboom. Op mobiel worden achtergrondaccenten kleiner of lichter. De typografische footer bevat geen kunst.
+Draai `npm run check`, `npm run build` en `node scripts/check-contrast.mjs`. De gegevenscontrole eist een geldig domein op alle onderwerpen en cases. Voor opgeslagen browserobservaties: `node scripts/check-contrast.mjs docs/reviews/kleursysteem/contrast-observaties.json`. Bekijk ook de gerenderde site op desktop en 360px, inclusief navigatie en dialogs. Logo's en rasterillustraties zijn geen functionele tekst/iconen in deze kleurcontrole; dit is geen volledige WCAG-audit.
+
+Historische ontwerpvoorbeelden behouden hun vergelijkingspaletten. De gezamenlijke componenten en contrasten worden wel meegecontroleerd; een botsende banner of onvoldoende duidelijke bewijsstipjes worden hersteld zonder de voorbeeldteksten te herschrijven. Het huidige kleursysteem geldt voor de hoofdsite.

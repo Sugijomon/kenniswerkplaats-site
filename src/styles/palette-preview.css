@@ -14,7 +14,6 @@
   --logo-blue: #1e2b37;
   --logo-magenta: #c22067;
   --logo-green: #117a65;
-  --logo-amber: #d48b28;
 }
 .palette-preview .groep-ai { --accent: #117a65; --accent-bg: #edf6f2; }
 .palette-preview .groep-leren { --accent: #925708; --accent-bg: #fff4e2; }
@@ -31,9 +30,9 @@
 .palette-preview .tile.t4 .n { background:#1e2b37; color:white; }
 .palette-preview .vraag-tile:nth-child(3n+2) .ico { color:#925708; background:#fff4e2; }
 .palette-preview .vraag-tile:nth-child(3n) .ico { color:#a51b58; background:#fbeaf1; }
-.palette-preview .banner { background:#1e2b37; }
+.palette-preview .banner { background:var(--paper); }
 .palette-preview :focus-visible { outline-color:#a51b58; }
-.palette-preview .banner :focus-visible { outline-color:white; }
+.palette-preview .banner :focus-visible { outline-color:var(--action); }
 .palette-preview .preview-notice { padding:14px 0; background:white; border-bottom:1px solid var(--line); }
 .palette-preview .preview-notice .wrap { display:flex; gap:16px; align-items:center; justify-content:space-between; flex-wrap:wrap; }
 .palette-preview .preview-notice p { margin:0; font-size:.9rem; }

@@ -1,3 +1,5 @@
+import type { Domein } from './domeinen';
+
 // Vraagstukken: de instap van de site. Elk vraagstuk verwijst naar één aanbodpagina.
 // `home: true` = tegel op de voorpagina (Herken je dit?).
 
@@ -5,6 +7,7 @@ export type Icoon = 'chip' | 'search' | 'doc' | 'rocket' | 'people' | 'target' |
 
 export interface Vraagstuk {
   id: string;
+  domein: Domein;
   titel: string;
   tekst: string;
   icoon: Icoon;
@@ -15,6 +18,7 @@ export interface Vraagstuk {
 export const vraagstukken: Vraagstuk[] = [
   {
     id: 'shadow-ai',
+    domein: 'tech',
     titel: 'Allerlei AI-tools',
     tekst: 'Medewerkers gebruiken allerlei AI-tools, maar niemand heeft overzicht.',
     icoon: 'chip',
@@ -23,6 +27,7 @@ export const vraagstukken: Vraagstuk[] = [
   },
   {
     id: 'grip-op-ai',
+    domein: 'org',
     titel: 'Weinig grip op AI',
     tekst: 'Er zijn losse afspraken, maar geen eigenaar en geen ritme.',
     icoon: 'search',
@@ -31,6 +36,7 @@ export const vraagstukken: Vraagstuk[] = [
   },
   {
     id: 'ai-act',
+    domein: 'org',
     titel: 'De AI Act',
     tekst: 'De AI-verordening vraagt om afspraken en AI-geletterdheid. Waar begin je?',
     icoon: 'doc',
@@ -39,6 +45,7 @@ export const vraagstukken: Vraagstuk[] = [
   },
   {
     id: 'losse-pilots',
+    domein: 'leren',
     titel: 'Losse pilots',
     tekst: 'Er lopen proeven, maar nog geen gezamenlijke keuzes.',
     icoon: 'rocket',
@@ -47,6 +54,7 @@ export const vraagstukken: Vraagstuk[] = [
   },
   {
     id: 'ai-in-hr',
+    domein: 'tech',
     titel: 'AI in HR',
     tekst: 'AI raakt werving, beoordeling en ontwikkeling, zonder duidelijke spelregels.',
     icoon: 'people',
@@ -55,6 +63,7 @@ export const vraagstukken: Vraagstuk[] = [
   },
   {
     id: 'copilot',
+    domein: 'tech',
     titel: 'Copilot zonder resultaat',
     tekst: 'De licenties zijn er, de training is gegeven, maar het werk verandert nauwelijks.',
     icoon: 'target',
@@ -63,6 +72,7 @@ export const vraagstukken: Vraagstuk[] = [
   },
   {
     id: 'samenwerken',
+    domein: 'org',
     titel: 'Samenwerken',
     tekst: 'Meerdere organisaties moeten tot één aanpak komen.',
     icoon: 'link',
@@ -70,6 +80,7 @@ export const vraagstukken: Vraagstuk[] = [
   },
   {
     id: 'samen-een-platform',
+    domein: 'tech',
     titel: 'Samen een platform',
     tekst: 'We willen een gedeeld platform, maar wat hebben we nodig en van wie is het?',
     icoon: 'layers',
@@ -77,6 +88,7 @@ export const vraagstukken: Vraagstuk[] = [
   },
   {
     id: 'platform-opbrengst',
+    domein: 'org',
     titel: 'Wat levert het op?',
     tekst: 'Een programma of platform loopt al een tijdje. Doorgaan, bijsturen of stoppen?',
     icoon: 'chart',
@@ -84,6 +96,7 @@ export const vraagstukken: Vraagstuk[] = [
   },
   {
     id: 'leermodule',
+    domein: 'leren',
     titel: 'Leermodule op maat',
     tekst: 'Er is een competentiekader, maar nog geen leerroute die erop aansluit.',
     icoon: 'book',
@@ -91,6 +104,7 @@ export const vraagstukken: Vraagstuk[] = [
   },
   {
     id: 'borging',
+    domein: 'org',
     titel: 'Het komt niet van de grond',
     tekst: 'Er ligt een plan, maar het wordt geen onderdeel van het gewone werk.',
     icoon: 'anchor',

@@ -1,4 +1,5 @@
 ---
+import { domeinen } from '../data/domeinen';
 import type { Case } from '../data/cases';
 import type { FaseKey } from '../data/fasen';
 import PhaseDots from './PhaseDots.astro';
@@ -6,17 +7,17 @@ interface Props { c: Case; highlight?: FaseKey[] }
 const { c, highlight = [] } = Astro.props;
 const aanpak = c.aanpak.split(' · ').filter(Boolean);
 ---
-<article class="case-card" id={`case-${c.id}`}>
-  <p class="case-domain">{c.domein}</p>
+<article class={`case-card domein-${c.kleurDomein}`} id={`case-${c.id}`}>
+  <p class="case-domain">{c.domein}<span class="case-kleurdomein">{domeinen[c.kleurDomein].naam}</span></p>
   <h3><button type="button" class="case-open" data-case-dialog={`dialog-${c.id}`} aria-haspopup="dialog">{c.vraagstuk}</button></h3>
   <p class="case-text case-summary">{c.tekst}</p>
   <p class="case-teaser-org">{c.organisatie}</p>
   <span class="case-read" aria-hidden="true">Bekijk de case <span>↗</span></span>
 </article>
-<dialog id={`dialog-${c.id}`} class="case-dialog" aria-labelledby={`title-${c.id}`}>
+<dialog id={`dialog-${c.id}`} class={`case-dialog domein-${c.kleurDomein}`} aria-labelledby={`title-${c.id}`}>
   <div class="dialog-inner">
   <form method="dialog"><button class="case-close" aria-label="Case sluiten">Sluiten <span aria-hidden="true">×</span></button></form>
-  <div class="case-meta-top"><p class="case-domain">{c.domein}</p><span class="organisation-badge">{c.organisatie}</span></div>
+  <div class="case-meta-top"><p class="case-domain">{c.domein}<span class="case-kleurdomein">{domeinen[c.kleurDomein].naam}</span></p><span class="organisation-badge">{c.organisatie}</span></div>
   <h2 id={`title-${c.id}`}>{c.vraagstuk}</h2>
   <p class="case-text">{c.tekst}</p>
   <p class="role-badge"><span>Mijn rol</span> {c.rol}</p>
@@ -48,20 +49,21 @@ const aanpak = c.aanpak.split(' · ').filter(Boolean);
   });
 </script>
 <style>
+  .case-kleurdomein { display:block; margin-top:3px; font-size:.6875rem; text-transform:none; letter-spacing:0; }
   .case-card { position:relative; padding:26px; transition:box-shadow .18s, border-color .18s; }
   .case-card:hover { border-color:var(--teal-400); box-shadow:0 12px 32px #10283a12; }
-  .case-open { padding:0; border:0; background:none; color:var(--ink); font:inherit; text-align:left; cursor:pointer; }
+  .case-open { padding:0; border:0; background:none; color:var(--action); font:inherit; text-align:left; cursor:pointer; }
   .case-open::after { content:''; position:absolute; inset:0; border-radius:var(--radius); }
   .case-open:focus-visible { outline:none; }
-  .case-open:focus-visible::after { outline:3px solid var(--brand-blue-dark); outline-offset:4px; }
+  .case-open:focus-visible::after { outline:3px solid var(--action); outline-offset:4px; }
   .case-summary { display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }
   .case-teaser-org { font-size:.875rem; color:var(--ink-3); margin:0; }
-  .case-read { margin-top:auto; padding-top:12px; color:var(--brand-blue-dark); font-weight:650; display:flex; justify-content:space-between; }
+  .case-read { margin-top:auto; padding-top:12px; color:var(--action); font-weight:650; display:flex; justify-content:space-between; }
   .case-dialog { width:min(820px,calc(100vw - 32px)); max-height:calc(100dvh - 32px); padding:0; border:1px solid var(--line); border-radius:24px; background:white; color:var(--ink); box-shadow:0 24px 80px #061f5c30; overflow:auto; font-size:.9375rem; line-height:1.45; }
   .case-dialog::backdrop { background:#061f5c66; backdrop-filter:blur(4px); }
   .dialog-inner { padding:24px 28px; container-type:inline-size; }
   form { display:flex; justify-content:flex-end; margin-bottom:8px; }
-  .case-close { border:1px solid var(--line); background:var(--teal-50); color:var(--ink); padding:8px 14px; border-radius:24px; font:inherit; cursor:pointer; display:flex; gap:12px; align-items:center; }
+  .case-close { border:1px solid var(--line); background:var(--action-tint); color:var(--action); padding:8px 14px; border-radius:24px; font:inherit; cursor:pointer; display:flex; gap:12px; align-items:center; }
   .case-close span { font-size:1.5rem; line-height:1; }
   h2 { font-size:clamp(1.25rem,3vw,1.65rem); margin-bottom:12px; }
   .case-dialog .case-text { font-size:.9375rem; margin-bottom:14px; }
@@ -72,7 +74,7 @@ const aanpak = c.aanpak.split(' · ').filter(Boolean);
   .case-dialog :global(.case-stepper) { margin:16px 0 12px; padding-top:14px; }
   .case-dialog .case-org { padding-top:10px; margin-bottom:0; font-size:.875rem; }
   .case-meta-top { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:12px; flex-wrap:wrap; }
-  .case-dialog .case-meta-top .case-domain { margin:0; background:#eef5f9; color:var(--brand-blue-dark); padding:5px 10px; border-radius:20px; font-size:.75rem; }
+  .case-dialog .case-meta-top .case-domain { margin:0; background:var(--domein-tint); color:var(--domein-ink); padding:5px 10px; border-radius:20px; font-size:.75rem; }
   .organisation-badge { padding:6px 10px; background:#f4f6f7; border:1px solid var(--line); border-radius:10px; font-size:.75rem; font-weight:650; }
   .role-badge { display:inline-flex; gap:10px; align-items:baseline; flex-wrap:wrap; background:#f4f6f7; border:1px solid var(--line); border-radius:10px; padding:7px 12px; font-size:.8125rem; margin:0 0 16px; }
   .role-badge>span { text-transform:uppercase; font-size:.6875rem; font-weight:650; letter-spacing:.05em; color:var(--ink-3); }
@@ -81,7 +83,7 @@ const aanpak = c.aanpak.split(' · ').filter(Boolean);
   .approach-block { background:#f3f6f8; }
   .outcome-block { background:#eef6f5; border-color:#c7e1e2 !important; }
   .case-content-blocks h3 { font-size:.75rem; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-3); margin:0 0 10px; }
-  .outcome-block h3 { color:var(--brand-green-dark); }
+  .outcome-block h3 { color:var(--ink); }
   .case-content-blocks ul { padding-left:17px; margin:0; display:grid; gap:7px; }
   .case-content-blocks li::marker { color:var(--support-blue); }
   .case-content-blocks p { margin:0; font-weight:550; }
