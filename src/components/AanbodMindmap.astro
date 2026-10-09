@@ -1,12 +1,11 @@
 ---
-import { domeinen } from '../data/domeinen';
 import { groepen, aanbodBySlug } from '../data/aanbod';
 ---
 <div class="offer-map">
   {groepen.map((g,i) => <div class={`branch branch-${g.key}`}>
     <div class="node-heading"><span class="node" aria-hidden="true">{String(i+1).padStart(2,'0')}</span><h3><a href={`/aanbod/#${g.key}`}>{g.naam}</a></h3></div>
     <p>{g.kort}</p>
-    <ul>{g.items.map(slug => <li class={`domein-${aanbodBySlug[slug].domein}`}><a href={`/aanbod/${slug}/`}>{aanbodBySlug[slug].naam}</a><span class="domein-label">{domeinen[aanbodBySlug[slug].domein].naam}</span></li>)}</ul>
+    <ul>{g.items.map(slug => <li><a href={`/aanbod/${slug}/`}>{aanbodBySlug[slug].naam}</a></li>)}</ul>
   </div>)}
 </div>
 <style>
@@ -24,7 +23,6 @@ import { groepen, aanbodBySlug } from '../data/aanbod';
   li::before { content:''; position:absolute; left:-28px; top:-8px; width:28px; height:30px; border-left:2px solid var(--line-2); border-bottom:2px solid var(--line-2); border-bottom-left-radius:20px; }
   li a { position:relative; display:inline-block; max-width:100%; padding:8px 12px; border:1px solid var(--line-2); border-radius:24px; color:var(--action); background:white; font-size:.875rem; line-height:1.35; text-decoration:none; transition:background .15s,border-color .15s; }
   li a:hover { background:var(--action-tint); border-color:var(--action); color:var(--action-hover); }
-  .domein-label { display:block; margin:4px 12px 0; font-size:.75rem; }
   @media(max-width:900px) { .offer-map { grid-template-columns:1fr; gap:32px; }.offer-map::before { display:none; }p { min-height:0; margin-bottom:18px; } }
   @media(prefers-reduced-motion:reduce) { li a { transition:none; } }
 </style>
