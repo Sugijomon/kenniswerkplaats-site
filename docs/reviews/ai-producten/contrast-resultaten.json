@@ -1,0 +1,32 @@
+{
+  "tokenPairs": 65,
+  "pages": 18,
+  "checks": 605,
+  "observedElements": 3512,
+  "minimumTextRatio": 4.74,
+  "minimumIconRatio": 5.116,
+  "minimumLargeTextRatio": 7.851,
+  "domainIcons": [
+    {
+      "label": "icoon org / org-tint",
+      "ratio": 5.307,
+      "minimum": 3,
+      "type": "icon"
+    },
+    {
+      "label": "icoon tech / tech-tint",
+      "ratio": 5.116,
+      "minimum": 3,
+      "type": "icon"
+    },
+    {
+      "label": "icoon leren / leren-tint",
+      "ratio": 5.914,
+      "minimum": 3,
+      "type": "icon"
+    }
+  ],
+  "baseGreenOnWhite": 3.13,
+  "complexBackgrounds": [],
+  "failures": []
+}
