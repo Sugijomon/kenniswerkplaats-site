@@ -298,7 +298,7 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
 .groep-leren { --accent: var(--brand-green-dark); --accent-bg: #eff5e9; }
 .groep-platforms { --accent: var(--brand-blue-dark); --accent-bg: #eaf3f8; }
 
-.groep-card { display: flex; flex-direction: column; gap: 8px; border-top: 4px solid var(--accent); background: linear-gradient(180deg, var(--accent-bg), #fff 60%); }
+.groep-card { display: flex; flex-direction: column; gap: 8px; position: relative; background: linear-gradient(180deg, var(--accent-bg), #fff 60%); }
 .groep-card h3 { margin: 0; font-size: 1.2rem; color: var(--accent); }
 .groep-card .groep-kort { margin: 0; font-weight: 600; }
 .groep-card .groep-items { margin: 0; color: var(--ink-2); font-size: .95rem; }
@@ -368,3 +368,5 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
 .case-domain { color:var(--brand-blue-dark); }
 .badge { background:#fbeaf2; color:#a81c60; }
 .site-footer { background:#edf2f5; }
+
+.groep-card::before { content: ''; position: absolute; top: 0; left: 22px; right: 22px; height: 4px; background: var(--accent); }
