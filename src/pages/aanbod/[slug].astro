@@ -3,7 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import FaseStrip from '../../components/FaseStrip.astro';
 import CaseCard from '../../components/CaseCard.astro';
-import KunstAccent from '../../components/KunstAccent.astro';
+
 import PlatformIllustratie from '../../components/PlatformIllustratie.astro';
 import { aanbod, groepen, aanbodBySlug, type AanbodItem } from '../../data/aanbod';
 import { caseById } from '../../data/cases';
@@ -21,7 +21,7 @@ const ontwerp = a.slug === 'ontwerp-en-ontwikkeling';
 const visueel = governance || ontwerp;
 ---
 <Base title={a.naam} description={a.kort}>
-  <div class:list={{ 'governance-page': visueel, 'ontwerp-page': ontwerp }}>
+  <div class:list={{ 'governance-page': visueel, 'ontwerp-page': ontwerp, 'art-background': visueel }} style={ontwerp ? '--background-art:url(/ontwerp-achtergrondkunst.png)' : governance ? '--background-art:url(/kunst/richting.png)' : undefined}>
   <header class="page-head">
     <div class="wrap">
       <p class="crumbs"><a href="/aanbod/">Aanbod</a> / {a.groep}</p>
@@ -32,7 +32,7 @@ const visueel = governance || ontwerp;
       <div class="hero-actions">
         <a class="btn" href={`/contact/?onderwerp=${encodeURIComponent(a.naam)}`}>Bespreek je vraagstuk <Icon name="arrow" size={18} /></a>
       </div>
-      </div>{governance && <KunstAccent beeld="richting" vorm="beeld" />}{ontwerp && <div class="art-space" aria-hidden="true"></div>}</div>
+      </div>{visueel && <div class="art-space" aria-hidden="true"></div>}</div>
     </div>
   </header>
 
@@ -106,15 +106,15 @@ const visueel = governance || ontwerp;
   .ontwerp-page .note { background:#fbf1d8; border-color:#f5b42c; color:#614b20; }
   .ontwerp-page :global(.cases-section) { background:#eaf1f3; }
   /* Selectieve beeldfragmenten; de contentlaag blijft rustig en klikbaar. */
-  .ontwerp-page .page-head { position:relative; isolation:isolate; overflow:hidden; }
-  .ontwerp-page .page-head::before { content:''; position:absolute; z-index:-1; pointer-events:none; right:-70px; top:-100px; width:min(650px,58vw); height:650px; background:url('/ontwerp-achtergrondkunst.png') center/cover no-repeat; opacity:.18; mask-image:linear-gradient(90deg,transparent,black 38%),linear-gradient(180deg,black 60%,transparent); mask-composite:intersect; }
+  .art-background .page-head { position:relative; isolation:isolate; overflow:hidden; }
+  .art-background .page-head::before { content:''; position:absolute; z-index:-1; pointer-events:none; right:-70px; top:-100px; width:min(650px,58vw); height:650px; background:var(--background-art) center/cover no-repeat; opacity:.18; mask-image:linear-gradient(90deg,transparent,black 38%),linear-gradient(180deg,black 60%,transparent); mask-composite:intersect; }
   .art-space { min-height:310px; }
-  .ontwerp-page>section { position:relative; isolation:isolate; }
-  .ontwerp-page>section:nth-of-type(2)::before { content:''; position:absolute; z-index:-1; pointer-events:none; left:0; top:0; width:180px; height:100%; background:url('/ontwerp-achtergrondkunst.png') 20% 60%/500px auto no-repeat; opacity:.07; mask-image:linear-gradient(90deg,black,transparent); }
-  .ontwerp-page :global(.cases-section) { overflow:hidden; }
-  .ontwerp-page :global(.cases-section)::before { content:''; position:absolute; z-index:-1; pointer-events:none; right:-80px; bottom:-180px; width:460px; height:460px; background:url('/ontwerp-achtergrondkunst.png') center/cover no-repeat; opacity:.09; mask-image:radial-gradient(ellipse,black 20%,transparent 70%); }
-  .ontwerp-page>section:last-child::before { content:''; position:absolute; z-index:-1; pointer-events:none; left:0; bottom:0; width:230px; height:180px; background:url('/ontwerp-achtergrondkunst.png') bottom left/420px auto no-repeat; opacity:.06; mask-image:linear-gradient(90deg,black,transparent); }
-  @media(max-width:760px) { .art-space { display:none; }.ontwerp-page .page-head::before { right:-180px; top:0; width:440px; height:440px; opacity:.07; }.ontwerp-page>section:nth-of-type(2)::before,.ontwerp-page>section:last-child::before { display:none; } }
+  .art-background>section { position:relative; isolation:isolate; }
+  .art-background>section:nth-of-type(2)::before { content:''; position:absolute; z-index:-1; pointer-events:none; left:0; top:0; width:180px; height:100%; background:var(--background-art) 20% 60%/500px auto no-repeat; opacity:.07; mask-image:linear-gradient(90deg,black,transparent); }
+  .art-background :global(.cases-section) { overflow:hidden; }
+  .art-background :global(.cases-section)::before { content:''; position:absolute; z-index:-1; pointer-events:none; right:-80px; bottom:-180px; width:460px; height:460px; background:var(--background-art) center/cover no-repeat; opacity:.09; mask-image:radial-gradient(ellipse,black 20%,transparent 70%); }
+  .art-background>section:last-child::before { content:''; position:absolute; z-index:-1; pointer-events:none; left:0; bottom:0; width:230px; height:180px; background:var(--background-art) bottom left/420px auto no-repeat; opacity:.06; mask-image:linear-gradient(90deg,black,transparent); }
+  @media(max-width:760px) { .art-space { display:none; }.art-background .page-head::before { right:-180px; top:0; width:440px; height:440px; opacity:.07; }.art-background>section:nth-of-type(2)::before,.art-background>section:last-child::before { display:none; } }
   @media(max-width:760px) { .governance-hero { grid-template-columns:1fr; gap:24px; } .governance-hero :global(.governance-art),.governance-hero :global(.platform-art) { max-width:300px; } }
 </style>
 
