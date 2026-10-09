@@ -1,0 +1,29 @@
+---
+import type { GroepKey } from '../data/aanbod';
+interface Props { groep: GroepKey }
+const { groep } = Astro.props;
+---
+<svg viewBox="0 0 400 180" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+  {groep === 'ai' ? <>
+    <path fill="#D80950" d="M0 0h400v180H0z"/>
+    <path fill="#8F165B" opacity=".35" d="m215 0 130 180H170L65 0h150Z"/>
+    <g stroke="#E496BD" stroke-width="3" fill="none"><path d="M0 57h68l43 43h80v80M60 0v32h113l35 35h192M400 137h-94l-32-32V0M0 154h40l48-48"/><circle cx="191" cy="100" r="10"/><circle cx="88" cy="106" r="9"/><circle cx="274" cy="105" r="10"/><circle cx="173" cy="32" r="8"/></g>
+    <g stroke="#9E1545" stroke-width="3" fill="none"><path d="M0 23h45l86 113v44M343 0v92h57"/><circle cx="131" cy="136" r="11"/><circle cx="343" cy="92" r="10"/></g>
+  </> : groep === 'leren' ? <>
+    <path fill="#F5B42C" d="M0 0h400v180H0z"/>
+    <path d="M191-20a110 110 0 0 0 0 220V-20Z" fill="#fff" opacity=".5"/>
+    <path d="M235 0v65a76 76 0 0 0 76 76h89" stroke="#F17C18" stroke-width="55"/>
+    <path d="M0 68h116a74 74 0 0 1 74 74v38" stroke="#F17C18" stroke-width="45"/>
+    <path d="M160 0h55v180h-55z" fill="#fff" opacity=".22"/>
+    <path d="M215 78h98a98 98 0 0 1-98 98V78Z" fill="#fff" opacity=".45"/>
+    <circle cx="320" cy="39" r="26" fill="#fff" opacity=".55"/>
+    <path d="M112 0h20v180h-20z" fill="#034F64" opacity=".12"/>
+  </> : <>
+    <path fill="#055566" d="M0 0h400v180H0z"/>
+    <path fill="#034F64" opacity=".5" d="M149 0h70v180h-70zM294 0h24v180h-24z"/>
+    <g stroke="#061F5C" opacity=".65" stroke-width="2" fill="none"><path d="M0 34h242v65h158M0 86h161v94M298 0v142H400M338 0v104h62"/><circle cx="249" cy="91" r="103"/></g>
+    <path d="M0 155h85c50 0 50-73 104-73h211" stroke="#034F64" stroke-width="36"/>
+    <path d="M242 0v42c0 45 20 55 65 55h93" stroke="#11A5BD" opacity=".25" stroke-width="16"/>
+  </>}
+</svg>
+<style>svg { display:block; width:100%; height:100%; }</style>
