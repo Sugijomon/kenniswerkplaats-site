@@ -1,0 +1,19 @@
+---
+import Icon from './Icon.astro';
+import { faseByKey } from '../data/fasen';
+import { domeinen } from '../data/domeinen';
+import type { AanbodItem } from '../data/aanbod';
+interface Props { item: AanbodItem; nummer?: number }
+const { item: a, nummer } = Astro.props;
+---
+<a class={`voorbeeld-dienst domein-${a.domein}`} href={`/aanbod/${a.slug}/`}>
+  <span class="dienst-icon" aria-hidden="true">{nummer ? String(nummer).padStart(2,'0') : <Icon name={domeinen[a.domein].icoon} size={24} />}</span>
+  <div class="dienst-inhoud"><h4>{a.naam} {a.instap && <span class="badge">Instap</span>}</h4><p>{a.kort}</p><div class="dienst-fasen">{a.fasen.map(f => <span>{faseByKey[f].nr}. {faseByKey[f].naam}</span>)}</div></div>
+  <span class="dienst-arrow"><Icon name="arrow" size={18} /></span>
+</a>
+<style>
+  .voorbeeld-dienst { position:relative; display:flex; gap:16px; align-items:flex-start; padding:24px; border:1px solid var(--line-2); border-radius:18px; background:white; text-decoration:none; transition:border-color .15s,box-shadow .15s; min-width:0; height:100%; }
+  .voorbeeld-dienst:hover { border-color:var(--action); box-shadow:var(--shadow); }.dienst-icon { display:grid; place-items:center; flex-shrink:0; width:44px; height:44px; border-radius:50%; color:var(--domein-icon); background:var(--domein-tint); font-weight:700; }.dienst-inhoud { min-width:0; flex:1; }h4 { margin:0 0 8px; font-size:1.1rem; line-height:1.3; color:var(--action); }p { margin:0; color:var(--ink-2); font-size:.9375rem; }.dienst-arrow { flex-shrink:0; padding-top:12px; color:var(--action); }.dienst-fasen { display:flex; flex-wrap:wrap; gap:6px; margin-top:14px; }.dienst-fasen span { border-radius:20px; padding:4px 8px; color:var(--ink-2); background:var(--surface); font-size:.75rem; line-height:1.4; }
+  @media(max-width:600px) { .voorbeeld-dienst { padding:20px; gap:12px; }.dienst-icon { width:36px; height:36px; }.dienst-arrow { display:none; } }
+  @media(prefers-reduced-motion:reduce) { .voorbeeld-dienst { transition:none; } }
+</style>
