@@ -4,6 +4,7 @@ import type { FaseKey } from '../data/fasen';
 import PhaseDots from './PhaseDots.astro';
 interface Props { c: Case; highlight?: FaseKey[] }
 const { c, highlight = [] } = Astro.props;
+const aanpak = c.aanpak.split(' · ').filter(Boolean);
 ---
 <article class="case-card" id={`case-${c.id}`}>
   <p class="case-domain">{c.domein}</p>
@@ -15,16 +16,16 @@ const { c, highlight = [] } = Astro.props;
 <dialog id={`dialog-${c.id}`} class="case-dialog" aria-labelledby={`title-${c.id}`}>
   <div class="dialog-inner">
   <form method="dialog"><button class="case-close" aria-label="Case sluiten">Sluiten <span aria-hidden="true">×</span></button></form>
-  <p class="case-domain">{c.domein}</p>
+  <div class="case-meta-top"><p class="case-domain">{c.domein}</p><span class="organisation-badge">{c.organisatie}</span></div>
   <h2 id={`title-${c.id}`}>{c.vraagstuk}</h2>
   <p class="case-text">{c.tekst}</p>
-  <dl>
-    <div><dt>Rol</dt><dd>{c.rol}</dd></div>
-    <div><dt>Aanpak</dt><dd>{c.aanpak}</dd></div>
-    <div><dt>Opbrengst</dt><dd>{c.opbrengst}</dd></div>
-  </dl>
+  <p class="role-badge"><span>Mijn rol</span> {c.rol}</p>
+  <div class="case-content-blocks">
+    <section class="approach-block" aria-labelledby={`approach-${c.id}`}><h3 id={`approach-${c.id}`}>Aanpak</h3><ul>{aanpak.map(x => <li>{x}</li>)}</ul></section>
+    <section class="outcome-block" aria-labelledby={`outcome-${c.id}`}><h3 id={`outcome-${c.id}`}>Opbrengst</h3><p>{c.opbrengst}</p></section>
+  </div>
   <PhaseDots values={c.fasen} highlight={highlight} />
-  <p class="case-org">{c.organisatie} <span>· {c.periode}</span></p>
+  <p class="case-org"><span class="footer-org">{c.organisatie}</span> <span>{c.periode}</span></p>
   </div>
 </dialog>
 <script>
@@ -70,6 +71,24 @@ const { c, highlight = [] } = Astro.props;
   dd { margin:3px 0 0; }
   .case-dialog :global(.case-stepper) { margin:16px 0 12px; padding-top:14px; }
   .case-dialog .case-org { padding-top:10px; margin-bottom:0; font-size:.875rem; }
+  .case-meta-top { display:flex; justify-content:space-between; align-items:center; gap:12px; margin-bottom:12px; flex-wrap:wrap; }
+  .case-dialog .case-meta-top .case-domain { margin:0; background:#eaf3f8; color:var(--brand-blue-dark); padding:5px 10px; border-radius:20px; font-size:.75rem; }
+  .organisation-badge { padding:6px 10px; background:#f4f6f7; border:1px solid var(--line); border-radius:10px; font-size:.75rem; font-weight:650; }
+  .role-badge { display:inline-flex; gap:10px; align-items:baseline; flex-wrap:wrap; background:#f4f6f7; border:1px solid var(--line); border-radius:10px; padding:7px 12px; font-size:.8125rem; margin:0 0 16px; }
+  .role-badge>span { text-transform:uppercase; font-size:.6875rem; font-weight:650; letter-spacing:.05em; color:var(--ink-3); }
+  .case-content-blocks { display:grid; grid-template-columns:minmax(0,1.2fr) minmax(0,1fr); gap:16px; }
+  .case-content-blocks section { padding:16px 18px; border-radius:16px; border:1px solid var(--line); }
+  .approach-block { background:#f3f6f8; }
+  .outcome-block { background:#eff5e9; border-color:#dce8cf !important; }
+  .case-content-blocks h3 { font-size:.75rem; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-3); margin:0 0 10px; }
+  .outcome-block h3 { color:var(--brand-green-dark); }
+  .case-content-blocks ul { padding-left:17px; margin:0; display:grid; gap:7px; }
+  .case-content-blocks li::marker { color:var(--support-blue); }
+  .case-content-blocks p { margin:0; font-weight:550; }
+  .case-content-blocks p,.case-content-blocks li { font-size:.875rem; line-height:1.45; }
+  .case-dialog .case-org { display:flex; justify-content:space-between; gap:16px; }
+  .case-dialog .case-org .footer-org { font-weight:650; color:var(--ink-2); }
+  @media(max-width:580px) { .case-content-blocks { grid-template-columns:1fr; } }
   :global(body.case-modal-open) { overflow:hidden; }
   @media(max-width:480px) { .dialog-inner { padding:24px 20px; } }
 </style>
