@@ -1,0 +1,54 @@
+---
+import type { Case } from '../data/cases';
+import PhaseDots from './PhaseDots.astro';
+interface Props { c: Case; variant: 'badge' | 'vraag' }
+const { c, variant } = Astro.props;
+const id = `${variant}-${c.id}`;
+const initials = c.organisatie.split(/\s+/).slice(0, 2).map(x => x[0]).join('');
+---
+<article class:list={['demo-case', variant]}>
+  <div class="card-top">
+    {variant === 'badge' && <span class="org-badge" aria-hidden="true">{initials}</span>}
+    <div>{variant === 'badge' && <p class="org-name">{c.organisatie}</p>}<p class="domain">{c.domein}</p></div>
+  </div>
+  <h3><button data-demo-case={id} aria-haspopup="dialog">{c.vraagstuk}</button></h3>
+  <p class="summary">{c.tekst}</p>
+  {variant === 'vraag' && <p class="org-name lower">{c.organisatie}</p>}
+  <span class="read" aria-hidden="true">Bekijk de case <span>→</span></span>
+</article>
+<dialog id={id} class:list={['demo-dialog', variant]} aria-labelledby={`${id}-title`}>
+  <div class="dialog-pad">
+    <form method="dialog"><button class="close">Sluiten <span aria-hidden="true">×</span></button></form>
+    <p class="domain">{c.domein}</p><h2 id={`${id}-title`}>{c.vraagstuk}</h2>
+    <p class="intro">{c.tekst}</p>
+    <div class="content-grid">
+      <div class="main-content"><section class="approach"><h3>Aanpak</h3><p>{c.aanpak}</p></section><section class="outcome"><h3>Opbrengst</h3><p>{c.opbrengst}</p></section></div>
+      <aside class="meta" aria-label="Casegegevens"><dl><div><dt>Organisatie</dt><dd>{c.organisatie}</dd></div><div><dt>Mijn rol</dt><dd>{c.rol}</dd></div><div><dt>Periode</dt><dd>{c.periode}</dd></div></dl>
+      {variant === 'badge' && <div class="phases"><h3>Fasen in deze case</h3><PhaseDots values={c.fasen}/><p class="phase-key">Gevuld: bewezen · Halfgevuld: deels · Leeg: niet in deze case</p></div>}</aside>
+    </div>
+    {variant === 'vraag' && <div class="phases"><h3>Fasen in deze case</h3><PhaseDots values={c.fasen}/><p class="phase-key">Gevuld: bewezen · Halfgevuld: deels · Leeg: niet in deze case</p></div>}
+  </div>
+</dialog>
+<script>
+  document.querySelectorAll<HTMLButtonElement>('[data-demo-case]').forEach(button => {
+    const dialog = document.getElementById(button.dataset.demoCase!) as HTMLDialogElement;
+    button.addEventListener('click', () => { dialog.showModal(); document.body.classList.add('demo-modal-open'); });
+    dialog.addEventListener('close', () => { document.body.classList.remove('demo-modal-open'); button.focus(); });
+    dialog.addEventListener('click', e => { if(e.target !== dialog) return; const r=dialog.getBoundingClientRect(); if(e.clientX<r.left || e.clientX>r.right || e.clientY<r.top || e.clientY>r.bottom) dialog.close(); });
+  });
+</script>
+<style>
+  .demo-case { position:relative; display:flex; flex-direction:column; gap:16px; padding:28px; background:white; border:1px solid var(--line); border-radius:22px; box-shadow:var(--shadow); transition:transform .2s,box-shadow .2s; }
+  .demo-case:hover { transform:translateY(-4px); box-shadow:0 16px 36px #10283a12; }
+  .card-top { display:flex; align-items:center; gap:12px; }.org-badge { flex-shrink:0; width:42px; height:42px; display:grid; place-items:center; background:#eaf3f8; color:var(--brand-blue-dark); border-radius:12px; font-weight:700; }
+  p { margin:0; }.org-name { font-size:.875rem; font-weight:650; color:var(--ink); }.domain { font-size:.75rem; text-transform:uppercase; letter-spacing:.06em; color:var(--ink-3); font-weight:650; }
+  h3 { margin:0; line-height:1.35; } h3 button { font:inherit; color:var(--ink); background:none; border:0; padding:0; text-align:left; cursor:pointer; } h3 button:after { content:''; position:absolute; inset:0; border-radius:22px; } h3 button:focus-visible { outline:none; } h3 button:focus-visible:after { outline:3px solid var(--brand-blue-dark); outline-offset:4px; }
+  .summary { color:var(--ink-2); font-size:1rem; display:-webkit-box; -webkit-line-clamp:3; -webkit-box-orient:vertical; overflow:hidden; }.read { display:flex; justify-content:space-between; border-top:1px solid var(--line); margin-top:auto; padding-top:16px; color:var(--brand-blue-dark); font-weight:650; }.read span { transition:transform .2s; }.demo-case:hover .read span { transform:translateX(4px); }
+  .vraag { border-left:3px solid var(--brand-blue-dark); border-top-left-radius:0; border-bottom-left-radius:0; }.lower { color:var(--ink-3); }
+  .demo-dialog { width:min(940px,calc(100vw - 32px)); max-height:calc(100dvh - 48px); padding:0; border:1px solid var(--line); border-radius:28px; color:var(--ink); background:white; overflow:auto; box-shadow:0 24px 90px #10283a30; }.demo-dialog::backdrop { background:#101c3066; backdrop-filter:blur(4px); }.dialog-pad { padding:36px; container-type:inline-size; }
+  form { display:flex; justify-content:flex-end; margin-bottom:16px; }.close { font:inherit; border:1px solid var(--line); background:#f1f5f7; border-radius:24px; padding:8px 16px; cursor:pointer; color:var(--ink); }.close span { margin-left:12px; } h2 { font-size:clamp(1.5rem,4vw,2rem); margin-top:10px; }.intro { color:var(--ink-2); margin:20px 0 28px; }
+  .content-grid { display:grid; grid-template-columns:minmax(0,1.65fr) minmax(0,1fr); gap:28px; }.main-content { display:grid; gap:18px; align-content:start; }.main-content section { padding:22px; border-radius:18px; }.approach { background:#f1f5f7; }.outcome { background:#edf5e7; }.main-content h3,.phases h3 { font-size:.875rem; margin-bottom:10px; }.main-content p { font-size:1rem; }.meta { padding-left:24px; border-left:1px solid var(--line); } dl { margin:0; display:grid; gap:20px; } dt { font-size:.75rem; text-transform:uppercase; color:var(--ink-3); font-weight:650; } dd { margin:4px 0 0; font-size:1rem; }.phases { margin-top:28px; }.phase-key { font-size:.75rem; color:var(--ink-3); }.badge .phases :global(.case-stepper) { grid-template-columns:repeat(2,minmax(0,1fr)); row-gap:18px; }.badge .phases :global(li:nth-child(2):after) { display:none; }
+  :global(body.demo-modal-open) { overflow:hidden; }
+  @media(max-width:680px) { .content-grid { grid-template-columns:1fr; }.meta { padding:20px 0 0; border-left:0; border-top:1px solid var(--line); }.dialog-pad { padding:24px; } }
+  @media(prefers-reduced-motion:reduce) { .demo-case,.read span { transition:none; }.demo-case:hover,.demo-case:hover .read span { transform:none; } }
+</style>
