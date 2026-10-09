@@ -1,0 +1,16 @@
+---
+import Base from '../../layouts/Base.astro';
+import CaseCard from '../../components/CaseCard.astro';
+import CaseOntwerpVoorbeeld from '../../components/CaseOntwerpVoorbeeld.astro';
+import { caseById } from '../../data/cases';
+const cases = ['zorgwise', 'viazorg-flexplatform', 'corpio'].map(id => caseById[id]);
+---
+<Base title="Casekaarten en pop-ups vergelijken">
+  <header class="page-head"><div class="wrap"><p class="eyebrow">Ontwerpvoorbeelden</p><h1>Welke casepresentatie past het best?</h1><p class="lead">Drie varianten, dezelfde cases. Klik op een kaart om ook de pop-up te vergelijken.</p><nav aria-label="Casevarianten"><a href="#huidig">1. Huidige opzet</a><a href="#badge">2. Organisatiebadge + zijbalk</a><a href="#vraag">3. Vraagstuk + brede proceslijn</a></nav></div></header>
+  <div class="wrap examples">
+    <section id="huidig"><p class="eyebrow">Optie 1</p><h2>Vraagstuk met eenvoudige pop-up</h2><p>De huidige kaart, met alle informatie onder elkaar in de pop-up.</p><div class="cases-grid">{cases.map(c => <CaseCard c={{ ...c, id:`huidig-${c.id}` }} />)}</div></section>
+    <section id="badge"><p class="eyebrow">Optie 2</p><h2>Organisatiebadge met compacte zijbalk</h2><p>Organisatie en domein bovenaan. In de pop-up staan aanpak en opbrengst links, gegevens en fasen rechts.</p><div class="cases-grid">{cases.map(c => <CaseOntwerpVoorbeeld c={c} variant="badge" />)}</div></section>
+    <section id="vraag"><p class="eyebrow">Optie 3</p><h2>Vraagstuk voorop, proceslijn onderaan</h2><p>Het probleem trekt de aandacht; de organisatie staat onder de beschrijving. De pop-up heeft twee kolommen en een brede proceslijn onderaan.</p><div class="cases-grid">{cases.map(c => <CaseOntwerpVoorbeeld c={c} variant="vraag" />)}</div></section>
+  </div>
+</Base>
+<style>nav { display:flex; flex-wrap:wrap; gap:12px; margin-top:24px; }nav a { padding:10px 16px; border:1px solid var(--line); border-radius:24px; background:white; text-decoration:none; }.examples { padding-bottom:56px; }.examples>section { scroll-margin-top:90px; padding:36px 0; }.examples>section>p { color:var(--ink-2); }.cases-grid { margin-top:24px; }@media(max-width:380px) { .cases-grid { grid-template-columns:1fr; } }</style>
