@@ -10,7 +10,7 @@ import { caseById } from '../../data/cases';
 import { fasen } from '../../data/fasen';
 
 export function getStaticPaths() {
-  return aanbod.map((a) => ({ params: { slug: a.slug }, props: { a } }));
+  return aanbod.filter((a) => a.slug !== 'ai-foto').map((a) => ({ params: { slug: a.slug }, props: { a } }));
 }
 const { a } = Astro.props as { a: AanbodItem };
 const groep = groepen.find((g) => g.naam === a.groep)!;
