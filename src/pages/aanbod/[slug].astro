@@ -3,8 +3,7 @@ import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import FaseStrip from '../../components/FaseStrip.astro';
 import CaseCard from '../../components/CaseCard.astro';
-import GovernanceIllustratie from '../../components/GovernanceIllustratie.astro';
-import PlatformIllustratie from '../../components/PlatformIllustratie.astro';
+import MensIllustratie from '../../components/MensIllustratie.astro';
 import { aanbod, groepen, aanbodBySlug, type AanbodItem } from '../../data/aanbod';
 import { caseById } from '../../data/cases';
 import { fasen } from '../../data/fasen';
@@ -18,10 +17,10 @@ const verwant = groep.items.filter((s) => s !== a.slug).map((s) => aanbodBySlug[
 const cases = a.cases.map((id) => caseById[id]).filter(Boolean);
 const governance = a.slug === 'governance-en-evaluatie';
 const ontwerp = a.slug === 'ontwerp-en-ontwikkeling';
-const visueel = governance || ontwerp;
+const visueel = true;
 ---
 <Base title={a.naam} description={a.kort}>
-  <div class:list={{ 'governance-page': visueel, 'ontwerp-page': ontwerp }}>
+  <div class:list={['human-offer', `groep-${groep.key}`, { 'governance-page': visueel, 'ontwerp-page': ontwerp }]}>
   <header class="page-head">
     <div class="wrap">
       <p class="crumbs"><a href="/aanbod/">Aanbod</a> / {a.groep}</p>
@@ -32,7 +31,7 @@ const visueel = governance || ontwerp;
       <div class="hero-actions">
         <a class="btn" href={`/contact/?onderwerp=${encodeURIComponent(a.naam)}`}>Bespreek je vraagstuk <Icon name="arrow" size={18} /></a>
       </div>
-      </div>{governance && <GovernanceIllustratie />}{ontwerp && <PlatformIllustratie />}</div>
+      </div><MensIllustratie groep={groep.key} /></div>
     </div>
   </header>
 
@@ -131,5 +130,6 @@ const visueel = governance || ontwerp;
   .ontwerp-page :global(.fase-strip li:nth-child(3) .nr) { background:#c21868; }
   .ontwerp-page :global(.fase-strip li:nth-child(4) .nr) { background:#183e55; }
   .ontwerp-page :global(.cases-section) { background:#eaf1f3; }
+  .human-offer .icon-list :global(svg) { color:var(--accent); }
   @media(max-width:760px) { .governance-hero { grid-template-columns:1fr; gap:24px; } .governance-hero :global(.governance-art),.governance-hero :global(.platform-art) { max-width:300px; } }
 </style>
