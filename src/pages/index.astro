@@ -46,11 +46,12 @@ const homeCases = ['zorgwise', 'viazorg-flexplatform', 'corpio'].map((id) => cas
         <h2>Drie gebieden waarin ik help</h2>
       </div>
       <div class="grid grid-3">
-        {groepen.map((g) => (
+        {groepen.map((g, i) => (
           <article class={`card groep-card groep-${g.key}`}>
+            <div class="groep-top"><span class="gebied-label">Gebied {String(i + 1).padStart(2, '0')}</span><span class="groep-icon"><Icon name={g.key === 'ai' ? 'chip' : g.key === 'leren' ? 'book' : 'canvas'} size={24} /></span></div>
             <h3>{g.naam}</h3>
             <p class="groep-kort">{g.kort}</p>
-            <p class="groep-items">{g.items.map((s, i) => <>{i > 0 && ' · '}<span class="nowrap">{aanbodBySlug[s].naam}</span></>)}</p>
+            <ul class="groep-diensten">{g.items.map((s) => <li>{aanbodBySlug[s].naam}</li>)}</ul>
             <a class="go" href={`/aanbod/#${g.key}`} aria-label={`Bekijk het aanbod: ${g.naam}`}>Bekijk het aanbod <Icon name="arrow" size={14} /></a>
           </article>
         ))}
