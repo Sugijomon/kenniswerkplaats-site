@@ -1,14 +1,17 @@
 ---
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
+import RedactieBlokken from '../components/RedactieBlokken.astro';
+import { paginas, sectie } from '../data/redactie';
+const page=paginas['/contact/'];
 import { site } from '../data/site';
 ---
-<Base title="Contact" description="Plan een vrijblijvend verkenningsgesprek over je vraagstuk.">
+<Base title="Contact" description={page.seo}>
   <header class="page-head">
     <div class="wrap">
       <p class="eyebrow">Contact</p>
       <h1>Bespreek een vraagstuk</h1>
-      <p class="lead">Een eerste verkenningsgesprek is vrijblijvend. We kijken samen wat er speelt en of en hoe ik kan helpen.</p>
+      <RedactieBlokken blocks={page.hero} />
     </div>
   </header>
   <section class="tight">
@@ -16,18 +19,15 @@ import { site } from '../data/site';
       <div class="card">
         <h2 style="font-size:1.25rem">Mail of bel</h2>
         <p><a class="textlink" id="mail" href={`mailto:${site.email}`}><Icon name="mail" size={18} /> {site.email}</a></p>
-        <p class="muted" style="margin:0">{site.plaats}</p>
+        <RedactieBlokken blocks={sectie(page,'Mail of bel')!.blocks.slice(1)} />
       </div>
       <div class="card">
         <h2 style="font-size:1.25rem">Handig om te vertellen</h2>
-        <ul class="check-list">
-          <li>Wat het vraagstuk is, in een paar zinnen</li>
-          <li>Wie erbij betrokken zijn</li>
-          <li>Wat er al is gedaan of besloten</li>
-        </ul>
+        <RedactieBlokken blocks={sectie(page,'Handig')!.blocks} />
       </div>
     </div>
   </section>
+  <section class="tight"><div class="wrap"><h2>Wat er daarna gebeurt</h2><RedactieBlokken blocks={sectie(page,'Wat er daarna')!.blocks} kaarten /></div></section>
   <!-- TODO: formulier toevoegen (bijv. Vercel/Formspree) zodra de keuze is gemaakt. -->
   <script>
     // Neem het onderwerp van een aanbodpagina mee in de mail.

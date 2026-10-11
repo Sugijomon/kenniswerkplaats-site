@@ -1,19 +1,22 @@
 ---
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
+import RedactieBlokken from '../components/RedactieBlokken.astro';
+import { paginas } from '../data/redactie';
+const page=paginas['/werkplaats/'];
 import { werkplaats } from '../data/werkplaats';
 ---
-<Base title="Werkplaats" description="Instrumenten, experimenten en signalen uit de werkplaats.">
+<Base title="Werkplaats" description={page.seo}>
   <header class="page-head">
     <div class="wrap">
       <p class="eyebrow">Werkplaats</p>
       <h1>Uit de werkplaats</h1>
-      <p class="lead">Instrumenten en experimenten die uit eerdere trajecten zijn ontstaan. Sommige zijn nog in ontwikkeling.</p>
+      <RedactieBlokken blocks={page.hero} />
     </div>
   </header>
   <section class="tight" aria-labelledby="werkplaats-lijst">
     <h2 id="werkplaats-lijst" class="sr-only">Instrumenten en experimenten</h2>
-    <div class="wrap grid grid-3">
+    <div class="wrap grid grid-2">
       {werkplaats.map((w) => (
         <div class="card" id={w.id}>
           <div class="tool-tile" style="margin-bottom:12px">
@@ -25,4 +28,5 @@ import { werkplaats } from '../data/werkplaats';
       ))}
     </div>
   </section>
+  <section class="tight"><div class="wrap"><p class="prose">Elk hulpmiddel dat ik voor een opdrachtgever maak, krijgt afspraken over eigenaarschap, gegevens en beheer. Zo blijft het bruikbaar na de overdracht.</p><div class="cta-bar"><p>Iets nodig dat er nog niet is?</p><a class="btn" href="/contact/">Bespreek je vraagstuk <Icon name="arrow" size={18} /></a></div></div></section>
 </Base>

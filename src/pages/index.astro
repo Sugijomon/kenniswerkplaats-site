@@ -7,10 +7,11 @@ import MensIllustratie from '../components/MensIllustratie.astro';
 import AanbodMindmap from '../components/AanbodMindmap.astro';
 import PraktijklabKaarten from '../components/PraktijklabKaarten.astro';
 import { vraagstukken } from '../data/vraagstukken';
-import { fasen } from '../data/fasen';
+import RedactieBlokken from '../components/RedactieBlokken.astro';
+import { paginas, sectie } from '../data/redactie';
 import { caseById } from '../data/cases';
 import { werkplaats } from '../data/werkplaats';
-import { groepen, aanbodBySlug } from '../data/aanbod';
+const home = paginas['/'];
 
 const homeTegels = vraagstukken.filter((v) => v.home);
 // Drie cases op de homepage: verschillende fasen en domeinen.
@@ -22,8 +23,9 @@ const homeCases = ['zorgwise', 'viazorg-flexplatform', 'corpio'].map((id) => cas
     <div class="wrap">
       <div class="hero-panel">
         <div>
-          <h1>Samen uitzoeken wat werkt. Daarna zorgen dat het blijft werken.</h1>
-          <p>Ik help organisaties en samenwerkingsverbanden om zicht te krijgen op een lastig vraagstuk, samen een werkbare oplossing te ontwerpen en die te laten landen in de praktijk.</p>
+          <h1>{home.title}</h1>
+          <p class="hero-subtitle">{home.subtitle}</p>
+          <RedactieBlokken blocks={home.hero.filter(b => b.type === 'paragraph' && !b.text?.startsWith('['))} />
           <div class="hero-actions">
             <a class="btn" href="/contact/">Plan een kennismaking <Icon name="arrow" size={18} /></a>
             <a class="btn ghost" href="/vraagstukken/">Bekijk vraagstukken</a>
@@ -46,7 +48,7 @@ const homeCases = ['zorgwise', 'viazorg-flexplatform', 'corpio'].map((id) => cas
           <a class={`card vraag-tile domein-${v.domein}`} href={`/aanbod/${v.aanbod}/`}>
             <span class="ico"><Icon name={v.icoon} size={28} /></span>
             <h3>{v.titel}</h3>
-            <p>{v.tekst}</p>
+            <p>{v.homeTekst ?? v.tekst}</p>
             <span class="go">Zo pak ik het aan <Icon name="arrow" size={14} /></span>
           </a>
         ))}
@@ -71,7 +73,7 @@ const homeCases = ['zorgwise', 'viazorg-flexplatform', 'corpio'].map((id) => cas
         <div>
           <p class="eyebrow">Instap</p>
           <h2>Begin met een praktijklab</h2>
-          <p>Met de mensen die het vraagstuk kennen samen onderzoeken, ontwerpen en beoordelen. Eén werkplaats of een korte reeks, in je eigen organisatie of met meerdere organisaties samen.</p>
+          <RedactieBlokken blocks={sectie(home, 'Instap:')!.blocks.filter(b => b.type === 'paragraph' && !b.text?.startsWith('['))} />
           <a class="btn light" href="/aanbod/praktijklab/">Bekijk het praktijklab <Icon name="arrow" size={18} /></a>
         </div>
         <PraktijklabKaarten />
@@ -87,7 +89,8 @@ const homeCases = ['zorgwise', 'viazorg-flexplatform', 'corpio'].map((id) => cas
         <a class="textlink" href="/werkwijze/">Meer over de werkwijze <Icon name="arrow" size={16} /></a>
       </div>
       <FaseStrip />
-      <p class="loop-note"><Icon name="loop" size={20} /> Je kunt bij elke stap instappen. Een evaluatie is vaak het begin van de volgende ronde.</p>
+      <p class="loop-note"><Icon name="loop" size={20} /> Je kunt bij elke fase instappen. Een evaluatie is vaak het begin van de volgende ronde.</p>
+      <div class="recept-home"><RedactieBlokken blocks={sectie(home, 'Zo werk ik')!.blocks.filter(b => b.type === 'paragraph' && b.text?.startsWith('In elke fase'))} /></div>
     </div>
   </section>
 
@@ -111,7 +114,7 @@ const homeCases = ['zorgwise', 'viazorg-flexplatform', 'corpio'].map((id) => cas
         <h2>Uit de werkplaats</h2>
         <a class="textlink" href="/werkplaats/">Naar de werkplaats <Icon name="arrow" size={16} /></a>
       </div>
-      <div class="grid grid-3">
+      <div class="grid grid-2">
         {werkplaats.map((w) => (
           <a class="card tool-tile" href={`/werkplaats/#${w.id}`}>
             <span class="ico"><Icon name={w.icoon} /></span>
@@ -129,7 +132,7 @@ const homeCases = ['zorgwise', 'viazorg-flexplatform', 'corpio'].map((id) => cas
         <div class="avatar" aria-hidden="true">RW</div>
         <div>
           <h2 style="font-size:1.15rem">Over Rink</h2>
-          <p>Al twintig jaar werk ik aan dezelfde overgang: van ambitie of besluit naar een praktijk die werkt en blijft werken. Vaak tussen organisaties die geen zeggenschap over elkaar hebben, in zorg, onderwijs en daarbuiten.</p>
+          <RedactieBlokken blocks={sectie(home, 'Over Rink')!.blocks.filter(b => b.type === 'paragraph' && !b.text?.startsWith('[') && !b.text?.startsWith('**Benieuwd'))} />
         </div>
         <a class="textlink" href="/over/">Meer over mij <Icon name="arrow" size={16} /></a>
       </div>
@@ -147,6 +150,8 @@ const homeCases = ['zorgwise', 'viazorg-flexplatform', 'corpio'].map((id) => cas
   </section>
 </Base>
 <style>
+  .hero-subtitle { font-size:1.3rem; font-weight:650; color:var(--ink); line-height:1.4; }
+  .recept-home { margin-top:28px; padding:24px; background:white; border:1px solid var(--line-2); border-radius:var(--radius-sm); }
   .art-card { padding:0; overflow:hidden; gap:0; }
   .art-header { height:170px; position:relative; }
   .art-header .gebied-label { position:absolute; left:20px; top:18px; color:var(--ink); background:rgba(255,255,255,.93); border:1px solid #ffffff80; }

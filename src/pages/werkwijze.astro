@@ -5,20 +5,17 @@ import KunstAccent from '../components/KunstAccent.astro';
 import { fasen } from '../data/fasen';
 import { aanbod } from '../data/aanbod';
 
-const principes = [
-  { titel: 'Samen met wie het vraagstuk kent', tekst: 'De mensen die het werk doen, onderzoeken, ontwerpen en beoordelen mee. Wie meedoet, maakt het onderweg eigen.' },
-  { titel: 'Eerst zien wat er werkelijk gebeurt', tekst: 'Ik stel vast wat er feitelijk speelt voordat ik iets ontwerp. Soms blijkt de oorspronkelijke vraag niet de juiste.' },
-  { titel: 'Iets tastbaars na elke stap', tekst: 'Elke fase levert iets op waar je mee verder kunt: een analyse, een ontwerp, een werkende praktijk of een besluit.' },
-  { titel: 'Een besluitmoment ingebouwd', tekst: 'Na elke stap kies je zelf: doorgaan, bijsturen of stoppen. Je zit niet vast aan een groot traject.' },
-];
+import RedactieBlokken from '../components/RedactieBlokken.astro';
+import { paginas, sectie } from '../data/redactie';
+const page=paginas['/werkwijze/'];
 ---
-<Base title="Werkwijze" description="Vier fasen van zicht krijgen tot sturen en evalueren, en de principes die in elke fase gelden.">
+<Base title="Werkwijze" description={page.seo}>
   <header class="page-head">
     <KunstAccent beeld="samenhang" />
     <div class="wrap">
       <p class="eyebrow">Werkwijze</p>
       <h1>Van vraagstuk naar werkende praktijk</h1>
-      <p class="lead">Een traject bestaat meestal uit vier fasen. Je kunt bij elke fase instappen en alleen afnemen wat je nodig hebt.</p>
+      <RedactieBlokken blocks={page.hero} />
     </div>
   </header>
 
@@ -45,17 +42,7 @@ const principes = [
     </div>
   </section>
 
-  <section>
-    <div class="wrap">
-      <h2>Wat in elke fase hetzelfde is</h2>
-      <p class="prose">De fasen beschrijven wat er gebeurt. Deze principes beschrijven hoe.</p>
-      <div class="grid grid-2">
-        {principes.map((p) => (
-          <div class="card"><h3>{p.titel}</h3><p style="margin:0;color:var(--ink-2)">{p.tekst}</p></div>
-        ))}
-      </div>
-    </div>
-  </section>
+  {['Het recept','Wat in elke fase'].map(t=><section><div class="wrap"><h2>{sectie(page,t)!.title}</h2><RedactieBlokken blocks={sectie(page,t)!.blocks} kaarten={t==='Wat in elke fase'} /></div></section>)}
 
   <section class="tight">
     <div class="wrap">

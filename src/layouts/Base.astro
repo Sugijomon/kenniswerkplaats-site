@@ -7,7 +7,7 @@ import { groepen, aanbodBySlug } from '../data/aanbod';
 
 interface Props { title?: string; description?: string; palettePreview?: boolean }
 const { title, description = site.beschrijving, palettePreview = false } = Astro.props;
-const fullTitle = title ? `${title} · Kenniswerkplaats` : 'Kenniswerkplaats · Samen uitzoeken wat werkt';
+const fullTitle = title ? `${title} · Kenniswerkplaats` : 'Kenniswerkplaats · Samen van vraagstuk naar werkende praktijk';
 const path = Astro.url.pathname;
 const jaar = new Date().getFullYear();
 const nav = [
@@ -19,6 +19,7 @@ const nav = [
   { href: '/contact/', label: 'Contact' },
 ];
 const isActive = (href: string) => path === href || (href !== '/' && path.startsWith(href));
+const footerNav = [...nav.slice(0,3), { href: '/cases/', label: 'Cases' }, ...nav.slice(3)];
 ---
 <!doctype html>
 <html lang="nl">
@@ -100,7 +101,7 @@ const isActive = (href: string) => path === href || (href !== '/' && path.starts
         <nav aria-labelledby="footer-nav-title">
           <h2 id="footer-nav-title" class="footer-title">Verken Kenniswerkplaats</h2>
           <ul class="footer-nav">
-            {nav.map((n) => <li><a href={n.href}>{n.label}</a></li>)}
+            {footerNav.map((n) => <li><a href={n.href}>{n.label}</a></li>)}
           </ul>
         </nav>
         <div class="footer-contact">

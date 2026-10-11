@@ -2,6 +2,7 @@
 import Base from '../layouts/Base.astro';
 import Icon from './Icon.astro';
 import CaseCard from './CaseCard.astro';
+import FinancieringBlok from './FinancieringBlok.astro';
 import { aanbodBySlug } from '../data/aanbod';
 import { caseById } from '../data/cases';
 import { site } from '../data/site';
@@ -12,7 +13,7 @@ const a = aanbodBySlug[p.slug];
 const contact = `/contact/?onderwerp=${encodeURIComponent(a.naam)}`;
 const voorbeeld = p.voorbeeld ? `mailto:${site.email}?subject=${encodeURIComponent(p.voorbeeld)}` : undefined;
 ---
-<Base title={a.naam} description={p.intro}>
+<Base title={a.naam} description={a.seo ?? p.intro}>
   <div class="product-page">
     <header class="page-head"><div class="wrap">
       <p class="crumbs"><a href="/aanbod/">Aanbod</a> / {a.groep}</p>
@@ -28,7 +29,7 @@ const voorbeeld = p.voorbeeld ? `mailto:${site.email}?subject=${encodeURICompone
 
     {p.secties.map((s, index) => <section class:list={{ zacht: s.zacht }} id={index === 0 ? 'systeem' : undefined}><div class="wrap">
       {s.label && <p class="eyebrow">{s.label}</p>}<h2>{s.titel}</h2>{s.intro && <p class="section-intro">{s.intro}</p>}
-      <div class={`product-grid cols-${s.kolommen ?? 3}`}>{s.kaarten.map(k => <article class="card product-card">{k.marker && <span class="marker" aria-hidden="true">{k.marker}</span>}<h3>{k.titel}</h3>{k.tekst && <p>{k.tekst}</p>}{k.items && <ul class="check-list">{k.items.map(x => <li>{x}</li>)}</ul>}</article>)}</div>
+      {s.kaarten.length > 0 && <div class={`product-grid cols-${s.kolommen ?? 3}`}>{s.kaarten.map(k => <article class="card product-card">{k.marker && <span class="marker" aria-hidden="true">{k.marker}</span>}<h3>{k.titel}</h3>{k.tekst && <p>{k.tekst}</p>}{k.items && <ul class="check-list">{k.items.map(x => <li>{x}</li>)}</ul>}</article>)}</div>}
       {s.noot && <p class="section-noot">{s.noot}</p>}
     </div></section>)}
 
@@ -37,6 +38,7 @@ const voorbeeld = p.voorbeeld ? `mailto:${site.email}?subject=${encodeURICompone
       <p class="section-noot">{p.varianten.noot}</p><details class="scope"><summary>Wat buiten de scope valt</summary><p>{p.scope}</p></details>
     </div></section>
 
+    <FinancieringBlok slug={a.slug} />
     <section class="cases-section"><div class="wrap"><p class="eyebrow">Ervaring met de aanpak</p><h2>Eerder aangepakt</h2><p class="section-intro">{a.casesIntro}</p><div class="cases-grid">{a.cases.map(id => <CaseCard c={caseById[id]} highlight={a.fasen} />)}</div></div></section>
 
     <section><div class="wrap faq-layout"><div><p class="eyebrow">Praktische vragen</p><h2>Veelgestelde vragen</h2></div><div class="vragen">{p.faq.map(f => <details><summary>{f.vraag}</summary><p>{f.antwoord}</p></details>)}</div></div></section>

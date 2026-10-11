@@ -1,36 +1,16 @@
 ---
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
+import RedactieBlokken from '../components/RedactieBlokken.astro';
+import { paginas } from '../data/redactie';
 import { vraagstukken } from '../data/vraagstukken';
 import { aanbodBySlug } from '../data/aanbod';
+const page=paginas['/vraagstukken/'];
+const groepen=[...new Set(vraagstukken.map(v=>v.groep))];
 ---
-<Base title="Vraagstukken" description="Herken je jouw vraagstuk? Van ongecontroleerd AI-gebruik tot samenwerken aan een gedeeld platform.">
-  <header class="page-head">
-    <div class="wrap">
-      <p class="eyebrow">Vraagstukken</p>
-      <h1>Herken je dit?</h1>
-      <p class="lead">Ik begin bij het vraagstuk, niet bij een product. Kies wat het meest op jouw situatie lijkt; je ziet dan hoe ik het zou aanpakken.</p>
-    </div>
-  </header>
-  <section class="tight" aria-labelledby="vraagstukken-lijst">
-    <h2 id="vraagstukken-lijst" class="sr-only">Alle vraagstukken</h2>
-    <div class="wrap grid grid-3">
-      {vraagstukken.map((v) => (
-        <a class={`card vraag-tile domein-${v.domein}`} href={`/aanbod/${v.aanbod}/`} id={v.id}>
-          <span class="ico"><Icon name={v.icoon} size={28} /></span>
-          <h3>{v.titel}</h3>
-          <p>{v.tekst}</p>
-          <span class="go">{aanbodBySlug[v.aanbod].naam} <Icon name="arrow" size={14} /></span>
-        </a>
-      ))}
-    </div>
-  </section>
-  <section class="tight">
-    <div class="wrap">
-      <div class="cta-bar">
-        <p>Staat jouw vraagstuk er niet tussen?</p>
-        <a class="btn" href="/contact/">Bespreek een vraagstuk <Icon name="arrow" size={18} /></a>
-      </div>
-    </div>
-  </section>
+<Base title="Vraagstukken" description={page.seo}>
+  <header class="page-head"><div class="wrap"><p class="eyebrow">Vraagstukken</p><h1>{page.title}</h1><RedactieBlokken blocks={page.hero} /></div></header>
+  {groepen.map(g=> <section class="tight"><div class="wrap"><h2>{g}</h2><div class="grid grid-3">{vraagstukken.filter(v=>v.groep===g).map(v=><a class={`card vraag-tile domein-${v.domein}`} href={`/aanbod/${v.aanbod}/`} id={v.id}><span class="ico"><Icon name={v.icoon} size={28} /></span><h3>{v.titel}</h3><p>{v.tekst}</p><span class="go">{aanbodBySlug[v.aanbod].naam}<Icon name="arrow" size={14} /></span></a>)}</div></div></section>)}
+  <section class="tight"><div class="wrap"><div class="cta-bar"><p>Staat jouw vraagstuk er niet tussen?</p><a class="btn" href="/contact/">Bespreek een vraagstuk <Icon name="arrow" size={18} /></a></div></div></section>
 </Base>
+<style>h2 { font-size:1.7rem; margin-bottom:24px; }</style>
