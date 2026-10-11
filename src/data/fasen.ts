@@ -15,7 +15,7 @@ export const fasen: Fase[] = [
   {
     key: 'zicht',
     nr: 1,
-    naam: 'Zicht krijgen',
+    naam: 'Verkennen',
     vraag: 'Wat speelt er echt?',
     tekst:
       'Eerst vaststellen wat er feitelijk gebeurt: gebruik, knelpunten, belangen en kansen. Soms blijkt de oorspronkelijke vraag niet de juiste.',
@@ -24,14 +24,14 @@ export const fasen: Fase[] = [
     key: 'ontwerp',
     nr: 2,
     naam: 'Ontwerpen',
-    vraag: 'Wat gaan we doen?',
+    vraag: 'Wat kiezen we, en hoe gaat het eruitzien?',
     tekst:
       'Samen met de betrokkenen richting en werking ontwerpen: scenario’s, kaders, processen, spelregels of een pilot.',
   },
   {
     key: 'ontwikkel',
     nr: 3,
-    naam: 'Ontwikkelen',
+    naam: 'Realiseren',
     vraag: 'Hoe wordt het werkende praktijk?',
     tekst:
       'Van ontwerp naar werkende praktijk: inrichten, bouwen, koppelen, invoeren en borgen in het gewone werk.',
@@ -39,10 +39,10 @@ export const fasen: Fase[] = [
   {
     key: 'sturen',
     nr: 4,
-    naam: 'Sturen & evalueren',
-    vraag: 'Blijft het werken, en wat levert het op?',
+    naam: 'Evalueren',
+    vraag: 'Werkt het, en blijft het werken?',
     tekst:
-      'Governance, eigenaarschap en een vast ritme, plus evaluatie die uitmondt in een besluit: doorgaan, bijsturen, opschalen of stoppen.',
+      'Evalueren met een besluit als uitkomst: doorgaan, bijsturen, opschalen of stoppen. Plus governance die het besturen daarna mogelijk maakt.',
   },
 ];
 

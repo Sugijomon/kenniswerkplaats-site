@@ -1,0 +1,2891 @@
+{
+  "/": {
+    "name": "Home",
+    "title": "Samen van vraagstuk naar werkende praktijk.",
+    "seo": "Kenniswerkplaats helpt organisaties en samenwerkingsverbanden in Zeeland en Zuidwest-Nederland samen van vraagstuk naar werkende praktijk: verantwoord werken met AI, leren dat aansluit op het werk en digitale platforms die blijven werken.",
+    "subtitle": "Samen uitzoeken wat werkt. Daarna zorgen dat het blijft werken.",
+    "hero": [
+      {
+        "type": "paragraph",
+        "text": "Ik help organisaties en samenwerkingsverbanden met vraagstukken waar mensen, afdelingen of organisaties samen uit moeten komen. Ik breng de mensen die het moeten waarmaken bij elkaar, met de kennis en digitale hulpmiddelen die ze nodig hebben. Zo ontstaan onderbouwde keuzes, getoetste oplossingen en een werkwijze die blijft werken.",
+        "html": "<p>Ik help organisaties en samenwerkingsverbanden met vraagstukken waar mensen, afdelingen of organisaties samen uit moeten komen. Ik breng de mensen die het moeten waarmaken bij elkaar, met de kennis en digitale hulpmiddelen die ze nodig hebben. Zo ontstaan onderbouwde keuzes, getoetste oplossingen en een werkwijze die blijft werken.</p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "[Plan een kennismaking] [Bekijk vraagstukken]",
+        "html": "<p><a href=\"/contact/?onderwerp=Home\">Plan een kennismaking</a> <a href=\"/vraagstukken/\">Bekijk vraagstukken</a></p>"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Herken je dit?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "[Alle vraagstukken]",
+            "html": "<p><a href=\"/vraagstukken/\">Alle vraagstukken</a></p>"
+          },
+          {
+            "type": "table",
+            "headers": [
+              "Tegel",
+              "Tekst",
+              "Knop → bestemming"
+            ],
+            "rows": [
+              [
+                "**Allerlei AI-tools**",
+                "Medewerkers gebruiken allerlei AI-tools, maar niemand weet precies wat, waarvoor en met welke gegevens.",
+                "Zo pak ik het aan → AI-Foto"
+              ],
+              [
+                "**Wel beleid, geen grip**",
+                "Er zijn losse afspraken over AI, maar geen eigenaar, geen register en geen ritme.",
+                "Zo pak ik het aan → AI op Orde"
+              ],
+              [
+                "**De AI Act**",
+                "De AI-verordening vraagt om afspraken en AI-geletterdheid. Waar begin je zonder dat het een papieren exercitie wordt?",
+                "Zo pak ik het aan → AI-Foto"
+              ],
+              [
+                "**Losse pilots**",
+                "Afdelingen experimenteren elk op hun eigen manier, maar er zijn geen gezamenlijke keuzes.",
+                "Zo pak ik het aan → Praktijklab"
+              ],
+              [
+                "**AI in HR**",
+                "AI raakt werving, beoordeling en ontwikkeling, zonder duidelijke spelregels.",
+                "Zo pak ik het aan → GRIP op AI in HR"
+              ],
+              [
+                "**Copilot zonder resultaat**",
+                "De licenties zijn er, de training is gegeven, maar het werk verandert nauwelijks.",
+                "Zo pak ik het aan → AI-bekwaamheid"
+              ]
+            ],
+            "headersHtml": [
+              "Tegel",
+              "Tekst",
+              "Knop → bestemming"
+            ],
+            "rowsHtml": [
+              [
+                "<strong>Allerlei AI-tools</strong>",
+                "Medewerkers gebruiken allerlei AI-tools, maar niemand weet precies wat, waarvoor en met welke gegevens.",
+                "Zo pak ik het aan → AI-Foto"
+              ],
+              [
+                "<strong>Wel beleid, geen grip</strong>",
+                "Er zijn losse afspraken over AI, maar geen eigenaar, geen register en geen ritme.",
+                "Zo pak ik het aan → AI op Orde"
+              ],
+              [
+                "<strong>De AI Act</strong>",
+                "De AI-verordening vraagt om afspraken en AI-geletterdheid. Waar begin je zonder dat het een papieren exercitie wordt?",
+                "Zo pak ik het aan → AI-Foto"
+              ],
+              [
+                "<strong>Losse pilots</strong>",
+                "Afdelingen experimenteren elk op hun eigen manier, maar er zijn geen gezamenlijke keuzes.",
+                "Zo pak ik het aan → Praktijklab"
+              ],
+              [
+                "<strong>AI in HR</strong>",
+                "AI raakt werving, beoordeling en ontwikkeling, zonder duidelijke spelregels.",
+                "Zo pak ik het aan → GRIP op AI in HR"
+              ],
+              [
+                "<strong>Copilot zonder resultaat</strong>",
+                "De licenties zijn er, de training is gegeven, maar het werk verandert nauwelijks.",
+                "Zo pak ik het aan → AI-bekwaamheid"
+              ]
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Drie gebieden waarin ik help",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "**Verantwoord werken met AI** — Van zicht op AI-gebruik naar afspraken, eigenaarschap en bewijs.\nAI-Foto · GRIP op AI in HR · AI op Orde",
+            "html": "<p><strong>Verantwoord werken met AI</strong> — Van zicht op AI-gebruik naar afspraken, eigenaarschap en bewijs.\nAI-Foto · GRIP op AI in HR · AI op Orde</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Leren en ontwikkelen** — Leren dat aansluit op het werk, van praktijklab tot leerroute.\nPraktijklab · Leermodule op maat · AI-bekwaamheid",
+            "html": "<p><strong>Leren en ontwikkelen</strong> — Leren dat aansluit op het werk, van praktijklab tot leerroute.\nPraktijklab · Leermodule op maat · AI-bekwaamheid</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Digitale platforms** — Platforms kiezen, invoeren en besturen, ook als meerdere organisaties ze delen.\nOntwerp en ontwikkeling · Implementatie · Governance en evaluatie",
+            "html": "<p><strong>Digitale platforms</strong> — Platforms kiezen, invoeren en besturen, ook als meerdere organisaties ze delen.\nOntwerp en ontwikkeling · Implementatie · Governance en evaluatie</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Instap: begin met een praktijklab",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "In een praktijklab zitten de mensen die het vraagstuk kennen samen aan tafel. Bij AI-vraagstukken werk ik met het AISA-kaartspel: herkenbare situaties, kansen en risico’s komen op tafel, en aan het eind liggen er gedeelde spelregels en eerste besluiten. Eén sessie om te starten, een verdieping na een AI-Foto, of een korte reeks. In je eigen organisatie of met meerdere organisaties samen.",
+            "html": "<p>In een praktijklab zitten de mensen die het vraagstuk kennen samen aan tafel. Bij AI-vraagstukken werk ik met het AISA-kaartspel: herkenbare situaties, kansen en risico’s komen op tafel, en aan het eind liggen er gedeelde spelregels en eerste besluiten. Eén sessie om te starten, een verdieping na een AI-Foto, of een korte reeks. In je eigen organisatie of met meerdere organisaties samen.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "[Bekijk het praktijklab]",
+            "html": "<p><a href=\"/aanbod/praktijklab/\">Bekijk het praktijklab</a></p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Zo werk ik",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "[Meer over de werkwijze]",
+            "html": "<p><a href=\"/werkwijze/\">Meer over de werkwijze</a></p>"
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "**Verkennen** — Wat speelt er echt?",
+              "**Ontwerpen** — Wat kiezen we, en hoe gaat het eruitzien?",
+              "**Realiseren** — Hoe wordt het werkende praktijk?",
+              "**Evalueren** — Werkt het, en blijft het werken?"
+            ],
+            "itemsHtml": [
+              "<strong>Verkennen</strong> — Wat speelt er echt?",
+              "<strong>Ontwerpen</strong> — Wat kiezen we, en hoe gaat het eruitzien?",
+              "<strong>Realiseren</strong> — Hoe wordt het werkende praktijk?",
+              "<strong>Evalueren</strong> — Werkt het, en blijft het werken?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Je kunt bij elke fase instappen. Een evaluatie is vaak het begin van de volgende ronde.",
+            "html": "<p>Je kunt bij elke fase instappen. Een evaluatie is vaak het begin van de volgende ronde.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "In elke fase hetzelfde recept: **de groep faciliteren**, met **passende technologie** en **de juiste inhoud**.",
+            "html": "<p>In elke fase hetzelfde recept: <strong>de groep faciliteren</strong>, met <strong>passende technologie</strong> en <strong>de juiste inhoud</strong>.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Eerder aangepakt",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "[Alle cases]",
+            "html": "<p><a href=\"/cases/\">Alle cases</a></p>"
+          }
+        ],
+        "caseIds": [
+          "zorgwise",
+          "viazorg-flexplatform",
+          "corpio"
+        ]
+      },
+      {
+        "title": "Uit de werkplaats",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "[Naar de werkplaats]",
+            "html": "<p><a href=\"/werkplaats/\">Naar de werkplaats</a></p>"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "**AISA-kaartspel** — 64 kaarten om met een team verantwoord AI-gebruik te bespreken en te beslissen.",
+              "**Signaalfeed** — Signalen over AI, beleid en praktijk, kort geduid.",
+              "**Kleine tools** — Instrumenten om zelf mee te beginnen.",
+              "**Digitaal canvas** — Werkvormen uit het praktijklab, ook online."
+            ],
+            "itemsHtml": [
+              "<strong>AISA-kaartspel</strong> — 64 kaarten om met een team verantwoord AI-gebruik te bespreken en te beslissen.",
+              "<strong>Signaalfeed</strong> — Signalen over AI, beleid en praktijk, kort geduid.",
+              "<strong>Kleine tools</strong> — Instrumenten om zelf mee te beginnen.",
+              "<strong>Digitaal canvas</strong> — Werkvormen uit het praktijklab, ook online."
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Over Rink",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Al twintig jaar werk ik aan dezelfde overgang: van ambitie of besluit naar een praktijk die werkt en blijft werken. Vaak tussen organisaties die geen zeggenschap over elkaar hebben, in zorg, onderwijs en daarbuiten. Ik verkoop geen software, model of licentie, dus mijn advies gaat over wat bij jullie werkt.",
+            "html": "<p>Al twintig jaar werk ik aan dezelfde overgang: van ambitie of besluit naar een praktijk die werkt en blijft werken. Vaak tussen organisaties die geen zeggenschap over elkaar hebben, in zorg, onderwijs en daarbuiten. Ik verkoop geen software, model of licentie, dus mijn advies gaat over wat bij jullie werkt.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "[Meer over mij]",
+            "html": "<p><a href=\"/over/\">Meer over mij</a></p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Benieuwd wat werkt voor jullie?** [Neem contact op]",
+            "html": "<p><strong>Benieuwd wat werkt voor jullie?</strong> <a href=\"/contact/\">Neem contact op</a></p>"
+          }
+        ],
+        "caseIds": []
+      }
+    ]
+  },
+  "/vraagstukken/": {
+    "name": "Vraagstukken",
+    "title": "Herken je dit?",
+    "seo": "Herken je jouw vraagstuk? Van AI-tools zonder overzicht en AI-geletterdheid tot samenwerken aan een gedeeld platform.",
+    "subtitle": "",
+    "hero": [
+      {
+        "type": "paragraph",
+        "text": "Ik begin bij het vraagstuk, niet bij een product. Kies wat het meest op jouw situatie lijkt; je ziet dan waar ik zou beginnen. Past niets precies? Dan bespreken we je eigen vraagstuk.",
+        "html": "<p>Ik begin bij het vraagstuk, niet bij een product. Kies wat het meest op jouw situatie lijkt; je ziet dan waar ik zou beginnen. Past niets precies? Dan bespreken we je eigen vraagstuk.</p>"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Verantwoord werken met AI",
+        "blocks": [
+          {
+            "type": "table",
+            "headers": [
+              "Vraagstuk",
+              "Tekst",
+              "Eerste stap"
+            ],
+            "rows": [
+              [
+                "**Allerlei AI-tools**",
+                "Medewerkers gebruiken allerlei AI-tools, maar niemand weet precies wat, waarvoor en met welke gegevens.",
+                "AI-Foto"
+              ],
+              [
+                "**Wel beleid, geen grip**",
+                "Er zijn losse afspraken over AI, maar geen eigenaar, geen register en geen ritme.",
+                "AI op Orde"
+              ],
+              [
+                "**De AI Act**",
+                "De AI-verordening vraagt om afspraken en AI-geletterdheid. Waar begin je?",
+                "AI-Foto"
+              ],
+              [
+                "**Losse pilots**",
+                "Afdelingen experimenteren elk op hun eigen manier, maar er zijn geen gezamenlijke keuzes.",
+                "Praktijklab"
+              ],
+              [
+                "**AI in HR**",
+                "AI raakt werving, beoordeling en ontwikkeling, zonder duidelijke spelregels.",
+                "GRIP op AI in HR"
+              ]
+            ],
+            "headersHtml": [
+              "Vraagstuk",
+              "Tekst",
+              "Eerste stap"
+            ],
+            "rowsHtml": [
+              [
+                "<strong>Allerlei AI-tools</strong>",
+                "Medewerkers gebruiken allerlei AI-tools, maar niemand weet precies wat, waarvoor en met welke gegevens.",
+                "AI-Foto"
+              ],
+              [
+                "<strong>Wel beleid, geen grip</strong>",
+                "Er zijn losse afspraken over AI, maar geen eigenaar, geen register en geen ritme.",
+                "AI op Orde"
+              ],
+              [
+                "<strong>De AI Act</strong>",
+                "De AI-verordening vraagt om afspraken en AI-geletterdheid. Waar begin je?",
+                "AI-Foto"
+              ],
+              [
+                "<strong>Losse pilots</strong>",
+                "Afdelingen experimenteren elk op hun eigen manier, maar er zijn geen gezamenlijke keuzes.",
+                "Praktijklab"
+              ],
+              [
+                "<strong>AI in HR</strong>",
+                "AI raakt werving, beoordeling en ontwikkeling, zonder duidelijke spelregels.",
+                "GRIP op AI in HR"
+              ]
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Leren en ontwikkelen",
+        "blocks": [
+          {
+            "type": "table",
+            "headers": [
+              "Vraagstuk",
+              "Tekst",
+              "Eerste stap"
+            ],
+            "rows": [
+              [
+                "**Copilot zonder resultaat**",
+                "De licenties zijn er, de training is gegeven, maar het werk verandert nauwelijks.",
+                "AI-bekwaamheid"
+              ],
+              [
+                "**AI-geletterdheid afvinken**",
+                "Iedereen moet AI-geletterd zijn, maar een e-learning voelt als afvinken.",
+                "AI-bekwaamheid"
+              ],
+              [
+                "**Leermodule op maat**",
+                "Er is een beroepsprofiel of competentiekader, maar nog geen leerroute die erop aansluit.",
+                "Leermodule op maat"
+              ]
+            ],
+            "headersHtml": [
+              "Vraagstuk",
+              "Tekst",
+              "Eerste stap"
+            ],
+            "rowsHtml": [
+              [
+                "<strong>Copilot zonder resultaat</strong>",
+                "De licenties zijn er, de training is gegeven, maar het werk verandert nauwelijks.",
+                "AI-bekwaamheid"
+              ],
+              [
+                "<strong>AI-geletterdheid afvinken</strong>",
+                "Iedereen moet AI-geletterd zijn, maar een e-learning voelt als afvinken.",
+                "AI-bekwaamheid"
+              ],
+              [
+                "<strong>Leermodule op maat</strong>",
+                "Er is een beroepsprofiel of competentiekader, maar nog geen leerroute die erop aansluit.",
+                "Leermodule op maat"
+              ]
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Samenwerken en digitale platforms",
+        "blocks": [
+          {
+            "type": "table",
+            "headers": [
+              "Vraagstuk",
+              "Tekst",
+              "Eerste stap"
+            ],
+            "rows": [
+              [
+                "**Samen tot één aanpak**",
+                "Meerdere organisaties moeten samen tot één aanpak komen, maar het blijft bij overleggen.",
+                "Praktijklab"
+              ],
+              [
+                "**Samen een platform**",
+                "We willen een gedeeld platform, maar wat hebben we nodig en van wie is het?",
+                "Ontwerp en ontwikkeling"
+              ],
+              [
+                "**Het komt niet van de grond**",
+                "Er ligt een plan of platform, maar het wordt geen onderdeel van het gewone werk.",
+                "Implementatie"
+              ],
+              [
+                "**Wat levert het op?**",
+                "Een programma, platform of AI-pilot loopt al een tijdje. Doorgaan, bijsturen of stoppen?",
+                "Governance en evaluatie"
+              ]
+            ],
+            "headersHtml": [
+              "Vraagstuk",
+              "Tekst",
+              "Eerste stap"
+            ],
+            "rowsHtml": [
+              [
+                "<strong>Samen tot één aanpak</strong>",
+                "Meerdere organisaties moeten samen tot één aanpak komen, maar het blijft bij overleggen.",
+                "Praktijklab"
+              ],
+              [
+                "<strong>Samen een platform</strong>",
+                "We willen een gedeeld platform, maar wat hebben we nodig en van wie is het?",
+                "Ontwerp en ontwikkeling"
+              ],
+              [
+                "<strong>Het komt niet van de grond</strong>",
+                "Er ligt een plan of platform, maar het wordt geen onderdeel van het gewone werk.",
+                "Implementatie"
+              ],
+              [
+                "<strong>Wat levert het op?</strong>",
+                "Een programma, platform of AI-pilot loopt al een tijdje. Doorgaan, bijsturen of stoppen?",
+                "Governance en evaluatie"
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "**Staat jouw vraagstuk er niet tussen?** [Bespreek een vraagstuk]",
+            "html": "<p><strong>Staat jouw vraagstuk er niet tussen?</strong> <a href=\"/contact/?onderwerp=Vraagstukken\">Bespreek een vraagstuk</a></p>"
+          }
+        ],
+        "caseIds": []
+      }
+    ]
+  },
+  "/aanbod/": {
+    "name": "Aanbod",
+    "title": "Wat ik voor je kan doen",
+    "seo": "Modulair aanbod met een vaste prijs in drie domeinen: verantwoord werken met AI, leren en ontwikkelen, en digitale platforms.",
+    "subtitle": "",
+    "hero": [
+      {
+        "type": "paragraph",
+        "text": "Elk onderdeel heeft een eigen resultaat en een vaste prijs. Je kunt los instappen of onderdelen combineren tot een traject. Wat al is gedaan, hergebruik ik, zodat je niets dubbel betaalt.",
+        "html": "<p>Elk onderdeel heeft een eigen resultaat en een vaste prijs. Je kunt los instappen of onderdelen combineren tot een traject. Wat al is gedaan, hergebruik ik, zodat je niets dubbel betaalt.</p>"
+      },
+      {
+        "type": "list",
+        "ordered": true,
+        "items": [
+          "Verkennen · 2. Ontwerpen · 3. Realiseren · 4. Evalueren"
+        ],
+        "itemsHtml": [
+          "Verkennen · 2. Ontwerpen · 3. Realiseren · 4. Evalueren"
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "title": "Verantwoord werken met AI",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Van zicht op feitelijk AI-gebruik naar afspraken, eigenaarschap en bewijs.",
+            "html": "<p>Van zicht op feitelijk AI-gebruik naar afspraken, eigenaarschap en bewijs.</p>"
+          },
+          {
+            "type": "table",
+            "headers": [
+              "Dienst",
+              "Ondertitel",
+              "Fase"
+            ],
+            "rows": [
+              [
+                "**AI-Foto**",
+                "Zicht op AI-gebruik in je organisatie",
+                "Verkennen"
+              ],
+              [
+                "**GRIP op AI in HR**",
+                "Verantwoord AI-gebruik in HR",
+                "Ontwerpen"
+              ],
+              [
+                "**AI op Orde**",
+                "AI-beleid en governance die in de praktijk werken",
+                "Realiseren · Evalueren"
+              ]
+            ],
+            "headersHtml": [
+              "Dienst",
+              "Ondertitel",
+              "Fase"
+            ],
+            "rowsHtml": [
+              [
+                "<strong>AI-Foto</strong>",
+                "Zicht op AI-gebruik in je organisatie",
+                "Verkennen"
+              ],
+              [
+                "<strong>GRIP op AI in HR</strong>",
+                "Verantwoord AI-gebruik in HR",
+                "Ontwerpen"
+              ],
+              [
+                "<strong>AI op Orde</strong>",
+                "AI-beleid en governance die in de praktijk werken",
+                "Realiseren · Evalueren"
+              ]
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Leren en ontwikkelen",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Leren dat aansluit op het werk en wat mensen er feitelijk mee moeten kunnen.",
+            "html": "<p>Leren dat aansluit op het werk en wat mensen er feitelijk mee moeten kunnen.</p>"
+          },
+          {
+            "type": "table",
+            "headers": [
+              "Dienst",
+              "Ondertitel",
+              "Fase"
+            ],
+            "rows": [
+              [
+                "**Praktijklab** *(instap)*",
+                "Samen uitzoeken, maken en beoordelen",
+                "Verkennen · Ontwerpen, als werkvorm in elke fase"
+              ],
+              [
+                "**Leermodule op maat**",
+                "Een leerroute die aansluit op werk en competentiekader",
+                "Ontwerpen · Realiseren"
+              ],
+              [
+                "**AI-bekwaamheid**",
+                "AI-geletterdheid per rol, zoals de AI Act vraagt",
+                "Realiseren"
+              ]
+            ],
+            "headersHtml": [
+              "Dienst",
+              "Ondertitel",
+              "Fase"
+            ],
+            "rowsHtml": [
+              [
+                "<strong>Praktijklab</strong> <em>(instap)</em>",
+                "Samen uitzoeken, maken en beoordelen",
+                "Verkennen · Ontwerpen, als werkvorm in elke fase"
+              ],
+              [
+                "<strong>Leermodule op maat</strong>",
+                "Een leerroute die aansluit op werk en competentiekader",
+                "Ontwerpen · Realiseren"
+              ],
+              [
+                "<strong>AI-bekwaamheid</strong>",
+                "AI-geletterdheid per rol, zoals de AI Act vraagt",
+                "Realiseren"
+              ]
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Digitale platforms",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Platforms en hulpmiddelen kiezen, invoeren en besturen, ook als meerdere organisaties ze delen.",
+            "html": "<p>Platforms en hulpmiddelen kiezen, invoeren en besturen, ook als meerdere organisaties ze delen.</p>"
+          },
+          {
+            "type": "table",
+            "headers": [
+              "Dienst",
+              "Ondertitel",
+              "Fase"
+            ],
+            "rows": [
+              [
+                "**Ontwerp en ontwikkeling**",
+                "Samen een platform of hulpmiddel kiezen en inrichten",
+                "Ontwerpen · Realiseren"
+              ],
+              [
+                "**Implementatie**",
+                "Van gekozen oplossing naar werkende praktijk",
+                "Realiseren"
+              ],
+              [
+                "**Governance en evaluatie**",
+                "Evaluatie van platforms, samenwerkingen en AI-pilots",
+                "Evalueren"
+              ]
+            ],
+            "headersHtml": [
+              "Dienst",
+              "Ondertitel",
+              "Fase"
+            ],
+            "rowsHtml": [
+              [
+                "<strong>Ontwerp en ontwikkeling</strong>",
+                "Samen een platform of hulpmiddel kiezen en inrichten",
+                "Ontwerpen · Realiseren"
+              ],
+              [
+                "<strong>Implementatie</strong>",
+                "Van gekozen oplossing naar werkende praktijk",
+                "Realiseren"
+              ],
+              [
+                "<strong>Governance en evaluatie</strong>",
+                "Evaluatie van platforms, samenwerkingen en AI-pilots",
+                "Evalueren"
+              ]
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Ook: duurzaamheid en circulariteit",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Vanuit mijn achtergrond in industriële ecologie begeleid ik ook verkenningen en samenwerkingen rond circulaire ketens en duurzaam ondernemen. Dit aanbod is in opbouw. Speelt er bij jou zo’n vraagstuk? Dan bespreek ik graag of ik kan helpen.",
+            "html": "<p>Vanuit mijn achtergrond in industriële ecologie begeleid ik ook verkenningen en samenwerkingen rond circulaire ketens en duurzaam ondernemen. Dit aanbod is in opbouw. Speelt er bij jou zo’n vraagstuk? Dan bespreek ik graag of ik kan helpen.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Hoe ik prijs",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Elke dienst heeft een vaste prijs per variant, binnen de grenzen waarbinnen een budgethouder meestal zelf kan beslissen. Na een kennismaking ontvang je een offerte met scope, resultaat en doorlooptijd.",
+            "html": "<p>Elke dienst heeft een vaste prijs per variant, binnen de grenzen waarbinnen een budgethouder meestal zelf kan beslissen. Na een kennismaking ontvang je een offerte met scope, resultaat en doorlooptijd.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Twijfel je waar je moet beginnen?** [Plan een kennismaking]",
+            "html": "<p><strong>Twijfel je waar je moet beginnen?</strong> <a href=\"/contact/?onderwerp=Aanbod\">Plan een kennismaking</a></p>"
+          }
+        ],
+        "caseIds": []
+      }
+    ]
+  },
+  "/aanbod/ai-foto/": {
+    "name": "AI-Foto",
+    "title": "AI-Foto",
+    "seo": "AI-Foto brengt in ongeveer twee tot vier weken het feitelijke gebruik van AI in je organisatie in beeld en vertaalt dat naar maximaal vijf besluitpunten met een 90-dagenroute.",
+    "subtitle": "Zicht op AI-gebruik in je organisatie. Eerst zien, dan samen beslissen.",
+    "hero": [
+      {
+        "type": "paragraph",
+        "text": "AI-Foto brengt het feitelijke gebruik van AI in je organisatie in beeld, formeel én informeel, inclusief het gebruik waar niemand toestemming voor vroeg. Dat beeld wordt een besluitagenda waarmee de directie verder kan.",
+        "html": "<p>AI-Foto brengt het feitelijke gebruik van AI in je organisatie in beeld, formeel én informeel, inclusief het gebruik waar niemand toestemming voor vroeg. Dat beeld wordt een besluitagenda waarmee de directie verder kan.</p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "Individuele voorbereiding, een gezamenlijke scan, drie analysekaarten en maximaal vijf besluitpunten met een route voor de eerste negentig dagen. Vertrouwelijk en geaggregeerd.",
+        "html": "<p>Individuele voorbereiding, een gezamenlijke scan, drie analysekaarten en maximaal vijf besluitpunten met een route voor de eerste negentig dagen. Vertrouwelijk en geaggregeerd.</p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "[Plan een AI-Foto-check] [Vraag een voorbeeldrapport]",
+        "html": "<p><a href=\"/contact/?onderwerp=AI-Foto\">Plan een AI-Foto-check</a> <a href=\"mailto:rink@digidactics.nl?subject=Vraag%20een%20voorbeeldrapport%20AI-Foto\">Vraag een voorbeeldrapport</a></p>"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Wanneer AI-Foto past",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "Je weet niet waar AI in het werk al wordt gebruikt.",
+              "Je vermoedt dat medewerkers tools gebruiken buiten het zicht van IT of privacy.",
+              "Formele systemen en wat mensen zelf doen geven een verschillend beeld.",
+              "Je wilt AI-beleid of training baseren op gebruik dat je echt hebt gezien.",
+              "Je hebt besluitpunten nodig, geen verzameling losse gegevens."
+            ],
+            "itemsHtml": [
+              "Je weet niet waar AI in het werk al wordt gebruikt.",
+              "Je vermoedt dat medewerkers tools gebruiken buiten het zicht van IT of privacy.",
+              "Formele systemen en wat mensen zelf doen geven een verschillend beeld.",
+              "Je wilt AI-beleid of training baseren op gebruik dat je echt hebt gezien.",
+              "Je hebt besluitpunten nodig, geen verzameling losse gegevens."
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Een duidelijke grens",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "Geen prompt-inzage, plug-ins of netwerkmonitoring.",
+              "Geen individuele rapportage aan de werkgever.",
+              "Geen maturityscore: drie afzonderlijke kaarten in plaats van één cijfer.",
+              "Geen juridisch oordeel, DPIA, audit of certificering."
+            ],
+            "itemsHtml": [
+              "Geen prompt-inzage, plug-ins of netwerkmonitoring.",
+              "Geen individuele rapportage aan de werkgever.",
+              "Geen maturityscore: drie afzonderlijke kaarten in plaats van één cijfer.",
+              "Geen juridisch oordeel, DPIA, audit of certificering."
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Drie perspectieven, één beeld",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "**Medewerkers — wat er in het werk gebeurt.** Vertrouwelijke, geaggregeerde uitvraag. Bij Standaard en Uitgebreid ook een medewerkerspuls en validatiegesprekken.",
+            "html": "<p><strong>Medewerkers — wat er in het werk gebeurt.</strong> Vertrouwelijke, geaggregeerde uitvraag. Bij Standaard en Uitgebreid ook een medewerkerspuls en validatiegesprekken.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Management — wat de organisatie denkt te weten.** Aannames, afspraken en verwachtingen naast de praktijk gelegd. Het verschil is zelf informatie.",
+            "html": "<p><strong>Management — wat de organisatie denkt te weten.</strong> Aannames, afspraken en verwachtingen naast de praktijk gelegd. Het verschil is zelf informatie.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Systemen — wat vastligt in software.** Vastgelegde toepassingen en ingebouwde AI-functies als basis voor een register.",
+            "html": "<p><strong>Systemen — wat vastligt in software.</strong> Vastgelegde toepassingen en ingebouwde AI-functies als basis voor een register.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "Systemen alleen of zelfrapportage alleen geven een onvolledig beeld. Samen ontstaat een basis waarop de directie kan beslissen. Technische detectietools laten zien dát een tool wordt gebruikt; AI-Foto laat ook zien waarom, waarvoor en wat mensen nodig hebben.",
+            "html": "<p>Systemen alleen of zelfrapportage alleen geven een onvolledig beeld. Samen ontstaat een basis waarop de directie kan beslissen. Technische detectietools laten zien dát een tool wordt gebruikt; AI-Foto laat ook zien waarom, waarvoor en wat mensen nodig hebben.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Hoe het verloopt (Compact, ongeveer 2 weken)",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "**Week 1 · Voorbereiding.** Individueel, per deelnemer. Scope en eenheid worden vastgesteld en de uitvraag wordt klaargezet.",
+              "**Week 1 · Gezamenlijke scan.** Praktijk, aannames en systemen naast elkaar. Geaggregeerd, nooit op persoon.",
+              "**Week 2 · Analyse.** Drie kaarten: waarde, aandachtspunten en vaardigheden.",
+              "**Week 2 · Besluiten.** Maximaal vijf besluitpunten met eigenaren, tijdelijke voorzorgen en een 90-dagenroute."
+            ],
+            "itemsHtml": [
+              "<strong>Week 1 · Voorbereiding.</strong> Individueel, per deelnemer. Scope en eenheid worden vastgesteld en de uitvraag wordt klaargezet.",
+              "<strong>Week 1 · Gezamenlijke scan.</strong> Praktijk, aannames en systemen naast elkaar. Geaggregeerd, nooit op persoon.",
+              "<strong>Week 2 · Analyse.</strong> Drie kaarten: waarde, aandachtspunten en vaardigheden.",
+              "<strong>Week 2 · Besluiten.</strong> Maximaal vijf besluitpunten met eigenaren, tijdelijke voorzorgen en een 90-dagenroute."
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Drie kaarten, geen totaalscore",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "**Kaart 1 · Waarde.** Waar levert AI nu al iets op? *Bijvoorbeeld: tekst en concepten, zoeken en samenvatten, analyse en planning.*",
+              "**Kaart 2 · Aandachtspunten.** Waar vraagt gebruik om een besluit? *Bijvoorbeeld: persoonsgegevens, output in klantwerk, onbekende tools.*",
+              "**Kaart 3 · Vaardigheden.** Wat kunnen mensen en wat missen ze? *Bijvoorbeeld: output beoordelen, weten wanneer je stopt, vastleggen wat je hebt gedaan.*"
+            ],
+            "itemsHtml": [
+              "<strong>Kaart 1 · Waarde.</strong> Waar levert AI nu al iets op? <em>Bijvoorbeeld: tekst en concepten, zoeken en samenvatten, analyse en planning.</em>",
+              "<strong>Kaart 2 · Aandachtspunten.</strong> Waar vraagt gebruik om een besluit? <em>Bijvoorbeeld: persoonsgegevens, output in klantwerk, onbekende tools.</em>",
+              "<strong>Kaart 3 · Vaardigheden.</strong> Wat kunnen mensen en wat missen ze? <em>Bijvoorbeeld: output beoordelen, weten wanneer je stopt, vastleggen wat je hebt gedaan.</em>"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Dit zijn schematische voorbeelden, geen meetresultaten. Eén totaalscore suggereert precisie die er niet is en verbergt waar de organisatie wél of niet klaar voor is.",
+            "html": "<p>Dit zijn schematische voorbeelden, geen meetresultaten. Eén totaalscore suggereert precisie die er niet is en verbergt waar de organisatie wél of niet klaar voor is.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Daarna weet de directie** waar AI het werk nu al raakt, welke maximaal vijf punten een besluit vragen, wie eigenaar is van elk punt, welke tijdelijke voorzorgen nu gelden en wat er in 30, 60 en 90 dagen gebeurt. De inhoud van die route volgt uit je eigen besluitpunten.",
+            "html": "<p><strong>Daarna weet de directie</strong> waar AI het werk nu al raakt, welke maximaal vijf punten een besluit vragen, wie eigenaar is van elk punt, welke tijdelijke voorzorgen nu gelden en wat er in 30, 60 en 90 dagen gebeurt. De inhoud van die route volgt uit je eigen besluitpunten.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Veilig vertellen wat er echt gebeurt",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Mensen vertellen alleen wat er echt gebeurt als het veilig is. Daarom is de uitvraag vertrouwelijk en geaggregeerd, zonder prompt-inzage, plug-ins of netwerkmonitoring en zonder individuele rapportage aan de werkgever. Deelnemers krijgen terugkoppeling op het geheel.",
+            "html": "<p>Mensen vertellen alleen wat er echt gebeurt als het veilig is. Daarom is de uitvraag vertrouwelijk en geaggregeerd, zonder prompt-inzage, plug-ins of netwerkmonitoring en zonder individuele rapportage aan de werkgever. Deelnemers krijgen terugkoppeling op het geheel.</p>"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "**Directie en MT:** besluitpunten met eigenaren en een route voor de eerste drie maanden.",
+              "**HR en L&D:** zicht op vaardigheden en waar oefening nodig is, per rolcluster.",
+              "**Privacy en IT:** een basis voor een register: toepassingen, ingebouwde functies en ontbrekende informatie.",
+              "**Medewerkers:** duidelijkheid over wat mag en terugkoppeling op het geaggregeerde beeld."
+            ],
+            "itemsHtml": [
+              "<strong>Directie en MT:</strong> besluitpunten met eigenaren en een route voor de eerste drie maanden.",
+              "<strong>HR en L&#x26;D:</strong> zicht op vaardigheden en waar oefening nodig is, per rolcluster.",
+              "<strong>Privacy en IT:</strong> een basis voor een register: toepassingen, ingebouwde functies en ontbrekende informatie.",
+              "<strong>Medewerkers:</strong> duidelijkheid over wat mag en terugkoppeling op het geaggregeerde beeld."
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Drie varianten",
+        "blocks": [
+          {
+            "type": "table",
+            "headers": [
+              "",
+              "Compact",
+              "Standaard",
+              "Uitgebreid"
+            ],
+            "rows": [
+              [
+                "Scope",
+                "Eén team of eenheid",
+                "Tot ongeveer vijf teams",
+                "Tot ongeveer acht eenheden"
+              ],
+              [
+                "Doorlooptijd",
+                "Ongeveer 2 weken",
+                "2–3 weken",
+                "3–4 weken"
+              ],
+              [
+                "Inhoud",
+                "Individuele voorbereiding, gezamenlijke scan, drie kaarten, besluitagenda met 90-dagenroute",
+                "Plus medewerkerspuls, 3–5 validatiegesprekken en een besluitsessie",
+                "Plus 6–8 gesprekken, afgesproken deelanalyses en besluitvorming over een breder deel van de organisatie"
+              ],
+              [
+                "Grens",
+                "Een eerste, begrensd beeld",
+                "Basis voor een register, geen volledige systeeminventarisatie",
+                "Complexe scopes of meerdere entiteiten vragen aparte scoping"
+              ]
+            ],
+            "headersHtml": [
+              "",
+              "Compact",
+              "Standaard",
+              "Uitgebreid"
+            ],
+            "rowsHtml": [
+              [
+                "Scope",
+                "Eén team of eenheid",
+                "Tot ongeveer vijf teams",
+                "Tot ongeveer acht eenheden"
+              ],
+              [
+                "Doorlooptijd",
+                "Ongeveer 2 weken",
+                "2–3 weken",
+                "3–4 weken"
+              ],
+              [
+                "Inhoud",
+                "Individuele voorbereiding, gezamenlijke scan, drie kaarten, besluitagenda met 90-dagenroute",
+                "Plus medewerkerspuls, 3–5 validatiegesprekken en een besluitsessie",
+                "Plus 6–8 gesprekken, afgesproken deelanalyses en besluitvorming over een breder deel van de organisatie"
+              ],
+              [
+                "Grens",
+                "Een eerste, begrensd beeld",
+                "Basis voor een register, geen volledige systeeminventarisatie",
+                "Complexe scopes of meerdere entiteiten vragen aparte scoping"
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "**Wat buiten de scope valt.** Geen juridisch oordeel of compliancegarantie. Geen volledige DPIA, security- of technische audit, biasmeting of certificering. Geen AI-ontwikkeling en geen formele FG-rol. Open juridische en technische vragen benoem ik en zet ik door naar specialisten. Bouwt je organisatie zelf AI-systemen? Dan gelden aanbiedersverplichtingen waarvoor dit product niet is gemaakt.",
+            "html": "<p><strong>Wat buiten de scope valt.</strong> Geen juridisch oordeel of compliancegarantie. Geen volledige DPIA, security- of technische audit, biasmeting of certificering. Geen AI-ontwikkeling en geen formele FG-rol. Open juridische en technische vragen benoem ik en zet ik door naar specialisten. Bouwt je organisatie zelf AI-systemen? Dan gelden aanbiedersverplichtingen waarvoor dit product niet is gemaakt.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Logisch vervolg",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Er is geen verplichte volgorde. Een veelgekozen route is **AI-Foto → praktijklab met het AISA-kaartspel → AI op Orde**: eerst zien, dan samen kiezen, dan inrichten. Kies je later GRIP op AI in HR of AI op Orde, dan gaan inventarisatie, eigenaren, statussen en besluiten mee, zodat werk niet wordt herhaald.",
+            "html": "<p>Er is geen verplichte volgorde. Een veelgekozen route is <strong>AI-Foto → praktijklab met het AISA-kaartspel → AI op Orde</strong>: eerst zien, dan samen kiezen, dan inrichten. Kies je later GRIP op AI in HR of AI op Orde, dan gaan inventarisatie, eigenaren, statussen en besluiten mee, zodat werk niet wordt herhaald.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Zo kun je het financieren",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Zeeuwse mkb-bedrijven kunnen voor externe advisering soms een voucher van Impuls Zeeland gebruiken. Maakbedrijven in Zeeland en West-Brabant kunnen via EDIH Zuid-Nederland (Klikopmorgen) ondersteuning bij digitalisering en AI krijgen. Voorwaarden en openstellingen wisselen; in de kennismaking kijk ik met je mee welke route past. Ik vraag geen subsidie namens je aan en kan geen toekenning garanderen.",
+            "html": "<p>Zeeuwse mkb-bedrijven kunnen voor externe advisering soms een voucher van Impuls Zeeland gebruiken. Maakbedrijven in Zeeland en West-Brabant kunnen via EDIH Zuid-Nederland (Klikopmorgen) ondersteuning bij digitalisering en AI krijgen. Voorwaarden en openstellingen wisselen; in de kennismaking kijk ik met je mee welke route past. Ik vraag geen subsidie namens je aan en kan geen toekenning garanderen.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Eerder aangepakt",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "AI-Foto is nieuw, de aanpak niet. Dezelfde vraag, wat gebeurt er echt, beantwoordde ik eerder voor digitale tools, kennisdeling, online kanalen en leerplatforms.",
+            "html": "<p>AI-Foto is nieuw, de aanpak niet. Dezelfde vraag, wat gebeurt er echt, beantwoordde ik eerder voor digitale tools, kennisdeling, online kanalen en leerplatforms.</p>"
+          }
+        ],
+        "caseIds": [
+          "addventure",
+          "enexis",
+          "rode-kruis",
+          "zorgwise"
+        ]
+      },
+      {
+        "title": "Eerst samen kijken of het past",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "In een half uur bepalen we samen of AI-Foto past en welke variant bij je scope hoort. Past het niet, dan zeg ik dat. Blijkt dat twee gerichte ingrepen voldoende zijn, dan zeg ik dat ook.",
+            "html": "<p>In een half uur bepalen we samen of AI-Foto past en welke variant bij je scope hoort. Past het niet, dan zeg ik dat. Blijkt dat twee gerichte ingrepen voldoende zijn, dan zeg ik dat ook.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "[Plan een AI-Foto-check] [Vraag een voorbeeldrapport]",
+            "html": "<p><a href=\"/contact/?onderwerp=AI-Foto\">Plan een AI-Foto-check</a> <a href=\"mailto:rink@digidactics.nl?subject=Vraag%20een%20voorbeeldrapport%20AI-Foto\">Vraag een voorbeeldrapport</a></p>"
+          }
+        ],
+        "caseIds": []
+      }
+    ]
+  },
+  "/aanbod/grip-op-ai-in-hr/": {
+    "name": "GRIP op AI in HR",
+    "title": "GRIP op AI in HR",
+    "seo": "GRIP op AI in HR maakt in ongeveer drie weken zichtbaar welke AI je HR-processen raakt, weegt de aandachtspunten en legt toezicht, eigenaarschap en een 30/60/90-plan vast.",
+    "subtitle": "Verantwoord AI-gebruik in HR. Weten wat er draait. Beslissen wat mag. Kunnen laten zien.",
+    "hero": [
+      {
+        "type": "paragraph",
+        "text": "Met de GRIP-methode maak ik samen met je team concrete AI-toepassingen in HR zichtbaar. We wegen operationele aandachtspunten en leggen toezicht, eigenaarschap en vervolgstappen praktisch vast.",
+        "html": "<p>Met de GRIP-methode maak ik samen met je team concrete AI-toepassingen in HR zichtbaar. We wegen operationele aandachtspunten en leggen toezicht, eigenaarschap en vervolgstappen praktisch vast.</p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "Een compact, besluitgericht traject: voorbereiding, concrete uitwerking en een 30/60/90-uitvoeringsplan. Een werkbare basis voor AI in processen die mensen direct raken.",
+        "html": "<p>Een compact, besluitgericht traject: voorbereiding, concrete uitwerking en een 30/60/90-uitvoeringsplan. Een werkbare basis voor AI in processen die mensen direct raken.</p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "[Plan een AI-in-HR-check] [Vraag een voorbeelduitwerking]",
+        "html": "<p><a href=\"/contact/?onderwerp=GRIP%20op%20AI%20in%20HR\">Plan een AI-in-HR-check</a> <a href=\"mailto:rink@digidactics.nl?subject=Vraag%20een%20voorbeelduitwerking%20GRIP%20op%20AI%20in%20HR\">Vraag een voorbeelduitwerking</a></p>"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Herken je één van deze situaties?",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Eén keer “ja” of “weet ik niet” is aanleiding om het gebruik nader in kaart te brengen. Niet iedere toepassing is automatisch hoog risico: teksthulp verschilt van kandidaat-ranking, en algemene capaciteitsplanning van individuele taaktoewijzing op basis van gedrag.",
+            "html": "<p>Eén keer “ja” of “weet ik niet” is aanleiding om het gebruik nader in kaart te brengen. Niet iedere toepassing is automatisch hoog risico: teksthulp verschilt van kandidaat-ranking, en algemene capaciteitsplanning van individuele taaktoewijzing op basis van gedrag.</p>"
+          },
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "Je ATS, jobboard of recruitmentplatform screent, matcht, rangschikt of beveelt kandidaten aan.",
+              "Software verdeelt diensten, taken of werk mede op basis van gegevens over individuele medewerkers.",
+              "Scores, voorspellingen of inzichten beïnvloeden beoordeling, ontwikkeling, verzuimbegeleiding of uitstroom.",
+              "HR, recruiters of leidinggevenden gebruiken generatieve AI met informatie over mensen.",
+              "Je kunt niet direct laten zien wie eigenaar is, hoe toezicht werkt en welke afspraken zijn vastgelegd."
+            ],
+            "itemsHtml": [
+              "Je ATS, jobboard of recruitmentplatform screent, matcht, rangschikt of beveelt kandidaten aan.",
+              "Software verdeelt diensten, taken of werk mede op basis van gegevens over individuele medewerkers.",
+              "Scores, voorspellingen of inzichten beïnvloeden beoordeling, ontwikkeling, verzuimbegeleiding of uitstroom.",
+              "HR, recruiters of leidinggevenden gebruiken generatieve AI met informatie over mensen.",
+              "Je kunt niet direct laten zien wie eigenaar is, hoe toezicht werkt en welke afspraken zijn vastgelegd."
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "De GRIP-methode: vier stappen, besluiten met een eigenaar",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "**Gebruik in kaart.** Welke AI wordt formeel, ingebouwd en informeel gebruikt? Wat gebeurt er met de uitkomsten?",
+              "**Risico’s wegen.** Welke toepassingen vragen basisafspraken, nader onderzoek, specialistische beoordeling of direct ingrijpen?",
+              "**Inrichten van toezicht.** Wie kijkt mee, met welke kennis, tijd en bevoegdheid om de uitkomst te beoordelen en bijtijds bij te sturen?",
+              "**Plannen en borgen.** Welke besluiten, eigenaren, acties en bewijsstukken zijn nodig om grip te krijgen en te houden?"
+            ],
+            "itemsHtml": [
+              "<strong>Gebruik in kaart.</strong> Welke AI wordt formeel, ingebouwd en informeel gebruikt? Wat gebeurt er met de uitkomsten?",
+              "<strong>Risico’s wegen.</strong> Welke toepassingen vragen basisafspraken, nader onderzoek, specialistische beoordeling of direct ingrijpen?",
+              "<strong>Inrichten van toezicht.</strong> Wie kijkt mee, met welke kennis, tijd en bevoegdheid om de uitkomst te beoordelen en bijtijds bij te sturen?",
+              "<strong>Plannen en borgen.</strong> Welke besluiten, eigenaren, acties en bewijsstukken zijn nodig om grip te krijgen en te houden?"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "De weging is signalering en prioritering, geen juridische classificatie.",
+            "html": "<p>De weging is signalering en prioritering, geen juridische classificatie.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Vier B’s van betekenisvol toezicht",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "**Bemenst.** Er is een aanwijsbare verantwoordelijke. Waar continuïteit dat vraagt, is ook vervanging geregeld.",
+              "**Bekwaam.** De toezichthouder begrijpt de toepassing en kan output, fouten en relevante vertekening beoordelen.",
+              "**Bevoegd en bijtijds.** De toezichthouder mag ingrijpen of afwijken, krijgt voldoende tijd en kan handelen zolang dat nog effect heeft.",
+              "**Bewijsbaar.** Relevante controles, afwijkingen, incidenten en besluiten zijn passend terug te zien."
+            ],
+            "itemsHtml": [
+              "<strong>Bemenst.</strong> Er is een aanwijsbare verantwoordelijke. Waar continuïteit dat vraagt, is ook vervanging geregeld.",
+              "<strong>Bekwaam.</strong> De toezichthouder begrijpt de toepassing en kan output, fouten en relevante vertekening beoordelen.",
+              "<strong>Bevoegd en bijtijds.</strong> De toezichthouder mag ingrijpen of afwijken, krijgt voldoende tijd en kan handelen zolang dat nog effect heeft.",
+              "<strong>Bewijsbaar.</strong> Relevante controles, afwijkingen, incidenten en besluiten zijn passend terug te zien."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Samen leveren ze een mens die daadwerkelijk kan ingrijpen.",
+            "html": "<p>Samen leveren ze een mens die daadwerkelijk kan ingrijpen.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Wat je ontvangt",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "**Overzicht:** een AI-in-HR-register (toepassingen, gebruik, eigenaar, status), een HR-proceskaart van waar AI ingrijpt in de employee journey, en use-casekaarten met doel, data, output, impact en open vragen.",
+              "**Prioriteiten en besluiten:** operationele prioritering en besluiten met eigenaren; specialistische opvolging waar nodig expliciet vastgesteld.",
+              "**Afspraken en toezicht:** werk- en toezichtsafspraken volgens de vier B’s.",
+              "**Bewijs en vervolg:** een 30/60/90-uitvoeringsplan met managementsamenvatting, bewijsindex en waar relevant een transparantie- en informatiecheck."
+            ],
+            "itemsHtml": [
+              "<strong>Overzicht:</strong> een AI-in-HR-register (toepassingen, gebruik, eigenaar, status), een HR-proceskaart van waar AI ingrijpt in de employee journey, en use-casekaarten met doel, data, output, impact en open vragen.",
+              "<strong>Prioriteiten en besluiten:</strong> operationele prioritering en besluiten met eigenaren; specialistische opvolging waar nodig expliciet vastgesteld.",
+              "<strong>Afspraken en toezicht:</strong> werk- en toezichtsafspraken volgens de vier B’s.",
+              "<strong>Bewijs en vervolg:</strong> een 30/60/90-uitvoeringsplan met managementsamenvatting, bewijsindex en waar relevant een transparantie- en informatiecheck."
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Voor wie",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "**Accountancy en administratie:** ATS, AFAS/Nmbrs, Copilot en recruitment in een context waarin verantwoording belangrijk is.",
+              "**Zakelijke dienstverlening en recruitment:** matching, sourcing, kandidaatpools en bewijs richting opdrachtgevers.",
+              "**Logistiek en personeelsintensief werk:** roostering, taaktoewijzing, monitoring en medezeggenschap.",
+              "**Publieke organisaties en zorg:** HR-processen waarin zorgvuldigheid en uitlegbaarheid richting medewerkers en OR extra zwaar wegen."
+            ],
+            "itemsHtml": [
+              "<strong>Accountancy en administratie:</strong> ATS, AFAS/Nmbrs, Copilot en recruitment in een context waarin verantwoording belangrijk is.",
+              "<strong>Zakelijke dienstverlening en recruitment:</strong> matching, sourcing, kandidaatpools en bewijs richting opdrachtgevers.",
+              "<strong>Logistiek en personeelsintensief werk:</strong> roostering, taaktoewijzing, monitoring en medezeggenschap.",
+              "<strong>Publieke organisaties en zorg:</strong> HR-processen waarin zorgvuldigheid en uitlegbaarheid richting medewerkers en OR extra zwaar wegen."
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Twee uitvoeringsvormen",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Indicatieve doorlooptijd: ongeveer drie weken vanaf bevestigde opdracht en scope.",
+            "html": "<p>Indicatieve doorlooptijd: ongeveer drie weken vanaf bevestigde opdracht en scope.</p>"
+          },
+          {
+            "type": "table",
+            "headers": [
+              "",
+              "Remote Kern",
+              "HR-AI Werkplaats"
+            ],
+            "rows": [
+              [
+                "Deelnemers",
+                "4–8, online",
+                "8–12, op locatie"
+              ],
+              [
+                "Vorm",
+                "Twee sessies van 2 uur",
+                "Werkplaats en 30-dagenreview"
+              ],
+              [
+                "Voor",
+                "Kernteam van HR, directie, IT/applicatiebeheer en eventueel privacy",
+                "HR, directie, operations, IT en eventueel de OR, die samen tot gedragen werkafspraken moeten komen"
+              ],
+              [
+                "Inhoud",
+                "Use-cases in kaart, prioriteren en verdiepen; tussenanalyse; documentatieset en overdracht; korte 30-dagencheck",
+                "Voorbereide HR-procesplaat; weging en besluiten met de simulatie “De selectieronde”; besluitforum; documentatieset, managementbriefing en 30-dagenreview"
+              ],
+              [
+                "Omvang",
+                "Tot circa 10–12 use-cases registreren, maximaal 5 verdiepen",
+                "Maximaal 8 diepgaand uitgewerkte use-cases"
+              ]
+            ],
+            "headersHtml": [
+              "",
+              "Remote Kern",
+              "HR-AI Werkplaats"
+            ],
+            "rowsHtml": [
+              [
+                "Deelnemers",
+                "4–8, online",
+                "8–12, op locatie"
+              ],
+              [
+                "Vorm",
+                "Twee sessies van 2 uur",
+                "Werkplaats en 30-dagenreview"
+              ],
+              [
+                "Voor",
+                "Kernteam van HR, directie, IT/applicatiebeheer en eventueel privacy",
+                "HR, directie, operations, IT en eventueel de OR, die samen tot gedragen werkafspraken moeten komen"
+              ],
+              [
+                "Inhoud",
+                "Use-cases in kaart, prioriteren en verdiepen; tussenanalyse; documentatieset en overdracht; korte 30-dagencheck",
+                "Voorbereide HR-procesplaat; weging en besluiten met de simulatie “De selectieronde”; besluitforum; documentatieset, managementbriefing en 30-dagenreview"
+              ],
+              [
+                "Omvang",
+                "Tot circa 10–12 use-cases registreren, maximaal 5 verdiepen",
+                "Maximaal 8 diepgaand uitgewerkte use-cases"
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Diepgaand betekent: outputketen, mensimpact, operationele weging, toezicht volgens de vier B’s, besluit, werkafspraken, eigenaar, bewijsroute en reviewdatum. Overige use-cases krijgen een registratie en vervolgroute.",
+            "html": "<p>Diepgaand betekent: outputketen, mensimpact, operationele weging, toezicht volgens de vier B’s, besluit, werkafspraken, eigenaar, bewijsroute en reviewdatum. Overige use-cases krijgen een registratie en vervolgroute.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Wat buiten de scope valt.** GRIP levert geen juridisch advies, formele AI Act-classificatie, DPIA, technische audit, security-audit, biasaudit, certificering of compliancegarantie. Waar een toepassing specialistische beoordeling vraagt, leg ik de vraag en route vast. Een formele juridische beoordeling blijft het werk van een bevoegde jurist.",
+            "html": "<p><strong>Wat buiten de scope valt.</strong> GRIP levert geen juridisch advies, formele AI Act-classificatie, DPIA, technische audit, security-audit, biasaudit, certificering of compliancegarantie. Waar een toepassing specialistische beoordeling vraagt, leg ik de vraag en route vast. Een formele juridische beoordeling blijft het werk van een bevoegde jurist.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Veelgestelde vragen",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "**Onze leverancier zegt dat de tool compliant is. Zijn we dan klaar?**\nEen leveranciersclaim zegt nog niet hoe jullie de toepassing gebruiken. In GRIP kijken we naar doel, inrichting, gegevens, output en de gevolgen in je eigen HR-processen.",
+            "html": "<p><strong>Onze leverancier zegt dat de tool compliant is. Zijn we dan klaar?</strong>\nEen leveranciersclaim zegt nog niet hoe jullie de toepassing gebruiken. In GRIP kijken we naar doel, inrichting, gegevens, output en de gevolgen in je eigen HR-processen.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Een mens neemt altijd de eindbeslissing. Is dat genoeg?**\nNiet automatisch. Die mens moet de uitkomst kunnen beoordelen, fouten herkennen, voldoende tijd hebben, bevoegd zijn om af te wijken en kunnen ingrijpen zolang dat nog effect heeft.",
+            "html": "<p><strong>Een mens neemt altijd de eindbeslissing. Is dat genoeg?</strong>\nNiet automatisch. Die mens moet de uitkomst kunnen beoordelen, fouten herkennen, voldoende tijd hebben, bevoegd zijn om af te wijken en kunnen ingrijpen zolang dat nog effect heeft.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Is iedere vorm van AI in HR hoog risico?**\nNee. Teksthulp verschilt van kandidaat-ranking of individuele taaktoewijzing. GRIP signaleert en prioriteert; een formele classificatie vraagt specialistische beoordeling.",
+            "html": "<p><strong>Is iedere vorm van AI in HR hoog risico?</strong>\nNee. Teksthulp verschilt van kandidaat-ranking of individuele taaktoewijzing. GRIP signaleert en prioriteert; een formele classificatie vraagt specialistische beoordeling.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Waarom nu beginnen?**\nAI wordt al gebruikt in recruitment, planning en beoordeling. Overzicht, eigenaarschap en toezicht helpen om besluiten te nemen over die bestaande praktijk, los van één juridische deadline.",
+            "html": "<p><strong>Waarom nu beginnen?</strong>\nAI wordt al gebruikt in recruitment, planning en beoordeling. Overzicht, eigenaarschap en toezicht helpen om besluiten te nemen over die bestaande praktijk, los van één juridische deadline.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Is dit juridisch advies of certificering?**\nNee. Ik breng gebruik in kaart, structureer aandachtspunten, faciliteer besluiten en help afspraken en bewijs vast te leggen. Voor juridische vragen schakelen we een specialist in.",
+            "html": "<p><strong>Is dit juridisch advies of certificering?</strong>\nNee. Ik breng gebruik in kaart, structureer aandachtspunten, faciliteer besluiten en help afspraken en bewijs vast te leggen. Voor juridische vragen schakelen we een specialist in.</p>"
+          }
+        ],
+        "caseIds": [],
+        "faq": [
+          {
+            "vraag": "Onze leverancier zegt dat de tool compliant is. Zijn we dan klaar?",
+            "antwoord": "<p>Een leveranciersclaim zegt nog niet hoe jullie de toepassing gebruiken. In GRIP kijken we naar doel, inrichting, gegevens, output en de gevolgen in je eigen HR-processen.</p>"
+          },
+          {
+            "vraag": "Een mens neemt altijd de eindbeslissing. Is dat genoeg?",
+            "antwoord": "<p>Niet automatisch. Die mens moet de uitkomst kunnen beoordelen, fouten herkennen, voldoende tijd hebben, bevoegd zijn om af te wijken en kunnen ingrijpen zolang dat nog effect heeft.</p>"
+          },
+          {
+            "vraag": "Is iedere vorm van AI in HR hoog risico?",
+            "antwoord": "<p>Nee. Teksthulp verschilt van kandidaat-ranking of individuele taaktoewijzing. GRIP signaleert en prioriteert; een formele classificatie vraagt specialistische beoordeling.</p>"
+          },
+          {
+            "vraag": "Waarom nu beginnen?",
+            "antwoord": "<p>AI wordt al gebruikt in recruitment, planning en beoordeling. Overzicht, eigenaarschap en toezicht helpen om besluiten te nemen over die bestaande praktijk, los van één juridische deadline.</p>"
+          },
+          {
+            "vraag": "Is dit juridisch advies of certificering?",
+            "antwoord": "<p>Nee. Ik breng gebruik in kaart, structureer aandachtspunten, faciliteer besluiten en help afspraken en bewijs vast te leggen. Voor juridische vragen schakelen we een specialist in.</p>"
+          }
+        ]
+      },
+      {
+        "title": "Zo kun je het financieren",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Zeeuwse mkb-bedrijven kunnen voor externe advisering soms een voucher van Impuls Zeeland gebruiken. Voorwaarden wisselen; in de kennismaking kijk ik met je mee. Ik vraag geen subsidie namens je aan en kan geen toekenning garanderen.",
+            "html": "<p>Zeeuwse mkb-bedrijven kunnen voor externe advisering soms een voucher van Impuls Zeeland gebruiken. Voorwaarden wisselen; in de kennismaking kijk ik met je mee. Ik vraag geen subsidie namens je aan en kan geen toekenning garanderen.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "De juiste ingang",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "HR hoeft niet de eerste ingang te zijn. Is organisatiebreed onduidelijk waar AI wordt gebruikt, dan helpt AI-Foto eerst. Is HR de aanleiding, dan kan GRIP zelfstandig starten. Register, besluiten en uitvoeringsplan kun je later hergebruiken in AI op Orde.",
+            "html": "<p>HR hoeft niet de eerste ingang te zijn. Is organisatiebreed onduidelijk waar AI wordt gebruikt, dan helpt AI-Foto eerst. Is HR de aanleiding, dan kan GRIP zelfstandig starten. Register, besluiten en uitvoeringsplan kun je later hergebruiken in AI op Orde.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Eerder aangepakt",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "HR-vraagstukken samen met de betrokkenen uitwerken deed ik eerder in de zorg, met organisaties die geen zeggenschap over elkaar hadden.",
+            "html": "<p>HR-vraagstukken samen met de betrokkenen uitwerken deed ik eerder in de zorg, met organisaties die geen zeggenschap over elkaar hadden.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "[Plan een AI-in-HR-check] [Vraag een voorbeelduitwerking]",
+            "html": "<p><a href=\"/contact/?onderwerp=GRIP%20op%20AI%20in%20HR\">Plan een AI-in-HR-check</a> <a href=\"mailto:rink@digidactics.nl?subject=Vraag%20een%20voorbeelduitwerking%20GRIP%20op%20AI%20in%20HR\">Vraag een voorbeelduitwerking</a></p>"
+          }
+        ],
+        "caseIds": [
+          "viazorg-flexplatform",
+          "balans-flex-vast",
+          "enexis"
+        ]
+      }
+    ]
+  },
+  "/aanbod/ai-op-orde/": {
+    "name": "AI op Orde",
+    "title": "AI op Orde",
+    "seo": "AI op Orde richt in 10 tot 26 weken AI-register, besluiten, werkafspraken, toezicht, praktijklabs en bewijs in, zodat je organisatie AI-gebruik daarna zelf kan beheren.",
+    "subtitle": "AI-beleid en governance die in de praktijk werken. Van losse afspraken naar een werkend systeem.",
+    "hero": [
+      {
+        "type": "paragraph",
+        "text": "AI op Orde brengt AI-register, besluiten, werkafspraken, eigenaarschap, toezicht, praktijklabs, leveranciersroutes, bewijs en periodiek onderhoud samen binnen een heldere scope.",
+        "html": "<p>AI op Orde brengt AI-register, besluiten, werkafspraken, eigenaarschap, toezicht, praktijklabs, leveranciersroutes, bewijs en periodiek onderhoud samen binnen een heldere scope.</p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "Ik richt samen met je organisatie een praktijk in die mensen begrijpen, kunnen toepassen en na overdracht zelf kunnen onderhouden. Een begeleid implementatie- en borgingstraject, zonder verplichte softwarelicentie.",
+        "html": "<p>Ik richt samen met je organisatie een praktijk in die mensen begrijpen, kunnen toepassen en na overdracht zelf kunnen onderhouden. Een begeleid implementatie- en borgingstraject, zonder verplichte softwarelicentie.</p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "[Plan een scopegesprek] [Bekijk de opbouw]",
+        "html": "<p><a href=\"/contact/?onderwerp=AI%20op%20Orde\">Plan een scopegesprek</a> <a href=\"#systeem\">Bekijk de opbouw</a></p>"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Wanneer losse maatregelen niet meer genoeg zijn",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "AI wordt gebruikt, maar toepassingen, besluiten en eigenaren staan niet in één beheersbaar systeem.",
+              "Er is AI-beleid of training, maar dagelijkse toepassing en onderhoud zijn onduidelijk.",
+              "Nieuwe AI-tools en ingebouwde functies verschijnen zonder vaste beoordelings- en wijzigingsroute.",
+              "Klanten, aanbesteders, OR, verzekeraars of auditors vragen hoe AI wordt beheerd.",
+              "Je wilt AI opschalen zonder dat verantwoordelijkheid, toezicht en bewijs uit elkaar groeien.",
+              "Een AI-Foto, GRIP-traject of eigen analyse heeft concrete implementatievragen opgeleverd."
+            ],
+            "itemsHtml": [
+              "AI wordt gebruikt, maar toepassingen, besluiten en eigenaren staan niet in één beheersbaar systeem.",
+              "Er is AI-beleid of training, maar dagelijkse toepassing en onderhoud zijn onduidelijk.",
+              "Nieuwe AI-tools en ingebouwde functies verschijnen zonder vaste beoordelings- en wijzigingsroute.",
+              "Klanten, aanbesteders, OR, verzekeraars of auditors vragen hoe AI wordt beheerd.",
+              "Je wilt AI opschalen zonder dat verantwoordelijkheid, toezicht en bewijs uit elkaar groeien.",
+              "Een AI-Foto, GRIP-traject of eigen analyse heeft concrete implementatievragen opgeleverd."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "De organisatie levert een sponsor, een interne trekker met tijd, een kernteam, eigenaren, gebruikers en beslismandaat. Ik breng structuur en tempo; de organisatie neemt besluiten en leert het systeem zelf beheren.",
+            "html": "<p>De organisatie levert een sponsor, een interne trekker met tijd, een kernteam, eigenaren, gebruikers en beslismandaat. Ik breng structuur en tempo; de organisatie neemt besluiten en leert het systeem zelf beheren.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Zes onderdelen van een werkend systeem",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "**Register en prioritaire use-cases** — een onderhoudbaar overzicht met eigenaar, status, voorwaarden, bewijs en reviewdatum.",
+              "**Besluiten en eigenaarschap** — per toepassing wat mag, wat nog wordt onderzocht, wie beslist en wie beheert.",
+              "**Praktische werkafspraken** — in gewone werktaal over gegevens, outputcontrole, transparantie, uitzonderingen en gebruik onder druk.",
+              "**Toezicht, leveranciers en incidentroutes** — wie controleert, afwijkt of ingrijpt; hoe nieuwe tools, wijzigingen en incidenten worden behandeld.",
+              "**Bekwaamheid en toepassing** — teams oefenen in praktijklabs met eigen situaties, onjuiste output, gevoelige gegevens en bijna-incidenten.",
+              "**Bewijs, open punten en onderhoud** — besluiten, oefeningen, controles en open punten vindbaar, met eigenaren en een reviewcyclus."
+            ],
+            "itemsHtml": [
+              "<strong>Register en prioritaire use-cases</strong> — een onderhoudbaar overzicht met eigenaar, status, voorwaarden, bewijs en reviewdatum.",
+              "<strong>Besluiten en eigenaarschap</strong> — per toepassing wat mag, wat nog wordt onderzocht, wie beslist en wie beheert.",
+              "<strong>Praktische werkafspraken</strong> — in gewone werktaal over gegevens, outputcontrole, transparantie, uitzonderingen en gebruik onder druk.",
+              "<strong>Toezicht, leveranciers en incidentroutes</strong> — wie controleert, afwijkt of ingrijpt; hoe nieuwe tools, wijzigingen en incidenten worden behandeld.",
+              "<strong>Bekwaamheid en toepassing</strong> — teams oefenen in praktijklabs met eigen situaties, onjuiste output, gevoelige gegevens en bijna-incidenten.",
+              "<strong>Bewijs, open punten en onderhoud</strong> — besluiten, oefeningen, controles en open punten vindbaar, met eigenaren en een reviewcyclus."
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Wat je organisatie daarna kan laten zien",
+        "blocks": [
+          {
+            "type": "table",
+            "headers": [
+              "Vraag",
+              "Wat er ligt"
+            ],
+            "rows": [
+              [
+                "Welke AI-toepassingen beheer je?",
+                "Een onderhoudbaar register met toepassing, eigenaar, besluit, voorwaarden en reviewdatum"
+              ],
+              [
+                "Hoe neem je besluiten?",
+                "Use-case- en besluitkaarten, een besluitlog en een uitzonderingsroute"
+              ],
+              [
+                "Hoe bereid je mensen voor?",
+                "Een bekwaamheidsmatrix, praktijklabs per team en een opfrisritme"
+              ],
+              [
+                "Wie houdt toezicht?",
+                "Een rollen-, toezicht- en escalatiestructuur met ruimte om in te grijpen"
+              ],
+              [
+                "Wat doe je bij wijzigingen en incidenten?",
+                "Een nieuwe-toolcheck, wijzigingsroute, meldinstructie en incidentlog"
+              ],
+              [
+                "Wat is nog niet afgerond?",
+                "Een lijst met open punten, eigenaar, specialistische route en deadline"
+              ]
+            ],
+            "headersHtml": [
+              "Vraag",
+              "Wat er ligt"
+            ],
+            "rowsHtml": [
+              [
+                "Welke AI-toepassingen beheer je?",
+                "Een onderhoudbaar register met toepassing, eigenaar, besluit, voorwaarden en reviewdatum"
+              ],
+              [
+                "Hoe neem je besluiten?",
+                "Use-case- en besluitkaarten, een besluitlog en een uitzonderingsroute"
+              ],
+              [
+                "Hoe bereid je mensen voor?",
+                "Een bekwaamheidsmatrix, praktijklabs per team en een opfrisritme"
+              ],
+              [
+                "Wie houdt toezicht?",
+                "Een rollen-, toezicht- en escalatiestructuur met ruimte om in te grijpen"
+              ],
+              [
+                "Wat doe je bij wijzigingen en incidenten?",
+                "Een nieuwe-toolcheck, wijzigingsroute, meldinstructie en incidentlog"
+              ],
+              [
+                "Wat is nog niet afgerond?",
+                "Een lijst met open punten, eigenaar, specialistische route en deadline"
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Dit is geen certificaat. Het maakt zichtbaar hoe jullie AI beheren.",
+            "html": "<p>Dit is geen certificaat. Het maakt zichtbaar hoe jullie AI beheren.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Zo bouwen we het systeem samen op",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "**Kwalificeren en afbakenen** — productfit, variant, scope, rollen, hergebruik en startvoorwaarden.",
+              "**Kaderen en actualiseren** — bestaande informatie valideren, baseline- en delta-check, registerstructuur en besluitforum.",
+              "**Besluiten en inrichten** — prioritaire toepassingen uitwerken; voorwaarden, eigenaarschap, afspraken, toezicht en routes vastleggen.",
+              "**Oefenen en toepassen** — teams testen de afspraken in praktijklabs met herkenbare situaties.",
+              "**Aantonen en testen** — routes voor nieuwe tools, wijzigingen en incidenten testen en een bewijswandeling uitvoeren.",
+              "**Overdragen en bijhouden** — de interne trekker neemt het beheer over; reviewkalender, vervanging, onboarding en 30-dagenborging vastgelegd."
+            ],
+            "itemsHtml": [
+              "<strong>Kwalificeren en afbakenen</strong> — productfit, variant, scope, rollen, hergebruik en startvoorwaarden.",
+              "<strong>Kaderen en actualiseren</strong> — bestaande informatie valideren, baseline- en delta-check, registerstructuur en besluitforum.",
+              "<strong>Besluiten en inrichten</strong> — prioritaire toepassingen uitwerken; voorwaarden, eigenaarschap, afspraken, toezicht en routes vastleggen.",
+              "<strong>Oefenen en toepassen</strong> — teams testen de afspraken in praktijklabs met herkenbare situaties.",
+              "<strong>Aantonen en testen</strong> — routes voor nieuwe tools, wijzigingen en incidenten testen en een bewijswandeling uitvoeren.",
+              "<strong>Overdragen en bijhouden</strong> — de interne trekker neemt het beheer over; reviewkalender, vervanging, onboarding en 30-dagenborging vastgelegd."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Mijlpalen rond dag 30 (basis en prioriteiten), dag 60 (besluiten en eerste routes) en dag 90 (oefenen en beheer). Bij Organisatiebreed en Complex is dag 90 een implementatiemijlpaal; verbreding en formele overdracht volgen daarna.",
+            "html": "<p>Mijlpalen rond dag 30 (basis en prioriteiten), dag 60 (besluiten en eerste routes) en dag 90 (oefenen en beheer). Bij Organisatiebreed en Complex is dag 90 een implementatiemijlpaal; verbreding en formele overdracht volgen daarna.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Oefenen in de werkpraktijk",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Praktijklabs zijn gekoppeld aan rolclusters en echte use-cases, deels met het AISA-kaartspel. Dagelijkse gebruikers oefenen afspraken toepassen en onjuiste output herkennen. Eigenaren en toezichthouders oefenen beoordelen en bijtijds ingrijpen. Beslissers en beheerders oefenen escalatie, wijzigingen en onderhoud. Individuele toetsing alleen als dat expliciet is afgesproken.",
+            "html": "<p>Praktijklabs zijn gekoppeld aan rolclusters en echte use-cases, deels met het AISA-kaartspel. Dagelijkse gebruikers oefenen afspraken toepassen en onjuiste output herkennen. Eigenaren en toezichthouders oefenen beoordelen en bijtijds ingrijpen. Beslissers en beheerders oefenen escalatie, wijzigingen en onderhoud. Individuele toetsing alleen als dat expliciet is afgesproken.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Na overdracht blijft het systeem van jullie",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Register, afspraken, routes, dossierstructuur en reviewkalender blijven bij de organisatie, zonder verplichte licentie. Periodieke ondersteuning bij reviews, nieuwe tools of onboarding kan optioneel. Inbegrepen 30-dagenborging: Compact 45 minuten; Organisatiebreed 60 minuten plus een statusnotitie; Complex per implementatiegolf.",
+            "html": "<p>Register, afspraken, routes, dossierstructuur en reviewkalender blijven bij de organisatie, zonder verplichte licentie. Periodieke ondersteuning bij reviews, nieuwe tools of onboarding kan optioneel. Inbegrepen 30-dagenborging: Compact 45 minuten; Organisatiebreed 60 minuten plus een statusnotitie; Complex per implementatiegolf.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Drie varianten, één methodiek",
+        "blocks": [
+          {
+            "type": "table",
+            "headers": [
+              "",
+              "Compact",
+              "Organisatiebreed",
+              "Complex"
+            ],
+            "rows": [
+              [
+                "Context",
+                "Overzichtelijk",
+                "Meerdere functies en processen",
+                "Meerdere entiteiten of gevoelige domeinen"
+              ],
+              [
+                "Doorlooptijd",
+                "Circa 10–12 weken",
+                "Circa 16–20 weken",
+                "Meestal 20–26 weken of langer"
+              ],
+              [
+                "Procesfamilies",
+                "1–2",
+                "3–5",
+                "Per implementatiegolf"
+              ],
+              [
+                "Use-cases registreren",
+                "Circa 8–12",
+                "Circa 15–25",
+                "Per golf"
+              ],
+              [
+                "Volledig inrichten",
+                "Maximaal 4–6",
+                "Maximaal 8–12",
+                "Per werkpakket"
+              ],
+              [
+                "Rolclusters / praktijklabs",
+                "Max. 3 / 1",
+                "Max. 4–6 / max. 3",
+                "Volgens adoptieplan"
+              ]
+            ],
+            "headersHtml": [
+              "",
+              "Compact",
+              "Organisatiebreed",
+              "Complex"
+            ],
+            "rowsHtml": [
+              [
+                "Context",
+                "Overzichtelijk",
+                "Meerdere functies en processen",
+                "Meerdere entiteiten of gevoelige domeinen"
+              ],
+              [
+                "Doorlooptijd",
+                "Circa 10–12 weken",
+                "Circa 16–20 weken",
+                "Meestal 20–26 weken of langer"
+              ],
+              [
+                "Procesfamilies",
+                "1–2",
+                "3–5",
+                "Per implementatiegolf"
+              ],
+              [
+                "Use-cases registreren",
+                "Circa 8–12",
+                "Circa 15–25",
+                "Per golf"
+              ],
+              [
+                "Volledig inrichten",
+                "Maximaal 4–6",
+                "Maximaal 8–12",
+                "Per werkpakket"
+              ],
+              [
+                "Rolclusters / praktijklabs",
+                "Max. 3 / 1",
+                "Max. 4–6 / max. 3",
+                "Volgens adoptieplan"
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "De scope- en ontwerpcheck bepaalt welke variant haalbaar is; het aantal medewerkers is alleen een eerste indicatie. Welke bestaande resultaten worden hergebruikt, leg ik vooraf vast in de offerte.",
+            "html": "<p>De scope- en ontwerpcheck bepaalt welke variant haalbaar is; het aantal medewerkers is alleen een eerste indicatie. Welke bestaande resultaten worden hergebruikt, leg ik vooraf vast in de offerte.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Wat buiten de scope valt.** Geen juridisch oordeel of compliancegarantie; geen vervanging van een DPIA, security- of technische audit, biasmeting of certificering. Waar specialistische beoordeling nodig is, leg ik vraag en route vast en verwerk ik de uitkomst in register, besluiten en afspraken.",
+            "html": "<p><strong>Wat buiten de scope valt.</strong> Geen juridisch oordeel of compliancegarantie; geen vervanging van een DPIA, security- of technische audit, biasmeting of certificering. Waar specialistische beoordeling nodig is, leg ik vraag en route vast en verwerk ik de uitkomst in register, besluiten en afspraken.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Veelgestelde vragen",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "**Moet ik eerst een AI-Foto doen?** Nee. Direct instappen kan bij voldoende betrouwbare basisinformatie. Wat kan worden overgenomen, leg ik vooraf vast.",
+            "html": "<p><strong>Moet ik eerst een AI-Foto doen?</strong> Nee. Direct instappen kan bij voldoende betrouwbare basisinformatie. Wat kan worden overgenomen, leg ik vooraf vast.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Hoe lang duurt het?** Compact circa 10–12 weken, Organisatiebreed 16–20 weken, Complex meestal 20–26 weken of langer. De klok start als scope, rollen, mandaat en input zijn bevestigd.",
+            "html": "<p><strong>Hoe lang duurt het?</strong> Compact circa 10–12 weken, Organisatiebreed 16–20 weken, Complex meestal 20–26 weken of langer. De klok start als scope, rollen, mandaat en input zijn bevestigd.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Wat vraagt dit van ons?** Een sponsor, een interne trekker met tijd, een kernteam, eigenaren en deelnemers aan praktijklabs.",
+            "html": "<p><strong>Wat vraagt dit van ons?</strong> Een sponsor, een interne trekker met tijd, een kernteam, eigenaren en deelnemers aan praktijklabs.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Zijn we daarna compliant?** AI op Orde geeft geen compliancegarantie. Wel liggen register, besluiten, eigenaarschap, afspraken, oefeningen, bewijs en open punten er, samen ingericht.",
+            "html": "<p><strong>Zijn we daarna compliant?</strong> AI op Orde geeft geen compliancegarantie. Wel liggen register, besluiten, eigenaarschap, afspraken, oefeningen, bewijs en open punten er, samen ingericht.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Is dit een softwarepakket?** Nee. Het is begeleide implementatie en borging. Documenten en beheer blijven bij jullie.",
+            "html": "<p><strong>Is dit een softwarepakket?</strong> Nee. Het is begeleide implementatie en borging. Documenten en beheer blijven bij jullie.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Kunnen we dit zelf?** Delen zeker. De waarde zit in samenhang, uitvoeringsdiscipline, praktijklabs, besluit- en bewijsstructuur en overdracht.",
+            "html": "<p><strong>Kunnen we dit zelf?</strong> Delen zeker. De waarde zit in samenhang, uitvoeringsdiscipline, praktijklabs, besluit- en bewijsstructuur en overdracht.</p>"
+          }
+        ],
+        "caseIds": [],
+        "faq": [
+          {
+            "vraag": "Moet ik eerst een AI-Foto doen?",
+            "antwoord": "<p>Nee. Direct instappen kan bij voldoende betrouwbare basisinformatie. Wat kan worden overgenomen, leg ik vooraf vast.</p>"
+          },
+          {
+            "vraag": "Hoe lang duurt het?",
+            "antwoord": "<p>Compact circa 10–12 weken, Organisatiebreed 16–20 weken, Complex meestal 20–26 weken of langer. De klok start als scope, rollen, mandaat en input zijn bevestigd.</p>"
+          },
+          {
+            "vraag": "Wat vraagt dit van ons?",
+            "antwoord": "<p>Een sponsor, een interne trekker met tijd, een kernteam, eigenaren en deelnemers aan praktijklabs.</p>"
+          },
+          {
+            "vraag": "Zijn we daarna compliant?",
+            "antwoord": "<p>AI op Orde geeft geen compliancegarantie. Wel liggen register, besluiten, eigenaarschap, afspraken, oefeningen, bewijs en open punten er, samen ingericht.</p>"
+          },
+          {
+            "vraag": "Is dit een softwarepakket?",
+            "antwoord": "<p>Nee. Het is begeleide implementatie en borging. Documenten en beheer blijven bij jullie.</p>"
+          },
+          {
+            "vraag": "Kunnen we dit zelf?",
+            "antwoord": "<p>Delen zeker. De waarde zit in samenhang, uitvoeringsdiscipline, praktijklabs, besluit- en bewijsstructuur en overdracht.</p>"
+          }
+        ]
+      },
+      {
+        "title": "Zo kun je het financieren",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Samenwerkingsverbanden van meerdere organisaties in Zeeland kunnen kijken naar de provinciale regeling *Zeeland in Stroomversnelling – Human Capital Agenda*, die projecten rond ICT, digitalisering en arbeidsmarkt ondersteunt. Zeeuwse mkb-bedrijven kunnen soms een voucher van Impuls Zeeland inzetten. Voorwaarden en openstellingen wisselen; ik kijk in de kennismaking met je mee. Ik vraag geen subsidie namens je aan en kan geen toekenning garanderen.",
+            "html": "<p>Samenwerkingsverbanden van meerdere organisaties in Zeeland kunnen kijken naar de provinciale regeling <em>Zeeland in Stroomversnelling – Human Capital Agenda</em>, die projecten rond ICT, digitalisering en arbeidsmarkt ondersteunt. Zeeuwse mkb-bedrijven kunnen soms een voucher van Impuls Zeeland inzetten. Voorwaarden en openstellingen wisselen; ik kijk in de kennismaking met je mee. Ik vraag geen subsidie namens je aan en kan geen toekenning garanderen.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Eerder aangepakt",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Verantwoording organiseren, met rollen, ritme en bewijs, deed ik eerder voor scholingsplatforms, kwaliteitszorg, merkplatforms en duurzaamheid.",
+            "html": "<p>Verantwoording organiseren, met rollen, ritme en bewijs, deed ik eerder voor scholingsplatforms, kwaliteitszorg, merkplatforms en duurzaamheid.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "[Plan een scopegesprek]",
+            "html": "<p><a href=\"/contact/?onderwerp=AI%20op%20Orde\">Plan een scopegesprek</a></p>"
+          }
+        ],
+        "caseIds": [
+          "corpio",
+          "quarterly-review",
+          "heineken",
+          "green-key"
+        ]
+      }
+    ]
+  },
+  "/aanbod/praktijklab/": {
+    "name": "Praktijklab",
+    "title": "Praktijklab",
+    "seo": "In een praktijklab werken de mensen die het vraagstuk kennen samen aan een oplossing. Laagdrempelige instap, ook met meerdere organisaties, met het AISA-kaartspel bij AI-vraagstukken.",
+    "subtitle": "Samen uitzoeken, maken en beoordelen.",
+    "hero": [
+      {
+        "type": "paragraph",
+        "text": "In een praktijklab werken de mensen die het vraagstuk kennen samen aan een oplossing. Geen presentatie waar je naar luistert, maar een werkplaats waarin je samen iets maakt: spelregels, een ontwerp, een keuze. Wie meedoet, maakt het onderweg eigen.",
+        "html": "<p>In een praktijklab werken de mensen die het vraagstuk kennen samen aan een oplossing. Geen presentatie waar je naar luistert, maar een werkplaats waarin je samen iets maakt: spelregels, een ontwerp, een keuze. Wie meedoet, maakt het onderweg eigen.</p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "[Bespreek je vraagstuk]",
+        "html": "<p><a href=\"/contact/?onderwerp=Praktijklab\">Bespreek je vraagstuk</a></p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "**Herkenbaar?** Er zijn veel ideeën en losse pilots, maar nog geen gezamenlijke keuzes. Of meerdere organisaties moeten samen verder, maar het blijft bij overleggen.",
+        "html": "<p><strong>Herkenbaar?</strong> Er zijn veel ideeën en losse pilots, maar nog geen gezamenlijke keuzes. Of meerdere organisaties moeten samen verder, maar het blijft bij overleggen.</p>"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Drie vormen",
+        "blocks": [
+          {
+            "type": "table",
+            "headers": [
+              "Vorm",
+              "Wanneer",
+              "Wat er gebeurt"
+            ],
+            "rows": [
+              [
+                "**Startsessie**",
+                "Je wilt laagdrempelig beginnen",
+                "Eén werkplaats. Het team verkent samen het vraagstuk en eindigt met gedeelde uitgangspunten en eerste besluiten."
+              ],
+              [
+                "**Verdiepingssessie**",
+                "Na een AI-Foto of eigen analyse",
+                "De bevindingen gaan op tafel. Het team kiest wat er moet gebeuren en legt afspraken en eigenaren vast."
+              ],
+              [
+                "**Reeks**",
+                "Het vraagstuk vraagt meer tijd of meerdere partijen",
+                "Drie tot vijf sessies, van gedeelde analyse naar ontwerp en een pilot of besluit."
+              ]
+            ],
+            "headersHtml": [
+              "Vorm",
+              "Wanneer",
+              "Wat er gebeurt"
+            ],
+            "rowsHtml": [
+              [
+                "<strong>Startsessie</strong>",
+                "Je wilt laagdrempelig beginnen",
+                "Eén werkplaats. Het team verkent samen het vraagstuk en eindigt met gedeelde uitgangspunten en eerste besluiten."
+              ],
+              [
+                "<strong>Verdiepingssessie</strong>",
+                "Na een AI-Foto of eigen analyse",
+                "De bevindingen gaan op tafel. Het team kiest wat er moet gebeuren en legt afspraken en eigenaren vast."
+              ],
+              [
+                "<strong>Reeks</strong>",
+                "Het vraagstuk vraagt meer tijd of meerdere partijen",
+                "Drie tot vijf sessies, van gedeelde analyse naar ontwerp en een pilot of besluit."
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Elke vorm kan in je eigen organisatie of met meerdere organisaties tegelijk. In een **regionaal praktijklab** leren organisaties met hetzelfde vraagstuk van elkaar, bijvoorbeeld gemeenten of zorgorganisaties die elk op hun eigen manier met AI bezig zijn.",
+            "html": "<p>Elke vorm kan in je eigen organisatie of met meerdere organisaties tegelijk. In een <strong>regionaal praktijklab</strong> leren organisaties met hetzelfde vraagstuk van elkaar, bijvoorbeeld gemeenten of zorgorganisaties die elk op hun eigen manier met AI bezig zijn.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Bij AI-vraagstukken: het AISA-kaartspel",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Voor verantwoord werken met AI gebruik ik het AISA-kaartspel: 64 kaarten met herkenbare situaties, vragen en routes, van *De juiste AI-vraag* tot *De risicoroute*. Het spel leert teams niet primair tools bedienen, maar beter framen, oordelen, samenwerken en leren met AI. Zo komt het gesprek over AI-gebruik los, ook bij mensen die er weinig van weten of juist sceptisch zijn.",
+            "html": "<p>Voor verantwoord werken met AI gebruik ik het AISA-kaartspel: 64 kaarten met herkenbare situaties, vragen en routes, van <em>De juiste AI-vraag</em> tot <em>De risicoroute</em>. Het spel leert teams niet primair tools bedienen, maar beter framen, oordelen, samenwerken en leren met AI. Zo komt het gesprek over AI-gebruik los, ook bij mensen die er weinig van weten of juist sceptisch zijn.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Wat je krijgt",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "Gedeelde spelregels of uitgangspunten",
+              "Gezamenlijke keuzes en een besluitagenda met eigenaren",
+              "Waar passend: een ontwerp, prototype of pilotopzet"
+            ],
+            "itemsHtml": [
+              "Gedeelde spelregels of uitgangspunten",
+              "Gezamenlijke keuzes en een besluitagenda met eigenaren",
+              "Waar passend: een ontwerp, prototype of pilotopzet"
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Hoe ik werk",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "Een kaartspel om kansen en risico’s te beoordelen",
+              "Een proceswand om een keten zichtbaar te maken",
+              "Scenario’s vergelijken en samen spelregels formuleren",
+              "Een pilot ontwerpen of een prototype testen"
+            ],
+            "itemsHtml": [
+              "Een kaartspel om kansen en risico’s te beoordelen",
+              "Een proceswand om een keten zichtbaar te maken",
+              "Scenario’s vergelijken en samen spelregels formuleren",
+              "Een pilot ontwerpen of een prototype testen"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Prijs: vaste prijs per vorm.",
+            "html": "<p>Prijs: vaste prijs per vorm.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Zo kun je het financieren",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Werk je met minstens drie partijen in Zeeland samen, waaronder een bedrijf en een kennispartner? Dan kan de provinciale regeling *Zeeland in Stroomversnelling – Human Capital Agenda* passen voor een reeks praktijklabs rond digitalisering en arbeidsmarkt. Voor leren en ontwikkelen in het mkb is de landelijke SLIM-regeling soms een optie (niet voor losse workshops). Voorwaarden en openstellingen wisselen; ik kijk met je mee.",
+            "html": "<p>Werk je met minstens drie partijen in Zeeland samen, waaronder een bedrijf en een kennispartner? Dan kan de provinciale regeling <em>Zeeland in Stroomversnelling – Human Capital Agenda</em> passen voor een reeks praktijklabs rond digitalisering en arbeidsmarkt. Voor leren en ontwikkelen in het mkb is de landelijke SLIM-regeling soms een optie (niet voor losse workshops). Voorwaarden en openstellingen wisselen; ik kijk met je mee.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Eerder aangepakt",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Werkplaatsen met meerdere partijen leidde ik eerder in de zorg en het hoger onderwijs.",
+            "html": "<p>Werkplaatsen met meerdere partijen leidde ik eerder in de zorg en het hoger onderwijs.</p>"
+          }
+        ],
+        "caseIds": [
+          "balans-flex-vast",
+          "viazorg-flexplatform",
+          "moodle-rbs"
+        ]
+      },
+      {
+        "title": "Meer binnen Leren en ontwikkelen",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "**Leermodule op maat** — Een leerroute die aansluit op werk en competentiekader.",
+              "**AI-bekwaamheid** — AI-geletterdheid per rol, zoals de AI Act vraagt."
+            ],
+            "itemsHtml": [
+              "<strong>Leermodule op maat</strong> — Een leerroute die aansluit op werk en competentiekader.",
+              "<strong>AI-bekwaamheid</strong> — AI-geletterdheid per rol, zoals de AI Act vraagt."
+            ]
+          }
+        ],
+        "caseIds": []
+      }
+    ]
+  },
+  "/aanbod/leermodule-op-maat/": {
+    "name": "Leermodule op maat",
+    "title": "Leermodule op maat",
+    "seo": "Een leermodule op maat, ontworpen vanuit je beroepsprofiel of competentiekader, gebouwd in je eigen leeromgeving en begeleid in de uitvoering.",
+    "subtitle": "Een leerroute die aansluit op werk en competentiekader.",
+    "hero": [
+      {
+        "type": "paragraph",
+        "text": "Ik vertaal beroepsprofielen, competentiekaders en leeruitkomsten naar samenhangende leerroutes: inhoud, activiteiten en beoordeling in één ontwerp, ingericht in je leeromgeving en zo nodig begeleid in de uitvoering.",
+        "html": "<p>Ik vertaal beroepsprofielen, competentiekaders en leeruitkomsten naar samenhangende leerroutes: inhoud, activiteiten en beoordeling in één ontwerp, ingericht in je leeromgeving en zo nodig begeleid in de uitvoering.</p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "[Bespreek je vraagstuk]",
+        "html": "<p><a href=\"/contact/?onderwerp=Leermodule%20op%20maat\">Bespreek je vraagstuk</a></p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "**Herkenbaar?** Er is een beroepsprofiel of competentiekader, maar nog geen leerroute die daar echt op aansluit. Of er is een standaardcursus, maar die past niet bij jullie werk.",
+        "html": "<p><strong>Herkenbaar?</strong> Er is een beroepsprofiel of competentiekader, maar nog geen leerroute die daar echt op aansluit. Of er is een standaardcursus, maar die past niet bij jullie werk.</p>"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Zo bestel je een module",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "**Intake** — doelgroep, leerdoel, gewenste vorm en de leeromgeving die je al hebt.",
+              "**Ontwerp** — leeruitkomsten, activiteiten en beoordeling in samenhang, met generatieve AI als ontwerphulp en een menselijke toets.",
+              "**Bouw** — inrichting in je eigen leeromgeving of in een eenvoudige eigen omgeving.",
+              "**Uitvoering** — de groep wordt begeleid; samen leren staat centraal.",
+              "**Evaluatie** — wat werkte, wat bijgesteld moet worden en wat blijft."
+            ],
+            "itemsHtml": [
+              "<strong>Intake</strong> — doelgroep, leerdoel, gewenste vorm en de leeromgeving die je al hebt.",
+              "<strong>Ontwerp</strong> — leeruitkomsten, activiteiten en beoordeling in samenhang, met generatieve AI als ontwerphulp en een menselijke toets.",
+              "<strong>Bouw</strong> — inrichting in je eigen leeromgeving of in een eenvoudige eigen omgeving.",
+              "<strong>Uitvoering</strong> — de groep wordt begeleid; samen leren staat centraal.",
+              "<strong>Evaluatie</strong> — wat werkte, wat bijgesteld moet worden en wat blijft."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Je kunt ook alleen ontwerp of alleen ontwerp en bouw afnemen.",
+            "html": "<p>Je kunt ook alleen ontwerp of alleen ontwerp en bouw afnemen.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Vormen",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Ik bied vormen aan die ik in de praktijk heb uitgevoerd, zoals een persoonlijke leerroute met keuzeruimte en een reeks praktijklabs rond eigen werksituaties. Nieuwe vormen voeg ik toe zodra ze zich in de praktijk hebben bewezen.",
+            "html": "<p>Ik bied vormen aan die ik in de praktijk heb uitgevoerd, zoals een persoonlijke leerroute met keuzeruimte en een reeks praktijklabs rond eigen werksituaties. Nieuwe vormen voeg ik toe zodra ze zich in de praktijk hebben bewezen.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Wat je krijgt",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "Leeruitkomsten, leeractiviteiten en beoordeling in samenhang",
+              "Een uitvoerbare leerlijn",
+              "Inrichting in je leeromgeving",
+              "Op verzoek: begeleiding en evaluatie van de eerste uitvoering"
+            ],
+            "itemsHtml": [
+              "Leeruitkomsten, leeractiviteiten en beoordeling in samenhang",
+              "Een uitvoerbare leerlijn",
+              "Inrichting in je leeromgeving",
+              "Op verzoek: begeleiding en evaluatie van de eerste uitvoering"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Prijs: vaste prijs per fase (ontwerp, bouw, uitvoering).",
+            "html": "<p>Prijs: vaste prijs per fase (ontwerp, bouw, uitvoering).</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Zo kun je het financieren",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Mkb-bedrijven en samenwerkingsverbanden kunnen voor het opzetten van leer- en ontwikkelmethoden soms de landelijke SLIM-regeling gebruiken. SLIM is bedoeld voor structureel leren in de organisatie, niet voor losse workshops. Aanvraagperiodes wisselen per jaar; ik kijk in de kennismaking met je mee.",
+            "html": "<p>Mkb-bedrijven en samenwerkingsverbanden kunnen voor het opzetten van leer- en ontwikkelmethoden soms de landelijke SLIM-regeling gebruiken. SLIM is bedoeld voor structureel leren in de organisatie, niet voor losse workshops. Aanvraagperiodes wisselen per jaar; ik kijk in de kennismaking met je mee.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Eerder aangepakt",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Leerroutes en leeromgevingen ontwierp en richtte ik eerder in voor hogescholen.",
+            "html": "<p>Leerroutes en leeromgevingen ontwierp en richtte ik eerder in voor hogescholen.</p>"
+          }
+        ],
+        "caseIds": [
+          "hz-plj",
+          "moodle-rbs"
+        ]
+      },
+      {
+        "title": "Meer binnen Leren en ontwikkelen",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "**Praktijklab** — Samen uitzoeken, maken en beoordelen.",
+              "**AI-bekwaamheid** — AI-geletterdheid per rol, zoals de AI Act vraagt."
+            ],
+            "itemsHtml": [
+              "<strong>Praktijklab</strong> — Samen uitzoeken, maken en beoordelen.",
+              "<strong>AI-bekwaamheid</strong> — AI-geletterdheid per rol, zoals de AI Act vraagt."
+            ]
+          }
+        ],
+        "caseIds": []
+      }
+    ]
+  },
+  "/aanbod/ai-bekwaamheid/": {
+    "name": "AI-bekwaamheid",
+    "title": "AI-bekwaamheid",
+    "seo": "AI-geletterdheid per rol in plaats van een algemene training: praktijklabs met eigen werksituaties en borging in leren en registratie.",
+    "subtitle": "AI-geletterdheid per rol, zoals de AI Act vraagt.",
+    "hero": [
+      {
+        "type": "paragraph",
+        "text": "Sinds februari 2025 moeten organisaties die AI inzetten zorgen dat hun mensen voldoende AI-geletterd zijn. Een algemene e-learning landt zelden in het werk. Ik werk met praktijklabs per rolcluster: wat moet een HR-adviseur, docent, beleidsmedewerker of teamleider kunnen, hoe oefen je dat met eigen werksituaties, en hoe leg je vast dat het gebeurt.",
+        "html": "<p>Sinds februari 2025 moeten organisaties die AI inzetten zorgen dat hun mensen voldoende AI-geletterd zijn. Een algemene e-learning landt zelden in het werk. Ik werk met praktijklabs per rolcluster: wat moet een HR-adviseur, docent, beleidsmedewerker of teamleider kunnen, hoe oefen je dat met eigen werksituaties, en hoe leg je vast dat het gebeurt.</p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "[Bespreek je vraagstuk]",
+        "html": "<p><a href=\"/contact/?onderwerp=AI-bekwaamheid\">Bespreek je vraagstuk</a></p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "**Herkenbaar?** Iedereen heeft een AI-training gehad of een e-learning afgevinkt, maar in het werk verandert weinig. Of de Copilot-licenties zijn er, maar niemand weet goed waarvoor.",
+        "html": "<p><strong>Herkenbaar?</strong> Iedereen heeft een AI-training gehad of een e-learning afgevinkt, maar in het werk verandert weinig. Of de Copilot-licenties zijn er, maar niemand weet goed waarvoor.</p>"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Wat je krijgt",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "Een bekwaamheidsprofiel per rolcluster: wat moet deze rol met AI kunnen en beoordelen?",
+              "Praktijklabs die aansluiten op het eigen werk, met echte taken en echte twijfels",
+              "Borging: hoe bekwaamheid wordt bijgehouden, opgefrist en aantoonbaar gemaakt"
+            ],
+            "itemsHtml": [
+              "Een bekwaamheidsprofiel per rolcluster: wat moet deze rol met AI kunnen en beoordelen?",
+              "Praktijklabs die aansluiten op het eigen werk, met echte taken en echte twijfels",
+              "Borging: hoe bekwaamheid wordt bijgehouden, opgefrist en aantoonbaar gemaakt"
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Hoe ik werk",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "Bepalen welke rollen wat moeten kunnen, vanuit het werk en de risico’s die erbij horen.",
+              "Oefenen met eigen werksituaties, inclusief onjuiste output, gevoelige gegevens en twijfel.",
+              "Vastleggen hoe bekwaamheid wordt bijgehouden, zodat je kunt laten zien wat je doet."
+            ],
+            "itemsHtml": [
+              "Bepalen welke rollen wat moeten kunnen, vanuit het werk en de risico’s die erbij horen.",
+              "Oefenen met eigen werksituaties, inclusief onjuiste output, gevoelige gegevens en twijfel.",
+              "Vastleggen hoe bekwaamheid wordt bijgehouden, zodat je kunt laten zien wat je doet."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Dit is geen prompttraining. Het gaat om oordeelsvermogen: wanneer je AI gebruikt, hoe je de uitkomst beoordeelt en wanneer je stopt.",
+            "html": "<p>Dit is geen prompttraining. Het gaat om oordeelsvermogen: wanneer je AI gebruikt, hoe je de uitkomst beoordeelt en wanneer je stopt.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "Prijs: vaste prijs per rolcluster.",
+            "html": "<p>Prijs: vaste prijs per rolcluster.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Zo kun je het financieren",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Voor structureel leren en ontwikkelen in het mkb is de landelijke SLIM-regeling soms een optie. Zeeuwse samenwerkingsverbanden kunnen kijken naar *Zeeland in Stroomversnelling – Human Capital Agenda*. Voorwaarden wisselen; ik kijk met je mee.",
+            "html": "<p>Voor structureel leren en ontwikkelen in het mkb is de landelijke SLIM-regeling soms een optie. Zeeuwse samenwerkingsverbanden kunnen kijken naar <em>Zeeland in Stroomversnelling – Human Capital Agenda</em>. Voorwaarden wisselen; ik kijk met je mee.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Eerder aangepakt",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Bekwaamheid ontwikkelen én aantoonbaar maken deed ik eerder in de zorg en het onderwijs.",
+            "html": "<p>Bekwaamheid ontwikkelen én aantoonbaar maken deed ik eerder in de zorg en het onderwijs.</p>"
+          }
+        ],
+        "caseIds": [
+          "hz-plj",
+          "corpio",
+          "addventure"
+        ]
+      }
+    ]
+  },
+  "/aanbod/ontwerp-en-ontwikkeling/": {
+    "name": "Ontwerp en ontwikkeling",
+    "title": "Ontwerp en ontwikkeling",
+    "seo": "Samen scherp krijgen wat een platform of hulpmiddel moet doen, routes vergelijken en de gekozen oplossing inrichten, ook als meerdere organisaties hem delen.",
+    "subtitle": "Samen een platform of hulpmiddel kiezen en inrichten.",
+    "hero": [
+      {
+        "type": "paragraph",
+        "text": "Ik help organisaties, ook samen, om scherp te krijgen wat een platform moet doen, routes te vergelijken en de gekozen oplossing in te richten. Met aandacht voor koppelingen, eigendom en zeggenschap. Ik ben aan geen leverancier gebonden.",
+        "html": "<p>Ik help organisaties, ook samen, om scherp te krijgen wat een platform moet doen, routes te vergelijken en de gekozen oplossing in te richten. Met aandacht voor koppelingen, eigendom en zeggenschap. Ik ben aan geen leverancier gebonden.</p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "[Bespreek je vraagstuk]",
+        "html": "<p><a href=\"/contact/?onderwerp=Ontwerp%20en%20ontwikkeling\">Bespreek je vraagstuk</a></p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "**Herkenbaar?** We willen samen een platform, maar wat hebben we eigenlijk nodig, en van wie is het?",
+        "html": "<p><strong>Herkenbaar?</strong> We willen samen een platform, maar wat hebben we eigenlijk nodig, en van wie is het?</p>"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Wat je krijgt",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "Samenwerkingsafspraken, een pakket van eisen en scenario’s",
+              "Een vergelijking van platformroutes, inclusief businesscase waar nodig",
+              "Inrichting en koppelingen met bestaande systemen"
+            ],
+            "itemsHtml": [
+              "Samenwerkingsafspraken, een pakket van eisen en scenario’s",
+              "Een vergelijking van platformroutes, inclusief businesscase waar nodig",
+              "Inrichting en koppelingen met bestaande systemen"
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Ook kleine hulpmiddelen",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Niet elk vraagstuk vraagt om een groot platform. Soms helpt een klein hulpmiddel meer: een funnel, een signaalfeed met analyse, een digitaal canvas of een eenvoudige beslishulp. Die bouw ik zelf, samen met de gebruikers, met afspraken over eigenaarschap, gegevens en beheer. Voorbeelden staan in de [Werkplaats].",
+            "html": "<p>Niet elk vraagstuk vraagt om een groot platform. Soms helpt een klein hulpmiddel meer: een funnel, een signaalfeed met analyse, een digitaal canvas of een eenvoudige beslishulp. Die bouw ik zelf, samen met de gebruikers, met afspraken over eigenaarschap, gegevens en beheer. Voorbeelden staan in de <a href=\"/werkplaats/\">Werkplaats</a>.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Hoe ik werk",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "Eerst de bestaande omgeving en werkprocessen in beeld",
+              "Samen met gebruikers en leveranciers ontwerpen",
+              "Stapsgewijs inrichten en testen"
+            ],
+            "itemsHtml": [
+              "Eerst de bestaande omgeving en werkprocessen in beeld",
+              "Samen met gebruikers en leveranciers ontwerpen",
+              "Stapsgewijs inrichten en testen"
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Zo kun je het financieren",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Mkb-bedrijven in Zuid-Nederland kunnen voor haalbaarheidsstudies en samenwerkingsprojecten soms de MIT-regeling gebruiken; Zeeuwse ondernemers soms een voucher van Impuls Zeeland. Samenwerkingsverbanden in Zeeland kunnen kijken naar *Zeeland in Stroomversnelling – Human Capital Agenda*. Voorwaarden wisselen; ik kijk met je mee.",
+            "html": "<p>Mkb-bedrijven in Zuid-Nederland kunnen voor haalbaarheidsstudies en samenwerkingsprojecten soms de MIT-regeling gebruiken; Zeeuwse ondernemers soms een voucher van Impuls Zeeland. Samenwerkingsverbanden in Zeeland kunnen kijken naar <em>Zeeland in Stroomversnelling – Human Capital Agenda</em>. Voorwaarden wisselen; ik kijk met je mee.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Eerder aangepakt",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Platforms ontwierp en richtte ik eerder in, vaak voor meerdere organisaties tegelijk.",
+            "html": "<p>Platforms ontwierp en richtte ik eerder in, vaak voor meerdere organisaties tegelijk.</p>"
+          }
+        ],
+        "caseIds": [
+          "zorgwise",
+          "corpio",
+          "moodle-rbs",
+          "viazorg-flexplatform"
+        ]
+      }
+    ]
+  },
+  "/aanbod/implementatie/": {
+    "name": "Implementatie",
+    "title": "Implementatie",
+    "seo": "Van gekozen oplossing naar werkende praktijk: werkprocessen, rollen, koppelingen, kennisoverdracht en een eigenaar die het na de projectfase overneemt.",
+    "subtitle": "Van gekozen oplossing naar werkende praktijk.",
+    "hero": [
+      {
+        "type": "paragraph",
+        "text": "Implementatie gaat om meer dan techniek: werkprocessen, rollen, kennisoverdracht en een eigenaar die het na de projectfase overneemt. Zeker als meerdere organisaties een platform delen, zonder hiërarchie tussen hen.",
+        "html": "<p>Implementatie gaat om meer dan techniek: werkprocessen, rollen, kennisoverdracht en een eigenaar die het na de projectfase overneemt. Zeker als meerdere organisaties een platform delen, zonder hiërarchie tussen hen.</p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "[Bespreek je vraagstuk]",
+        "html": "<p><a href=\"/contact/?onderwerp=Implementatie\">Bespreek je vraagstuk</a></p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "**Herkenbaar?** Er ligt een plan of een platform, maar het komt niet van de grond.",
+        "html": "<p><strong>Herkenbaar?</strong> Er ligt een plan of een platform, maar het komt niet van de grond.</p>"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Wat je krijgt",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "Ingerichte processen en werkafspraken",
+              "Werkende koppelingen en registraties",
+              "Een eigenaar en overdracht",
+              "Borging in de reguliere cyclus"
+            ],
+            "itemsHtml": [
+              "Ingerichte processen en werkafspraken",
+              "Werkende koppelingen en registraties",
+              "Een eigenaar en overdracht",
+              "Borging in de reguliere cyclus"
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Hoe ik werk",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "Werkprocessen harmoniseren met de betrokken organisaties",
+              "Koppelingen en registraties laten werken",
+              "Kennis overdragen en tactisch verankeren"
+            ],
+            "itemsHtml": [
+              "Werkprocessen harmoniseren met de betrokken organisaties",
+              "Koppelingen en registraties laten werken",
+              "Kennis overdragen en tactisch verankeren"
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Zo kun je het financieren",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Samenwerkingsverbanden in Zeeland kunnen kijken naar *Zeeland in Stroomversnelling – Human Capital Agenda*; leerplatforms in het mkb soms naar de SLIM-regeling. Voorwaarden wisselen; ik kijk met je mee.",
+            "html": "<p>Samenwerkingsverbanden in Zeeland kunnen kijken naar <em>Zeeland in Stroomversnelling – Human Capital Agenda</em>; leerplatforms in het mkb soms naar de SLIM-regeling. Voorwaarden wisselen; ik kijk met je mee.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Eerder aangepakt",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Implementaties die bleven werken na de projectfase.",
+            "html": "<p>Implementaties die bleven werken na de projectfase.</p>"
+          }
+        ],
+        "caseIds": [
+          "corpio",
+          "moodle-rbs",
+          "quarterly-review",
+          "green-key"
+        ]
+      }
+    ]
+  },
+  "/aanbod/governance-en-evaluatie/": {
+    "name": "Governance en evaluatie",
+    "title": "Governance en evaluatie",
+    "seo": "Onafhankelijke evaluatie van platforms, samenwerkingen en AI-pilots, met een besluit als uitkomst: doorgaan, bijsturen, opschalen of stoppen.",
+    "subtitle": "Evaluatie van platforms, samenwerkingen en AI-pilots.",
+    "hero": [
+      {
+        "type": "paragraph",
+        "text": "Een evaluatie met handelingsperspectief: niet alleen een oordeel, maar ook wat er nu besloten moet worden. Doorgaan, bijsturen, opschalen of stoppen. Daarna richt ik waar nodig governance in die het besturen mogelijk maakt. Omdat ik geen platform, model of licentie verkoop, evalueer ik zonder eigen belang.",
+        "html": "<p>Een evaluatie met handelingsperspectief: niet alleen een oordeel, maar ook wat er nu besloten moet worden. Doorgaan, bijsturen, opschalen of stoppen. Daarna richt ik waar nodig governance in die het besturen mogelijk maakt. Omdat ik geen platform, model of licentie verkoop, evalueer ik zonder eigen belang.</p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "[Bespreek je vraagstuk]",
+        "html": "<p><a href=\"/contact/?onderwerp=Governance%20en%20evaluatie\">Bespreek je vraagstuk</a></p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "**Herkenbaar?** Een programma, platform, samenwerking of AI-pilot loopt al een tijdje, maar wat levert het op, en hoe nu verder?",
+        "html": "<p><strong>Herkenbaar?</strong> Een programma, platform, samenwerking of AI-pilot loopt al een tijdje, maar wat levert het op, en hoe nu verder?</p>"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Vier vaste vragen",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Elke evaluatie beantwoordt in elk geval deze vier vragen, aangevuld met jullie eigen vragen:",
+            "html": "<p>Elke evaluatie beantwoordt in elk geval deze vier vragen, aangevuld met jullie eigen vragen:</p>"
+          },
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "**Doeltreffendheid** — Worden de doelen gehaald, en wat verandert er in de praktijk?",
+              "**Doelmatigheid** — Hoe verhouden kosten en inzet zich tot wat het oplevert?",
+              "**Governance en opschaling** — Is duidelijk wie beslist en betaalt, en kan het blijven bestaan of groeien?",
+              "**Bereik** — Wie wordt bereikt, en is dat de doelgroep die je bedoelde?"
+            ],
+            "itemsHtml": [
+              "<strong>Doeltreffendheid</strong> — Worden de doelen gehaald, en wat verandert er in de praktijk?",
+              "<strong>Doelmatigheid</strong> — Hoe verhouden kosten en inzet zich tot wat het oplevert?",
+              "<strong>Governance en opschaling</strong> — Is duidelijk wie beslist en betaalt, en kan het blijven bestaan of groeien?",
+              "<strong>Bereik</strong> — Wie wordt bereikt, en is dat de doelgroep die je bedoelde?"
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Voor wie",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "Regionale samenwerkingen en programma’s die moeten verantwoorden of besluiten over vervolg",
+              "Organisaties met een (leer)platform dat al een tijd draait",
+              "Hogescholen, mbo-instellingen en publieke organisaties die een AI-pilot hebben gedraaid"
+            ],
+            "itemsHtml": [
+              "Regionale samenwerkingen en programma’s die moeten verantwoorden of besluiten over vervolg",
+              "Organisaties met een (leer)platform dat al een tijd draait",
+              "Hogescholen, mbo-instellingen en publieke organisaties die een AI-pilot hebben gedraaid"
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Wat je krijgt",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "Een evaluatie met besluitadvies",
+              "Waar nodig: een governancemodel en rapportagekader",
+              "Een reviewritme, zodat de volgende evaluatie geen verrassing is"
+            ],
+            "itemsHtml": [
+              "Een evaluatie met besluitadvies",
+              "Waar nodig: een governancemodel en rapportagekader",
+              "Een reviewritme, zodat de volgende evaluatie geen verrassing is"
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Hoe ik werk",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "Meerdere bronnen combineren: data, interviews, observaties en producten van deelnemers",
+              "Bevindingen vertalen naar besluitpunten",
+              "Governance afstemmen op de sturing die er al is"
+            ],
+            "itemsHtml": [
+              "Meerdere bronnen combineren: data, interviews, observaties en producten van deelnemers",
+              "Bevindingen vertalen naar besluitpunten",
+              "Governance afstemmen op de sturing die er al is"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Prijs: vaste prijs na afbakening.",
+            "html": "<p>Prijs: vaste prijs na afbakening.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Eerder aangepakt",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Programma’s en platforms evalueerde ik eerder voor onder meer TU Delft, OCW en Kennisnet.",
+            "html": "<p>Programma’s en platforms evalueerde ik eerder voor onder meer TU Delft, OCW en Kennisnet.</p>"
+          }
+        ],
+        "caseIds": [
+          "urway",
+          "delft-ocw",
+          "stad-esch",
+          "heineken"
+        ]
+      }
+    ]
+  },
+  "/werkwijze/": {
+    "name": "Werkwijze",
+    "title": "Van vraagstuk naar werkende praktijk",
+    "seo": "Vier fasen, van verkennen tot evalueren, en één recept dat in elke fase geldt: de groep faciliteren, met passende technologie en de juiste inhoud.",
+    "subtitle": "",
+    "hero": [
+      {
+        "type": "paragraph",
+        "text": "Mijn werkwijze heeft twee lagen. De vier fasen zeggen **wanneer** iets gebeurt. Het recept zegt **hoe** ik werk, in elke fase. Je kunt bij elke fase instappen en alleen afnemen wat je nodig hebt.",
+        "html": "<p>Mijn werkwijze heeft twee lagen. De vier fasen zeggen <strong>wanneer</strong> iets gebeurt. Het recept zegt <strong>hoe</strong> ik werk, in elke fase. Je kunt bij elke fase instappen en alleen afnemen wat je nodig hebt.</p>"
+      }
+    ],
+    "sections": [
+      {
+        "title": "De vier fasen",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "**Fase 1 · Verkennen — Wat speelt er echt?**\nEerst vaststellen wat er feitelijk gebeurt: gebruik, knelpunten, belangen en kansen. Soms blijkt de oorspronkelijke vraag niet de juiste.\nAanbod: AI-Foto · Praktijklab · [Cases in deze fase]",
+            "html": "<p><strong>Fase 1 · Verkennen — Wat speelt er echt?</strong>\nEerst vaststellen wat er feitelijk gebeurt: gebruik, knelpunten, belangen en kansen. Soms blijkt de oorspronkelijke vraag niet de juiste.\nAanbod: AI-Foto · Praktijklab · <a href=\"/cases/\">Cases in deze fase</a></p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Fase 2 · Ontwerpen — Wat kiezen we, en hoe gaat het eruitzien?**\nSamen met de betrokkenen richting en werking ontwerpen: scenario’s, kaders, processen, spelregels of een pilot.\nAanbod: GRIP op AI in HR · Praktijklab · Leermodule op maat · Ontwerp en ontwikkeling · [Cases in deze fase]",
+            "html": "<p><strong>Fase 2 · Ontwerpen — Wat kiezen we, en hoe gaat het eruitzien?</strong>\nSamen met de betrokkenen richting en werking ontwerpen: scenario’s, kaders, processen, spelregels of een pilot.\nAanbod: GRIP op AI in HR · Praktijklab · Leermodule op maat · Ontwerp en ontwikkeling · <a href=\"/cases/\">Cases in deze fase</a></p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Fase 3 · Realiseren — Hoe wordt het werkende praktijk?**\nVan ontwerp naar werkende praktijk: inrichten, bouwen, koppelen, invoeren en borgen in het gewone werk.\nAanbod: AI op Orde · Leermodule op maat · AI-bekwaamheid · Ontwerp en ontwikkeling · Implementatie · [Cases in deze fase]",
+            "html": "<p><strong>Fase 3 · Realiseren — Hoe wordt het werkende praktijk?</strong>\nVan ontwerp naar werkende praktijk: inrichten, bouwen, koppelen, invoeren en borgen in het gewone werk.\nAanbod: AI op Orde · Leermodule op maat · AI-bekwaamheid · Ontwerp en ontwikkeling · Implementatie · <a href=\"/cases/\">Cases in deze fase</a></p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Fase 4 · Evalueren — Werkt het, en blijft het werken?**\nEvalueren met een besluit als uitkomst: doorgaan, bijsturen, opschalen of stoppen. Plus governance die het besturen daarna mogelijk maakt.\nAanbod: AI op Orde · Governance en evaluatie · [Cases in deze fase]",
+            "html": "<p><strong>Fase 4 · Evalueren — Werkt het, en blijft het werken?</strong>\nEvalueren met een besluit als uitkomst: doorgaan, bijsturen, opschalen of stoppen. Plus governance die het besturen daarna mogelijk maakt.\nAanbod: AI op Orde · Governance en evaluatie · <a href=\"/cases/\">Cases in deze fase</a></p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Het recept",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "In elke fase faciliteer ik de groep, met passende technologie en de juiste inhoud, zodat mensen samen kennis opbouwen en een gedeelde praktijk ontwikkelen.",
+            "html": "<p>In elke fase faciliteer ik de groep, met passende technologie en de juiste inhoud, zodat mensen samen kennis opbouwen en een gedeelde praktijk ontwikkelen.</p>"
+          },
+          {
+            "type": "table",
+            "headers": [
+              "Ingrediënt",
+              "Wat het is",
+              "Voorbeelden"
+            ],
+            "rows": [
+              [
+                "**De groep faciliteren**",
+                "Mensgericht werken: samen uitzoeken, maken en beoordelen",
+                "Praktijklabs, kaartspellen, proceswanden, canvassen"
+              ],
+              [
+                "**Passende technologie**",
+                "De digitale omgeving en kleine hulpmiddelen die het samenwerken dragen",
+                "Leerplatforms, gedeelde registers, signaalfeeds, digitale canvassen"
+              ],
+              [
+                "**De juiste inhoud**",
+                "De kennis en het materiaal waar de groep mee werkt",
+                "Wet- en regelgeving, beroepsprofielen, praktijkvoorbeelden, analyses"
+              ]
+            ],
+            "headersHtml": [
+              "Ingrediënt",
+              "Wat het is",
+              "Voorbeelden"
+            ],
+            "rowsHtml": [
+              [
+                "<strong>De groep faciliteren</strong>",
+                "Mensgericht werken: samen uitzoeken, maken en beoordelen",
+                "Praktijklabs, kaartspellen, proceswanden, canvassen"
+              ],
+              [
+                "<strong>Passende technologie</strong>",
+                "De digitale omgeving en kleine hulpmiddelen die het samenwerken dragen",
+                "Leerplatforms, gedeelde registers, signaalfeeds, digitale canvassen"
+              ],
+              [
+                "<strong>De juiste inhoud</strong>",
+                "De kennis en het materiaal waar de groep mee werkt",
+                "Wet- en regelgeving, beroepsprofielen, praktijkvoorbeelden, analyses"
+              ]
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Het **praktijklab** is de werkvorm waarin dat recept het meest zichtbaar is. Het past in elke fase: om samen te verkennen, te ontwerpen, afspraken te oefenen of een evaluatie te bespreken.",
+            "html": "<p>Het <strong>praktijklab</strong> is de werkvorm waarin dat recept het meest zichtbaar is. Het past in elke fase: om samen te verkennen, te ontwerpen, afspraken te oefenen of een evaluatie te bespreken.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Wat in elke fase hetzelfde is",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "**Samen met wie het vraagstuk kent.** De mensen die het werk doen, onderzoeken, ontwerpen en beoordelen mee. Wie meedoet, maakt het onderweg eigen.",
+              "**Eerst zien wat er werkelijk gebeurt.** Ik stel vast wat er feitelijk speelt voordat ik iets ontwerp.",
+              "**Iets tastbaars na elke stap.** Elke fase levert iets op waar je mee verder kunt: een analyse, een ontwerp, een werkende praktijk of een besluit.",
+              "**Een besluitmoment ingebouwd.** Na elke stap kies je zelf: doorgaan, bijsturen of stoppen.",
+              "**Onafhankelijk.** Ik verkoop geen software, model, licentie of detachering. Mijn advies gaat over wat bij jullie werkt."
+            ],
+            "itemsHtml": [
+              "<strong>Samen met wie het vraagstuk kent.</strong> De mensen die het werk doen, onderzoeken, ontwerpen en beoordelen mee. Wie meedoet, maakt het onderweg eigen.",
+              "<strong>Eerst zien wat er werkelijk gebeurt.</strong> Ik stel vast wat er feitelijk speelt voordat ik iets ontwerp.",
+              "<strong>Iets tastbaars na elke stap.</strong> Elke fase levert iets op waar je mee verder kunt: een analyse, een ontwerp, een werkende praktijk of een besluit.",
+              "<strong>Een besluitmoment ingebouwd.</strong> Na elke stap kies je zelf: doorgaan, bijsturen of stoppen.",
+              "<strong>Onafhankelijk.</strong> Ik verkoop geen software, model, licentie of detachering. Mijn advies gaat over wat bij jullie werkt."
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "**Waar sta jij in je vraagstuk?** [Plan een kennismaking]",
+            "html": "<p><strong>Waar sta jij in je vraagstuk?</strong> <a href=\"/contact/?onderwerp=Werkwijze\">Plan een kennismaking</a></p>"
+          }
+        ],
+        "caseIds": []
+      }
+    ]
+  },
+  "/cases/": {
+    "name": "Cases",
+    "title": "Eerder aangepakt",
+    "seo": "Eerder aangepakte vraagstukken in zorg, onderwijs en organisaties, per fase van een traject.",
+    "subtitle": "",
+    "hero": [
+      {
+        "type": "paragraph",
+        "text": "Geen van deze projecten heette al Kenniswerkplaats, en bij de meeste werkte ik voor een opdrachtgever, werkgever of eerder eigen bedrijf. Samen laten ze zien dat elke fase al vaak in de praktijk is uitgevoerd. De stipjes tonen welke fasen een case aantoonbaar bewijst.",
+        "html": "<p>Geen van deze projecten heette al Kenniswerkplaats, en bij de meeste werkte ik voor een opdrachtgever, werkgever of eerder eigen bedrijf. Samen laten ze zien dat elke fase al vaak in de praktijk is uitgevoerd. De stipjes tonen welke fasen een case aantoonbaar bewijst.</p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "Filters: Alle · 1. Verkennen · 2. Ontwerpen · 3. Realiseren · 4. Evalueren",
+        "html": "<p>Filters: Alle · 1. Verkennen · 2. Ontwerpen · 3. Realiseren · 4. Evalueren</p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "Alle cases uit de casebibliotheek (C1–C15), gesorteerd van recent naar ouder.",
+        "html": "<p>Alle cases uit de casebibliotheek (C1–C15), gesorteerd van recent naar ouder.</p>"
+      }
+    ],
+    "sections": []
+  },
+  "/werkplaats/": {
+    "name": "Werkplaats",
+    "title": "Uit de werkplaats",
+    "seo": "Instrumenten, experimenten en signalen uit de werkplaats van Kenniswerkplaats.",
+    "subtitle": "",
+    "hero": [
+      {
+        "type": "paragraph",
+        "text": "In de werkplaats maak ik het gereedschap dat in trajecten helpt: spellen, canvassen en kleine digitale hulpmiddelen. Sommige zijn klaar voor gebruik, andere nog in ontwikkeling. Ze laten zien wat er kan; op maat maken kan ook.",
+        "html": "<p>In de werkplaats maak ik het gereedschap dat in trajecten helpt: spellen, canvassen en kleine digitale hulpmiddelen. Sommige zijn klaar voor gebruik, andere nog in ontwikkeling. Ze laten zien wat er kan; op maat maken kan ook.</p>"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Instrumenten en experimenten",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "**AISA-kaartspel** · *Beschikbaar in praktijklabs*\n64 kaarten om met een team verantwoord AI-gebruik te bespreken, te beoordelen en te beslissen. Met facilitatorhandboek.",
+            "html": "<p><strong>AISA-kaartspel</strong> · <em>Beschikbaar in praktijklabs</em>\n64 kaarten om met een team verantwoord AI-gebruik te bespreken, te beoordelen en te beslissen. Met facilitatorhandboek.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Signaalfeed** · *In ontwikkeling*\nEen doorlopende feed met signalen uit beleid, onderzoek en praktijk, en wat ze betekenen voor organisaties. Ook als gedeelde feed voor een netwerk of samenwerkingsverband.",
+            "html": "<p><strong>Signaalfeed</strong> · <em>In ontwikkeling</em>\nEen doorlopende feed met signalen uit beleid, onderzoek en praktijk, en wat ze betekenen voor organisaties. Ook als gedeelde feed voor een netwerk of samenwerkingsverband.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Kleine tools** · *In ontwikkeling*\nDirect bruikbare instrumenten uit eerdere trajecten, zoals checklists en beslishulpen.",
+            "html": "<p><strong>Kleine tools</strong> · <em>In ontwikkeling</em>\nDirect bruikbare instrumenten uit eerdere trajecten, zoals checklists en beslishulpen.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Digitaal canvas** · *In ontwikkeling*\nDigitale versies van werkvormen uit het praktijklab, om samen een vraagstuk in kaart te brengen.",
+            "html": "<p><strong>Digitaal canvas</strong> · <em>In ontwikkeling</em>\nDigitale versies van werkvormen uit het praktijklab, om samen een vraagstuk in kaart te brengen.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "Elk hulpmiddel dat ik voor een opdrachtgever maak, krijgt afspraken over eigenaarschap, gegevens en beheer. Zo blijft het bruikbaar na de overdracht.",
+            "html": "<p>Elk hulpmiddel dat ik voor een opdrachtgever maak, krijgt afspraken over eigenaarschap, gegevens en beheer. Zo blijft het bruikbaar na de overdracht.</p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "**Iets nodig dat er nog niet is?** [Bespreek je vraagstuk]",
+            "html": "<p><strong>Iets nodig dat er nog niet is?</strong> <a href=\"/contact/?onderwerp=Werkplaats\">Bespreek je vraagstuk</a></p>"
+          }
+        ],
+        "caseIds": []
+      }
+    ]
+  },
+  "/over/": {
+    "name": "Over",
+    "title": "Rink Weijs",
+    "seo": "Rink Weijs werkt aan de overgang van ambitie of besluit naar werkende, geborgde praktijk, vaak tussen organisaties die geen zeggenschap over elkaar hebben.",
+    "subtitle": "",
+    "hero": [
+      {
+        "type": "paragraph",
+        "text": "Ik werk aan de overgang van ambitie of besluit naar een praktijk die werkt en blijft werken. Bijna altijd tussen organisaties, disciplines of bestuurslagen die geen zeggenschap over elkaar hebben.",
+        "html": "<p>Ik werk aan de overgang van ambitie of besluit naar een praktijk die werkt en blijft werken. Bijna altijd tussen organisaties, disciplines of bestuurslagen die geen zeggenschap over elkaar hebben.</p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "Twintig jaar werk ik aan hetzelfde soort vraagstuk, vanuit wisselende posities: als adviseur, als onderwijsontwerper binnen een hogeschool, als lid van de centrale medezeggenschap en als projectleider. In het hoger onderwijs, in de zorg en bij publieke en private organisaties.",
+        "html": "<p>Twintig jaar werk ik aan hetzelfde soort vraagstuk, vanuit wisselende posities: als adviseur, als onderwijsontwerper binnen een hogeschool, als lid van de centrale medezeggenschap en als projectleider. In het hoger onderwijs, in de zorg en bij publieke en private organisaties.</p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "Mijn manier van werken is faciliterend: kennis ophalen bij de mensen die het vraagstuk kennen, zichtbaar maken en terugleggen, zodat een groep er samen over kan besluiten. Systeemdenken is daarbij mijn lens: wie zijn de spelers, waar lopen de afhankelijkheden en geldstromen, en wat zijn de onbedoelde effecten.",
+        "html": "<p>Mijn manier van werken is faciliterend: kennis ophalen bij de mensen die het vraagstuk kennen, zichtbaar maken en terugleggen, zodat een groep er samen over kan besluiten. Systeemdenken is daarbij mijn lens: wie zijn de spelers, waar lopen de afhankelijkheden en geldstromen, en wat zijn de onbedoelde effecten.</p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "Sinds 2025 richt ik me ook op verantwoord werken met AI: de organisatorische laag tussen wat is besloten en wat mensen feitelijk doen.",
+        "html": "<p>Sinds 2025 richt ik me ook op verantwoord werken met AI: de organisatorische laag tussen wat is besloten en wat mensen feitelijk doen.</p>"
+      },
+      {
+        "type": "paragraph",
+        "text": "Kenniswerkplaats is de voortzetting van Digidactics, mijn bedrijf sinds 2022.",
+        "html": "<p>Kenniswerkplaats is de voortzetting van Digidactics, mijn bedrijf sinds 2022.</p>"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Rollen die ik vervul",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Mijn rol volgt uit de opgave: kwartiermaker, procesbegeleider, ontwerper, projectleider of onafhankelijk evaluator. In een voorstel staat welke rol ik op me neem, met welke bevoegdheden.",
+            "html": "<p>Mijn rol volgt uit de opgave: kwartiermaker, procesbegeleider, ontwerper, projectleider of onafhankelijk evaluator. In een voorstel staat welke rol ik op me neem, met welke bevoegdheden.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Waar ik sterk in ben",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "**Eerst vaststellen wat er gebeurt.** Met eigen instrumenten onderzoeken wat er werkelijk speelt, voordat er iets wordt ontworpen.",
+              "**Ontwerpen dat landt in het gewone werk.** Scenario’s, kaders, processen en instrumenten die in een bestaande cyclus worden gebruikt.",
+              "**Financiering en besluitvorming meenemen.** Businesscases, scenario’s en begrotingen, en ervaring met stuurgroepen en medezeggenschap van beide kanten van de tafel.",
+              "**Koppelingen en leveranciers doorzien.** Begrijpen hoe gegevensstromen, standaarden en leveranciersbelangen de uitvoerbaarheid bepalen.",
+              "**Verantwoording organiseren.** Normen en kwaliteitseisen vertalen naar rollen, ritmes, registraties en bewijs."
+            ],
+            "itemsHtml": [
+              "<strong>Eerst vaststellen wat er gebeurt.</strong> Met eigen instrumenten onderzoeken wat er werkelijk speelt, voordat er iets wordt ontworpen.",
+              "<strong>Ontwerpen dat landt in het gewone werk.</strong> Scenario’s, kaders, processen en instrumenten die in een bestaande cyclus worden gebruikt.",
+              "<strong>Financiering en besluitvorming meenemen.</strong> Businesscases, scenario’s en begrotingen, en ervaring met stuurgroepen en medezeggenschap van beide kanten van de tafel.",
+              "<strong>Koppelingen en leveranciers doorzien.</strong> Begrijpen hoe gegevensstromen, standaarden en leveranciersbelangen de uitvoerbaarheid bepalen.",
+              "<strong>Verantwoording organiseren.</strong> Normen en kwaliteitseisen vertalen naar rollen, ritmes, registraties en bewijs."
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Wat ik niet verkoop",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "Geen software, geen eigen AI-model, geen licenties en geen detachering. Daardoor kan ik keuzes en evaluaties maken zonder eigen belang. Waar technische bouw, hosting of juridisch oordeel nodig is, werk ik samen met specialisten en leg ik de taakverdeling vooraf vast.",
+            "html": "<p>Geen software, geen eigen AI-model, geen licenties en geen detachering. Daardoor kan ik keuzes en evaluaties maken zonder eigen belang. Waar technische bouw, hosting of juridisch oordeel nodig is, werk ik samen met specialisten en leg ik de taakverdeling vooraf vast.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Opleiding",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "MSc Industrial Ecology · TU Delft / Universiteit Leiden",
+              "MA Communicatie, Beleid & Management (cum laude) · Universiteit Utrecht",
+              "BSc Onderwijskunde (HRD) · Universiteit Utrecht",
+              "BA Communicatie & Journalistiek · Hogeschool Utrecht"
+            ],
+            "itemsHtml": [
+              "MSc Industrial Ecology · TU Delft / Universiteit Leiden",
+              "MA Communicatie, Beleid &#x26; Management (cum laude) · Universiteit Utrecht",
+              "BSc Onderwijskunde (HRD) · Universiteit Utrecht",
+              "BA Communicatie &#x26; Journalistiek · Hogeschool Utrecht"
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Scholing en certificering",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "Oxford AI Ethics, Regulation and Compliance Programme (Saïd Business School)",
+              "ISO/IEC 42001 Lead Implementer, in opleiding",
+              "PRINCE2 Foundation"
+            ],
+            "itemsHtml": [
+              "Oxford AI Ethics, Regulation and Compliance Programme (Saïd Business School)",
+              "ISO/IEC 42001 Lead Implementer, in opleiding",
+              "PRINCE2 Foundation"
+            ]
+          },
+          {
+            "type": "paragraph",
+            "text": "**Kennismaken?** [LinkedIn] [Neem contact op]",
+            "html": "<p><strong>Kennismaken?</strong> <a href=\"https://www.linkedin.com/in/rinkweijs\">LinkedIn</a> <a href=\"/contact/\">Neem contact op</a></p>"
+          }
+        ],
+        "caseIds": []
+      }
+    ]
+  },
+  "/contact/": {
+    "name": "Contact",
+    "title": "Bespreek een vraagstuk",
+    "seo": "Plan een vrijblijvend verkenningsgesprek over je vraagstuk met Kenniswerkplaats in Vlissingen.",
+    "subtitle": "",
+    "hero": [
+      {
+        "type": "paragraph",
+        "text": "Een eerste verkenningsgesprek is vrijblijvend en duurt ongeveer een half uur. We kijken samen wat er speelt en of en hoe ik kan helpen. Past mijn aanbod niet, dan zeg ik dat, en waar mogelijk wie wel kan helpen.",
+        "html": "<p>Een eerste verkenningsgesprek is vrijblijvend en duurt ongeveer een half uur. We kijken samen wat er speelt en of en hoe ik kan helpen. Past mijn aanbod niet, dan zeg ik dat, en waar mogelijk wie wel kan helpen.</p>"
+      }
+    ],
+    "sections": [
+      {
+        "title": "Mail of bel",
+        "blocks": [
+          {
+            "type": "paragraph",
+            "text": "[rink@digidactics.nl](mailto:rink@digidactics.nl)",
+            "html": "<p><a href=\"mailto:rink@digidactics.nl\">rink@digidactics.nl</a></p>"
+          },
+          {
+            "type": "paragraph",
+            "text": "Vlissingen, Zeeland. Ik werk vooral in Zeeland en Zuidwest-Nederland, en online.",
+            "html": "<p>Vlissingen, Zeeland. Ik werk vooral in Zeeland en Zuidwest-Nederland, en online.</p>"
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Handig om te vertellen",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": false,
+            "items": [
+              "Wat het vraagstuk is, in een paar zinnen",
+              "Wie erbij betrokken zijn, en of het meerdere organisaties betreft",
+              "Wat er al is gedaan of besloten"
+            ],
+            "itemsHtml": [
+              "Wat het vraagstuk is, in een paar zinnen",
+              "Wie erbij betrokken zijn, en of het meerdere organisaties betreft",
+              "Wat er al is gedaan of besloten"
+            ]
+          }
+        ],
+        "caseIds": []
+      },
+      {
+        "title": "Wat er daarna gebeurt",
+        "blocks": [
+          {
+            "type": "list",
+            "ordered": true,
+            "items": [
+              "We plannen een kennismaking van een half uur.",
+              "Past het, dan ontvang je een offerte met scope, resultaat, doorlooptijd en vaste prijs."
+            ],
+            "itemsHtml": [
+              "We plannen een kennismaking van een half uur.",
+              "Past het, dan ontvang je een offerte met scope, resultaat, doorlooptijd en vaste prijs."
+            ]
+          }
+        ],
+        "caseIds": []
+      }
+    ]
+  }
+}

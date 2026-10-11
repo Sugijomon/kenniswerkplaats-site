@@ -5,15 +5,18 @@ import FaseStrip from '../../components/FaseStrip.astro';
 import KunstAccent from '../../components/KunstAccent.astro';
 import { groepen, aanbodBySlug } from '../../data/aanbod';
 import { domeinen } from '../../data/domeinen';
+import RedactieBlokken from '../../components/RedactieBlokken.astro';
+import { paginas, sectie } from '../../data/redactie';
+const page=paginas['/aanbod/'];
 import { faseByKey } from '../../data/fasen';
 ---
-<Base title="Aanbod" description="Modulair aanbod in drie domeinen: verantwoord werken met AI, leren en ontwikkelen, en digitale platforms.">
+<Base title="Aanbod" description={page.seo}>
   <header class="page-head">
     <KunstAccent beeld="richting" />
     <div class="wrap">
       <p class="eyebrow">Aanbod</p>
       <h1>Wat ik voor je kan doen</h1>
-      <p class="lead">Elk onderdeel hoort bij een of meer fasen van een traject. Je kunt los instappen of onderdelen combineren tot een heel traject.</p>
+      <RedactieBlokken blocks={page.hero} />
     </div>
   </header>
   <section class="tight">
@@ -44,6 +47,7 @@ import { faseByKey } from '../../data/fasen';
       ))}
     </div>
   </section>
+  {['Ook: duurzaamheid','Hoe ik prijs'].map(t => <section class="tight"><div class="wrap"><h2>{sectie(page,t)!.title}</h2><RedactieBlokken blocks={sectie(page,t)!.blocks.filter(b => !b.text?.startsWith('**Twijfel'))} /></div></section>)}
   <section class="tight">
     <div class="wrap">
       <div class="cta-bar">

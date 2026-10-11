@@ -3,97 +3,29 @@ import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import FaseStrip from '../../components/FaseStrip.astro';
 import CaseCard from '../../components/CaseCard.astro';
-
-import { domeinen } from '../../data/domeinen';
+import RedactieBlokken from '../../components/RedactieBlokken.astro';
+import FinancieringBlok from '../../components/FinancieringBlok.astro';
+import { paginas } from '../../data/redactie';
 import { aanbod, groepen, aanbodBySlug, type AanbodItem } from '../../data/aanbod';
 import { caseById } from '../../data/cases';
-import { fasen } from '../../data/fasen';
-
-export function getStaticPaths() {
-  return aanbod.filter((a) => !['ai-foto', 'grip-op-ai-in-hr', 'ai-op-orde'].includes(a.slug)).map((a) => ({ params: { slug: a.slug }, props: { a } }));
-}
+export function getStaticPaths() { return aanbod.filter(a => !['ai-foto','grip-op-ai-in-hr','ai-op-orde'].includes(a.slug)).map(a => ({ params: { slug:a.slug }, props:{a} })); }
 const { a } = Astro.props as { a: AanbodItem };
-const groep = groepen.find((g) => g.naam === a.groep)!;
-const verwant = groep.items.filter((s) => s !== a.slug).map((s) => aanbodBySlug[s]);
-const cases = a.cases.map((id) => caseById[id]).filter(Boolean);
-const governance = a.slug === 'governance-en-evaluatie';
-const ontwerp = a.slug === 'ontwerp-en-ontwikkeling';
-const visueel = governance || ontwerp;
+const page = paginas[`/aanbod/${a.slug}/`];
+const groep = groepen.find(g => g.naam === a.groep)!;
+const verwant = groep.items.filter(s => s !== a.slug).map(s => aanbodBySlug[s]);
+const governance=a.slug==='governance-en-evaluatie', ontwerp=a.slug==='ontwerp-en-ontwikkeling';
+const visueel=governance||ontwerp;
 ---
-<Base title={a.naam} description={a.kort}>
-  <div class:list={[`domein-${a.domein}`, { 'governance-page': visueel, 'ontwerp-page': ontwerp, 'art-background': visueel }]} style={ontwerp ? '--background-art:url(/ontwerp-achtergrondkunst.png)' : governance ? '--background-art:url(/kunst/richting.png)' : undefined}>
-  <header class="page-head">
-    <div class="wrap">
-      <p class="crumbs"><a href="/aanbod/">Aanbod</a> / {a.groep}</p>
-      <div class:list={{ 'governance-hero': visueel }}><div>
-      <p class="eyebrow">{a.groep}</p>
-      <h1>{a.naam} {a.instap && <span class="badge">Instap</span>}</h1>
-      <p class="lead">{a.intro}</p>
-      <div class="hero-actions">
-        <a class="btn" href={`/contact/?onderwerp=${encodeURIComponent(a.naam)}`}>Bespreek je vraagstuk <Icon name="arrow" size={18} /></a>
-      </div>
-      </div>{visueel && <div class="art-space" aria-hidden="true"></div>}</div>
-    </div>
-  </header>
-
-  <section class="tight">
-    <div class="wrap">
-      <p class="eyebrow">Waar dit in een traject zit</p>
-      <FaseStrip active={a.fasen} compact />
-    </div>
-  </section>
-
-  <section class="tight">
-    <div class="wrap">
-      <div class="note" style="margin-bottom:24px">{visueel && <Icon name="search" size={28} />}<span><strong>Herkenbaar?</strong> {a.vraag}</span></div>
-      <div class="two-col">
-        <div class="card">
-          <h2 style="font-size:1.25rem">Wat je krijgt</h2>
-          <ul class:list={['check-list', { 'icon-list': visueel }]}>{a.jeKrijgt.map((x, i) => <li>{visueel && <Icon name={['doc', 'layers', 'link'][i] ?? 'doc'} size={24} />}<span>{x}</span></li>)}</ul>
-        </div>
-        <div class="card">
-          <h2 style="font-size:1.25rem">Hoe ik werk</h2>
-          <ul class:list={['check-list', { 'icon-list': visueel }]}>{a.zoWerkIk.map((x, i) => <li>{visueel && <Icon name={['layers', 'people', 'chart'][i] ?? 'target'} size={24} />}<span>{x}</span></li>)}</ul>
-        </div>
-      </div>
-      {a.noot && <p class="note" style="margin-top:20px">{a.noot}</p>}
-    </div>
-  </section>
-
-  {cases.length > 0 && (
-    <section class="cases-section">
-      <div class="wrap">
-        <p class="eyebrow">Praktijkcases</p>
-        <h2>Eerder aangepakt</h2>
-        <p class="prose" style="color:var(--ink-2)">{a.casesIntro}</p>
-        <div class="legend" aria-hidden="true">
-          <span class="dot v2"><span class="pip"></span>fase bewezen</span>
-          <span class="dot v1"><span class="pip"></span>deels</span>
-          <span class="dot v0"><span class="pip"></span>niet in deze case</span>
-        </div>
-        <div class="cases-grid">
-          {cases.map((c) => <CaseCard c={c} highlight={a.fasen} />)}
-        </div>
-      </div>
-    </section>
-  )}
-
-  <section>
-    <div class="wrap">
-      <h2 style="font-size:1.35rem">Meer binnen {a.groep}</h2>
-      <div class="grid grid-2">
-        {verwant.map((v) => (
-          <a class={`card aanbod-card domein-${v.domein}`} href={`/aanbod/${v.slug}/`}>
-            <span class="ico"><Icon name={domeinen[v.domein].icoon} size={28} /></span>
-            <h3>{v.naam}</h3>
-            <p>{v.kort}</p>
-          </a>
-        ))}
-      </div>
-    </div>
-  </section>
+<Base title={a.naam} description={page.seo}>
+  <div class:list={[`domein-${a.domein}`, { 'governance-page':visueel, 'ontwerp-page':ontwerp, 'art-background':visueel }]} style={ontwerp?'--background-art:url(/ontwerp-achtergrondkunst.png)':governance?'--background-art:url(/kunst/richting.png)':undefined}>
+    <header class="page-head"><div class="wrap"><p class="crumbs"><a href="/aanbod/">Aanbod</a> / {a.groep}</p><div class:list={{ 'governance-hero':visueel }}><div><p class="eyebrow">{a.groep}</p><h1>{a.naam} {a.instap && <span class="badge">Instap</span>}</h1><p class="service-subtitle">{page.subtitle}</p><p class="lead">{a.intro}</p><div class="hero-actions"><a class="btn" href={`/contact/?onderwerp=${encodeURIComponent(a.naam)}`}>Bespreek je vraagstuk <Icon name="arrow" size={18} /></a></div></div>{visueel && <div class="art-space" aria-hidden="true"></div>}</div></div></header>
+    <section class="tight"><div class="wrap"><p class="eyebrow">Waar dit in een traject zit</p><FaseStrip active={a.fasen} compact />{a.slug==='praktijklab' && <p class="vorm-noot">Als werkvorm inzetbaar in elke fase.</p>}<div class="note" style="margin-top:24px"><strong>Herkenbaar?</strong> {a.vraag}</div></div></section>
+    {page.sections.filter(s => !s.title.startsWith('Meer binnen')).map(s => s.title==='Zo kun je het financieren' ? <FinancieringBlok slug={a.slug} /> : s.caseIds.length ? <section class="cases-section"><div class="wrap"><h2>{s.title}</h2><RedactieBlokken blocks={s.blocks} /><div class="cases-grid">{s.caseIds.map(id => <CaseCard c={caseById[id]} highlight={a.fasen} />)}</div></div></section> : <section class="content-section"><div class="wrap"><h2>{s.title}</h2><RedactieBlokken blocks={s.blocks} kaarten={['Wat je krijgt','Hoe ik werk','Vier vaste vragen','Zo bestel je een module','Voor wie'].includes(s.title)} /></div></section>)}
+    {!page.sections.some(s => s.title==='Zo kun je het financieren') && <FinancieringBlok slug={a.slug} />}
+    <section><div class="wrap"><h2>Meer binnen {a.groep}</h2><div class="grid grid-2">{verwant.map(v => <a class="card aanbod-card" href={`/aanbod/${v.slug}/`}><h3>{v.naam}</h3><p>{v.kort}</p></a>)}</div></div></section>
   </div>
 </Base>
+<style>.service-subtitle { font-size:1.4rem; font-weight:650; line-height:1.4; color:var(--ink); }.vorm-noot { color:var(--ink-3); font-size:.9375rem; }.content-section:nth-of-type(odd) { background:var(--paper); }.content-section h2 { font-size:1.7rem; margin-bottom:26px; }</style>
 <style>
   .governance-hero { display:grid; grid-template-columns:minmax(0,1.65fr) minmax(260px,1fr); gap:40px; align-items:center; }
   .governance-page .lead { max-width:44rem; }

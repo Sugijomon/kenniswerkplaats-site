@@ -9,7 +9,7 @@ Website van Kenniswerkplaats (Rink Weijs). Statische site in **Astro 5**, gehost
 
 ## Structuur
 - `src/data/` — **alle inhoud staat hier**, pagina's lezen eruit:
-  - `fasen.ts` — de vier fasen: Zicht krijgen · Ontwerpen · Ontwikkelen · Sturen & evalueren
+  - `fasen.ts` — de vier fasen: Verkennen · Ontwerpen · Realiseren · Evalueren (interne sleutels blijven stabiel)
   - `aanbod.ts` — drie groepen, negen aanbodonderdelen, elk met fasen en case-ids
   - `cases.ts` — praktijkcases met fase-scores (2 = bewezen, 1 = deels, 0 = niet)
   - `vraagstukken.ts` — instaptegels; `home: true` = op de voorpagina
@@ -25,7 +25,7 @@ Website van Kenniswerkplaats (Rink Weijs). Statische site in **Astro 5**, gehost
 4. **Casekaart-anatomie:** domein → vraagstuk (kop) → korte tekst → rol/aanpak/opbrengst → fase-stipjes → organisatie onderaan. De bezoeker herkent eerst het probleem.
 5. **Nog geen AI-klantcases.** AI-pagina's tonen overdraagbare cases met een brugzin. Niet doen alsof AI-Foto e.d. al bij klanten zijn uitgevoerd.
 6. **Juridisch:** geen juridisch eindoordeel of compliancegarantie claimen (zie noot bij AI op Orde).
-7. **Prijzen** staan (nog) niet op de site.
+7. **Prijsaanpak:** vaste prijs per variant of vorm benoemen, maar nog geen bedragen publiceren. Contact blijft voorlopig rink@digidactics.nl; geen reactietermijn verzinnen.
 
 ## Stijl
 - Teal-palet via CSS-variabelen; niet "alles groen": domeinen (AI, zorg, onderwijs) moeten zichtbaar blijven.

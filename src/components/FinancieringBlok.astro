@@ -1,0 +1,10 @@
+---
+import { financiering, financieringNoot } from '../data/financiering';
+interface Props { slug: string }
+const { slug } = Astro.props;
+const f = financiering[slug];
+---
+{f && <section class="financiering"><div class="wrap"><div class="financiering-panel"><h2>Zo kun je het financieren</h2>{f.teksten.map(t => <p>{t}</p>)}<p class="financiering-noot">{financieringNoot}</p>{f.bronnen.length>0 && <ul>{f.bronnen.map(b => <li><a href={b.href}>{b.naam}</a></li>)}</ul>}</div></div></section>}
+<style>
+  .financiering-panel { padding:30px; border:1px solid var(--line-2); border-radius:var(--radius); background:var(--action-tint); }.financiering-panel h2 { font-size:1.5rem; margin-bottom:20px; }.financiering-panel p { color:var(--ink-2); max-width:58rem; }.financiering-noot { font-size:.9375rem; }.financiering-panel ul { display:flex; flex-wrap:wrap; gap:12px 24px; list-style:none; margin:20px 0 0; padding:0; font-size:.9375rem; }@media(max-width:600px) { .financiering-panel { padding:22px; }.financiering-panel ul { display:grid; } }
+</style>
