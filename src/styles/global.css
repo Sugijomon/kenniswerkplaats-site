@@ -133,19 +133,21 @@ section.tight { padding: 36px 0; }
 }
 
 /* ─── Footer: rustig, typografisch en logisch leesbaar ──── */
-.site-footer { background:var(--paper); border-top:1px solid var(--line-2); padding:44px 0 24px; margin-top:24px; font-size:.9375rem; }
-.footer-inner { display:grid; grid-template-columns:minmax(0,1.4fr) minmax(0,1fr) minmax(0,1fr); gap:48px; align-items:start; }
+.site-footer { background:var(--paper); border-top:1px solid var(--line); padding:24px 0; margin-top:24px; }
+.footer-inner { display:flex; justify-content:space-between; align-items:center; gap:24px 48px; }
 .footer-brand .logo { display:flex; width:fit-content; margin:0; }
 .footer-brand .logo-full { width:250px; max-width:100%; }
-.footer-tagline { margin:0; max-width:19rem; font-size:.875rem; line-height:1.6; color:var(--ink-2); }
-.footer-title { margin:0 0 12px; font-size:.875rem; line-height:1.5; font-weight:650; letter-spacing:0; color:var(--ink); }
-.footer-nav { list-style:none; padding:0; margin:0; display:grid; grid-template-columns:1fr; gap:2px; }
-.footer-nav a { display:inline-block; padding:5px 0; color:var(--action); text-decoration:none; line-height:1.5; }
-.footer-nav a:hover,.footer-contact a:hover { color:var(--action-hover); text-decoration:underline; }
-.footer-contact a { display:inline-block; padding:5px 0; font-weight:600; overflow-wrap:anywhere; line-height:1.5; }
-.footer-bottom { margin-top:32px; border-top:1px solid var(--line); padding-top:18px; display:flex; justify-content:space-between; gap:12px 24px; flex-wrap:wrap; font-size:.8125rem; color:var(--ink-3); }
-.footer-bottom p { margin:0; }
-@media(max-width:720px) { .site-footer { padding-top:32px; }.footer-inner { grid-template-columns:1fr; gap:28px; }.footer-nav a,.footer-contact a { padding:10px 0; }.footer-bottom { margin-top:24px; } }
+.footer-details { text-align:right; }
+.footer-email { display:inline-block; padding:8px 0; font-size:.9375rem; font-weight:600; text-decoration:none; overflow-wrap:anywhere; }
+.footer-email:hover { text-decoration:underline; }
+.footer-meta { margin:0; color:var(--ink-3); font-size:.75rem; line-height:1.6; }
+@media(max-width:720px) {
+  .site-footer { padding:24px 0; }
+  .footer-inner { flex-direction:column; align-items:flex-start; gap:12px; }
+  .footer-brand .logo-full { width:220px; }
+  .footer-details { text-align:left; }
+  .footer-email { padding:8px 0; }
+}
 
 /* ─── Hero ─────────────────────────────────────────────── */
 .hero { padding: 28px 0 8px; }

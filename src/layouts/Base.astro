@@ -20,7 +20,6 @@ const nav = [
   { href: '/contact/', label: 'Contact' },
 ];
 const isActive = (href: string) => path === href || (href !== '/' && path.startsWith(href));
-const footerNav = [...nav.slice(0,3), { href: '/cases/', label: 'Cases' }, ...nav.slice(3)];
 ---
 <!doctype html>
 <html lang="nl">
@@ -98,23 +97,10 @@ const footerNav = [...nav.slice(0,3), { href: '/cases/', label: 'Cases' }, ...na
       <div class="wrap footer-inner">
         <div class="footer-brand">
           <Logo />
-          <p class="footer-tagline">{site.tagline}</p>
         </div>
-        <nav aria-labelledby="footer-nav-title">
-          <h2 id="footer-nav-title" class="footer-title">Verken Kenniswerkplaats</h2>
-          <ul class="footer-nav">
-            {footerNav.map((n) => <li><a href={n.href}>{n.label}</a></li>)}
-          </ul>
-        </nav>
-        <div class="footer-contact">
-          <h2 class="footer-title">Contact</h2>
-          <a href={`mailto:${site.email}`}>{site.email}</a>
-        </div>
-      </div>
-      <div class="wrap">
-        <div class="footer-bottom">
-          <p>© {jaar} {site.naam}</p>
-          <p>{site.plaats}</p>
+        <div class="footer-details">
+          <a class="footer-email" href={`mailto:${site.email}`}>{site.email}</a>
+          <p class="footer-meta">© {jaar} {site.naam}<span aria-hidden="true"> · </span>{site.plaats}</p>
         </div>
       </div>
     </footer>
