@@ -1,37 +1,37 @@
 /* ─── Tokens ───────────────────────────────────────────── */
 :root {
-  /* Vaste rollen: marine voor tekst, petrol voor iedere actie. */
-  --ink: #004E70;
-  --ink-2: #435871;
-  --ink-3: #586B7C;
-  --action: #034F64;
-  --action-hover: #003D4E;
-  --action-tint: #EBF1F3;
-  --paper: #F7F8F6;
-  --card: #FFFFFF;
-  --surface: #EAF0F2;
-  --line: #E4EAEE;
-  --line-2: #C9D3D8;
-  --phase: #034F64;
+  /* Vaste rollen: diepnavy voor tekst, koningsblauw voor iedere actie. */
+  --ink: var(--kwp-diepnavy);
+  --ink-2: var(--kwp-leisteen);
+  --ink-3: var(--kwp-leisteen);
+  --action: var(--kwp-koningsblauw);
+  --action-hover: var(--kwp-diepnavy);
+  --action-tint: #F0F4F8;
+  --paper: var(--kwp-wit);
+  --card: var(--kwp-wit);
+  --surface: var(--kwp-mist);
+  --line: var(--kwp-mist);
+  --line-2: var(--kwp-mist-op-blauw);
+  --phase: var(--kwp-petrol-tekst);
 
   /* Domeintinten: 8% basiskleur gemengd met wit, vooraf berekend. */
-  --org: #B52A68;
-  --org-tint: #F9EEF3;
-  --org-ink: #9A2057;
-  --tech: #006D9A;
-  --tech-tint: #EBF3F7;
-  --tech-ink: #005779;
-  --leren: #709F3A;
-  --leren-tint: #F4F7EF;
-  --leren-ink: #486823;
+  --org: var(--kwp-magenta);
+  --org-tint: #FCEBF3;
+  --org-ink: var(--kwp-diepnavy);
+  --tech: var(--kwp-koningsblauw);
+  --tech-tint: #EBEFF5;
+  --tech-ink: var(--kwp-koningsblauw);
+  --leren: var(--kwp-petrol);
+  --leren-tint: #EBF6F8;
+  --leren-ink: var(--kwp-diepnavy);
 
   /* Compatibiliteit voor bestaande componenten en historische voorbeelden.
-     Nieuwe UI gebruikt bovenstaande rollen; oranje krijgt geen token. */
+     Nieuwe UI gebruikt bovenstaande rollen en het aangeleverde v3-palet. */
   --teal-900: var(--ink);
   --teal-700: var(--action);
   --teal-600: var(--phase);
   --teal-500: var(--action);
-  --teal-400: #A9C4CB;
+  --teal-400: var(--kwp-mist-op-blauw);
   --teal-100: var(--surface);
   --teal-50: var(--action-tint);
   --support-blue: var(--ink-3);
@@ -44,7 +44,7 @@
   --radius: 22px;
   --radius-sm: 12px;
   --shadow: 0 8px 28px rgba(28, 48, 69, .06);
-  --font: 'Figtree Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font: 'Montserrat Variable', Arial, sans-serif;
   --wrap: 1140px;
 }
 
@@ -54,6 +54,7 @@ body {
   margin: 0;
   font-family: var(--font);
   font-size: 1.0625rem;
+  font-weight: 500;
   line-height: 1.6;
   color: var(--ink);
   background: var(--paper);
@@ -68,13 +69,13 @@ a:hover { color: var(--action-hover); }
 h1, h2, h3, h4 { line-height: 1.2; margin: 0 0 .5em; letter-spacing: -.01em; }
 h1 { font-size: clamp(2rem, 4.5vw, 3rem); font-weight: 700; }
 h2 { font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 700; }
-h3 { font-size: 1.15rem; font-weight: 650; }
+h3 { font-size: 1.15rem; font-weight: 600; }
 p { margin: 0 0 1em; }
 
-.wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 20px; }
+.wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
 .muted { color: var(--ink-3); }
 .eyebrow {
-  font-size: .8rem; font-weight: 650; text-transform: uppercase; letter-spacing: .08em;
+  font-size: .8rem; font-weight: 600; text-transform: uppercase; letter-spacing: .08em;
   color: var(--teal-700); margin-bottom: .6rem;
 }
 .lead { font-size: 1.2rem; color: var(--ink-2); max-width: 46rem; }
@@ -105,7 +106,7 @@ section.tight { padding: 36px 0; }
 
 /* ─── Header ───────────────────────────────────────────── */
 .site-header { background: var(--paper); backdrop-filter: blur(8px); border-bottom: 1px solid var(--line); position: sticky; top: 0; z-index: 20; }
-.header-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+.header-inner { display: flex; align-items: center; justify-content: space-between; min-height: 96px; }
 .logo { display: inline-flex; align-items: center; gap: .55rem; text-decoration: none; color: var(--ink); font-weight: 700; font-size: 1.2rem; letter-spacing: -.01em; }
 .logo:hover { color: var(--ink); }
 
@@ -125,7 +126,7 @@ section.tight { padding: 36px 0; }
   .menu { display: block; }
   .menu summary { display: inline-flex; }
   .menu[open] > ul {
-    position: absolute; left: 0; right: 0; top: 68px; flex-direction: column;
+    position: absolute; left: 0; right: 0; top: 96px; flex-direction: column;
     background: var(--paper); border-bottom: 1px solid var(--line); padding: 8px 12px 16px;
   }
   .menu[open] a { display: block; padding: 12px; font-size: 1.05rem; }
@@ -233,7 +234,7 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
   content: '→'; position: absolute; right: -22px; top: 50%; transform: translateY(-50%); color: var(--ink-3);
 }
 .fase-strip .nr { width: 34px; height: 34px; border-radius: 50%; background: var(--teal-700); color: #fff; font-weight: 700; display: grid; place-items: center; grid-row: span 2; }
-.fase-strip .naam { font-weight: 650; }
+.fase-strip .naam { font-weight: 600; }
 .fase-strip .vraag { font-size: .88rem; color: var(--ink-3); }
 .fase-strip.compact li { padding: 12px 14px; }
 .fase-strip li.dim { opacity: .45; background: transparent; box-shadow: none; }
@@ -251,7 +252,7 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
 .tool-tile .ico { width: 44px; height: 44px; border-radius: 10px; background: var(--teal-50); color: var(--teal-700); display: grid; place-items: center; flex-shrink: 0; }
 .tool-tile h3 { margin: 0; font-size: 1rem; }
 .tool-tile p { margin: 0; font-size: .9rem; color: var(--ink-3); }
-.badge { display: inline-block; font-size: .72rem; font-weight: 650; text-transform: uppercase; letter-spacing: .06em; background: var(--teal-100); color: var(--teal-900); padding: 3px 8px; border-radius: 999px; }
+.badge { display: inline-block; font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; background: var(--teal-100); color: var(--teal-900); padding: 3px 8px; border-radius: 999px; }
 
 .about { display: grid; grid-template-columns: auto 1fr auto; gap: 24px; align-items: center; }
 .avatar { width: 88px; height: 88px; border-radius: 50%; background: var(--teal-100); color: var(--teal-700); display: grid; place-items: center; font-weight: 700; font-size: 1.6rem; }
@@ -260,7 +261,7 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
 @media (max-width: 700px) { .about { grid-template-columns: 1fr; } }
 
 .cta-bar { background: var(--teal-50); border: 1px solid var(--teal-100); border-radius: var(--radius); padding: 22px 26px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-.cta-bar p { margin: 0; font-weight: 650; font-size: 1.15rem; color: var(--teal-900); }
+.cta-bar p { margin: 0; font-weight: 600; font-size: 1.15rem; color: var(--teal-900); }
 
 /* ─── Aanbod ───────────────────────────────────────────── */
 .aanbod-groep { margin-bottom: 40px; }
@@ -289,14 +290,14 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
   background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 22px;
   display: flex; flex-direction: column; gap: 10px; box-shadow: var(--shadow);
 }
-.case-domain { font-size: .78rem; font-weight: 650; text-transform: uppercase; letter-spacing: .06em; color: var(--domein-ink); margin: 0; }
+.case-domain { font-size: .78rem; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--domein-ink); margin: 0; }
 .case-card h3 { margin: 0; font-size: 1.12rem; }
 .case-text { color: var(--ink-2); font-size: .94rem; margin: 0; }
 .case-card dl { margin: 4px 0 0; display: grid; gap: 6px; font-size: .88rem; }
 .case-card dl div { display: grid; grid-template-columns: 82px 1fr; gap: 8px; }
 .case-card dt { color: var(--ink-3); font-weight: 600; text-transform: uppercase; font-size: .72rem; letter-spacing: .06em; padding-top: 2px; }
 .case-card dd { margin: 0; color: var(--ink); }
-.case-org { margin: auto 0 0; padding-top: 12px; border-top: 1px solid var(--line); font-weight: 650; font-size: .92rem; }
+.case-org { margin: auto 0 0; padding-top: 12px; border-top: 1px solid var(--line); font-weight: 600; font-size: .92rem; }
 .case-org span { color: var(--ink-3); font-weight: 500; }
 
 .dots { list-style: none; padding: 0; margin: 4px 0 0; display: flex; gap: 14px; flex-wrap: wrap; }
@@ -305,7 +306,7 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
 .dot.v2 .pip { background: var(--teal-600); border-color: var(--teal-600); }
 .dot.v1 .pip { background: linear-gradient(90deg, var(--teal-600) 50%, #fff 50%); border-color: var(--teal-600); }
 .dot.v2 .lbl, .dot.v1 .lbl { color: var(--ink-2); }
-.dot.hl .lbl { color: var(--teal-900); font-weight: 650; }
+.dot.hl .lbl { color: var(--teal-900); font-weight: 600; }
 .legend { display: flex; gap: 16px; flex-wrap: wrap; font-size: .85rem; color: var(--ink-3); margin-bottom: 18px; }
 .legend .dot { font-size: .85rem; }
 
@@ -324,7 +325,7 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
 .groep-card h3 { margin: 0; font-size: 1.25rem; line-height:1.35; color: var(--ink); }
 .groep-card .groep-kort { margin: 0; font-weight: 450; color:var(--ink-2); font-size:1rem; }
 .groep-card .groep-items { margin: 0; color: var(--ink-2); font-size: .95rem; }
-.groep-card .go { margin-top: auto; padding-top: 10px; font-weight: 650; color: var(--action); text-decoration: none; display: inline-flex; align-items: center; gap: .35rem; }
+.groep-card .go { margin-top: auto; padding-top: 10px; font-weight: 600; color: var(--action); text-decoration: none; display: inline-flex; align-items: center; gap: .35rem; }
 .groep-card .go:hover { text-decoration: underline; color: var(--action-hover); }
 .groep-card :focus-visible, .mega :focus-visible { outline-color: var(--action); }
 .aanbod-groep { scroll-margin-top: 88px; }
@@ -352,7 +353,7 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
 
 .menu-groepen { padding: 0 0 4px 12px; }
 .menu-groep { border-left: 3px solid var(--accent); margin: 2px 0; }
-.menu-groep summary { display: block; border: 0; border-radius: 0; padding: 10px 12px; font-weight: 650; font-size: 1rem; color: var(--accent); cursor: pointer; }
+.menu-groep summary { display: block; border: 0; border-radius: 0; padding: 10px 12px; font-weight: 600; font-size: 1rem; color: var(--accent); cursor: pointer; }
 .menu-groep summary::after { content: '+'; float: right; font-weight: 700; }
 .menu-groep[open] summary::after { content: '–'; }
 .menu .menu-groep ul { position: static; display: block; padding: 0 0 6px; }

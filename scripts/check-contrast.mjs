@@ -54,8 +54,8 @@ export function collectContrast() {
 }
 
 function run() {
-  const css = readFileSync(new URL('../src/styles/global.css', import.meta.url), 'utf8');
-  const declarations = Object.fromEntries([...css.slice(0, css.indexOf('}', css.indexOf(':root'))).matchAll(/(--[\w-]+):\s*([^;]+);/g)].map(m => [m[1], m[2].trim()]));
+  const css = readFileSync(new URL('../src/styles/kwp-kleuren.css', import.meta.url), 'utf8') + '\n' + readFileSync(new URL('../src/styles/global.css', import.meta.url), 'utf8');
+  const declarations = Object.fromEntries([...[...css.matchAll(/:root\s*\{([^}]+)\}/g)].map(m => m[1]).join('\n').matchAll(/(--[\w-]+):\s*([^;]+);/g)].map(m => [m[1], m[2].trim()]));
   const color = token => {
     const value = declarations[token];
     if (!value) throw new Error(`Onbekend token ${token}`);
