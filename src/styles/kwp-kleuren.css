@@ -1,0 +1,16 @@
+:root {
+  --kwp-diepnavy: #001F58;
+  --kwp-koningsblauw: #00337C;
+  --kwp-oranjerood: #F5450F;
+  --kwp-magenta: #DF0264;
+  --kwp-petrol: #0093A8;
+  --kwp-amber: #FD8000;
+  --kwp-cyaan: #00C4CC;
+  --kwp-staalblauw: #0070A8;
+  --kwp-wit: #FFFFFF;
+  --kwp-mist: #E8EEF4;
+  --kwp-leisteen: #4A5A70;
+  --kwp-mist-op-blauw: #BFD0E6;
+  --kwp-petrol-tekst: #00788A;   /* kleine tekst op wit, 5:1 */
+  --kwp-oranjerood-tekst: #C9360A; /* kleine tekst op wit, 5:1 */
+}

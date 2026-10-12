@@ -28,12 +28,12 @@ Website van Kenniswerkplaats (Rink Weijs). Statische site in **Astro 5**, gehost
 7. **Prijsaanpak:** vaste prijs per variant of vorm benoemen, maar nog geen bedragen publiceren. Contact blijft voorlopig rink@digidactics.nl; geen reactietermijn verzinnen.
 
 ## Stijl
-- Teal-palet via CSS-variabelen; niet "alles groen": domeinen (AI, zorg, onderwijs) moeten zichtbaar blijven.
+- Huisstijl v3 via `src/styles/kwp-kleuren.css` en semantische CSS-variabelen; niet "alles groen": domeinen (AI, zorg, onderwijs) moeten zichtbaar blijven.
 - Toegankelijk: semantische HTML, zichtbare focus, alt-teksten, contrast AA, werkt op 360px breed zonder horizontaal scrollen.
 - Geen externe trackers of fonts van derden (font zit in de bundle).
 
 ## Open punten
-- Definitief logo en beeldmateriaal (nu een tijdelijk woordmerk en illustratieve tegels)
+- Logo en favicons gebruiken de aangeleverde v3-SVG/PNG-bestanden; typografie is lokaal gebundelde Montserrat.
 - E-mailadres in `site.ts` vervangen door Kenniswerkplaats-adres; contactformulier kiezen
 - Werkplaats-items (signaalfeed, tools, canvas) inhoudelijk uitwerken
 - Casepagina's per hoofdcase (Viazorg, Zorgwise, Corpio, Quarterly Review)

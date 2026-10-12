@@ -1,5 +1,6 @@
 ---
-import '@fontsource-variable/figtree';
+import '@fontsource-variable/montserrat';
+import '../styles/kwp-kleuren.css';
 import '../styles/global.css';
 import Logo from '../components/Logo.astro';
 import { site } from '../data/site';
@@ -28,9 +29,10 @@ const footerNav = [...nav.slice(0,3), { href: '/cases/', label: 'Cases' }, ...na
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
-    <link rel="icon" href="/favicon2-vol.svg" type="image/svg+xml" />
+    <link rel="icon" href="/brand/v3/kwp-favicon.svg" type="image/svg+xml" />
 
-    <link rel="apple-touch-icon" href="/favicon2.png" />
+    <link rel="icon" href="/brand/v3/kwp-favicon-32.png" type="image/png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/brand/v3/kwp-favicon-180.png" />
   </head>
   <body class:list={{ 'palette-preview': palettePreview }}>
     <a class="skip" href="#main">Naar de inhoud</a>
