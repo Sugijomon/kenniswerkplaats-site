@@ -25,7 +25,7 @@ Website van Kenniswerkplaats (Rink Weijs). Statische site in **Astro 5**, gehost
 4. **Casekaart-anatomie:** domein → vraagstuk (kop) → korte tekst → rol/aanpak/opbrengst → fase-stipjes → organisatie onderaan. De bezoeker herkent eerst het probleem.
 5. **Nog geen AI-klantcases.** AI-pagina's tonen overdraagbare cases met een brugzin. Niet doen alsof AI-Foto e.d. al bij klanten zijn uitgevoerd.
 6. **Juridisch:** geen juridisch eindoordeel of compliancegarantie claimen (zie noot bij AI op Orde).
-7. **Prijsaanpak:** vaste prijs per variant of vorm benoemen, maar nog geen bedragen publiceren. Contact blijft voorlopig rink@digidactics.nl; geen reactietermijn verzinnen.
+7. **Prijsaanpak:** vaste prijs per variant of vorm benoemen, maar nog geen bedragen publiceren. Contact: rink@kenniswerkplaats.nl; geen reactietermijn verzinnen.
 
 ## Stijl
 - Huisstijl v3 via `src/styles/kwp-kleuren.css` en semantische CSS-variabelen; niet "alles groen": domeinen (AI, zorg, onderwijs) moeten zichtbaar blijven.
@@ -34,7 +34,7 @@ Website van Kenniswerkplaats (Rink Weijs). Statische site in **Astro 5**, gehost
 
 ## Open punten
 - Logo en favicons gebruiken de aangeleverde v3-SVG/PNG-bestanden; typografie is lokaal gebundelde Montserrat.
-- E-mailadres in `site.ts` vervangen door Kenniswerkplaats-adres; contactformulier kiezen
+- Contactformulier kiezen
 - Werkplaats-items (signaalfeed, tools, canvas) inhoudelijk uitwerken
 - Casepagina's per hoofdcase (Viazorg, Zorgwise, Corpio, Quarterly Review)
 - Domeinrecepten ("groep · tech · inhoud") op de werkwijzepagina uitwerken
