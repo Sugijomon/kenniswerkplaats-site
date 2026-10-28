@@ -698,7 +698,7 @@
       {
         "type": "paragraph",
         "text": "[Plan een AI-Foto-check] [Vraag een voorbeeldrapport]",
-        "html": "<p><a href=\"/contact/?onderwerp=AI-Foto\">Plan een AI-Foto-check</a> <a href=\"mailto:rink@digidactics.nl?subject=Vraag%20een%20voorbeeldrapport%20AI-Foto\">Vraag een voorbeeldrapport</a></p>"
+        "html": "<p><a href=\"/contact/?onderwerp=AI-Foto\">Plan een AI-Foto-check</a> <a href=\"mailto:rink@kenniswerkplaats.nl?subject=Vraag%20een%20voorbeeldrapport%20AI-Foto\">Vraag een voorbeeldrapport</a></p>"
       }
     ],
     "sections": [
@@ -980,7 +980,7 @@
           {
             "type": "paragraph",
             "text": "[Plan een AI-Foto-check] [Vraag een voorbeeldrapport]",
-            "html": "<p><a href=\"/contact/?onderwerp=AI-Foto\">Plan een AI-Foto-check</a> <a href=\"mailto:rink@digidactics.nl?subject=Vraag%20een%20voorbeeldrapport%20AI-Foto\">Vraag een voorbeeldrapport</a></p>"
+            "html": "<p><a href=\"/contact/?onderwerp=AI-Foto\">Plan een AI-Foto-check</a> <a href=\"mailto:rink@kenniswerkplaats.nl?subject=Vraag%20een%20voorbeeldrapport%20AI-Foto\">Vraag een voorbeeldrapport</a></p>"
           }
         ],
         "caseIds": []
@@ -1006,7 +1006,7 @@
       {
         "type": "paragraph",
         "text": "[Plan een AI-in-HR-check] [Vraag een voorbeelduitwerking]",
-        "html": "<p><a href=\"/contact/?onderwerp=GRIP%20op%20AI%20in%20HR\">Plan een AI-in-HR-check</a> <a href=\"mailto:rink@digidactics.nl?subject=Vraag%20een%20voorbeelduitwerking%20GRIP%20op%20AI%20in%20HR\">Vraag een voorbeelduitwerking</a></p>"
+        "html": "<p><a href=\"/contact/?onderwerp=GRIP%20op%20AI%20in%20HR\">Plan een AI-in-HR-check</a> <a href=\"mailto:rink@kenniswerkplaats.nl?subject=Vraag%20een%20voorbeelduitwerking%20GRIP%20op%20AI%20in%20HR\">Vraag een voorbeelduitwerking</a></p>"
       }
     ],
     "sections": [
@@ -1311,7 +1311,7 @@
           {
             "type": "paragraph",
             "text": "[Plan een AI-in-HR-check] [Vraag een voorbeelduitwerking]",
-            "html": "<p><a href=\"/contact/?onderwerp=GRIP%20op%20AI%20in%20HR\">Plan een AI-in-HR-check</a> <a href=\"mailto:rink@digidactics.nl?subject=Vraag%20een%20voorbeelduitwerking%20GRIP%20op%20AI%20in%20HR\">Vraag een voorbeelduitwerking</a></p>"
+            "html": "<p><a href=\"/contact/?onderwerp=GRIP%20op%20AI%20in%20HR\">Plan een AI-in-HR-check</a> <a href=\"mailto:rink@kenniswerkplaats.nl?subject=Vraag%20een%20voorbeelduitwerking%20GRIP%20op%20AI%20in%20HR\">Vraag een voorbeelduitwerking</a></p>"
           }
         ],
         "caseIds": [
@@ -2837,8 +2837,8 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "[rink@digidactics.nl](mailto:rink@digidactics.nl)",
-            "html": "<p><a href=\"mailto:rink@digidactics.nl\">rink@digidactics.nl</a></p>"
+            "text": "[rink@kenniswerkplaats.nl](mailto:rink@kenniswerkplaats.nl)",
+            "html": "<p><a href=\"mailto:rink@kenniswerkplaats.nl\">rink@kenniswerkplaats.nl</a></p>"
           },
           {
             "type": "paragraph",
