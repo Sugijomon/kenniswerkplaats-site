@@ -157,12 +157,11 @@ export const aanbod: AanbodItem[] = [
       "Rollen, routines en registratie samen met de eigenaren inrichten",
       "Een eerste reviewronde om het ritme te testen"
     ],
-    "casesIntro": "Verantwoording organiseren, met rollen, ritme en bewijs, deed ik eerder voor scholingsplatforms, kwaliteitszorg, merkplatforms en duurzaamheid.",
+    "casesIntro": "Deze eerdere opdrachten gaan over kwaliteitszorg, scholingsplatforms en platformbeheer. Ze laten de ervaring zien die ik meeneem naar AI op Orde; het zijn geen uitgevoerde AI op Orde-trajecten.",
     "cases": [
       "corpio",
       "quarterly-review",
-      "heineken",
-      "green-key"
+      "merkplatform"
     ],
     "noot": "Ik geef geen juridisch eindoordeel en geen compliancegarantie. Waar specialistische juridische toetsing nodig is, gebeurt dat door een bevoegde jurist.",
     "ondertitel": "AI-beleid en governance die in de praktijk werken",
@@ -196,7 +195,8 @@ export const aanbod: AanbodItem[] = [
     "cases": [
       "balans-flex-vast",
       "viazorg-flexplatform",
-      "moodle-rbs"
+      "moodle-rbs",
+      "sustainability-business"
     ],
     "ondertitel": "Samen uitzoeken, maken en beoordelen",
     "seo": "In een praktijklab werken de mensen die het vraagstuk kennen samen aan een oplossing. Laagdrempelige instap, ook met meerdere organisaties, met het AISA-kaartspel bij AI-vraagstukken."
@@ -227,7 +227,8 @@ export const aanbod: AanbodItem[] = [
     "casesIntro": "Leerroutes en leeromgevingen ontwierp en richtte ik eerder in voor hogescholen.",
     "cases": [
       "hz-plj",
-      "moodle-rbs"
+      "moodle-rbs",
+      "sustainability-business"
     ],
     "ondertitel": "Een leerroute die aansluit op werk en competentiekader",
     "seo": "Een leermodule op maat, ontworpen vanuit je beroepsprofiel of competentiekader, gebouwd in je eigen leeromgeving en begeleid in de uitvoering."
@@ -289,7 +290,8 @@ export const aanbod: AanbodItem[] = [
       "zorgwise",
       "corpio",
       "moodle-rbs",
-      "viazorg-flexplatform"
+      "viazorg-flexplatform",
+      "rode-kruis"
     ],
     "ondertitel": "Samen een platform of hulpmiddel kiezen en inrichten",
     "seo": "Samen scherp krijgen wat een platform of hulpmiddel moet doen, routes vergelijken en de gekozen oplossing inrichten, ook als meerdere organisaties hem delen."
@@ -321,7 +323,7 @@ export const aanbod: AanbodItem[] = [
       "corpio",
       "moodle-rbs",
       "quarterly-review",
-      "green-key"
+      "sustainability-business"
     ],
     "ondertitel": "Van gekozen oplossing naar werkende praktijk",
     "seo": "Van gekozen oplossing naar werkende praktijk: werkprocessen, rollen, koppelingen, kennisoverdracht en een eigenaar die het na de projectfase overneemt."
@@ -352,7 +354,9 @@ export const aanbod: AanbodItem[] = [
       "urway",
       "delft-ocw",
       "stad-esch",
-      "heineken"
+      "merkplatform",
+      "rode-kruis",
+      "viazorg-flexplatform"
     ],
     "ondertitel": "Evaluatie van platforms, samenwerkingen en AI-pilots",
     "seo": "Onafhankelijke evaluatie van platforms, samenwerkingen en AI-pilots, met een besluit als uitkomst: doorgaan, bijsturen, opschalen of stoppen."

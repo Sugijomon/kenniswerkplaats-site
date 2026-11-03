@@ -18,6 +18,7 @@ const fouten = [];
 const laad = (naam) => import(pathToFileURL(join(root, 'src/data', naam)).href);
 const { aanbod } = await laad('aanbod.ts');
 const { cases } = await laad('cases.ts');
+const { paginas } = await laad('redactie.ts');
 const { vraagstukken } = await laad('vraagstukken.ts');
 const { domeinen } = await laad('domeinen.ts');
 
@@ -37,6 +38,19 @@ const caseIds = new Set(cases.map((c) => c.id));
 for (const a of aanbod) {
   for (const id of a.cases) {
     if (!caseIds.has(id)) fouten.push(`aanbod.ts: "${a.slug}" verwijst naar onbekend case-id "${id}"`);
+  }
+}
+
+// Redactionele pagina's hebben eigen caseselecties naast aanbod.ts.
+if (caseIds.size !== cases.length) fouten.push('cases.ts: dubbele case-id');
+for (const c of cases) {
+  if (!c.verband?.trim()) fouten.push(`cases.ts: ontbrekend verband bij "${c.id}"`);
+}
+for (const [pad, pagina] of Object.entries(paginas)) {
+  for (const sectie of pagina.sections) {
+    for (const id of sectie.caseIds) {
+      if (!caseIds.has(id)) fouten.push(`redactie: "${pad}" verwijst naar onbekend case-id "${id}"`);
+    }
   }
 }
 
