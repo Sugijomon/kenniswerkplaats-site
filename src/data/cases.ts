@@ -87,7 +87,7 @@ export const cases: Case[] = [
     },
     "aanpak": "maandelijks ontwikkelteam met zorgorganisaties; gerichte gesprekken met bestuurders en HR-managers; doelgroep- en arbeidsmarktanalyse; businesscases en financiële scenario's; inbreng van Zeeuwse casuïstiek bij landelijke gesprekken met VWS, SZW en de Belastingdienst",
     "opbrengst": "een herzien afsprakenkader en rekentool, door de stuurgroep vastgesteld; daarnaast doelgroepverkenningen, eisen voor het platform, businesscases, scenario's en een implementatieplan als basis voor verdere besluitvorming",
-    "tekst": "Wat begon als een vraag naar een digitaal flexplatform, groeide uit tot een bredere opgave rond doelgroepen, personeelsbeleid, werkprocessen en financiering. Al in de eerste maand toetste ik de aanname dat vast personeel tussen organisaties zou gaan rouleren, en pauzeerde ik de leveranciersgesprekken om eerst samenwerking en doelgroepen uit te werken. Met zorgorganisaties, de programmamanager en landelijke partijen herzag ik de route daarna nog twee keer, telkens op basis van wat de praktijk liet zien. In februari 2024 ging het project vanwege de bekostiging on hold. Ik droeg de lopende kennisactiviteiten over.",
+    "tekst": "Wat begon als een vraag naar een digitaal flexplatform, groeide uit tot een bredere opgave rond doelgroepen, personeelsbeleid, werkprocessen en financiering. Al in de eerste maand toetste ik de aanname dat vast personeel tussen organisaties zou gaan rouleren, en pauzeerde ik de leveranciersgesprekken om eerst samenwerking en doelgroepen uit te werken. Met zorgorganisaties, de programmamanager en landelijke partijen herzag ik de route daarna nog twee keer, telkens op basis van wat de praktijk liet zien. In februari 2024 zette de stuurgroep het project vanwege de bekostiging formeel on hold. Op verzoek liepen voorbereidende werkzaamheden op beperkte schaal en in laag tempo door. Ik droeg de lopende kennisactiviteiten over.",
     "verband": "Binnen programma Deltaplan 2.0. De bestuurlijke voorbereiding deed ik samen met de programmamanager; het ontwikkelteam zat ik eerst samen met een collega voor, later alleen.",
     "toelichtingen": {
       "home": "Samenwerking tussen zelfstandige zorgorganisaties: aannames toetsen, de route herzien en keuzes voorbereiden voor bestuurders.",
@@ -116,9 +116,9 @@ export const cases: Case[] = [
     "verband": "Teamopdracht, met de scholingsteams van De huisartsenconnectie en Nucleuszorg en technisch partner Netbasics",
     "toelichtingen": {
       "home": "Platformimplementatie voor twee organisaties: van selectie en migratie tot borging van de werkprocessen, samen met de scholingsteams en de technisch partner.",
-      "ai-bekwaamheid": "Bij Corpio verbonden we een scholingsplatform met de beroepsgebonden registratie van nascholing. Ik had de projectleiding.",
+      "ai-bekwaamheid": "Bij Corpio verbonden we een scholingsplatform met de beroepsgebonden nascholings- en accreditatieregistratie. Ik had de projectleiding.",
       "implementatie": "Als projectleider bracht ik het platform van selectie en testen via datamigratie en implementatie tot borging van de nieuwe werkprocessen.",
-      "ai-op-orde": "Werkprocessen, verantwoordelijkheden en de verplichte registratie bij de beroepsgroepen kwamen samen rond het scholingsplatform.",
+      "ai-op-orde": "Werkprocessen, verantwoordelijkheden en de beroepsgebonden nascholings- en accreditatieregistratie kwamen samen rond het scholingsplatform.",
       "ontwerp-en-ontwikkeling": "Van selectie en testen tot technische doorontwikkeling met de scholingsteams en de technisch partner."
     }
   },
@@ -204,10 +204,10 @@ export const cases: Case[] = [
     },
     "aanpak": "onderwijskundig ontwerp van doelen, toetsing, leeractiviteiten en online inhoud; inrichting van de leeromgeving; contentproductie en opbouw van aangeleverde weken in Moodle; evaluatie van de gegevensstroom",
     "opbrengst": "een Moodle-omgeving voor een minor van 30 EC, gedragen door drie hogescholen, met een flipped-classroompilot voor 40 à 50 studenten in het eerste jaar",
-    "tekst": "Een gedeelde Moodle-leeromgeving om flipped classroom in de praktijk te brengen, van cursusstructuur, rollen en toetsen tot hosting, ondersteuning en de koppeling met het studentinformatiesysteem. Ik had de interne projectleiding en deed het onderwijskundig ontwerp: doelen, toetsing, leeractiviteiten en online inhoud op elkaar afgestemd. Het grootste deel van de online inhoud maakte ik zelf. Wat collega's aanleverden, bouwde ik in Moodle op tot complete weken.",
+    "tekst": "Een gedeelde Moodle-leeromgeving om flipped classroom in de praktijk te brengen, van cursusstructuur, rollen en toetsen tot hosting, ondersteuning en de koppeling met het studentinformatiesysteem. Ik had de interne projectleiding en deed het onderwijskundig ontwerp: doelen, toetsing, leeractiviteiten en online inhoud op elkaar afgestemd. De minor bestond uit 15 ECTS voornamelijk theorie en 15 ECTS praktijk, met aanvullende theorie en begeleidende teksten, waaronder opdrachten. Mijn digitale contentproductie concentreerde zich op het theoriedeel: het grootste deel daarvan maakte ik zelf. Wat collega's aanleverden, bouwde ik in Moodle op tot complete weken.",
     "verband": "Teamopdracht, met drie hogescholen en een ontwikkelteam van docenten",
     "toelichtingen": {
-      "leermodule-op-maat": "Bij Rotterdam Business School deed ik het onderwijskundig ontwerp en maakte ik het grootste deel van de online inhoud voor een minor die drie hogescholen samen droegen.",
+      "leermodule-op-maat": "Bij Rotterdam Business School deed ik het onderwijskundig ontwerp en maakte ik het grootste deel van de online inhoud voor het theoriedeel van 15 ECTS, binnen een minor van 30 ECTS die drie hogescholen samen droegen.",
       "implementatie": "De gedeelde leeromgeving vroeg om afstemming van rollen, inhoud en gegevensstromen tussen hogescholen. Ik had de interne projectleiding."
     }
   },
