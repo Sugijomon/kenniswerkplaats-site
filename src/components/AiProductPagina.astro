@@ -1,6 +1,7 @@
 ---
 import Base from '../layouts/Base.astro';
 import Icon from './Icon.astro';
+import CaseIntro from './CaseIntro.astro';
 import CaseCard from './CaseCard.astro';
 import FinancieringBlok from './FinancieringBlok.astro';
 import { aanbodBySlug } from '../data/aanbod';
@@ -39,7 +40,7 @@ const voorbeeld = p.voorbeeld ? `mailto:${site.email}?subject=${encodeURICompone
     </div></section>
 
     <FinancieringBlok slug={a.slug} />
-    <section class="cases-section"><div class="wrap"><p class="eyebrow">Ervaring met de aanpak</p><h2>Eerder aangepakt</h2><p class="section-intro">{a.casesIntro}</p><div class="cases-grid">{a.cases.map(id => <CaseCard c={caseById[id]} highlight={a.fasen} />)}</div></div></section>
+    <section class="cases-section"><div class="wrap"><p class="eyebrow">Ervaring met de aanpak</p><h2>Eerder aangepakt</h2><p class="section-intro">{a.casesIntro}</p><CaseIntro /><div class="cases-grid">{a.cases.map(id => <CaseCard context={a.slug} c={caseById[id]} highlight={a.fasen} />)}</div></div></section>
 
     <section><div class="wrap faq-layout"><div><p class="eyebrow">Praktische vragen</p><h2>Veelgestelde vragen</h2></div><div class="vragen">{p.faq.map(f => <details><summary>{f.vraag}</summary><p>{f.antwoord}</p></details>)}</div></div></section>
 

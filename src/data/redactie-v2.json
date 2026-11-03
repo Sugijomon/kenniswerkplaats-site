@@ -1714,8 +1714,8 @@
         "blocks": [
           {
             "type": "paragraph",
-            "text": "Verantwoording organiseren, met rollen, ritme en bewijs, deed ik eerder voor scholingsplatforms, kwaliteitszorg, merkplatforms en duurzaamheid.",
-            "html": "<p>Verantwoording organiseren, met rollen, ritme en bewijs, deed ik eerder voor scholingsplatforms, kwaliteitszorg, merkplatforms en duurzaamheid.</p>"
+            "text": "Deze eerdere opdrachten gaan over kwaliteitszorg, scholingsplatforms en platformbeheer. Ze laten de ervaring zien die ik meeneem naar AI op Orde; het zijn geen uitgevoerde AI op Orde-trajecten.",
+            "html": "<p>Deze eerdere opdrachten gaan over kwaliteitszorg, scholingsplatforms en platformbeheer. Ze laten de ervaring zien die ik meeneem naar AI op Orde; het zijn geen uitgevoerde AI op Orde-trajecten.</p>"
           },
           {
             "type": "paragraph",
@@ -1726,8 +1726,7 @@
         "caseIds": [
           "corpio",
           "quarterly-review",
-          "heineken",
-          "green-key"
+          "merkplatform"
         ]
       }
     ]
@@ -1894,7 +1893,8 @@
         "caseIds": [
           "balans-flex-vast",
           "viazorg-flexplatform",
-          "moodle-rbs"
+          "moodle-rbs",
+          "sustainability-business"
         ]
       },
       {
@@ -2029,7 +2029,8 @@
         ],
         "caseIds": [
           "hz-plj",
-          "moodle-rbs"
+          "moodle-rbs",
+          "sustainability-business"
         ]
       },
       {
@@ -2251,7 +2252,8 @@
           "zorgwise",
           "corpio",
           "moodle-rbs",
-          "viazorg-flexplatform"
+          "viazorg-flexplatform",
+          "rode-kruis"
         ]
       }
     ]
@@ -2345,7 +2347,7 @@
           "corpio",
           "moodle-rbs",
           "quarterly-review",
-          "green-key"
+          "sustainability-business"
         ]
       }
     ]
@@ -2478,7 +2480,9 @@
           "urway",
           "delft-ocw",
           "stad-esch",
-          "heineken"
+          "merkplatform",
+          "rode-kruis",
+          "viazorg-flexplatform"
         ]
       }
     ]
