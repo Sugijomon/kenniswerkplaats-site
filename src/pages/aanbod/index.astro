@@ -47,7 +47,7 @@ import { faseByKey } from '../../data/fasen';
       ))}
     </div>
   </section>
-  {['Ook: duurzaamheid','Hoe ik prijs'].map(t => <section class="tight"><div class="wrap"><h2>{sectie(page,t)!.title}</h2><RedactieBlokken blocks={sectie(page,t)!.blocks.filter(b => !b.text?.startsWith('**Twijfel'))} /></div></section>)}
+  {['Hoe ik prijs'].map(t => <section class="tight"><div class="wrap"><h2>{sectie(page,t)!.title}</h2><RedactieBlokken blocks={sectie(page,t)!.blocks.filter(b => !b.text?.startsWith('**Twijfel'))} /></div></section>)}
   <section class="tight">
     <div class="wrap">
       <div class="cta-bar">

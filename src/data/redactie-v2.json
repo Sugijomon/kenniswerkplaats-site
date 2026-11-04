@@ -651,17 +651,6 @@
         "caseIds": []
       },
       {
-        "title": "Ook: duurzaamheid en circulariteit",
-        "blocks": [
-          {
-            "type": "paragraph",
-            "text": "Vanuit mijn achtergrond in industriële ecologie begeleid ik ook verkenningen en samenwerkingen rond circulaire ketens en duurzaam ondernemen. Dit aanbod is in opbouw. Speelt er bij jou zo’n vraagstuk? Dan bespreek ik graag of ik kan helpen.",
-            "html": "<p>Vanuit mijn achtergrond in industriële ecologie begeleid ik ook verkenningen en samenwerkingen rond circulaire ketens en duurzaam ondernemen. Dit aanbod is in opbouw. Speelt er bij jou zo’n vraagstuk? Dan bespreek ik graag of ik kan helpen.</p>"
-          }
-        ],
-        "caseIds": []
-      },
-      {
         "title": "Hoe ik prijs",
         "blocks": [
           {
@@ -2792,6 +2781,11 @@
               "BSc Onderwijskunde (HRD) · Universiteit Utrecht",
               "BA Communicatie &#x26; Journalistiek · Hogeschool Utrecht"
             ]
+          },
+          {
+            "type": "paragraph",
+            "text": "Vanuit mijn achtergrond in industriële ecologie begeleid ik ook vraagstukken rond duurzaamheid en circulariteit in de groene sector.",
+            "html": "<p>Vanuit mijn achtergrond in industriële ecologie begeleid ik ook vraagstukken rond duurzaamheid en circulariteit in de groene sector.</p>"
           }
         ],
         "caseIds": []
