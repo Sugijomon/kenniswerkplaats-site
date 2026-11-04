@@ -2,10 +2,13 @@
 import type { Case } from '../data/cases';
 import type { FaseKey } from '../data/fasen';
 import PhaseDots from './PhaseDots.astro';
+import { aanbod, caseAanbodTeksten } from '../data/aanbod';
 interface Props { c: Case; highlight?: FaseKey[]; context?: string }
 const { c, highlight = [], context } = Astro.props;
 const toelichting = context ? c.toelichtingen?.[context] : undefined;
 const aanpak = c.aanpak.split(' · ').filter(Boolean);
+const passendAanbod = aanbod.filter(a => a.cases.includes(c.id) && a.slug !== context);
+const bevatAiAanbod = passendAanbod.some(a => a.groep === 'Verantwoord werken met AI' || a.slug === 'ai-bekwaamheid');
 ---
 <article class={`case-card domein-${c.kleurDomein}`} id={`case-${c.id}`}>
   <p class="case-domain">{c.domein}</p>
@@ -28,6 +31,11 @@ const aanpak = c.aanpak.split(' · ').filter(Boolean);
     <section class="outcome-block" aria-labelledby={`outcome-${c.id}`}><h3 id={`outcome-${c.id}`}>Opbrengst</h3><p>{c.opbrengst}</p></section>
   </div>
   <PhaseDots values={c.fasen} highlight={highlight} />
+  {passendAanbod.length > 0 && <nav class="case-aanbod" aria-labelledby={`aanbod-${c.id}`}>
+    <h3 id={`aanbod-${c.id}`}>{caseAanbodTeksten.titel}</h3>
+    {bevatAiAanbod && <p>{caseAanbodTeksten.aiToelichting}</p>}
+    <ul>{passendAanbod.map(a => <li><a href={`/aanbod/${a.slug}/`}>{a.naam} <span aria-hidden="true">→</span></a></li>)}</ul>
+  </nav>}
   <p class="case-org"><span class="footer-org">{c.organisatie}</span> <span>{c.periode}</span></p>
   </div>
 </dialog>
@@ -51,6 +59,12 @@ const aanpak = c.aanpak.split(' · ').filter(Boolean);
   });
 </script>
 <style>
+  .case-aanbod { margin:16px 0; padding-top:14px; border-top:1px solid var(--line); }
+  .case-aanbod h3 { font-size:.9375rem; margin:0 0 8px; }
+  .case-aanbod p { font-size:.8125rem; margin:0 0 8px; }
+  .case-aanbod ul { display:flex; flex-wrap:wrap; gap:4px 20px; padding:0; margin:0; list-style:none; }
+  .case-aanbod li { min-width:0; max-width:100%; }
+  .case-aanbod a { display:inline-block; padding:8px 0; color:var(--action); font-size:.875rem; font-weight:650; overflow-wrap:anywhere; }
   .case-card { position:relative; padding:26px; transition:box-shadow .18s, border-color .18s; }
   .case-card:hover { border-color:var(--teal-400); box-shadow:0 12px 32px #10283a12; }
   .case-open { padding:0; border:0; background:none; color:var(--action); font:inherit; text-align:left; cursor:pointer; }
