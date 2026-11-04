@@ -225,14 +225,14 @@ export const cases: Case[] = [
     "organisatie": "Rotterdam Business School · Sustainability & Business (2 EC)",
     "verband": "Teamopdracht, met een docententeam van vijf",
     "periode": "april 2015 – oktober 2016",
-    "rol": "onderwijsontwerper, projectleider van de pilot en facilitator van het docententeam",
-    "aanpak": "flipped-classroompilot in vier stappen: voorbereiding, uitvoering, evaluatie en aanpassing; ontwerp van doelen, leeractiviteiten, toetsing en online inhoud; facilitatie van het docententeam; inrichting in Moodle",
+    "rol": "onderwijsontwerper en ontwikkelaar, eindverantwoordelijk voor cursusontwerp en Moodle-uitwerking; projectleider van de pilot en facilitator van het docententeam",
+    "aanpak": "eigen ontwerp en ontwikkeling van verhaallijn, structuur, leerdoelen, leeractiviteiten, toetsing en online materiaal; co-creatie en facilitatie van het docententeam; functionele Moodle-inrichting; afstemming met centrale ICT over technische inbedding, authenticatie, back-ups, logging en Moodle–Excel–Osiris; uitvoering, evaluatie, bijstelling en overdracht",
     "opbrengst": "een geëvalueerde en aangepaste flipped-classroomcursus, overgedragen aan een nieuw team",
-    "tekst": "Een vak voor circa 250 studenten in 11 klassen, omgebouwd naar flipped classroom. Van voorbereiding in april 2015 via uitvoering en evaluatie in maart 2016 tot aanpassing in oktober 2016. Ik ontwierp de cursus, bouwde hem op in Moodle en faciliteerde het docententeam. Bij mijn vertrek droeg ik hem over aan een nieuwe teamcoördinator.",
+    "tekst": "Voor circa 250 studenten in 11 klassen ontwikkelde ik met een docententeam van vijf een flipped-classroomaanpak voor Sustainability & Business. Ik ontwierp en ontwikkelde de cursus: van verhaallijn en overkoepelende structuur tot leerdoelen, leeractiviteiten, toetsing en online materiaal. Als eindverantwoordelijke voor het cursusontwerp en de Moodle-uitwerking stimuleerde ik co-creatie binnen het docententeam. Ik bracht bijdragen van collega’s samen tot een samenhangende cursus en vertaalde ze naar werkende leeractiviteiten in Moodle. Daarnaast faciliteerde ik het docententeam bij de uitvoering, evaluatie en bijstelling. Ik verzorgde de functionele inrichting van Moodle, waaronder rollen, rechten, toetsen, cijferberekening en ingebedde media. Met de centrale ICT-afdeling van RBS stemde ik het gebruik en de technische inbedding van Moodle af, inclusief authenticatie, back-ups, logging en de gegevensstroom Moodle–Excel–Osiris. De pilot liep van voorbereiding in april 2015 via uitvoering en evaluatie in maart 2016 tot aanpassing in oktober 2016. Bij mijn vertrek droeg ik de aangepaste cursus over aan een nieuwe teamcoördinator.",
     "toelichtingen": {
-      "leermodule-op-maat": "Voor een vak met circa 250 studenten ontwierp ik een flipped-classroomaanpak en bouwde ik de cursus opnieuw op in Moodle.",
-      "implementatie": "Van een gezamenlijke pilot naar een herontworpen cursus, met een overdracht aan een nieuw team. Zo bleef de aanpak bestaan na mijn vertrek.",
-      "praktijklab": "Met een docententeam van vijf werkten we een nieuwe didactiek uit en stelden die bij."
+      "leermodule-op-maat": "Voor circa 250 studenten ontwierp en ontwikkelde ik een flipped-classroomcursus: van verhaallijn en onderwijskundig ontwerp tot online materiaal en de Moodle-uitwerking, met bijdragen van het docententeam.",
+      "implementatie": "Ik verzorgde de functionele Moodle-inrichting en stemde de technische inbedding en gegevensstroom af met centrale ICT. Ik faciliteerde het docententeam bij uitvoering, evaluatie en bijstelling en droeg de cursus over aan een nieuwe teamcoördinator.",
+      "praktijklab": "Als eindverantwoordelijke voor het cursusontwerp stimuleerde ik co-creatie in een docententeam van vijf. Ik bracht bijdragen samen in Moodle en faciliteerde de uitvoering, evaluatie en bijstelling."
     }
   },
   {
