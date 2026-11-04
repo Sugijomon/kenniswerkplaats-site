@@ -364,3 +364,8 @@ export const aanbod: AanbodItem[] = [
 ];
 
 export const aanbodBySlug = Object.fromEntries(aanbod.map(a => [a.slug, a])) as Record<string, AanbodItem>;
+
+export const caseAanbodTeksten = {
+  titel: 'Passend aanbod',
+  aiToelichting: 'Bij AI-aanbod laat deze case ervaring met de aanpak zien; het is geen uitgevoerd traject van dat AI-aanbod.',
+};
