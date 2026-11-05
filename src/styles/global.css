@@ -238,6 +238,8 @@ a.card:hover { border-color: var(--teal-400); transform: translateY(-2px); color
 .fase-strip .nr { width: 34px; height: 34px; border-radius: 50%; background: var(--teal-700); color: #fff; font-weight: 700; display: grid; place-items: center; grid-row: span 2; }
 .fase-strip .naam { font-weight: 600; }
 .fase-strip .vraag { font-size: .88rem; color: var(--ink-3); }
+.fase-strip:not(.compact) li { grid-template-rows: auto 1fr; row-gap: 4px; align-items: start; }
+.fase-strip:not(.compact) .nr { align-self: center; }
 .fase-strip.compact li { padding: 12px 14px; }
 .fase-strip li.dim { opacity: .45; background: transparent; box-shadow: none; }
 .fase-strip li.dim .nr { background: var(--ink-3); }
