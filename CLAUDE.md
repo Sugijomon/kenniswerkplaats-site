@@ -25,7 +25,7 @@ Website van Kenniswerkplaats (Rink Weijs). Statische site in **Astro 5**, gehost
 4. **Casekaart-anatomie:** domein → vraagstuk (kop) → korte tekst → rol/aanpak/opbrengst → fase-stipjes → organisatie onderaan. De bezoeker herkent eerst het probleem.
 5. **Nog geen AI-klantcases.** AI-pagina's tonen overdraagbare cases met een brugzin. Niet doen alsof AI-Foto e.d. al bij klanten zijn uitgevoerd.
 6. **Juridisch:** geen juridisch eindoordeel of compliancegarantie claimen (zie noot bij AI op Orde).
-7. **Prijsaanpak:** vaste prijs per variant of vorm benoemen, maar nog geen bedragen publiceren. Contact: rink@kenniswerkplaats.nl; geen reactietermijn verzinnen.
+7. **Prijsaanpak:** vaste prijs per variant of vorm benoemen, maar nog geen bedragen publiceren. Contact: info@kenniswerkplaats.nl; geen reactietermijn verzinnen.
 
 ## Stijl
 - Huisstijl v3 via `src/styles/kwp-kleuren.css` en semantische CSS-variabelen; niet "alles groen": domeinen (AI, zorg, onderwijs) moeten zichtbaar blijven.
