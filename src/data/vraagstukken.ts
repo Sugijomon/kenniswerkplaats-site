@@ -47,9 +47,7 @@ export const vraagstukken: Vraagstuk[] = [
     "tekst": "De AI-verordening vraagt om afspraken en AI-geletterdheid. Waar begin je?",
     "icoon": "doc",
     "aanbod": "ai-foto",
-    "groep": "Verantwoord werken met AI",
-    "home": true,
-    "homeTekst": "De AI-verordening vraagt om afspraken en AI-geletterdheid. Waar begin je zonder dat het een papieren exercitie wordt?"
+    "groep": "Verantwoord werken met AI"
   },
   {
     "id": "losse-pilots",
@@ -58,9 +56,7 @@ export const vraagstukken: Vraagstuk[] = [
     "tekst": "Afdelingen experimenteren elk op hun eigen manier, maar er zijn geen gezamenlijke keuzes.",
     "icoon": "rocket",
     "aanbod": "praktijklab",
-    "groep": "Verantwoord werken met AI",
-    "home": true,
-    "homeTekst": "Afdelingen experimenteren elk op hun eigen manier, maar er zijn geen gezamenlijke keuzes."
+    "groep": "Verantwoord werken met AI"
   },
   {
     "id": "ai-in-hr",
@@ -69,9 +65,7 @@ export const vraagstukken: Vraagstuk[] = [
     "tekst": "AI raakt werving, beoordeling en ontwikkeling, zonder duidelijke spelregels.",
     "icoon": "people",
     "aanbod": "grip-op-ai-in-hr",
-    "groep": "Verantwoord werken met AI",
-    "home": true,
-    "homeTekst": "AI raakt werving, beoordeling en ontwikkeling, zonder duidelijke spelregels."
+    "groep": "Verantwoord werken met AI"
   },
   {
     "id": "copilot",
@@ -80,9 +74,7 @@ export const vraagstukken: Vraagstuk[] = [
     "tekst": "De licenties zijn er, de training is gegeven, maar het werk verandert nauwelijks.",
     "icoon": "target",
     "aanbod": "ai-bekwaamheid",
-    "groep": "Leren en ontwikkelen",
-    "home": true,
-    "homeTekst": "De licenties zijn er, de training is gegeven, maar het werk verandert nauwelijks."
+    "groep": "Leren en ontwikkelen"
   },
   {
     "id": "ai-geletterdheid",
@@ -100,7 +92,8 @@ export const vraagstukken: Vraagstuk[] = [
     "tekst": "Er is een beroepsprofiel of competentiekader, maar nog geen leerroute die erop aansluit.",
     "icoon": "book",
     "aanbod": "leermodule-op-maat",
-    "groep": "Leren en ontwikkelen"
+    "groep": "Leren en ontwikkelen",
+    "home": true
   },
   {
     "id": "samenwerken",
@@ -109,7 +102,8 @@ export const vraagstukken: Vraagstuk[] = [
     "tekst": "Meerdere organisaties moeten samen tot één aanpak komen, maar het blijft bij overleggen.",
     "icoon": "link",
     "aanbod": "praktijklab",
-    "groep": "Samenwerken en digitale platforms"
+    "groep": "Samenwerken en digitale platforms",
+    "home": true
   },
   {
     "id": "samen-een-platform",
@@ -118,7 +112,8 @@ export const vraagstukken: Vraagstuk[] = [
     "tekst": "We willen een gedeeld platform, maar wat hebben we nodig en van wie is het?",
     "icoon": "layers",
     "aanbod": "ontwerp-en-ontwikkeling",
-    "groep": "Samenwerken en digitale platforms"
+    "groep": "Samenwerken en digitale platforms",
+    "home": true
   },
   {
     "id": "borging",
@@ -127,7 +122,8 @@ export const vraagstukken: Vraagstuk[] = [
     "tekst": "Er ligt een plan of platform, maar het wordt geen onderdeel van het gewone werk.",
     "icoon": "anchor",
     "aanbod": "implementatie",
-    "groep": "Samenwerken en digitale platforms"
+    "groep": "Samenwerken en digitale platforms",
+    "home": true
   },
   {
     "id": "platform-opbrengst",
